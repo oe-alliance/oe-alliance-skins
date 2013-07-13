@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: myNOVUM_HD Vs.5.0 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com and MetrixHD_MOD by BiniCKNiCH  -->
+  <!--  Skin: myNOVUM_HD Vs.5.1 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com and MetrixHD_MOD by BiniCKNiCH  -->
   <!--  Skin: ViXBMC Vs 1.0 based on ViX-Night-HD Vs 0.39 by markus625 @www.world-of-satellite.com  -->
   <!--  Skin: ViX-Night-HD Vs 0.39 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
@@ -1354,6 +1354,7 @@
     <eLabel position="695,80" size="574,325" zPosition="2" backgroundColor="grey" foregroundColor="background30" transparent="1" />
     <widget source="session.VideoPicture" render="Pig" position="697,82" size="570,321" zPosition="3" backgroundColor="transparent" />
     <eLabel position="18,130" size="664,530" zPosition="0" backgroundColor="grey" transparent="1" />
+    <widget name="bouquetlist" position="697,82" size="570,321" itemHeight="35" foregroundColor="grey" backgroundColor="un242426" foregroundColorSelected="white" backgroundColorSelected="un242426" scrollbarMode="showNever" zPosition="6" transparent="1" />
     <widget name="list" position="20,130" size="660,536" zPosition="3" scrollbarMode="showNever" backgroundColor="un242426" selectionPixmap="myNOVUM_HD/images/FocusBar_H90x700.png" foregroundColorEvent="grey" foregroundColorEventSelected="white" serviceItemHeight="36" foregroundColorServiceNotAvail="red" serviceNumberFont="Regular2;24" serviceNameFont="Regular2;24" serviceInfoFont="Regular2;21" transparent="1" />
     <widget name="now_button_sel" pixmap="myNOVUM_HD/epg_now.png" position="20,85" zPosition="1" size="463,34" alphatest="on" />
     <widget name="next_button_sel" pixmap="myNOVUM_HD/epg_next.png" position="20,85" zPosition="1" size="463,34" alphatest="on" />
@@ -1549,6 +1550,7 @@
     </widget>
     <widget name="lab1" position="center,60" size="1280,115" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="un242426" transparent="1" />
     <widget name="timeline_text" position="center,60" size="1260,30" foregroundColor="light_blue" font="Regular2; 20" transparent="1" zPosition="21" />
+    <widget name="bouquetlist" position="center,90" size="1260,85" itemHeight="42" foregroundColor="grey" backgroundColor="un242426" foregroundColorSelected="white" backgroundColorSelected="un242426" scrollbarMode="showNever" zPosition="6" transparent="1" />
     <widget name="list" position="center,90" size="1260,85" backgroundColor="un242426" scrollbarMode="showNever" zPosition="1" EntryFontWrap="no" transparent="1" />
     <widget name="timeline_now" position="10,72" zPosition="2" size="19,99" pixmap="myNOVUM_HD/timeline-now.png" alphatest="on" />
     <ePixmap pixmap="myNOVUM_HD/buttons/red.png" position="60,189" size="24,25" alphatest="blend" />
