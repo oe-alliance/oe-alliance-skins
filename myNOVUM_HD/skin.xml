@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: myNOVUM_HD Vs.5.1 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com and MetrixHD_MOD by BiniCKNiCH  -->
+  <!--  Skin: myNOVUM_HD Vs.5.2 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com and MetrixHD_MOD by BiniCKNiCH  -->
   <!--  Skin: ViXBMC Vs 1.0 based on ViX-Night-HD Vs 0.39 by markus625 @www.world-of-satellite.com  -->
   <!--  Skin: ViX-Night-HD Vs 0.39 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
@@ -1222,6 +1222,17 @@
     <widget name="text" position="10,480" size="553,148" font="Regular; 18" halign="center" transparent="1" backgroundColor="background20" />
     <widget name="list" position="10,55" size="553,415" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background20" transparent="1" />
     <ePixmap position="20,667" size="45,25" zPosition="10" pixmap="myNOVUM_HD/buttons/key_menu.png" transparent="1" alphatest="blend" />
+  </screen>
+  <screen name="RecordTimerQuestion" position="center,center" size="225,60" zPosition="5" flags="wfNoBorder" >
+	<widget name="text" position="0,0" size="0,0" font="Regular;20" />
+	<widget name="list" position="0,5" size="225,50" enableWrapAround="1" />
+  </screen>
+  <screen name="RemoveTimerQuestion" position="center,center" size="503,130" zPosition="5" flags="wfNoBorder" >
+	<widget name="text" position="0,0" size="0,0" font="Regular;20" />
+	<widget name="list" position="10,10" size="220,50" enableWrapAround="1" />
+	<applet type="onLayoutFinish">
+		self.autoResize()
+	</applet>
   </screen>
   <screen name="MMIDialog" position="0,0" size="1280,720" title="Common Interface" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="global.CurrentTime" render="Label" position="830,10" size="410,28" font="SetrixHD;24" foregroundColor="transpWhite" backgroundColor="background20" halign="right" transparent="1">
