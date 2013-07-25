@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--	Skin: myNOVUM_HD Vs.5.4 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com and MetrixHD_MOD by BiniCKNiCH	-->
+  <!--	Skin: myNOVUM_HD Vs.5.4r1 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com and MetrixHD_MOD by BiniCKNiCH	-->
   <!--	Skin: ViXBMC Vs 1.0 based on ViX-Night-HD Vs 0.39 by markus625 @www.world-of-satellite.com	-->
   <!--	Skin: ViX-Night-HD Vs 0.39 by AndyBlac @ www.world-of-satellite.com	-->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
@@ -7252,7 +7252,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="Service" render="Label" position="40,671" size="100,28" font="Regular;24" halign="right" valign="center" backgroundColor="un242426" shadowColor="black" shadowOffset="-1,-1" transparent="1" foregroundColor="light_blue">
       <convert type="EMCServicePosition">Position</convert>
     </widget>
-    <widget source="Service" render="PositionGauge" position="151,681" size="899,9" transparent="1">
+    <widget source="Service" render="PositionGauge" position="151,681" size="899,9" zPosition="1" transparent="1">
       <convert type="EMCServicePosition">Gauge</convert>
     </widget>
     <widget source="Service" render="Progress" position="151,684" size="899,3" backgroundColor="un37ADEA" foregroundColor="un37ADEA" borderWidth="0" transparent="1">
