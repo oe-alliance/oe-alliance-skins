@@ -1,5 +1,5 @@
 <skin>
-  <!--	Skin: NeoNOVUM_HD vs.7.8 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com	-->
+  <!--	Skin: NeoNOVUM_HD vs.7.9 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com	-->
   <!--	Skin: ViXBMC Vs 1.0 based on ViX-Night-HD Vs 0.39 by markus625 @www.world-of-satellite.com	-->
   <!--	Skin: ViX-Night-HD Vs 0.39 by AndyBlac @ www.world-of-satellite.com	-->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
@@ -7515,11 +7515,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="535,405" size="500,30" font="Regular;24" backgroundColor="un242426" shadowColor="#00605f5e" transparent="1" halign="center" foregroundColor="menu-buttons-bkgrnd">
+    <widget source="Event" render="Label" position="535,405" size="500,30" font="Regular;24" backgroundColor="un242426" shadowColor="#00605f5e" transparent="1" halign="center" foregroundColor="ivorywhite">
       <convert type="EventName">Name</convert>
     </widget>
-    <ePixmap position="660,448" size="240,14" zPosition="1" pixmap="NeoNOVUM_HD/progress_back.png" />
-    <widget source="Event" render="Progress" position="660,448" size="240,14" pixmap="NeoNOVUM_HD/progress.png" borderWidth="2" borderColor="event-bkgrnd" zPosition="2" transparent="1">
+    <ePixmap position="665,448" size="240,14" zPosition="1" pixmap="NeoNOVUM_HD/progress_back.png" />
+    <widget source="Event" render="Progress" position="665,448" size="240,14" pixmap="NeoNOVUM_HD/progress.png" borderWidth="2" borderColor="event-bkgrnd" zPosition="2" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
     <!-- Running Text Start -->
@@ -8717,7 +8717,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="AboutScrollLabel" position="200,263" size="600,320" font="Regular; 22" backgroundColor="background20" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
     <ePixmap position="865,200" size="220,220" pixmap="NeoNOVUM_HD/menu/oealliance_info.png" transparent="1" alphatest="blend" />
     <ePixmap position="200,660" size="45,25" pixmap="NeoNOVUM_HD/buttons/key_info.png" alphatest="blend" />
-    <eLabel text="Skin NeoNOVUM_HD vs.7.8 by Nashu" position="850,480" size="250,70" backgroundColor="background20" foregroundColor="white" transparent="1" font="Robo-Regular; 20" halign="center" />
+    <eLabel text="Skin NeoNOVUM_HD vs.7.9 by Nashu" position="850,480" size="250,70" backgroundColor="background20" foregroundColor="white" transparent="1" font="Robo-Regular; 20" halign="center" />
   </screen>
   <screen name="Devices" position="0,0" size="1280,720" title="Systeminfo" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="NeoNOVUM_HD/images/menu_bg3.png" position="center,2" size="1280,720" zPosition="-1" transparent="1" alphatest="on" />
