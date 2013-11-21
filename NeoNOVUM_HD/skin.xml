@@ -2728,8 +2728,8 @@ self.autoResize()
     <widget name="list" position="10,87" size="653,500" itemHeight="50" selectionPixmap="NeoNOVUM_HD/images/FocusBar.png" foregroundColor="lightgrey" backgroundColor="window-bg" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
     <ePixmap pixmap="NeoNOVUM_HD/buttons/red.png" position="0,667" size="24,24" alphatest="blend" transparent="1" />
     <ePixmap pixmap="NeoNOVUM_HD/buttons/green.png" position="0,694" size="24,24" alphatest="blend" transparent="1" />
-    <widget name="red" position="35,667" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" />
-    <widget name="green" position="35,694" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" />
+    <widget name="key_red" position="35,667" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" />
+    <widget name="key_green" position="35,694" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" />
   </screen>
   <screen name="PluginDownloadBrowser" position="0,0" size="1280,720" title="Choose Plugin" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="NeoNOVUM_HD/images/menu_bg.png" position="0,0" size="1280,720" alphatest="on" transparent="1" zPosition="-1" />
