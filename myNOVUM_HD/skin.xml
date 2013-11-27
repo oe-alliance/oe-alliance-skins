@@ -1,5 +1,5 @@
 <skin>
-  <!--	Skin: myNOVUM_HD vs.8.7 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
+  <!--	Skin: myNOVUM_HD vs.8.8 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
   <!--	Skin: ViXBMC Vs 1.0 based on ViX-Night-HD Vs 0.39 by markus625 @www.world-of-satellite.com	-->
   <!--	Skin: ViX-Night-HD Vs 0.39 by AndyBlac @ www.world-of-satellite.com	-->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
@@ -1208,7 +1208,7 @@
   <!-- Channel Selection -->
   <screen name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap pixmap="myNOVUM_HD/images/Ch_Selection_Bg-Dividers_fs8.png" position="center,51" size="1280,657" transparent="1" zPosition="-1" />
-    <widget name="list" position="21,119" size="609,540" selectionPixmap="myNOVUM_HD/images/FocusBar.png" backgroundPixmap="myNOVUM_HD/images/sel_bg1.png" foregroundColorEvent="light_blue1" backgroundColorEvent="light_blue" foregroundColorEventSelected="white" foregroundColorServiceNotAvail="red" serviceItemHeight="54" serviceNumberFont="Regular2;21" serviceNameFont="Regular_light;21" serviceInfoFont="Regular_light;21" transparent="1" zPosition="3" scrollbarMode="showNever" />
+    <widget name="list" position="21,119" size="609,540" selectionPixmap="myNOVUM_HD/images/FocusBar.png" backgroundPixmap="myNOVUM_HD/images/sel_bg1.png" foregroundColorEvent="light_blue1" backgroundColorEvent="light_blue" foregroundColorEventSelected="white" foregroundColorServiceNotAvail="red" serviceItemHeight="54" serviceNumberFont="Roboto-Medium;20" serviceNameFont="Roboto-Medium;20" serviceInfoFont="Roboto-Light;20" transparent="1" zPosition="3" scrollbarMode="showNever" />
     <widget backgroundColor="un181A1C" font="scoutcondWide; 26" foregroundColor="preTrans10" halign="center" position="625,74" render="Label" size="90,35" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
@@ -2952,7 +2952,7 @@ self.autoResize()
     <eLabel name="new eLabel" position="0, 0" size="1280,101" backgroundColor="un181A1C" zPosition="-2" />
     <eLabel name="new eLabel" position="0,101" size="1280,1" backgroundColor="background80" zPosition="-2" />
     <eLabel name="new eLabel" position="0,102" size="1280,537" backgroundColor="background20" zPosition="-2" />
-    <ePixmap position="947,245" size="220,220" pixmap="myNOVUM_HD/menu/iconmy.png" transparent="1" alphatest="blend" />
+    <ePixmap position="947,245" size="220,220" pixmap="myNOVUM_HD/menu/oealliance_info.png" transparent="1" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="830,10" size="410,28" font="SetrixHD;24" foregroundColor="transpWhite" backgroundColor="un181A1C" halign="right" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
@@ -3027,7 +3027,7 @@ self.autoResize()
   <screen name="SlimChannelSelection" position="0,0" size="1280,720" title=" " flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD/images/Ch_Selection_Bg-DividersS_fs8.png" position="0,0" size="1280,720" transparent="1" zPosition="-1" />
     <eLabel text="EVENTVIEW" position="845,13" size="220,38" halign="left" font="Robo-Regular; 30" foregroundColor="light_blue" backgroundColor="background20" transparent="1" noWrap="1" valign="center" zPosition="6" />
-    <widget name="list" position="0,458" size="830,240" selectionPixmap="myNOVUM_HD/images/FocusBar.png" backgroundPixmap="myNOVUM_HD/images/sel_bg1.png" foregroundColorEvent="light_blue" backgroundColorEvent="light_blue" foregroundColorEventSelected="white" foregroundColorServiceNotAvail="red" serviceItemHeight="40" serviceNumberFont="Regular2;24" serviceNameFont="Regular_light;24" serviceInfoFont="Regular_light;24" transparent="1" zPosition="3" scrollbarMode="showNever" />
+    <widget name="list" position="0,458" size="830,240" selectionPixmap="myNOVUM_HD/images/FocusBar.png" backgroundPixmap="myNOVUM_HD/images/sel_bg1.png" foregroundColorEvent="light_blue" backgroundColorEvent="light_blue" foregroundColorEventSelected="white" foregroundColorServiceNotAvail="red" serviceItemHeight="40" serviceNumberFont="Roboto-Medium;20" serviceNameFont="Roboto-Medium;20" serviceInfoFont="Roboto-Light;20" transparent="1" zPosition="3" scrollbarMode="showNever" />
     <widget source="ServiceEvent" render="Label" position="20,335" size="808,70" font="Robo-Regular; 52" halign="left" noWrap="1" foregroundColor="preTrans50" backgroundColor="transparent" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -3084,7 +3084,7 @@ self.autoResize()
   <screen name="SimpleChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD/images/Ch_Selection_Bg-DividersS_fs8.png" position="0,0" size="1280,720" transparent="1" zPosition="-1" />
     <eLabel text="EVENTVIEW" position="845,13" size="220,38" halign="left" font="Robo-Regular; 30" foregroundColor="light_blue" backgroundColor="background20" transparent="1" noWrap="1" valign="center" zPosition="6" />
-    <widget name="list" position="0,458" size="830,240" selectionPixmap="myNOVUM_HD/images/FocusBar.png" backgroundPixmap="myNOVUM_HD/images/sel_bg1.png" foregroundColorEvent="light_blue" backgroundColorEvent="light_blue" foregroundColorEventSelected="white" foregroundColorServiceNotAvail="red" serviceItemHeight="40" serviceNumberFont="Regular2;24" serviceNameFont="Regular_light;24" serviceInfoFont="Regular_light;24" transparent="1" zPosition="3" scrollbarMode="showNever" />
+    <widget name="list" position="0,458" size="830,240" selectionPixmap="myNOVUM_HD/images/FocusBar.png" backgroundPixmap="myNOVUM_HD/images/sel_bg1.png" foregroundColorEvent="light_blue" backgroundColorEvent="light_blue" foregroundColorEventSelected="white" foregroundColorServiceNotAvail="red" serviceItemHeight="40" serviceNumberFont="Roboto-Medium;20" serviceNameFont="Roboto-Medium;20" serviceInfoFont="Roboto-Light;20" transparent="1" zPosition="3" scrollbarMode="showNever" />
     <widget source="ServiceEvent" render="Label" position="20,335" size="808,70" font="Robo-Regular; 52" halign="left" noWrap="1" foregroundColor="preTrans50" backgroundColor="transparent" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -4855,7 +4855,7 @@ self.autoResize()
   <screen name="mySmallChannelSelection" title="Select service to add..." position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD/images/Ch_Selection_Bg-DividersS_fs8.png" position="0,0" size="1280,720" transparent="1" zPosition="-1" />
     <eLabel text="EVENTVIEW" position="935,78" size="245,40" halign="center" font="Robo-Regular; 28" foregroundColor="light_blue" backgroundColor="background20" transparent="1" noWrap="1" valign="center" zPosition="6" />
-    <widget name="list" position="0,458" size="830,240" selectionPixmap="myNOVUM_HD/images/FocusBar.png" backgroundPixmap="myNOVUM_HD/images/sel_bg1.png" foregroundColorEvent="light_blue" backgroundColorEvent="light_blue" foregroundColorEventSelected="white" foregroundColorServiceNotAvail="red" serviceItemHeight="40" serviceNumberFont="Regular2;21" serviceNameFont="SetrixHD;21" serviceInfoFont="SetrixHD;21" transparent="1" zPosition="3" scrollbarMode="showNever" />
+    <widget name="list" position="0,458" size="830,240" selectionPixmap="myNOVUM_HD/images/FocusBar.png" backgroundPixmap="myNOVUM_HD/images/sel_bg1.png" foregroundColorEvent="light_blue" backgroundColorEvent="light_blue" foregroundColorEventSelected="white" foregroundColorServiceNotAvail="red" serviceItemHeight="40" serviceNumberFont="Roboto-Medium;20" serviceNameFont="Roboto-Medium;20" serviceInfoFont="Roboto-Light;20" transparent="1" zPosition="3" scrollbarMode="showNever" />
     <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=7,startdelay=4000" position="20,400" size="808,50" backgroundColor="transparent" font="Robo-Regular; 34" foregroundColor="preTrans50" transparent="1" zPosition="3" noWrap="1">
       <convert type="EventName">Name</convert>
     </widget>
@@ -10037,7 +10037,7 @@ self.autoResize()
     <widget name="AboutScrollLabel" position="200,263" size="600,320" font="Regular; 22" backgroundColor="background20" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
     <ePixmap position="875,200" size="220,220" pixmap="myNOVUM_HD/menu/oealliance_info.png" transparent="1" alphatest="blend" />
     <ePixmap position="200,660" size="45,25" pixmap="myNOVUM_HD/buttons/key_info.png" alphatest="blend" />
-    <eLabel text="Skin myNOVUM_HD vs.8.7 by Nashu" position="865,480" size="250,70" backgroundColor="background20" foregroundColor="white" transparent="1" font="Robo-Regular; 20" halign="center" />
+    <eLabel text="Skin myNOVUM_HD vs.8.8 by Nashu" position="865,480" size="250,70" backgroundColor="background20" foregroundColor="white" transparent="1" font="Robo-Regular; 20" halign="center" />
   </screen>
   <screen name="Devices" position="0,0" size="1280,720" title="Systeminfo" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel name="new eLabel" position="center,640" size="1280,80" backgroundColor="un181A1C" zPosition="-2" />
@@ -10055,7 +10055,7 @@ self.autoResize()
     <widget source="hdd" render="Label" position="200,319" size="730,100" font="Regular; 19" foregroundColor="white" transparent="1" zPosition="2" enableWrapAround="0" backgroundColor="background20" />
     <widget source="MountsHeader" render="Label" position="200,426" size="730,36" font="Bold; 21" foregroundColor="white" transparent="1" zPosition="2" backgroundColor="background20" />
     <widget source="mounts" render="Label" position="200,471" size="730,143" font="Regular; 21" foregroundColor="white" transparent="1" zPosition="2" enableWrapAround="0" backgroundColor="background20" />
-    <ePixmap position="940,245" size="220,220" pixmap="myNOVUM_HD/menu/iconmy.png" transparent="1" alphatest="blend" />
+    <ePixmap position="940,245" size="220,220" pixmap="myNOVUM_HD/menu/oealliance_info.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel name="new eLabel" position="center,640" size="1280,80" backgroundColor="un181A1C" zPosition="-2" />
@@ -10066,7 +10066,7 @@ self.autoResize()
     <widget source="global.CurrentTime" render="Label" position="870,10" size="350,25" font="Regular2; 20" halign="right" backgroundColor="un181A1C" transparent="1">
       <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
     </widget>
-    <ePixmap position="940,245" size="220,220" pixmap="myNOVUM_HD/menu/iconmy.png" transparent="1" alphatest="blend" />
+    <ePixmap position="940,245" size="220,220" pixmap="myNOVUM_HD/menu/oealliance_info.png" transparent="1" alphatest="blend" />
     <widget source="Title" render="Label" position="center,47" size="700,38" font="Bold;35" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="center" />
     <widget source="lab1" render="Label" position="200,145" size="730,35" font="Regular; 26" transparent="1" zPosition="2" backgroundColor="background40" halign="left" />
     <widget source="lab2" render="Label" position="200,188" size="730,30" font="Regular; 19" transparent="1" zPosition="2" backgroundColor="background40" halign="left" />
@@ -10082,7 +10082,7 @@ self.autoResize()
       <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
     </widget>
     <widget source="Title" render="Label" position="center,47" size="700,38" font="Bold;35" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="center" />
-    <ePixmap position="940,245" size="220,220" pixmap="myNOVUM_HD/menu/iconmy.png" transparent="1" alphatest="blend" />
+    <ePixmap position="940,245" size="220,220" pixmap="myNOVUM_HD/menu/oealliance_info.png" transparent="1" alphatest="blend" />
     <widget name="AboutScrollLabel" position="200,132" size="600,217" font="Regular;20" transparent="1" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="background20" />
     <widget source="LabelBSSID" render="Label" position="200,363" size="200,25" valign="left" font="Regular;20" transparent="1" backgroundColor="background20" />
     <widget source="LabelESSID" render="Label" position="200,398" size="200,25" valign="center" font="Regular;20" transparent="1" backgroundColor="background20" />
@@ -10107,7 +10107,7 @@ self.autoResize()
     <eLabel name="new eLabel" position="0, 0" size="1280,101" backgroundColor="un181A1C" zPosition="-2" />
     <eLabel name="new eLabel" position="0,101" size="1280,1" backgroundColor="background80" zPosition="-2" />
     <eLabel name="new eLabel" position="0,102" size="1280,537" backgroundColor="background20" zPosition="-2" />
-    <ePixmap position="990,244" size="220,220" pixmap="myNOVUM_HD/menu/iconmy.png" transparent="1" alphatest="blend" />
+    <ePixmap position="990,244" size="220,220" pixmap="myNOVUM_HD/menu/oealliance_info.png" transparent="1" alphatest="blend" />
     <widget source="Title" render="Label" position="center,47" size="780,38" font="Bold;35" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="center" />
     <widget source="global.CurrentTime" render="Label" position="870,10" size="350,25" font="Regular2; 20" halign="right" backgroundColor="un181A1C" transparent="1">
       <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
