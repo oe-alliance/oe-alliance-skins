@@ -379,42 +379,25 @@
 		<widget name="FullDescription" position="55,50" size="870,140" font="skymedium;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
 	</screen>
 	
-	<screen name="MoviePlayer" flags="wfNoBorder" position="center,e-165" size="1000,350" title="InfoBar" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-1" size="1000,190" pixmap="Sky/infobar/movie_infobar-bg.png" />
-		<widget source="session.CurrentService" render="Label" position="18,4" size="650,34" font="skymedium;30" foregroundColor="#FFFFFF" backgroundColor="infobar-bkgrnd" transparent="1" valign="top" halign="left" noWrap="1">
+	<screen name="MoviePlayer" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
+		<ePixmap position="157,530" zPosition="-1" size="1280,400" pixmap="Sky/infobar/movie_infobar-bg.png" />
+		<widget source="session.CurrentService" render="Label" position="170,612" size="650,34" font="skymedium;28" foregroundColor="#0A1A3B" backgroundColor="infobar-bkgrnd" transparent="1" valign="top" halign="left" noWrap="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget name="statusicon" position="29,45" size="20,20" zPosition="3" alphatest="on" pixmaps="Sky/icons/play.png,Sky/icons/pause.png,Sky/icons/stop.png,Sky/icons/forward.png,Sky/icons/backward.png,Sky/icons/slow.png,Sky/icons/blank.png" />
-		<widget name="speed" position="54,48" size="80,15" font="skymedium;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
-		<widget source="global.CurrentTime" render="Label" position="767,10" zPosition="1" size="59,20" font="skymedium;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="right" valign="top">
+		<widget name="statusicon" position="29,95" size="95,95" zPosition="-1" alphatest="on" pixmaps="Sky/icons/play.png,Sky/icons/pause.png,Sky/icons/stop.png,Sky/icons/forward.png,Sky/icons/backward.png,Sky/icons/slow.png,Sky/icons/blank.png" />
+		<widget name="speed" position="61,150" size="80,15" font="skymedium;17" halign="left" foregroundColor="#FFFFFF" backgroundColor="infobar_sunken" transparent="1" zPosition="1" />
+		<widget source="global.CurrentTime" render="Label" position="844,545" zPosition="1" size="59,20" font="skymedium;22" foregroundColor="#FFFFFF" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="right" valign="top">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="827,10" zPosition="1" size="35,20" font="skymedium;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top">
+		<widget source="global.CurrentTime" render="Label" position="904,545" zPosition="1" size="35,20" font="skymedium;22" foregroundColor="#FFFFFF" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="855,10" zPosition="1" size="115,20" font="skymedium;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="center" valign="top">
+		<widget source="global.CurrentTime" render="Label" position="932,545" zPosition="1" size="115,20" font="skymedium;22" foregroundColor="#FFFFFF" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="center" valign="top">
 			<convert type="ClockToText">Format:%a %d/%m</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="562,58" size="200,24" font="skymedium;18" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" halign="right">
-			<convert type="ServicePosition">Length</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="200,92" size="200,24" font="skymedium;18" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" halign="left" valign="center">
-			<convert type="ServicePosition">Position</convert>
-		</widget>
-		<ePixmap position="200,75" size="563,18" pixmap="Sky/infobar/Mediaplayerbar_gray.png" alphatest="blend" />
-		<ePixmap position="195,75" size="5,18" pixmap="Sky/infobar/Mediaplayerbar_purple.png" alphatest="blend" />
-		<widget source="session.CurrentService" render="PositionGauge" position="199,68" size="563,25" zPosition="2" pointer="Sky/infobar/Mediaplayerbar_purple.png:563,0" transparent="1">
-			<convert type="ServicePosition">Gauge</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="562,92" size="200,20" font="skymedium;18" halign="right" valign="center" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="782,613" size="260,30" font="skymedium;28" halign="right" valign="center" foregroundColor="#FFFFFF" backgroundColor="infobar_sunken" transparent="1">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<ePixmap pixmap="Sky/buttons/green.png" position="275,118" size="25,25" alphatest="blend" />
-		<widget name="key_green" position="310,118" size="130,25" font="skymedium;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="Sky/buttons/yellow.png" position="475,118" size="25,25" alphatest="blend" />
-		<widget name="key_yellow" position="510,118" size="130,25" font="skymedium;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" transparent="1" zPosition="1" />
-		<ePixmap pixmap="Sky/buttons/blue.png" position="675,118" size="25,25" alphatest="blend" />
-		<widget name="key_blue" position="710,118" size="130,25" font="skymedium;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" transparent="1" zPosition="1" />
 	</screen>
 	
 	
@@ -1179,7 +1162,7 @@ self.autoResize()
 		<panel name="MenuPanel" />
 		<widget name="list" position="10,107" size="503,536" itemHeight="25" font="skymedium;22" selectionPixmap="Sky/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
-	<screen name="Mute" position="92,40" zPosition="10" size="90,80" backgroundColor="transparent" title="Mute" flags="wfNoBorder">
+	<screen name="Mute" position="1162,20" zPosition="10" size="90,80" backgroundColor="transparent" title="Mute" flags="wfNoBorder">
 		<ePixmap position="0,0" size="90,80" pixmap="Sky/screens/mute.png" transparent="1" alphatest="on" />
 	</screen>
 	<screen name="NameserverSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
