@@ -11,10 +11,13 @@
 		<resolution xres="1280" yres="720" bpp="32" />
 	</output>
 	<include filename="/usr/share/enigma2/Blue-HD/skin_Blue-HD.xml"/>
+	<include filename="/usr/share/enigma2/Blue-HD/skin_Blue-HD_Templates.xml"/>
 	<include filename="/usr/share/enigma2/Blue-HD/skin_Blue-HD_ExtPlugins.xml"/>
 	<include filename="/usr/share/enigma2/Blue-HD/skin_Blue-HD_Wizard.xml"/>
 	<fonts>
+	    <font name="skyregular" filename="/usr/share/enigma2/Blue-HD/fonts/skyregular.ttf" scale="100" />
 		<font name="skymedium" filename="/usr/share/enigma2/Blue-HD/fonts/skymedium.ttf" scale="100" />
+		<font name="skybold" filename="/usr/share/enigma2/Blue-HD/fonts/skybold.ttf" scale="100" />
 	</fonts>
 	<colors>
 		<color name="foreground" value="#001c1c1c" />

@@ -60,12 +60,10 @@
 		<panel name="MenuRed1Panel" />
 	</screen>
 	<screen name="AutoBouquetsDownloader" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/screens/autobouquets282.png" position="10,10" size="240,55" alphatest="blend" transparent="1" />
-		<widget name="action" halign="center" valign="center" position="10,10" size="240,30" font="skymedium;20" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" zPosition="1" />
-		<widget name="status" halign="center" valign="center" position="10,35" size="240,25" font="skymedium;18" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="0" zPosition="1" />
+		<panel name="CrossEPGDownloadBar" />
 	</screen>
 	
-		<!-- ## IPTV List Updater by Nobody and Satinfo## -->
+	<!-- ## IPTV List Updater by Nobody and Satinfo## -->
 	<screen name="Start" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater" >
 		<panel name="MenuPanel" />
 		<widget name="title" position="110,125" size="300,30" font="skymedium;24" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
