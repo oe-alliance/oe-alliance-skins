@@ -220,7 +220,7 @@
 		<widget name="key_blue" position="665,118" size="150,25" font="skymedium;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="InfobarInfoButton">
-		<ePixmap pixmap="buttons/key_info.png" position="645,118" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap pixmap="buttons/infobutton.png" position="645,118" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
 	</screen>
 	<screen name="InfobarInfoText">
 		<eLabel text="Info" position="675,118" size="243,25" font="skymedium;22" foregroundColor="skywhite" backgroundColor="skydarkblue" halign="left" transparent="1" zPosition="1"/>	
