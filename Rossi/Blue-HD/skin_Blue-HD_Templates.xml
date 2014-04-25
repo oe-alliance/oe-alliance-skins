@@ -433,7 +433,7 @@
 	
 	<!-- ## Movie Selection Panels ## -->
 	<screen name="PlannerIconBar">
-		<ePixmap pixmap="infobar/iconbar.png" position="290,35" size="440,42" transparent="1" alphatest="blend" zPosition="-1"/>
+		<ePixmap pixmap="infobar/iconbar2.png" position="290,35" size="440,42" transparent="1" alphatest="blend" zPosition="-1"/>
 	</screen>
 	<screen name="PlannerText">
 		<eLabel text="Planner" position="50,239" size="243,25" font="skymedium;25" foregroundColor="skylighterblue2" backgroundColor="skydarkblue" halign="left" transparent="1" zPosition="1"/>	
