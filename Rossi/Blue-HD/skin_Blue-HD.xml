@@ -37,7 +37,7 @@
 	</screen>
 	<screen name="Setup" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<ePixmap pixmap="Blue-HD/infobar/setup.png" position="0,0" size="597,720" alphatest="on" zPosition="-1" />
-		<widget source="Title" render="Label" position="40,25" size="850,43" font="skymedium;28" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
+		<widget source="Title" render="Label" position="40,29" size="850,43" font="skymedium;28" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<widget name="config" position="10,82" size="573,500" selectionPixmap="Blue-HD/buttons/FocusBar_H25x670.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
 		<widget name="description" position="10,590" size="560,78" font="skymedium;18" foregroundColor="skygold" backgroundColor="skydarkblue" halign="center" valign="top" transparent="1" zPosition="1" />
 		<panel name="FullscreenRed2Panel" />
@@ -64,10 +64,11 @@
 		<panel name="InfobarTunerIcons" />
 		<panel name="InfobarPicon" />
 		<ePixmap pixmap="infobar/arrowupdown.png" position="29,122" size="36,20" transparent="1" zPosition="-1" alphatest="blend"/>
-		<eLabel text="Channels" position="67,118" size="100,25" font="skymedium;22" foregroundColor="white" backgroundColor="skydarkblue" halign="left" valign="center" transparent="1" zPosition="1"/>	
+		<eLabel text="Channels" position="67,118" size="100,25" font="skymedium;22" foregroundColor="skywhite" backgroundColor="skydarkblue" halign="left" valign="center" transparent="1" zPosition="1"/>	
 		<ePixmap pixmap="infobar/arrowleftright.png" position="162,122" size="45,20" transparent="1" zPosition="-1" alphatest="blend"/>
-		<eLabel text="Time" position="210,118" size="100,25" font="skymedium;22" foregroundColor="white" backgroundColor="skydarkblue" halign="left" valign="center" transparent="1" zPosition="1"/>	
-		<panel name="InfobarBlueButton" />
+		<eLabel text="Time" position="210,118" size="100,25" font="skymedium;22" foregroundColor="skywhite" backgroundColor="skydarkblue" halign="left" valign="center" transparent="1" zPosition="1"/>	
+		<panel name="InfobarInfoButton" />
+		<panel name="InfobarInfoText" />
 	</screen>		
 	<screen name="SecondInfoBar" flags="wfNoBorder" position="center,e-360" size="974,350" backgroundColor="transparent">
 		<ePixmap position="0,0" size="974,350" pixmap="Blue-HD/infobar/2ndinfobar.png" alphatest="on" zPosition="-1"/>
@@ -75,7 +76,7 @@
 		<panel name="2ndInfobarProgramNowDescription" />
 		<panel name="2ndInfobarSNR" />
 		<panel name="2ndInfobarChannelName" />
-		<widget source="session.Event_Now" render="Label" position="29,247" size="70,35" font="skymedium;22" foregroundColor="white" backgroundColor="infobar_sunken" transparent="1" noWrap="1" valign="center">
+		<widget source="session.Event_Now" render="Label" position="29,247" size="70,35" font="skymedium;22" foregroundColor="skylighterblue" backgroundColor="infobar_sunken" transparent="1" noWrap="1" valign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -85,7 +86,7 @@
         <widget source="session.Event_Now" render="Label" position="29,277" size="430,35" font="skymedium;22" noWrap="1" foregroundColor="skydarkblue" backgroundColor="skygold" transparent="1" valign="center">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="500,247" size="70,35" font="skymedium;22" foregroundColor="white" backgroundColor="infobar_sunken" transparent="1" noWrap="1" valign="center">
+		<widget source="session.Event_Next" render="Label" position="500,247" size="70,35" font="skymedium;22" foregroundColor="skylighterblue" backgroundColor="infobar_sunken" transparent="1" noWrap="1" valign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -100,11 +101,10 @@
 	    <panel name="2ndInfobarOnlineUpdateIcon" />
 		<panel name="2ndInfobarTunerIcons" />
 		<panel name="2ndInfobarPicon" />
-		<ePixmap pixmap="infobar/arrowupdown.png" position="29,322" size="36,20" transparent="1" zPosition="-1" alphatest="blend"/>
-		<eLabel text="Channels" position="67,320" size="100,25" font="skymedium;22" foregroundColor="white" backgroundColor="skydarkblue" halign="left" valign="center" transparent="1" zPosition="1"/>	
-		<ePixmap pixmap="infobar/arrowleftright.png" position="160,322" size="45,20" transparent="1" zPosition="-1" alphatest="blend"/>
-		<eLabel text="Time" position="210,320" size="100,25" font="skymedium;22" foregroundColor="white" backgroundColor="skydarkblue" halign="left" valign="center" transparent="1" zPosition="1"/>
-		<panel name="2ndInfobarBlueButton" />
+		<ePixmap pixmap="infobar/arrowupdown.png" position="29,324" size="36,20" transparent="1" zPosition="-1" alphatest="blend"/>
+		<eLabel text="Channels" position="67,320" size="100,25" font="skymedium;22" foregroundColor="skywhite" backgroundColor="skydarkblue" halign="left" valign="center" transparent="1" zPosition="1"/>	
+		<ePixmap pixmap="infobar/arrowleftright.png" position="162,324" size="45,20" transparent="1" zPosition="-1" alphatest="blend"/>
+		<eLabel text="Time" position="210,320" size="100,25" font="skymedium;22" foregroundColor="skywhite" backgroundColor="skydarkblue" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>	
 	<screen name="QuickEPG" flags="wfNoBorder" position="center,e-305" size="974,295" title="InfoBar" backgroundColor="transparent">
 		<ePixmap position="0,0" size="974,295" pixmap="Blue-HD/infobar/quickepg-infobar.png" alphatest="on" zPosition="-1"/>
@@ -114,10 +114,10 @@
 		<widget source="Service" render="Label" position="18,151" size="625,34" font="skymedium;28" foregroundColor="white" backgroundColor="infobar-bkgrnd" transparent="1" valign="top" halign="left" noWrap="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="765,157" zPosition="1" size="90,20" font="skymedium;22" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="left" valign="top">
+		<widget source="global.CurrentTime" render="Label" position="765,157" zPosition="1" size="90,20" font="skymedium;22" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="left" valign="top">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="855,157" zPosition="1" size="115,20" font="skymedium;22" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="center" valign="top">
+		<widget source="global.CurrentTime" render="Label" position="855,157" zPosition="1" size="115,20" font="skymedium;22" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="center" valign="top">
 			<convert type="ClockToText">Format:%a %d/%m</convert>
 		</widget>
 		<widget name="number" position="152,198" size="647,60" zPosition="5" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="0" font="skymedium;28" borderColor="black" borderWidth="2" valign="center" halign="center" />
@@ -178,30 +178,30 @@
 	
 	<screen name="EventView" position="center,e-260" size="980,250" backgroundColor="transparent" flags="wfNoBorder" zPosition="1" >
 		<ePixmap position="0,0" zPosition="-1" size="980,250" pixmap="Blue-HD/infobar/event-info-bg.png" alphatest="on" />
-		<widget source="Title" render="Label" position="50,3" size="400,35" font="skymedium;28" valign="center" halign="left" noWrap="1" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" transparent="1" zPosition="1" />
-		<widget source="global.CurrentTime" render="Label" position="850,14" zPosition="1" size="90,20" font="skymedium;22" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" valign="top" halign="left" transparent="1" noWrap="1">
+		<widget source="Title" render="Label" position="50,3" size="400,35" font="skymedium;28" valign="center" halign="left" noWrap="1" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" transparent="1" zPosition="1" />
+		<widget source="global.CurrentTime" render="Label" position="850,14" zPosition="1" size="90,20" font="skymedium;22" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" valign="top" halign="left" transparent="1" noWrap="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
-		<widget name="datetime" position="530,14" size="250,22" font="skymedium;22" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
-		<widget name="duration" position="750,14" size="150,22" font="skymedium;22" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
+		<widget name="datetime" position="530,14" size="250,22" font="skymedium;22" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
+		<widget name="duration" position="750,14" size="150,22" font="skymedium;22" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
 		<widget name="FullDescription" position="54,50" size="870,160" font="skymedium;22" foregroundColor="white" backgroundColor="infobar_sunken" transparent="1" />
 		<widget name="red" pixmap="Blue-HD/buttons/red.png" position="100,218" size="25,25" alphatest="blend" zPosition="3" />
-		<widget name="key_red" position="138,218" size="130,25" font="skymedium;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1" />
+		<widget name="key_red" position="138,218" size="130,25" font="skymedium;20" foregroundColor="skylighterblue2" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1" />
 		<widget name="green"  pixmap="Blue-HD/buttons/green.png" position="300,218" size="25,25" alphatest="blend" />
-		<widget name="key_green" position="338,218" size="130,25" font="skymedium;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1" />
+		<widget name="key_green" position="338,218" size="130,25" font="skymedium;20" foregroundColor="skylighterblue2" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1" />
 		<widget name="yellow"  pixmap="Blue-HD/buttons/yellow.png" position="500,218" size="25,25" alphatest="blend" />
-		<widget name="key_yellow" position="538,218" size="130,25" font="skymedium;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1" />
+		<widget name="key_yellow" position="538,218" size="130,25" font="skymedium;20" foregroundColor="skylighterblue2" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1" />
 		<widget name="blue"  pixmap="Blue-HD/buttons/blue.png" position="700,218" size="25,25" alphatest="blend" />
-		<widget name="key_blue" position="738,218" size="130,25" font="skymedium;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1" />
+		<widget name="key_blue" position="738,218" size="130,25" font="skymedium;20" foregroundColor="skylighterblue2" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1" />
 	</screen>
 	<screen name="EventViewSimple" position="center,e-260" size="980,250" backgroundColor="transparent" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-1" size="980,250" pixmap="Blue-HD/infobar/event-info-bg.png" />
-		<widget source="Title" render="Label" position="50,3" size="400,30" font="skymedium;28" valign="center" halign="left" noWrap="1" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" transparent="1" />
-		<widget source="global.CurrentTime" render="Label" position="845,14" zPosition="1" size="90,20" font="skymedium;22" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" valign="top" halign="left" transparent="1" noWrap="1">
+		<widget source="Title" render="Label" position="50,3" size="400,30" font="skymedium;28" valign="center" halign="left" noWrap="1" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" transparent="1" />
+		<widget source="global.CurrentTime" render="Label" position="845,14" zPosition="1" size="90,20" font="skymedium;22" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" valign="top" halign="left" transparent="1" noWrap="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
-		<widget name="datetime" position="530,14" size="250,22" font="skymedium;22" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
-		<widget name="duration" position="750,14" size="150,22" font="skymedium;22" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
+		<widget name="datetime" position="530,14" size="250,22" font="skymedium;22" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
+		<widget name="duration" position="750,14" size="150,22" font="skymedium;22" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
 		<widget name="FullDescription" position="54,50" size="870,160" font="skymedium;22" foregroundColor="white" backgroundColor="infobar_sunken" transparent="1" />
 	</screen>
 	
@@ -209,19 +209,19 @@
 		<widget name="statusicon" position="70,50" size="125,144" zPosition="0" alphatest="on" pixmaps="Blue-HD/icons/play_large.png,Blue-HD/icons/pause_large.png,Blue-HD/icons/stop_large.png,Blue-HD/icons/forward_large.png,Blue-HD/icons/backward_large.png,Blue-HD/icons/slow_large.png,Blue-HD/icons/blank.png" />
 		<widget name="speed" position="93,161" size="80,20" font="skymedium;22" halign="center" valign="center" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" zPosition="1" />
 		<ePixmap position="150,560" zPosition="-1" size="1000,190" pixmap="Blue-HD/infobar/movie_infobar-bg.png" />
-		<eLabel text="Now Playing" foregroundColor="white" backgroundColor="skydarkblue" font="skymedium;23" halign="left" position="175,605" size="130,25" transparent="1" zPosition="1"/>
-		<widget source="session.CurrentService" render="Label" position="180,635" size="430,35" zPosition="1" font="skymedium;22" foregroundColor="skydarkblue" backgroundColor="skygold" transparent="1" valign="center" noWrap="1">
-			<convert type="ServiceName">Name</convert>
-		</widget>
 		<widget source="global.CurrentTime" render="Label" position="914,570" zPosition="1" size="90,20" font="skymedium;22" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="left" valign="top">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1002,570" zPosition="1" size="115,20" font="skymedium;22" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="center" valign="top">
 			<convert type="ClockToText">Format:%a %d/%m</convert>
 		</widget>
+		<eLabel text="Now Playing" foregroundColor="white" backgroundColor="skydarkblue" font="skymedium;23" halign="left" position="175,605" size="130,25" transparent="1" zPosition="1"/>
 <!--    	<widget source="session.CurrentService" render="PositionGauge" position="175,635" size="454,35" foregroundColor="skygold" backgroundColor="skygold" zPosition="0" alphatest="blend" pointer="Blue-HD/infobar/infobareventprogress-short.png:454,0" transparent="1">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget> -->
+		<widget source="session.CurrentService" render="Label" position="180,635" size="430,35" zPosition="1" font="skymedium;22" foregroundColor="skydarkblue" backgroundColor="skygold" transparent="1" valign="center" noWrap="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>	
 		<eLabel text="Viewing time remaining" position="653,635" size="228,35" foregroundColor="white" backgroundColor="skydarkblue" font="skymedium;22" halign="left" valign="center" transparent="1" zPosition="1" />
 		<widget source="session.CurrentService" render="Label" position="877,635" size="85,35" font="skymedium;22" halign="left" valign="center" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" zPosition="1" >
 			<convert type="ServicePosition">Remaining</convert>
@@ -295,17 +295,17 @@
 				<widget source="Service" render="Picon" position="46,17" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="0" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1030,25" size="100,25" font="skymedium;22" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+		<panel name="ChannelSelectionIconBar" />
+		<widget source="global.CurrentTime" render="Label" position="1030,55" size="100,25" font="skymedium;25" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1135,25" size="100,25" font="skymedium;22" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="1135,55" size="100,25" font="skymedium;25" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%a %d/%m</convert>
 		</widget>	
-		<widget source="Title" render="Label" position="80,95" size="850,44" font="skymedium;28" transparent="1" foregroundColor="white" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
-<!--		<widget name="lab1" position="100,140" size="1280,620" font="skymedium;22" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" /> -->
-		<widget name="timeline_text" position="100,138" size="1280,30" font="skymedium;20" borderWidth="0" borderColor="baleblue" backgroundColor="baleblue" foregroundColor="skydarkblue" transparent="1" zPosition="0" />
-		<widget name="bouquetlist" position="100,160" size="1075,495" backgroundColor="skydarkblue" backgroundColorSelected="skygold" foregroundColorSelected="skydarkblue" scrollbarMode="showNever" zPosition="4" transparent="0" />
-		<widget name="list" position="100,160" size="1075,500" EntryBackgroundColor="skydarkblue" EntryBackgroundColorSelected="skygold" EntryBackgroundColorNowSelected="skygold" EntryBackgroundColorNow="skydarkblue" ServiceForegroundColorNow="skydarkblue"  ServiceBackgroundColor="skydarkblue"  ServiceBackgroundColorNow="skygold" backgroundColor="skydarkblue" EntryForegroundColorSelected="skydarkblue" EntryForegroundColorNowSelected="skydarkblue" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="0" />
+		<widget source="Title" render="Label" position="80,94" size="850,44" font="skymedium;28" transparent="1" foregroundColor="white" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
+		<widget name="timeline_text" position="100,133" size="1280,30" font="skymedium;20" foregroundColor="skylighterblue2" transparent="1" zPosition="2" />
+		<widget name="bouquetlist" position="100,160" size="1075,480" backgroundColor="skydarkblue" backgroundColorSelected="skygold" foregroundColorSelected="skydarkblue" scrollbarMode="showNever" zPosition="4" transparent="0" />
+		<widget name="list" position="100,160" size="1075,485" font="skymedium;25" EntryBackgroundColor="skydarkblue" EntryBackgroundColorSelected="skygold" EntryBackgroundColorNowSelected="skygold" EntryBackgroundColorNow="skydarkblue" ServiceForegroundColorNow="skydarkblue"  ServiceBackgroundColor="skydarkblue"  ServiceBackgroundColorNow="skygold" backgroundColor="skydarkblue" EntryForegroundColorSelected="skydarkblue" EntryForegroundColorNowSelected="skydarkblue" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="0" />
 <!--		<widget name="timeline_now" position="100,300" zPosition="3" size="19,332" pixmap="Blue-HD/epg/timeline-now-pig.png" alphatest="on" /> -->
 <!--		<ePixmap pixmap="buttons/key_menu.png" position="20,686" size="35,25" alphatest="blend" transparent="1" zPosition="1" /> -->
 		<panel name="ChannelSelectionRedButton" />
@@ -313,6 +313,7 @@
 		<panel name="ChannelSelectionYellowButton" />
         <panel name="ChannelSelectionBlueButton" />
 		<panel name="EPGSelectionSelectToViewOrRecord" />
+		<panel name="ChannelSelectionMenuButton" />
 	</screen>
 	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
 	    <ePixmap pixmap="Blue-HD/infobar/epg.png" position="0,0" size="1280,720" zPosition="-1"/>
@@ -325,9 +326,9 @@
 		<panel name="EPGSelectionProgramNowDescription" />
 		<panel name="ChannelSelectionTVGuideText" />
 		<panel name="ChannelSelectionBouquetName" />
-		<widget name="timeline_text" position="100,303" size="1280,30" font="skymedium;20" foregroundColor="skylighterblue" transparent="1" zPosition="2" />
+		<widget name="timeline_text" position="100,303" size="1280,30" font="skymedium;20" foregroundColor="skylighterblue2" transparent="1" zPosition="2" />
 		<widget name="bouquetlist" position="100,332" size="1075,305" backgroundColor="skydarkblue" backgroundColorSelected="skygold" foregroundColorSelected="skydarkblue" scrollbarMode="showNever" zPosition="4" transparent="0" />
-		<widget name="list" position="100,332" size="1075,310" backgroundColor="skydarkblue" EntryBackgroundColor="skydarkblue" EntryBackgroundColorSelected="skygold" EntryBackgroundColorNowSelected="skygold" EntryBackgroundColorNow="skydarkblue" ServiceForegroundColorNow="skydarkblue" ServiceBackgroundColor="skydarkblue" ServiceBackgroundColorNow="skygold" EntryForegroundColorSelected="skydarkblue" EntryForegroundColorNowSelected="skydarkblue" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no" />
+		<widget name="list" position="100,332" size="1075,310" font="skymedium;25" backgroundColor="skydarkblue" EntryBackgroundColor="skydarkblue" EntryBackgroundColorSelected="skygold" EntryBackgroundColorNowSelected="skygold" EntryBackgroundColorNow="skydarkblue" ServiceForegroundColorNow="skydarkblue" ServiceBackgroundColor="skydarkblue" ServiceBackgroundColorNow="skygold" EntryForegroundColorSelected="skydarkblue" EntryForegroundColorNowSelected="skydarkblue" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no" />
 <!--		<widget name="timeline_now" position="100,300" zPosition="3" size="19,332" pixmap="Blue-HD/epg/timeline-now-pig.png" alphatest="on" /> -->
 <!--		<ePixmap pixmap="buttons/key_menu.png" position="20,686" size="35,25" alphatest="blend" transparent="1" zPosition="1" /> -->
 		<panel name="ChannelSelectionRedButton" />
@@ -335,29 +336,37 @@
 		<panel name="ChannelSelectionYellowButton" />
         <panel name="ChannelSelectionBlueButton" />
 		<panel name="EPGSelectionSelectToViewOrRecord" />
+		<panel name="ChannelSelectionMenuButton" />
 	</screen>
 	<screen name="GraphicalInfoBarEPG" position="0,0" size="1280,720" backgroundColor="transparent" transparent="0" flags="wfNoBorder" >
-		<ePixmap pixmap="Blue-HD/infobar/epg.png" position="0,490" size="1280,230" zPosition="-1"/>
-		<widget source="Title" render="Label" position="80,13" size="850,43" font="skymedium;28" transparent="1" foregroundColor="white" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
-		<widget name="timeline_text" position="100,60" size="1280,30" font="skymedium;20" foregroundColor="skylighterblue" transparent="1" zPosition="2" />
-		<widget name="bouquetlist" position="100,85" size="1075,85" font="skymedium;22" itemHeight="42" backgroundColor="skydarkblue" backgroundColorSelected="skygold" foregroundColorSelected="skydarkblue" scrollbarMode="showNever" zPosition="4" transparent="0" />
-		<widget name="list" position="100,85" size="1075,85" EntryBackgroundColor="skydarkblue" EntryBackgroundColorSelected="skygold" EntryBackgroundColorNowSelected="skygold" EntryBackgroundColorNow="skydarkblue" ServiceForegroundColorNow="skydarkblue"  ServiceBackgroundColor="skydarkblue"  ServiceBackgroundColorNow="skygold" backgroundColor="skydarkblue" EntryForegroundColorSelected="skydarkblue" EntryForegroundColorNowSelected="skydarkblue" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="1" EntryFontWrap="no" />
+		<ePixmap pixmap="Blue-HD/infobar/mquickepg-infobar.png" position="0,461" size="1280,259" zPosition="-1"/>
+		<eLabel text="TV Guide" position="50,465" size="243,25" font="skymedium;25" foregroundColor="skylighterblue2" backgroundColor="skydarkblue" halign="left" transparent="1" zPosition="1"/>	
+		<widget source="global.CurrentTime" render="Label" position="1030,465" size="100,25" font="skymedium;25" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1135,465" size="100,25" font="skymedium;25" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>	
+		<widget source="Title" render="Label" position="80,496" size="850,43" font="skymedium;28" transparent="1" foregroundColor="white" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
+		<widget name="timeline_text" position="100,530" size="1280,30" font="skymedium;20" foregroundColor="skylighterblue2" transparent="1" zPosition="2" />
+		<widget name="bouquetlist" position="100,555" size="1075,85" font="skymedium;22" itemHeight="42" backgroundColor="skydarkblue" backgroundColorSelected="skygold" foregroundColorSelected="skydarkblue" scrollbarMode="showNever" zPosition="4" transparent="0" />
+		<widget name="list" position="100,555" size="1075,85" font="skymedium;25" EntryBackgroundColor="skydarkblue" EntryBackgroundColorSelected="skygold" EntryBackgroundColorNowSelected="skygold" EntryBackgroundColorNow="skydarkblue" ServiceForegroundColorNow="skydarkblue"  ServiceBackgroundColor="skydarkblue"  ServiceBackgroundColorNow="skygold" backgroundColor="skydarkblue" EntryForegroundColorSelected="skydarkblue" EntryForegroundColorNowSelected="skydarkblue" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="1" EntryFontWrap="no" />
 <!--		<widget name="timeline_now" position="100,75" zPosition="3" size="19,85" pixmap="epg/timeline-now.png" alphatest="on" /> -->
-<!--		<ePixmap pixmap="buttons/key_menu.png" position="20,686" size="35,25" alphatest="blend" transparent="1" zPosition="1" /> -->
 		<panel name="ChannelSelectionRedButton" />
 		<panel name="ChannelSelectionGreenButton" />
 		<panel name="ChannelSelectionYellowButton" />
         <panel name="ChannelSelectionBlueButton" />
 		<panel name="EPGSelectionSelectToViewOrRecord" />
+		<panel name="ChannelSelectionMenuButton" />
 	</screen>		
 	<screen name="InfoBarEventView" position="0,0" size="1280,250" backgroundColor="transparent" flags="wfNoBorder" zPosition="1" >
 		<ePixmap position="150,0" zPosition="-1" size="980,250" pixmap="Blue-HD/infobar/event-info-bg.png" alphatest="on" />
-		<widget source="Title" render="Label" position="200,3" size="400,35" font="skymedium;28" valign="center" halign="left" noWrap="1" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" transparent="1" zPosition="1" />
-		<widget source="global.CurrentTime" render="Label" position="1000,14" zPosition="1" size="90,20" font="skymedium;22" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" valign="top" halign="left" transparent="1" noWrap="1">
+		<widget source="Title" render="Label" position="200,3" size="400,35" font="skymedium;28" valign="center" halign="left" noWrap="1" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" transparent="1" zPosition="1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,14" zPosition="1" size="90,20" font="skymedium;22" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" valign="top" halign="left" transparent="1" noWrap="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
-		<widget name="datetime" position="680,14" size="250,22" font="skymedium;22" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
-		<widget name="duration" position="900,14" size="150,22" font="skymedium;22" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
+		<widget name="datetime" position="680,14" size="250,22" font="skymedium;22" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
+		<widget name="duration" position="900,14" size="150,22" font="skymedium;22" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
 		<widget name="FullDescription" position="204,50" size="870,160" font="skymedium;22" foregroundColor="white" backgroundColor="infobar_sunken" transparent="1" />
 	</screen>	
 	<screen name="RadioInfoBar" flags="wfNoBorder" position="center,e-172" size="843,162" backgroundColor="transparent">
@@ -540,7 +549,7 @@
 		<widget source="lab3" render="Label" position="30,184" size="458,45" font="skymedium;19" foregroundColor="white" backgroundColor="skydarkblue" halign="center" transparent="1" zPosition="1" />
 		<widget name="AboutScrollLabel" position="30,225" size="458,400" foregroundColor="skygold" backgroundColor="skydarkblue" font="skymedium;20" transparent="1" zPosition="1" />
 		<ePixmap pixmap="Blue-HD/picon_default.png" position="210,530" size="110,66" alphatest="blend" transparent="1" />
-		<eLabel text="v3.0 by rossi2000 and simonsez" foregroundColor="skygold" backgroundColor="skydarkblue" font="skymedium;19" halign="center" position="30,585" size="458,25" transparent="1" zPosition="1"/>
+		<eLabel text="v3.0 by rossi2000 and simonsez" foregroundColor="white" backgroundColor="skydarkblue" font="skymedium;20" halign="center" position="30,585" size="458,25" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="Blue-HD/buttons/key_info.png" position="10,663" size="35,25" alphatest="blend" transparent="1" />
 	</screen>
 	<screen name="SystemMemoryInfo" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -685,7 +694,8 @@
 		<panel name="ChannelSelectionGreenButton" />
 		<panel name="ChannelSelectionYellowButton" />
         <panel name="ChannelSelectionBlueButton" />
-        <panel name="ChannelSelectionSelectToView" />				
+        <panel name="ChannelSelectionSelectToView" />
+        <panel name="ChannelSelectionMenuButton" />		
 	</screen>
 	<screen name="SlimChannelSelection" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -881,29 +891,30 @@ self.autoResize()
 			<convert type="ServiceName">Reference</convert>
 		</widget> -->
 		<panel name="PlannerIconBar" />
-		<widget source="Service" render="Label" position="46,93" zPosition="2" size="100,25" transparent="1" foregroundColor="skylighterblue" backgroundColor="black" font="skymedium;22" halign="left" >
+		<widget source="Service" render="Label" position="46,93" size="100,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;26" zPosition="2" transparent="1" halign="left" >
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
 		</widget>
-		<widget source="Service" render="Label" position="146,92" size="530,30" zPosition="2" foregroundColor="skylighterblue" backgroundColor="black" font="skymedium;22" noWrap="1" transparent="1" valign="top" >
+		<widget source="Service" render="Label" position="146,92" size="530,30" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;26" zPosition="2" noWrap="1" transparent="1" valign="top" >
 			<convert type="MovieInfo">RecordServiceName</convert>
 		</widget>
-		<widget source="Service" render="Label" position="46,126" size="780,130" font="skymedium;20" backgroundColor="black" foregroundColor="white" transparent="1" valign="top" zPosition="2">
+		<widget source="Service" render="Label" position="46,126" size="780,130" font="skymedium;24" backgroundColor="black" foregroundColor="white" transparent="1" valign="top" zPosition="2">
 			<convert type="MovieInfo">MetaDescription</convert>
 		</widget>
 		<panel name="ChannelSelectionPIGPanel" />
         <panel name="ChannelSelectionTimeDatePanel" />
         <panel name="PlannerText" />		
 		<panel name="ChannelSelectionBouquetName" />
-		<widget name="TrashcanSize" position="640,305" size="400,20" font="skymedium;18" foregroundColor="skylighterblue" backgroundColor="skydarkblue" valign="center" halign="left" zPosition="2" transparent="1" />		
-		<widget name="freeDiskSpace" position="775,305" size="400,20" font="skymedium;18" foregroundColor="skylighterblue" backgroundColor="skydarkblue" valign="center" halign="right" zPosition="2" transparent="1" />	
-		<widget name="waitingtext" position="100,332" size="1075,299" font="skymedium;22" transparent="0" foregroundColor="skylighterblue" backgroundColor="skydarkblue" halign="center" valign="center" zPosition="4" />
-		<widget name="list" position="100,332" size="1075,310" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="Blue-HD/buttons/FocusBar_H36x1075.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" enableWrapAround="1" />
+		<widget name="TrashcanSize" position="640,305" size="400,20" font="skymedium;20" foregroundColor="skylighterblue2" backgroundColor="skydarkblue" valign="center" halign="left" zPosition="2" transparent="1" />		
+		<widget name="freeDiskSpace" position="775,305" size="400,20" font="skymedium;20" foregroundColor="skylighterblue2" backgroundColor="skydarkblue" valign="center" halign="right" zPosition="2" transparent="1" />	
+		<widget name="waitingtext" position="100,332" size="1075,299" font="skymedium;25" transparent="0" foregroundColor="skylighterblue2" backgroundColor="skydarkblue" halign="center" valign="center" zPosition="4" />
+		<widget name="list" position="100,332" size="1075,310" font="skymedium;25" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="Blue-HD/buttons/FocusBar_H36x1075.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" enableWrapAround="1" />
         <panel name="ChannelSelectionRedButton" />
 		<panel name="ChannelSelectionGreenButton" />
 		<panel name="ChannelSelectionYellowButton" />
         <panel name="ChannelSelectionBlueButton" />
         <panel name="ChannelSelectionSelectToView" />	
+		<panel name="ChannelSelectionMenuButton" />
 	</screen>
 	<screen name="MovieSelectionSlim" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -1433,9 +1444,9 @@ self.autoResize()
 		<panel name="MenuGreen1Panel" />
 	</screen>
 	<screen name="Standby" flags="wfNoBorder" position="0,0" size="1280,720" title="Standby" backgroundColor="skydarkblue" />	
-	<screen name="QuitMainloopScreen" position="fill" flags="wfNoBorder">
-		<ePixmap pixmap="icons/input_info.png" position="c-27,c-60" size="53,53" alphatest="blend" />
-		<widget name="text" position="center,c+5" size="720,100" font="skymedium;22" halign="center" />
+	<screen name="QuitMainloopScreen" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="black">
+		<ePixmap pixmap="infobar/reboot.png" position="0,0" size="1280,720" alphatest="blend" zPosition="-1"/>
+		<widget name="text" position="center,520" size="720,100" font="skymedium;22" foregroundColor="skylighterblue2" transparent="1" halign="center" />
 	</screen>
 	<screen name="SubservicesQuickzap" position="124,470" size="512,200" title="Subservices" backgroundColor="transparent" flags="wfNoBorder">
 		<widget source="session.RecordState" render="Pixmap" pixmap="icons/record.png" position="450,0" zPosition="2" size="14,14" alphatest="on">
@@ -1563,7 +1574,7 @@ self.autoResize()
 		<widget name="timerlist" selectionPixmap="Blue-HD/buttons/FocusBar_H70x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" position="10,107" size="503,533" scrollbarMode="showOnDemand" />
 	</screen>
 	<screen name="Volume" position="e-330,10" zPosition="1" size="320,68" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="screens/volume_background_gold.png" position="0,0" size="320,68" alphatest="on" />
+		<ePixmap pixmap="screens/volume_background.png" position="0,0" size="320,68" alphatest="on" />
 		<widget name="Volume" pixmap="screens/volume_up.png" position="62,14" zPosition="1" size="240,34" transparent="1" />
 	</screen>
 	<screen name="WebIfConfigScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">

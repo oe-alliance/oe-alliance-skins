@@ -15,9 +15,10 @@
 	<include filename="/usr/share/enigma2/Blue-HD/skin_Blue-HD_ExtPlugins.xml"/>
 	<include filename="/usr/share/enigma2/Blue-HD/skin_Blue-HD_Wizard.xml"/>
 	<fonts>
-	    <font name="skyregular" filename="/usr/share/enigma2/Blue-HD/fonts/skyregular.ttf" scale="100" />
+	    <font name="skyregular" filename="/usr/share/enigma2/Blue-HD/fonts/skyregular.otf" scale="100" />
 		<font name="skymedium" filename="/usr/share/enigma2/Blue-HD/fonts/skymedium.ttf" scale="100" />
-		<font name="skybold" filename="/usr/share/enigma2/Blue-HD/fonts/skybold.ttf" scale="100" />
+		<font name="skysemibold" filename="/usr/share/enigma2/Blue-HD/fonts/skysemibold.otf" scale="100" />
+		<font name="skybold" filename="/usr/share/enigma2/Blue-HD/fonts/skybold.otf" scale="100" />
 	</fonts>
 	<colors>
 		<color name="foreground" value="#001c1c1c" />
@@ -64,18 +65,20 @@
 		<color name="white" value="#00ffffff" />
 		<color name="yellow" value="#00bab329" />
 		<color name="baleblue" value="#00b4c1d1" />
-		<color name="skywhite" value="#00bdcbd6" />
+		<color name="skywhite" value="#00a4bed9" />
 		<color name="skygold" value="#00f5cf24" />
 		<color name="skydarkgold" value="#00edaf1c" />
 		<color name="skydarkblue" value="#0012326d" />
-		<color name="skylightblue" value="#00224684" />
+		<color name="skylightblue" value="#00224684" />		
 		<color name="skylighterblue" value="#00a4bed9" />
+		<color name="skylighterblue2" value="#0069b6ff" />
+		<color name="skylighterblue3" value="#00224684" />
 	</colors>
 	<windowstyle type="skinned" id="0">
 		<title offset="35,10" font="skymedium;24" />
-		<color name="Background" color="#032d497b" />
+		<color name="Background" color="#03050c1c" />
 		<color name="LabelForeground" color="skygold" />
-		<color name="ListboxBackground" color="#032d497b" />
+		<color name="ListboxBackground" color="#03050c1c" />
 		<color name="ListboxForeground" color="window-fg" />
 		<color name="ListboxSelectedBackground" color="skygold" />
 		<color name="ListboxSelectedForeground" color="skydarkblue" />
