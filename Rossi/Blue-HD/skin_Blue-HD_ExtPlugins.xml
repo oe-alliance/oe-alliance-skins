@@ -7,6 +7,66 @@
 	
 	<!--  ## Head ##  -->
 	
+	<!-- ## OnDemand ## -->
+	<screen name="OnDemand_Screen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/ondemandmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<widget name="PlayerList" position="160,90" size="220,573" selectionPixmap="Blue-HD/buttons/FocusBar_H106x503.png" transparent="1" scrollbarMode="showNever" />
+		<panel name="MenuMenuButton" />
+		<panel name="MenuInfoButton" />
+	</screen>	
+	<screen name="OnDemand_About" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/ondemandmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<widget name="about" position="10,107" size="503,533" font="skymedium;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<panel name="MenuRed1Panel" />
+	</screen>
+	<screen name="OnDemandScreenSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/ondemandsetupmenu.png" position="0,0" size="597,720" alphatest="on" zPosition="-1" />
+		<widget name="config" position="10,107" size="573,500" selectionPixmap="Blue-HD/buttons/FocusBar_H25x670.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+	</screen>
+	<screen name="BBCiMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/bbciplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<widget name="BBCiMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/BBCBar_H38x503.png" scrollbarbackgroundPixmap="Blue-HD/ondemand/BBCScrollBar_H533x30.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" alphatest="blend" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="ITVplayer" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/itvplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<widget name="ITVMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/ITVBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="fourODMainMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/4odmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<widget name="fourODMainMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/4odBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="threeMainMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/3playermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<widget name="threeMainMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/3Bar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="RTEMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/rteplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<widget name="RTEMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/RteBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="iViewMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/iviewmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<widget name="iViewMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/IVIEWBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="iRadioMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/radioplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<widget name="iRadioMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/RadioBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="shoutGenresMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/radioplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<widget name="shoutGenresMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/RadioBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="shoutSubGenresMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/radioplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<widget name="shoutSubGenresMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/RadioBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="tuneinGenresMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/radioplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<widget name="tuneinGenresMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/RadioBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	
+	
 	<!-- ## Autobouquets 28.2E by Lraizer ## -->
 	<screen name="AutoBouquets" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="AutoBouquets E2 for 28.2E" >
 		<panel name="MenuPanel" />		
@@ -34,8 +94,8 @@
 		<widget name="ftacheck" position="400,350" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
 		<widget name="status" position="70,420" size="140,30" font="skymedium; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
 		<widget name="status2" position="220,420" size="205,30" font="skymedium;22" foregroundColor="white" backgroundColor="skydarkblue" zPosition="5" transparent="1" />
-		<ePixmap pixmap="buttons/key_menu.png" position="470,663" size="35,25" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="buttons/key_info.png" position="470,690" size="35,25" alphatest="blend" transparent="1" />
+		<panel name="MenuMenuButton" />
+		<panel name="MenuInfoButton" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 		<panel name="MenuYellow1Panel" />
@@ -56,10 +116,9 @@
 	<screen name="AutoBouquetsAbout" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<widget name="about" position="10,107" size="503,430" font="skymedium;19" itemHeight="28" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
-		<widget name="oealogo" position="182,500" size="177,130"  zPosition="4" transparent="1" alphatest="on" />
 		<panel name="MenuRed1Panel" />
 	</screen>
-	<screen name="AutoBouquetsDownloader" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AutoBouquetsDownloader" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="CrossEPGDownloadBar" />
 	</screen>
 	

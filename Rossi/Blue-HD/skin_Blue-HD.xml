@@ -685,7 +685,7 @@
         <panel name="ChannelSelectionTimeDatePanel" />
         <panel name="NewChannelSelectionBouquetName" />	
 		<panel name="NewChannelSelectionTVGuideText" />
-		<widget name="list" position="65,170" size="600,470" selectionPixmap="Blue-HD/buttons/FocusBar_H36x1075.png" scrollbarbackgroundPixmap="Blue-HD/buttons/channelselectionscrollbar_H20x470.png" backgroundColor="skydarkblue" foregroundColorService="white" foregroundColorServiceSelected="skydarkblue" foregroundColorEvent="skywhite" backgroundColorService="skygold" foregroundColorEventSelected="skydarkblue" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="36" serviceNumberFont="skymedium;22" serviceNameFont="skymedium;22" serviceInfoFont="skymedium;22" transparent="1" zPosition="3" scrollbarMode="showOnDemand" />
+		<widget name="list" position="65,170" size="600,470" selectionPixmap="Blue-HD/buttons/FocusBar_H36x1075.png" foregroundColorService="white" backgroundColor="skydarkblue" foregroundColorServiceSelected="skydarkblue" foregroundColorEvent="skywhite" backgroundColorService="skygold" foregroundColorEventSelected="skydarkblue" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="36" serviceNumberFont="skymedium;22" serviceNameFont="skymedium;22" serviceInfoFont="skymedium;22" transparent="1" zPosition="3" scrollbarMode="showOnDemand" />
 		<panel name="NewChannelSelectionProgramNowName" />		
 		<panel name="NewChannelSelectionProgramNowStartTime" />
 		<panel name="NewChannelSelectionProgramNowEndTime" />		

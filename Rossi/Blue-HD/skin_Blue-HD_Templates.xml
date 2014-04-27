@@ -54,7 +54,7 @@
 		<eLabel text="TV Guide" position="50,239" size="243,25" font="skymedium;25" foregroundColor="skylighterblue2" backgroundColor="skydarkblue" halign="left" transparent="1" zPosition="1"/>	
 	</screen>
 	<screen name="ChannelSelectionBouquetName">
-		<widget source="Title" render="Label" position="80,272" size="850,43" font="skysemibold;25" transparent="1" foregroundColor="white" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />	
+		<widget source="Title" render="Label" position="80,272" size="850,43" font="skymedium;25" transparent="1" foregroundColor="white" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />	
 	</screen>
 	<screen name="ChannelSelectionRedButton">
 		<ePixmap pixmap="Blue-HD/buttons/red.png" position="100,645" size="25,25" alphatest="blend" transparent="1" />
@@ -76,10 +76,10 @@
 		<eLabel text="Press SELECT to view" position="100,677" size="243,25" font="skymedium;23" foregroundColor="skylighterblue2" backgroundColor="skydarkblue" halign="left" transparent="1" zPosition="1"/>	
 	</screen>
 	<screen name="ChannelSelectionInfoButton">
-		<ePixmap pixmap="buttons/key_info.png" position="1205,645" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap pixmap="buttons/key_info.png" position="1104,645" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
 	</screen>
 	<screen name="ChannelSelectionMenuButton">
-		<ePixmap pixmap="buttons/key_menu.png" position="1145,677" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap pixmap="buttons/key_menu.png" position="1140,677" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
 	</screen>
 	
 	<!-- ## Channel Selection New ## -->
@@ -87,7 +87,7 @@
 		<eLabel text="TV Guide" position="40,95" size="243,25" font="skymedium;25" foregroundColor="skylighterblue2" backgroundColor="skydarkblue" halign="left" transparent="1" zPosition="1"/>	
 	</screen>
 	<screen name="NewChannelSelectionBouquetName">
-		<widget source="Title" render="Label" position="60,128" size="850,40" font="skysemibold;25" transparent="1" foregroundColor="white" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />	
+		<widget source="Title" render="Label" position="60,128" size="850,40" font="skymedium;25" transparent="1" foregroundColor="white" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />	
 	</screen>
 	<screen name="NewChannelSelectionProgramNowName">
 		<widget source="ServiceEvent" render="Label" position="695,275" size="400,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" halign="left" valign="center" noWrap="1" transparent="1">
@@ -524,88 +524,6 @@
 	<screen name="PlannerText">
 		<eLabel text="Planner" position="50,239" size="243,25" font="skymedium;25" foregroundColor="skylighterblue2" backgroundColor="skydarkblue" halign="left" transparent="1" zPosition="1"/>	
 	</screen>	
-	
-	<!-- ## OnDemand Panels ## -->
-	<screen name="OnDemandMenuPanel">
-		<widget source="Title" render="Label" position="40,54" size="540,38" font="skymedium;28" foregroundColor="white" backgroundColor="infobar-bkgrnd" transparent="1" />
-		<ePixmap pixmap="Blue-HD/ondemand/ondemandmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="280,8" size="110,28" font="skymedium;24" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="left" transparent="1">
-			<convert type="ClockToText">Format:%H:%M:%S</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="400,8" size="110,28" font="skymedium;24" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="right" transparent="1">
-			<convert type="ClockToText">Format:%a %d/%m</convert>
-		</widget>
-	</screen>
-	<screen name="BBCiPlayerMenuPanel">
-		<widget source="Title" render="Label" position="40,54" size="540,38" font="skymedium;28" foregroundColor="white" backgroundColor="infobar-bkgrnd" transparent="1" />
-		<ePixmap pixmap="Blue-HD/ondemand/bbciplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="280,8" size="110,28" font="skymedium;24" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="left" transparent="1">
-			<convert type="ClockToText">Format:%H:%M:%S</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="400,8" size="110,28" font="skymedium;24" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="right" transparent="1">
-			<convert type="ClockToText">Format:%a %d/%m</convert>
-		</widget>
-	</screen>
-	<screen name="ITVPlayerMenuPanel">
-		<widget source="Title" render="Label" position="40,54" size="540,38" font="skymedium;28" foregroundColor="white" backgroundColor="infobar-bkgrnd" transparent="1" />
-		<ePixmap pixmap="Blue-HD/ondemand/itvplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="280,8" size="110,28" font="skymedium;24" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="left" transparent="1">
-			<convert type="ClockToText">Format:%H:%M:%S</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="400,8" size="110,28" font="skymedium;24" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="right" transparent="1">
-			<convert type="ClockToText">Format:%a %d/%m</convert>
-		</widget>
-	</screen>
-	<screen name="4odMenuPanel">
-		<widget source="Title" render="Label" position="40,54" size="540,38" font="skymedium;28" foregroundColor="white" backgroundColor="infobar-bkgrnd" transparent="1" />
-		<ePixmap pixmap="Blue-HD/ondemand/4odmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="280,8" size="110,28" font="skymedium;24" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="left" transparent="1">
-			<convert type="ClockToText">Format:%H:%M:%S</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="400,8" size="110,28" font="skymedium;24" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="right" transparent="1">
-			<convert type="ClockToText">Format:%a %d/%m</convert>
-		</widget>
-	</screen>
-	<screen name="3MenuPanel">
-		<widget source="Title" render="Label" position="40,54" size="540,38" font="skymedium;28" foregroundColor="white" backgroundColor="infobar-bkgrnd" transparent="1" />
-		<ePixmap pixmap="Blue-HD/ondemand/3playermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="280,8" size="110,28" font="skymedium;24" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="left" transparent="1">
-			<convert type="ClockToText">Format:%H:%M:%S</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="400,8" size="110,28" font="skymedium;24" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="right" transparent="1">
-			<convert type="ClockToText">Format:%a %d/%m</convert>
-		</widget>
-	</screen>
-	<screen name="RTEMenuPanel">
-		<widget source="Title" render="Label" position="40,54" size="540,38" font="skymedium;28" foregroundColor="white" backgroundColor="infobar-bkgrnd" transparent="1" />
-		<ePixmap pixmap="Blue-HD/ondemand/rteplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="280,8" size="110,28" font="skymedium;24" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="left" transparent="1">
-			<convert type="ClockToText">Format:%H:%M:%S</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="400,8" size="110,28" font="skymedium;24" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="right" transparent="1">
-			<convert type="ClockToText">Format:%a %d/%m</convert>
-		</widget>
-	</screen>
-	<screen name="iViewMenuPanel">
-		<widget source="Title" render="Label" position="40,54" size="540,38" font="skymedium;28" foregroundColor="white" backgroundColor="infobar-bkgrnd" transparent="1" />
-		<ePixmap pixmap="Blue-HD/ondemand/iviewmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="280,8" size="110,28" font="skymedium;24" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="left" transparent="1">
-			<convert type="ClockToText">Format:%H:%M:%S</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="400,8" size="110,28" font="skymedium;24" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="right" transparent="1">
-			<convert type="ClockToText">Format:%a %d/%m</convert>
-		</widget>
-	</screen>
-	<screen name="iRadioMenuPanel">
-		<widget source="Title" render="Label" position="40,54" size="540,38" font="skymedium;28" foregroundColor="white" backgroundColor="infobar-bkgrnd" transparent="1" />
-		<ePixmap pixmap="Blue-HD/ondemand/radioplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="280,8" size="110,28" font="skymedium;24" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="left" transparent="1">
-			<convert type="ClockToText">Format:%H:%M:%S</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="400,8" size="110,28" font="skymedium;24" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="right" transparent="1">
-			<convert type="ClockToText">Format:%a %d/%m</convert>
-		</widget>
-	</screen>
 	
 	<!-- ## FullScreen Panels ## -->	
 	<screen name="FullscreenTopPanel">
