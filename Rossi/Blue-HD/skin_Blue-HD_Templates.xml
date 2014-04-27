@@ -90,19 +90,19 @@
 		<widget source="Title" render="Label" position="60,128" size="850,40" font="skymedium;25" transparent="1" foregroundColor="white" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />	
 	</screen>
 	<screen name="NewChannelSelectionProgramNowName">
-		<widget source="ServiceEvent" render="Label" position="695,275" size="400,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" halign="left" valign="center" noWrap="1" transparent="1">
+		<widget source="ServiceEvent" render="Label" position="695,275" size="385,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" halign="left" valign="center" noWrap="1" transparent="1">
 			<convert type="EventName">NowName</convert>
 		</widget>	
 	</screen>
 	<screen name="NewChannelSelectionProgramNowStartTime">
-		<widget source="ServiceEvent" render="Label" position="1105,275" size="60,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" noWrap="1" halign="right" valign="center" transparent="1">
+		<widget source="ServiceEvent" render="Label" position="1095,275" size="60,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" noWrap="1" halign="right" valign="center" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">
 			</convert>
 		</widget>	
 	</screen>
 	<screen name="NewChannelSelectionProgramNowEndTime">
-		<widget source="ServiceEvent" render="Label" position="1170,275" size="80,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" noWrap="1" halign="left" valign="center" transparent="1">
+		<widget source="ServiceEvent" render="Label" position="1160,275" size="80,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" noWrap="1" halign="left" valign="center" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>	
@@ -113,19 +113,19 @@
 		</widget>	
 	</screen>
 	<screen name="NewChannelSelectionProgramNextName">
-		<widget source="ServiceEvent" render="Label" position="695,435" size="400,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" halign="left" valign="center" noWrap="1" transparent="1">
+		<widget source="ServiceEvent" render="Label" position="695,435" size="385,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" halign="left" valign="center" noWrap="1" transparent="1">
 			<convert type="EventName">NextName</convert>
 		</widget>	
 	</screen>
 	<screen name="NewChannelSelectionProgramNextStartTime">
-		<widget source="ServiceEvent" render="Label" position="1105,435" size="60,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" noWrap="1" halign="right" valign="center" transparent="1">
+		<widget source="ServiceEvent" render="Label" position="1095,435" size="60,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" noWrap="1" halign="right" valign="center" transparent="1">
 			<convert type="EventTime">NextStartTime</convert>
 			<convert type="ClockToText">
 			</convert>
 		</widget>	
 	</screen>
 	<screen name="NewChannelSelectionProgramNextEndTime">
-		<widget source="ServiceEvent" render="Label" position="1170,435" size="80,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" noWrap="1" halign="left" valign="center" transparent="1">
+		<widget source="ServiceEvent" render="Label" position="1160,435" size="80,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" noWrap="1" halign="left" valign="center" transparent="1">
 			<convert type="EventTime">NextEndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>	
@@ -136,19 +136,19 @@
 		</widget>	
 	</screen>
 	<screen name="NewChannelSelectionProgramLaterName">
-		<widget source="ServiceEvent" render="Label" position="695,605" size="400,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" halign="left" valign="center" noWrap="1" transparent="1">
+		<widget source="ServiceEvent" render="Label" position="695,605" size="385,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" halign="left" valign="center" noWrap="1" transparent="1">
 			<convert type="EventName">ThirdName</convert>
 		</widget>	
 	</screen>
 	<screen name="NewChannelSelectionProgramLaterStartTime">
-		<widget source="ServiceEvent" render="Label" position="1105,605" size="60,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" noWrap="1" halign="right" valign="center" transparent="1">
+		<widget source="ServiceEvent" render="Label" position="1095,605" size="60,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" noWrap="1" halign="right" valign="center" transparent="1">
 			<convert type="EventTime">ThirdStartTime</convert>
 			<convert type="ClockToText">
 			</convert>
 		</widget>	
 	</screen>
 	<screen name="NewChannelSelectionProgramLaterEndTime">
-		<widget source="ServiceEvent" render="Label" position="1170,605" size="80,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" noWrap="1" halign="left" valign="center" transparent="1">
+		<widget source="ServiceEvent" render="Label" position="1160,605" size="80,25" foregroundColor="skylighterblue2" backgroundColor="black" font="skymedium;23" noWrap="1" halign="left" valign="center" transparent="1">
 			<convert type="EventTime">ThirdEndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>	
