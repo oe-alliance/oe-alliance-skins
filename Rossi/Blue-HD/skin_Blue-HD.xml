@@ -1220,7 +1220,7 @@ self.autoResize()
 	</screen>
 	<screen name="PluginBrowser" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="list" position="10,107" size="503,533" itemHeight="49" selectionPixmap="Blue-HD/buttons/FocusBar_H50x503.png" foregroundColor="white" backgroundColor="#03050c1c" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="list" position="10,107" size="503,533" itemHeight="49" selectionPixmap="Blue-HD/buttons/FocusBar_H50x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<ePixmap pixmap="Blue-HD/buttons/key_menu.png" position="470,663" size="35,25" alphatest="blend" transparent="1" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
