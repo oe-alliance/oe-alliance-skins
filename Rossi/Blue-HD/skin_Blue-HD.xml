@@ -326,7 +326,7 @@
 		<panel name="EPGSelectionProgramNowDescription" />
 		<panel name="ChannelSelectionTVGuideText" />
 		<panel name="ChannelSelectionBouquetName" />
-		<widget name="timeline_text" position="100,303" size="1280,30" font="skymedium;20" foregroundColor="skylighterblue2" TimelineAlignment="right" transparent="1" zPosition="2" />
+		<widget name="timeline_text" position="100,305" size="1280,30" font="skymedium;20" foregroundColor="skylighterblue2" TimelineAlignment="right" transparent="1" zPosition="2" />
 		<widget name="bouquetlist" position="100,332" size="1075,305" backgroundColor="skydarkblue" backgroundColorSelected="skygold" foregroundColorSelected="skydarkblue" scrollbarMode="showNever" zPosition="4" transparent="0" />
 		<widget name="list" position="100,332" size="1075,310" font="skymedium;25" backgroundColor="skydarkblue" EntryBackgroundColor="skydarkblue" EntryBackgroundColorSelected="skygold" EntryBackgroundColorNowSelected="skygold" EntryBackgroundColorNow="skydarkblue" ServiceForegroundColorNow="skydarkblue" ServiceBackgroundColor="skydarkblue" ServiceBackgroundColorNow="skygold" EntryForegroundColorSelected="skydarkblue" EntryForegroundColorNowSelected="skydarkblue" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no" />
 <!--		<widget name="timeline_now" position="100,300" zPosition="3" size="19,332" pixmap="Blue-HD/epg/timeline-now-pig.png" alphatest="on" /> -->
