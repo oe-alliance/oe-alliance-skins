@@ -15,10 +15,10 @@
 	<include filename="/usr/share/enigma2/Blue-HD/skin_Blue-HD_ExtPlugins.xml"/>
 	<include filename="/usr/share/enigma2/Blue-HD/skin_Blue-HD_Wizard.xml"/>
 	<fonts>
-	    <font name="skyregular" filename="/usr/share/enigma2/Blue-HD/fonts/skyregular.otf" scale="100" />
-		<font name="skymedium" filename="/usr/share/enigma2/Blue-HD/fonts/skymedium.ttf" scale="100" />
-		<font name="skysemibold" filename="/usr/share/enigma2/Blue-HD/fonts/skysemibold.otf" scale="100" />
-		<font name="skybold" filename="/usr/share/enigma2/Blue-HD/fonts/skybold.otf" scale="100" />
+	    <font name="skymedium" filename="/usr/share/enigma2/Blue-HD/fonts/skymedium.ttf" scale="100" />
+	    <font name="skyfinalregular" filename="/usr/share/enigma2/Blue-HD/fonts/SkyFinalRegular.ttf" scale="100" />		
+		<font name="skyfinalmedium" filename="/usr/share/enigma2/Blue-HD/fonts/SkyFinalMedium.ttf" scale="100" />
+		<font name="skyfinalbold" filename="/usr/share/enigma2/Blue-HD/fonts/SkyFinalBold.ttf" scale="100" />
 	</fonts>
 	<colors>
 		<color name="foreground" value="#001c1c1c" />
