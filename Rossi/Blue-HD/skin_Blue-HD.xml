@@ -40,13 +40,13 @@
 		<widget source="Title" render="Label" position="40,29" size="850,43" font="skymedium;28" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<widget name="config" position="10,82" size="573,500" selectionPixmap="Blue-HD/buttons/FocusBar_H25x670.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
 		<widget name="description" position="10,590" size="560,78" font="skymedium;18" foregroundColor="skygold" backgroundColor="skydarkblue" halign="center" valign="top" transparent="1" zPosition="1" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
 		<widget name="footnote" position="415,690" size="175,20" zPosition="1" font="skymedium;20" foregroundColor="white" backgroundColor="skydarkblue" halign="left" transparent="1" valign="top" />
 		<widget source="VKeyIcon" render="Pixmap" pixmap="Blue-HD/buttons/key_text.png" position="1200,686" zPosition="1" size="35,25" transparent="1" alphatest="on" >
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget name="HelpWindow" pixmap="Blue-HD/buttons/vkey_icon.png" position="60,440" zPosition="1" size="541,720" transparent="1" alphatest="on" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
 	</screen>
 
 <!-- InfoBar's -->
@@ -303,7 +303,7 @@
 			<convert type="ClockToText">Format:%a %d/%m</convert>
 		</widget>	
 		<widget source="Title" render="Label" position="80,94" size="850,44" font="skymedium;28" transparent="1" foregroundColor="white" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
-		<widget name="timeline_text" position="100,133" size="1280,30" font="skymedium;20" foregroundColor="skylighterblue2" transparent="1" zPosition="2" />
+		<widget name="timeline_text" position="100,133" size="1280,30" font="skymedium;20" foregroundColor="skylighterblue2" TimelineAlignment="right" transparent="1" zPosition="2" />
 		<widget name="bouquetlist" position="100,160" size="1075,480" backgroundColor="skydarkblue" backgroundColorSelected="skygold" foregroundColorSelected="skydarkblue" scrollbarMode="showNever" zPosition="4" transparent="0" />
 		<widget name="list" position="100,160" size="1075,485" font="skymedium;25" EntryBackgroundColor="skydarkblue" EntryBackgroundColorSelected="skygold" EntryBackgroundColorNowSelected="skygold" EntryBackgroundColorNow="skydarkblue" ServiceForegroundColorNow="skydarkblue"  ServiceBackgroundColor="skydarkblue"  ServiceBackgroundColorNow="skygold" backgroundColor="skydarkblue" EntryForegroundColorSelected="skydarkblue" EntryForegroundColorNowSelected="skydarkblue" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="0" />
 <!--		<widget name="timeline_now" position="100,300" zPosition="3" size="19,332" pixmap="Blue-HD/epg/timeline-now-pig.png" alphatest="on" /> -->
@@ -326,7 +326,7 @@
 		<panel name="EPGSelectionProgramNowDescription" />
 		<panel name="ChannelSelectionTVGuideText" />
 		<panel name="ChannelSelectionBouquetName" />
-		<widget name="timeline_text" position="100,303" size="1280,30" font="skymedium;20" foregroundColor="skylighterblue2" transparent="1" zPosition="2" />
+		<widget name="timeline_text" position="100,303" size="1280,30" font="skymedium;20" foregroundColor="skylighterblue2" TimelineAlignment="right" transparent="1" zPosition="2" />
 		<widget name="bouquetlist" position="100,332" size="1075,305" backgroundColor="skydarkblue" backgroundColorSelected="skygold" foregroundColorSelected="skydarkblue" scrollbarMode="showNever" zPosition="4" transparent="0" />
 		<widget name="list" position="100,332" size="1075,310" font="skymedium;25" backgroundColor="skydarkblue" EntryBackgroundColor="skydarkblue" EntryBackgroundColorSelected="skygold" EntryBackgroundColorNowSelected="skygold" EntryBackgroundColorNow="skydarkblue" ServiceForegroundColorNow="skydarkblue" ServiceBackgroundColor="skydarkblue" ServiceBackgroundColorNow="skygold" EntryForegroundColorSelected="skydarkblue" EntryForegroundColorNowSelected="skydarkblue" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no" />
 <!--		<widget name="timeline_now" position="100,300" zPosition="3" size="19,332" pixmap="Blue-HD/epg/timeline-now-pig.png" alphatest="on" /> -->
@@ -348,7 +348,7 @@
 			<convert type="ClockToText">Format:%a %d/%m</convert>
 		</widget>	
 		<widget source="Title" render="Label" position="80,496" size="850,43" font="skymedium;28" transparent="1" foregroundColor="white" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
-		<widget name="timeline_text" position="100,530" size="1280,30" font="skymedium;20" foregroundColor="skylighterblue2" transparent="1" zPosition="2" />
+		<widget name="timeline_text" position="100,530" size="1280,30" font="skymedium;20" foregroundColor="skylighterblue2" TimelineAlignment="right" transparent="1" zPosition="2" />
 		<widget name="bouquetlist" position="100,555" size="1075,85" font="skymedium;22" itemHeight="42" backgroundColor="skydarkblue" backgroundColorSelected="skygold" foregroundColorSelected="skydarkblue" scrollbarMode="showNever" zPosition="4" transparent="0" />
 		<widget name="list" position="100,555" size="1075,85" font="skymedium;25" EntryBackgroundColor="skydarkblue" EntryBackgroundColorSelected="skygold" EntryBackgroundColorNowSelected="skygold" EntryBackgroundColorNow="skydarkblue" ServiceForegroundColorNow="skydarkblue"  ServiceBackgroundColor="skydarkblue"  ServiceBackgroundColorNow="skygold" backgroundColor="skydarkblue" EntryForegroundColorSelected="skydarkblue" EntryForegroundColorNowSelected="skydarkblue" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="1" EntryFontWrap="no" />
 <!--		<widget name="timeline_now" position="100,75" zPosition="3" size="19,85" pixmap="epg/timeline-now.png" alphatest="on" /> -->
@@ -678,18 +678,25 @@
 		<widget name="menu" position="10,107" size="503,480" itemHeight="30" selectionPixmap="Blue-HD/buttons/FocusBar_H30x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
 	</screen>
 	<screen name="ChannelSelection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
-	    <ePixmap pixmap="Blue-HD/infobar/epg.png" position="0,0" size="1280,720" zPosition="-1"/>
+	    <ePixmap pixmap="Blue-HD/infobar/channelselection.png" position="0,0" size="1280,720" zPosition="-1"/>
 		<panel name="ChannelSelectionPicon" />
         <panel name="ChannelSelectionIconBar" />		
 		<panel name="ChannelSelectionPIGPanel" />
-        <panel name="ChannelSelectionTimeDatePanel" />	
-		<panel name="ChannelSelectionProgramNowStartTime" />
-		<panel name="ChannelSelectionProgramNowName" />
-		<panel name="ChannelSelectionProgramNowDescription" />
-		<panel name="ChannelSelectionTVGuideText" />
-		<panel name="ChannelSelectionBouquetName" />	
-		<widget name="list" position="100,332" size="1075,310" selectionPixmap="Blue-HD/buttons/FocusBar_H36x1075.png" backgroundColor="skydarkblue" foregroundColorService="white" foregroundColorServiceSelected="skydarkblue" foregroundColorEvent="skywhite" backgroundColorService="skygold" foregroundColorEventSelected="skydarkblue" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="36" serviceNumberFont="skymedium;22" serviceNameFont="skymedium;22" serviceInfoFont="skymedium;22" transparent="1" zPosition="3" scrollbarMode="showOnDemand" />
-<!--		<ePixmap pixmap="buttons/key_menu.png" position="20,686" size="35,25" alphatest="blend" transparent="1" zPosition="1" /> -->
+        <panel name="ChannelSelectionTimeDatePanel" />
+        <panel name="NewChannelSelectionBouquetName" />	
+		<panel name="NewChannelSelectionTVGuideText" />
+		<widget name="list" position="65,170" size="600,470" selectionPixmap="Blue-HD/buttons/FocusBar_H36x1075.png" scrollbarbackgroundPixmap="Blue-HD/buttons/channelselectionscrollbar_H20x470.png" backgroundColor="skydarkblue" foregroundColorService="white" foregroundColorServiceSelected="skydarkblue" foregroundColorEvent="skywhite" backgroundColorService="skygold" foregroundColorEventSelected="skydarkblue" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="36" serviceNumberFont="skymedium;22" serviceNameFont="skymedium;22" serviceInfoFont="skymedium;22" transparent="1" zPosition="3" scrollbarMode="showOnDemand" />
+		<panel name="NewChannelSelectionProgramNowName" />		
+		<panel name="NewChannelSelectionProgramNowStartTime" />
+		<panel name="NewChannelSelectionProgramNowEndTime" />		
+		<panel name="NewChannelSelectionProgramNowDescription" />
+		<panel name="NewChannelSelectionProgramNextName" />
+		<panel name="NewChannelSelectionProgramNextStartTime" />
+		<panel name="NewChannelSelectionProgramNextEndTime" />	
+		<panel name="NewChannelSelectionProgramNextDescription" />
+		<panel name="NewChannelSelectionProgramLaterName" />
+		<panel name="NewChannelSelectionProgramLaterStartTime" />
+		<panel name="NewChannelSelectionProgramLaterEndTime" />	
 		<panel name="ChannelSelectionRedButton" />
 		<panel name="ChannelSelectionGreenButton" />
 		<panel name="ChannelSelectionYellowButton" />
