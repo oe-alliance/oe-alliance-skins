@@ -27,7 +27,7 @@
 	</screen>
 	<screen name="BBCiMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Blue-HD/ondemand/bbciplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget name="BBCiMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/BBCBar_H38x503.png" scrollbarbackgroundPixmap="Blue-HD/ondemand/BBCScrollBar_H533x30.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" alphatest="blend" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="BBCiMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/BBCBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" alphatest="blend" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="ITVplayer" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Blue-HD/ondemand/itvplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
