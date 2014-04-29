@@ -10,90 +10,96 @@
 	<!-- ## OnDemand ## -->
 	<screen name="OnDemand_Screen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Blue-HD/ondemand/ondemandmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget name="PlayerList" position="160,90" size="220,573" selectionPixmap="Blue-HD/buttons/FocusBar_H106x503.png" transparent="1" scrollbarMode="showNever" />
+		<widget name="PlayerList" position="160,90" size="220,573" selectionPixmap="Blue-HD/buttons/FocusBar_H106x503.png" transparent="1" scrollbarMode="showOnDemand" />
 		<panel name="MenuMenuButton" />
 		<panel name="MenuInfoButton" />
 	</screen>	
 	<screen name="OnDemand_About" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Blue-HD/ondemand/ondemandmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget name="about" position="10,107" size="503,533" font="skymedium;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="about" position="10,107" size="503,533" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<panel name="MenuRed1Panel" />
 	</screen>
 	<screen name="OnDemandScreenSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Blue-HD/ondemand/ondemandsetupmenu.png" position="0,0" size="597,720" alphatest="on" zPosition="-1" />
-		<widget name="config" position="10,107" size="573,500" selectionPixmap="Blue-HD/buttons/FocusBar_H25x670.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
+		<widget name="config" position="10,107" size="573,500" font="skyreg;19" selectionPixmap="Blue-HD/buttons/FocusBar_H25x670.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
 		<panel name="FullscreenRed2Panel" />
 		<panel name="FullscreenGreen2Panel" />
 	</screen>
 	<screen name="BBCiMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Blue-HD/ondemand/bbciplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget name="BBCiMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/BBCBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" alphatest="blend" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="BBCiMenu" position="10,107" size="503,533" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" alphatest="blend" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="ITVplayer" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Blue-HD/ondemand/itvplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget name="ITVMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/ITVBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="ITVMenu" position="10,107" size="503,533" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="fourODMainMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Blue-HD/ondemand/4odmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget name="fourODMainMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/4odBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="fourODMainMenu" position="10,107" size="503,533" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="threeMainMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Blue-HD/ondemand/3playermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget name="threeMainMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/3Bar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="threeMainMenu" position="10,107" size="503,533" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="RTEMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Blue-HD/ondemand/rteplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget name="RTEMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/RteBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="RTEMenu" position="10,107" size="503,533" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="iViewMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Blue-HD/ondemand/iviewmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget name="iViewMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/IVIEWBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="iViewMenu" position="10,107" size="503,533" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="iRadioMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Blue-HD/ondemand/radioplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget name="iRadioMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/RadioBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="iRadioMenu" position="10,107" size="503,533" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="shoutGenresMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Blue-HD/ondemand/radioplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget name="shoutGenresMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/RadioBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="shoutGenresMenu" position="10,107" size="503,533" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="shoutSubGenresMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Blue-HD/ondemand/radioplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget name="shoutSubGenresMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/RadioBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="shoutSubGenresMenu" position="10,107" size="503,533" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="tuneinGenresMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Blue-HD/ondemand/radioplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget name="tuneinGenresMenu" position="10,107" size="503,533" font="skymedium;19" selectionPixmap="Blue-HD/ondemand/RadioBar_H38x503.png" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="tuneinGenresMenu" position="10,107" size="503,533" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
+<!--	<screen name="StreamsThumbCommon" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/radioplayermenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<widget name="lab1" position="0,0" size="541,720" font="skyreg;24" foregroundColor="white" backgroundColor="skydarkblue" halign="center" valign="center" transparent="0" zPosition="5" />
+		<widget source="Title" render="Label" position="20,0" size="e,50" font="skyreg;32" />
+		<widget name="list" position="0,50" size="1280,670" scrollbarMode="showOnDemand" transparent="1" />
+	</screen> -->
 	
 	
 	<!-- ## Autobouquets 28.2E by Lraizer ## -->
 	<screen name="AutoBouquets" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="AutoBouquets E2 for 28.2E" >
 		<panel name="MenuPanel" />		
-		<widget name="area" position="90,125" size="140,30" font="skymedium; 24" foregroundColor="white" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
-		<widget name="areavalue" position="240,125" size="205,50" font="skymedium;24" foregroundColor="white" backgroundColor="skydarkblue" zPosition="2" transparent="1" />
-		<widget name="otherx" position="70,190" size="140,30" font="skymedium; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
+		<widget name="area" position="90,125" size="140,30" font="skyreg; 24" foregroundColor="white" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
+		<widget name="areavalue" position="240,125" size="205,50" font="skyreg;24" foregroundColor="white" backgroundColor="skydarkblue" zPosition="2" transparent="1" />
+		<widget name="otherx" position="70,190" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
 		<widget name="otherextra" position="220,190" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
-		<widget name="scriptc" position="250,190" size="140,30" font="skymedium; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
+		<widget name="scriptc" position="250,190" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
 		<widget name="scriptcheck" position="400,190" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
-		<widget name="picons" position="70,230" size="140,30" font="skymedium; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
+		<widget name="picons" position="70,230" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
 		<widget name="piconscheck" position="220,230" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
-		<widget name="num" position="250,230" size="140,30" font="skymedium; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
+		<widget name="num" position="250,230" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
 		<widget name="numcheck" position="400,230" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
-		<widget name="nit" position="70,270" size="140,30" font="skymedium; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
+		<widget name="nit" position="70,270" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
 		<widget name="nitcheck" position="220,270" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
-		<widget name="placeh" position="250,270" size="140,30" font="skymedium; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
+		<widget name="placeh" position="250,270" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
 		<widget name="placehcheck" position="400,270" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
-		<widget name="parental" position="70,310" size="140,30" font="skymedium; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
+		<widget name="parental" position="70,310" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
 		<widget name="parentalcheck" position="220,310" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
-		<widget name="def" position="250,310" size="140,30" font="skymedium; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
+		<widget name="def" position="250,310" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
 		<widget name="defcheck" position="400,310" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
-		<widget name="ordering" position="70,350" size="140,30" font="skymedium; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
+		<widget name="ordering" position="70,350" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
 		<widget name="orderingcheck" position="220,350" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
-		<widget name="fta" position="250,350" size="140,30" font="skymedium; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
+		<widget name="fta" position="250,350" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
 		<widget name="ftacheck" position="400,350" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
-		<widget name="status" position="70,420" size="140,30" font="skymedium; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
-		<widget name="status2" position="220,420" size="205,30" font="skymedium;22" foregroundColor="white" backgroundColor="skydarkblue" zPosition="5" transparent="1" />
+		<widget name="status" position="70,420" size="140,30" font="skyreg; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
+		<widget name="status2" position="220,420" size="205,30" font="skyreg;22" foregroundColor="white" backgroundColor="skydarkblue" zPosition="5" transparent="1" />
 		<panel name="MenuMenuButton" />
 		<panel name="MenuInfoButton" />
 		<panel name="MenuRed1Panel" />
@@ -109,13 +115,13 @@
 	</screen>
 	<screen name="AutoBouquetsLogView" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="list" position="15,110" size="503,535" font="skymedium;16" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
+		<widget name="list" position="15,110" size="503,535" font="skyreg;16" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 	</screen>
 	<screen name="AutoBouquetsAbout" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="about" position="10,107" size="503,430" font="skymedium;19" itemHeight="28" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="about" position="10,107" size="503,430" font="skyreg;19" itemHeight="28" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<panel name="MenuRed1Panel" />
 	</screen>
 	<screen name="AutoBouquetsDownloader" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -125,13 +131,13 @@
 	<!-- ## IPTV List Updater by Nobody and Satinfo## -->
 	<screen name="Start" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater" >
 		<panel name="MenuPanel" />
-		<widget name="title" position="110,125" size="300,30" font="skymedium;24" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
-		<widget name="maintain" position="110,195" size="300,30" font="skymedium; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
-		<widget name="link1" position="110,230" size="300,30" font="skymedium; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
-		<widget name="link2" position="110,265" size="300,30" font="skymedium; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
-		<widget name="description" position="30,300" size="450,30" font="skymedium; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
-		<widget name="description2" position="90,335" size="350,30" font="skymedium; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
-		<widget name="thanks" position="30,370" size="450,30" font="skymedium; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
+		<widget name="title" position="110,125" size="300,30" font="skyreg;24" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
+		<widget name="maintain" position="110,195" size="300,30" font="skyreg; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
+		<widget name="link1" position="110,230" size="300,30" font="skyreg; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
+		<widget name="link2" position="110,265" size="300,30" font="skyreg; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
+		<widget name="description" position="30,300" size="450,30" font="skyreg; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
+		<widget name="description2" position="90,335" size="350,30" font="skyreg; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
+		<widget name="thanks" position="30,370" size="450,30" font="skyreg; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
 		<ePixmap pixmap="buttons/key_menu.png" position="470,663" size="35,25" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="buttons/key_info.png" position="470,690" size="35,25" alphatest="blend" transparent="1" />
 		<panel name="MenuRed1Panel" />
@@ -141,24 +147,24 @@
 	</screen>
 	<screen name="Changelog" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater - Changelog" >
 		<panel name="MenuPanel" />
-		<widget name="text" position="15,110" size="496,535" font="skymedium;18" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="text" position="15,110" size="496,535" font="skyreg;18" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
 		<panel name="MenuRed1Panel" />
 	</screen>
 	<screen name="Credits" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater - Credits" >
 		<panel name="MenuPanel" />
-		<widget name="text" position="15,110" size="496,535" font="skymedium;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="text" position="15,110" size="496,535" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
 		<panel name="MenuRed1Panel" />
 	</screen>
 	<screen name="FAQ" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater - FAQ" >
 		<panel name="MenuPanel" />
-		<widget name="text" position="15,110" size="496,535" font="skymedium;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="text" position="15,110" size="496,535" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
 		<panel name="MenuRed1Panel" />
 	</screen>
 	<screen name="IPTV" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater" >
 		<panel name="MenuPanel" />
-		<widget name="text1" position="30,125" size="450,30" font="skymedium;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" />
-<!--		<widget name="IPTVList" position="30,160" size="400,300" font="skymedium;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" />
-		<widget name="country" position="30,465" size="450,300" font="skymedium;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" /> -->
+		<widget name="text1" position="30,125" size="450,30" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" />
+<!--		<widget name="IPTVList" position="30,160" size="400,300" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" />
+		<widget name="country" position="30,465" size="450,300" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" /> -->
 		<ePixmap pixmap="buttons/key_info.png" position="470,690" size="35,25" alphatest="blend" transparent="1" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
@@ -167,9 +173,9 @@
 	</screen>
 	<screen name="IPTV_mod" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater" >
 		<panel name="MenuPanel" />
-		<widget name="text1" position="30,125" size="450,30" font="skymedium;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" />
-<!--		<widget name="IPTVList" position="30,160" size="400,300" font="skymedium;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" />
-		<widget name="country" position="30,465" size="450,300" font="skymedium;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" /> -->
+		<widget name="text1" position="30,125" size="450,30" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" />
+<!--		<widget name="IPTVList" position="30,160" size="400,300" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" />
+		<widget name="country" position="30,465" size="450,300" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" /> -->
 		<ePixmap pixmap="buttons/key_info.png" position="470,690" size="35,25" alphatest="blend" transparent="1" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
@@ -180,12 +186,12 @@
 	<!-- ##Movie Browser# -->
 	<screen name="movieBrowserConfig" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="Movie Browser Setup">
 		<panel name="MenuPanel" />
-		<widget name="config" position="10,107" size="503,250" scrollbarMode="showOnDemand" font="skymedium;20" itemHeight="28" transparent="0" foregroundColor="white" enableWrapAround="1"/>
+		<widget name="config" position="10,107" size="503,250" scrollbarMode="showOnDemand" font="skyreg;20" itemHeight="28" transparent="0" foregroundColor="white" enableWrapAround="1"/>
 		<widget name="plugin" position="20,360" size="477,280" zPosition="2" alphatest="blend"/>
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
-		<eLabel text="Cancel" position="75,662" size="100,26" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" zPosition="1" font="skymedium;22" halign="left"/>
-		<eLabel text="Save" position="75,690" size="100,26" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" zPosition="1" font="skymedium;22" halign="left"/>
+		<eLabel text="Cancel" position="75,662" size="100,26" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" zPosition="1" font="skyreg;22" halign="left"/>
+		<eLabel text="Save" position="75,690" size="100,26" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" zPosition="1" font="skyreg;22" halign="left"/>
 	</screen>
 
 	
