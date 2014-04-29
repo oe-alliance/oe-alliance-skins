@@ -15,7 +15,6 @@
 	<include filename="/usr/share/enigma2/Blue-HD/skin_Blue-HD_ExtPlugins.xml"/>
 	<include filename="/usr/share/enigma2/Blue-HD/skin_Blue-HD_Wizard.xml"/>
 	<fonts>
-	    <font name="skymedium" filename="/usr/share/enigma2/Blue-HD/fonts/skymedium.ttf" scale="100" />
 	    <font name="skyreg" filename="/usr/share/enigma2/Blue-HD/fonts/SkyFinalRegular.ttf" scale="100" />		
 		<font name="skymed" filename="/usr/share/enigma2/Blue-HD/fonts/SkyFinalMedium.ttf" scale="100" />
 		<font name="skybold" filename="/usr/share/enigma2/Blue-HD/fonts/SkyFinalBold.ttf" scale="100" />
