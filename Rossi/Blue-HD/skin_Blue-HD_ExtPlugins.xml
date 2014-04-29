@@ -10,7 +10,7 @@
 	<!-- ## OnDemand ## -->
 	<screen name="OnDemand_Screen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Blue-HD/ondemand/ondemandmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget name="PlayerList" position="160,90" size="220,573" selectionPixmap="Blue-HD/buttons/FocusBar_H106x503.png" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="PlayerList" position="160,91" size="220,573" selectionPixmap="Blue-HD/buttons/FocusBar_H106x503.png" transparent="1" scrollbarMode="showOnDemand" />
 		<panel name="MenuMenuButton" />
 		<panel name="MenuInfoButton" />
 	</screen>	

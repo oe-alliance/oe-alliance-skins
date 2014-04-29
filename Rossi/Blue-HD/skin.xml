@@ -76,7 +76,7 @@
 
 	</colors>
 	<windowstyle type="skinned" id="0">
-		<title offset="35,10" font="skyreg;24" />
+		<title offset="35,10" font="skybold;24" />
 		<color name="Background" color="#03050c1c" />
 		<color name="LabelForeground" color="skygold" />
 		<color name="ListboxBackground" color="#03050c1c" />

@@ -216,17 +216,17 @@
 		</widget>
 	</screen>
 	<screen name="InfobarRecordIcon">
-    <!--	<ePixmap pixmap="icons/icon_rec_off.png" position="938,47" size="31,17" zPosition="0" alphatest="blend" /> -->
-		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec.png" position="938,47" size="31,17" zPosition="1" alphatest="blend" >
+    <!--	<ePixmap pixmap="icons/icon_rec.png" position="948,47" size="21,21" zPosition="0" alphatest="blend" /> -->
+		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec.png" position="948,47" size="31,17" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>
 	<screen name="InfobarOnlineUpdateIcon">
-    <!--	<ePixmap pixmap="icons/icon_update_off.png" position="950,67" size="20,20" zPosition="0" alphatest="blend" /> -->
-		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="icons/icon_stableupdate.png" position="950,67" size="20,20" zPosition="1" alphatest="blend" >
+    <!--	<ePixmap pixmap="icons/icon_stableupdate.png" position="948,70" size="21,21" zPosition="0" alphatest="blend" /> -->
+		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="icons/icon_stableupdate.png" position="948,70" size="20,20" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="950,67" size="20,20" zPosition="1" alphatest="blend" >
+		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="948,70" size="20,20" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>
@@ -344,17 +344,17 @@
 		</widget>
 	</screen>
 	<screen name="2ndInfobarRecordIcon">
-    <!--	<ePixmap pixmap="icons/icon_rec_off.png" position="938,249" size="31,17" zPosition="0" alphatest="blend" /> -->
-		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec.png" position="938,249" size="31,17" zPosition="1" alphatest="blend" >
+    <!--	<ePixmap pixmap="icons/icon_rec.png" position="948,249" size="21,21" zPosition="0" alphatest="blend" /> -->
+		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec.png" position="948,249" size="21,21" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>
 	<screen name="2ndInfobarOnlineUpdateIcon">
-    <!--	<ePixmap pixmap="icons/icon_update_off.png" position="950,269" size="20,20" zPosition="0" alphatest="blend" /> -->
-		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="icons/icon_stableupdate.png" position="950,269" size="20,20" zPosition="1" alphatest="blend" >
+    <!--	<ePixmap pixmap="icons/icon_stableupdate.png" position="948,272" size="21,21" zPosition="0" alphatest="blend" /> -->
+		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="icons/icon_stableupdate.png" position="948,272" size="21,21" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="950,269" size="20,20" zPosition="1" alphatest="blend" >
+		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="948,272" size="21,21" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>
@@ -432,7 +432,7 @@
 	
 	<!-- ## Menu Panels ## -->
 	<screen name="MenuPanel">
-		<widget source="Title" render="Label" position="40,54" size="540,38" font="skybold;28" foregroundColor="white" backgroundColor="infobar-bkgrnd" transparent="1" />
+		<widget source="Title" render="Label" position="40,52" size="540,38" font="skybold;28" foregroundColor="white" backgroundColor="infobar-bkgrnd" transparent="1" />
 		<ePixmap pixmap="Blue-HD/infobar/menu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="280,8" size="110,28" font="skyreg;24" foregroundColor="skylighterblue2" backgroundColor="infobar-bkgrnd" halign="left" transparent="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
@@ -475,35 +475,35 @@
 	</screen>
 	<screen name="MenuRed3Panel">
 		<ePixmap pixmap="Blue-HD/buttons/red.png" position="0,0" size="140,40" alphatest="on" />
-		<widget name="key_red" position="0,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
+		<widget name="key_red" position="0,0" zPosition="1" size="140,40" font="skyreg;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
 	</screen>
 	<screen name="MenuGreen3Panel">
 		<ePixmap pixmap="Blue-HD/buttons/green.png" position="140,0" size="140,40" alphatest="on" />
-		<widget name="key_green" position="140,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1" />
+		<widget name="key_green" position="140,0" zPosition="1" size="140,40" font="skyreg;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1" />
 	</screen>
 	<screen name="MenuYellow3Panel">
 		<ePixmap pixmap="Blue-HD/buttons/yellow.png" position="280,0" size="140,40" alphatest="on" />
-		<widget name="key_yellow" position="280,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1" />
+		<widget name="key_yellow" position="280,0" zPosition="1" size="140,40" font="skyreg;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1" />
 	</screen>
 	<screen name="MenuBlue3Panel">
 		<ePixmap pixmap="Blue-HD/buttons/blue.png" position="420,0" size="140,40" alphatest="on" />
-		<widget name="key_blue" position="420,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#141484" transparent="1" />
+		<widget name="key_blue" position="420,0" zPosition="1" size="140,40" font="skyreg;20" halign="center" valign="center" backgroundColor="#141484" transparent="1" />
 	</screen>
 	<screen name="MenuRed4Panel">
 		<ePixmap pixmap="Blue-HD/buttons/red.png" position="0,0" size="140,40" alphatest="on" />
-		<widget source="key_red" render="Label" position="0,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
+		<widget source="key_red" render="Label" position="0,0" zPosition="1" size="140,40" font="skyreg;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
 	</screen>
 	<screen name="MenuGreen4Panel">
 		<ePixmap pixmap="Blue-HD/buttons/green.png" position="140,0" size="140,40" alphatest="on" />
-		<widget source="key_green" render="Label"  position="140,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1" />
+		<widget source="key_green" render="Label"  position="140,0" zPosition="1" size="140,40" font="skyreg;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1" />
 	</screen>
 	<screen name="MenuYellow4Panel">
 		<ePixmap pixmap="Blue-HD/buttons/yellow.png" position="280,0" size="140,40" alphatest="on" />
-		<widget source="key_yellow" render="Label" position="280,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1" />
+		<widget source="key_yellow" render="Label" position="280,0" zPosition="1" size="140,40" font="skyreg;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1" />
 	</screen>
 	<screen name="MenuBlue4Panel">
 		<ePixmap pixmap="Blue-HD/buttons/blue.png" position="420,0" size="140,40" alphatest="on" />
-		<widget source="key_blue" render="Label" position="420,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#141484" transparent="1" />
+		<widget source="key_blue" render="Label" position="420,0" zPosition="1" size="140,40" font="skyreg;20" halign="center" valign="center" backgroundColor="#141484" transparent="1" />
 	</screen>
 	<screen name="MenuMenuButton">
 		<ePixmap pixmap="buttons/key_menu.png" position="470,663" size="35,25" alphatest="blend" transparent="1" />
