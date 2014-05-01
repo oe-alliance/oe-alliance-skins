@@ -217,7 +217,7 @@
 	</screen>
 	<screen name="InfobarRecordIcon">
     <!--	<ePixmap pixmap="icons/icon_rec.png" position="948,47" size="21,21" zPosition="0" alphatest="blend" /> -->
-		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec.png" position="948,47" size="31,17" zPosition="1" alphatest="blend" >
+		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec.png" position="948,47" size="21,21" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>
