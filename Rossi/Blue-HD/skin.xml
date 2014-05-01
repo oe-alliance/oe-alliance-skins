@@ -73,6 +73,14 @@
 		<color name="skylighterblue2" value="#0069b6ff" />
 		<color name="skylighterblue3" value="#00224684" />
 		<color name="bbcpink" value="#00ff2a97" />
+		<color name="threepurple" value="#007848a1" />
+		<color name="4odblue" value="#00446173" />
+		<color name="itvblack" value="#00148797" />
+		<color name="rteyellow" value="#00f7ce00" />
+		<color name="iviewlightblue" value="#0021bdba" />
+		<color name="radiolightblue" value="#00ffffff" />
+		<color name="shoutcastorange" value="#00f58812" />
+		<color name="tuneinwhite" value="#00ffffff" />
 
 	</colors>
 	<windowstyle type="skinned" id="0">
