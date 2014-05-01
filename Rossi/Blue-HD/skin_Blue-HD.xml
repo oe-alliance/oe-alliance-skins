@@ -206,8 +206,8 @@
 	</screen>
 	
 	<screen name="MoviePlayer" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
-		<widget name="statusicon" position="70,50" size="125,144" zPosition="1" alphatest="on" pixmaps="Blue-HD/icons/play_large.png,Blue-HD/icons/pause_large.png,Blue-HD/icons/stop_large.png,Blue-HD/icons/forward_large.png,Blue-HD/icons/backward_large.png,Blue-HD/icons/slow_large.png,Blue-HD/icons/blank.png" />
-		<widget name="speed" position="93,161" size="80,20" font="skyreg;22" halign="center" valign="center" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" zPosition="1" />
+		<widget name="statusicon" position="70,50" size="125,144" pixmaps="Blue-HD/icons/play_large.png,Blue-HD/icons/pause_large.png,Blue-HD/icons/stop_large.png,Blue-HD/icons/forward_large.png,Blue-HD/icons/backward_large.png,Blue-HD/icons/slow_large.png,Blue-HD/icons/blank.png" zPosition="0" alphatest="blend" />
+		<widget name="speed" position="93,161" size="80,20" font="skyreg;22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" zPosition="1" />
 		<ePixmap position="150,560" zPosition="-1" size="1000,190" pixmap="Blue-HD/infobar/movie_infobar-bg.png" />
 		<widget source="global.CurrentTime" render="Label" position="914,570" zPosition="1" size="90,20" font="skyreg;22" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="left" valign="top">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
@@ -235,8 +235,8 @@
 		<widget name="key_blue" position="850,677" size="130,25" font="skyreg;20" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" zPosition="1" />
 	</screen>	
 	<screen name="TimeshiftState" position="0,0" size="250,250" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
-		<widget name="statusicon" position="70,50" size="125,144" pixmaps="Blue-HD/icons/play_large.png,Blue-HD/icons/pause_large.png,Blue-HD/icons/stop_large.png,Blue-HD/icons/forward_large.png,Blue-HD/icons/backward_large.png,Blue-HD/icons/slow_large.png,Blue-HD/icons/blank.png" zPosition="0" alphatest="on" />
-		<widget name="speed" position="93,120" size="80,20" font="skyreg;18" valign="center" halign="center" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" zPosition="1" />
+		<widget name="statusicon" position="70,50" size="125,144" pixmaps="Blue-HD/icons/play_large.png,Blue-HD/icons/pause_large.png,Blue-HD/icons/stop_large.png,Blue-HD/icons/forward_large.png,Blue-HD/icons/backward_large.png,Blue-HD/icons/slow_large.png,Blue-HD/icons/blank.png" zPosition="0" alphatest="blend" />
+		<widget name="speed" position="93,120" size="80,20" font="skyreg;16" foregroundColor="white" backgroundColor="skydarkblue" valign="center" halign="center" transparent="1" zPosition="1" />
 		<widget source="session.CurrentService" render="Label" position="110,155" size="50,20" font="skyreg;18" valign="center" halign="center" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" zPosition="1" >
 			<convert type="ServicePosition">Length</convert>
 		</widget>
@@ -246,8 +246,8 @@
 	</screen>
 	<screen name="PVRState" position="92,50" zPosition="2" size="88,88" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
 		<ePixmap position="0,0" zPosition="1" size="88,88" pixmap="Blue-HD/screens/pvr-bg.png" />
-		<widget name="statusicon" position="70,50" size="125,144" pixmaps="Blue-HD/icons/play_large.png,Blue-HD/icons/pause_large.png,Blue-HD/icons/stop_large.png,Blue-HD/icons/forward_large.png,Blue-HD/icons/backward_large.png,Blue-HD/icons/slow_large.png,Blue-HD/icons/blank.png" zPosition="0" alphatest="on" />
-		<widget name="speed" position="93,120" size="80,20" font="skyreg;18" valign="center" halign="center" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" zPosition="4" />
+		<widget name="statusicon" position="70,50" size="125,144" pixmaps="Blue-HD/icons/play_large.png,Blue-HD/icons/pause_large.png,Blue-HD/icons/stop_large.png,Blue-HD/icons/forward_large.png,Blue-HD/icons/backward_large.png,Blue-HD/icons/slow_large.png,Blue-HD/icons/blank.png" zPosition="0" alphatest="blend" />
+		<widget name="speed" position="93,120" size="80,20" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" valign="center" halign="center" transparent="1" zPosition="4" />
 	</screen>
 	<!-- EPG Screens -->
 	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="transparent" transparent="0" flags="wfNoBorder">
