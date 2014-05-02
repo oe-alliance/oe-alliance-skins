@@ -326,9 +326,9 @@
 		<widget name="link2" position="110,265" size="300,30" font="skyreg; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
 		<widget name="description" position="30,300" size="450,30" font="skyreg; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
 		<widget name="description2" position="90,335" size="350,30" font="skyreg; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
-		<widget name="thanks" position="30,370" size="450,30" font="skyreg; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
-		<ePixmap pixmap="buttons/key_menu.png" position="470,663" size="35,25" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="buttons/key_info.png" position="470,690" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="thanks" position="30,370" size="450,70" font="skyreg; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" zPosition="2" transparent="1" />
+		<panel name="MenuMenuButton" />
+		<panel name="MenuInfoButton" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 		<panel name="MenuYellow1Panel" />
@@ -336,7 +336,7 @@
 	</screen>
 	<screen name="Changelog" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater - Changelog" >
 		<panel name="MenuPanel" />
-		<widget name="text" position="15,110" size="496,535" font="skyreg;18" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="text" position="15,110" size="496,535" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
 		<panel name="MenuRed1Panel" />
 	</screen>
 	<screen name="Credits" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater - Credits" >
@@ -351,21 +351,21 @@
 	</screen>
 	<screen name="IPTV" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater" >
 		<panel name="MenuPanel" />
-		<widget name="text1" position="30,125" size="450,30" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" />
-<!--		<widget name="IPTVList" position="30,160" size="400,300" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" />
-		<widget name="country" position="30,465" size="450,300" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" /> -->
-		<ePixmap pixmap="buttons/key_info.png" position="470,690" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="text1" position="center,100" size="450,45" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="IPTVList" render="Listbox" position="center,155" size="400,275" font="skyreg;18" selectionPixmap="Blue-HD/buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="country" position="130,445" size="450,300" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
+		<panel name="MenuInfoButton" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 		<panel name="MenuYellow1Panel" />
 		<panel name="MenuBlue1Panel" />
 	</screen>
-	<screen name="IPTV_mod" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater" >
+	<screen name="IPTV_Mod" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater" >
 		<panel name="MenuPanel" />
-		<widget name="text1" position="30,125" size="450,30" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" />
-<!--		<widget name="IPTVList" position="30,160" size="400,300" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" />
-		<widget name="country" position="30,465" size="450,300" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" scrollbarMode="showOnDemand" /> -->
-		<ePixmap pixmap="buttons/key_info.png" position="470,690" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="text1" position="center,100" size="450,45" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="IPTVList" render="Listbox" position="center,155" size="400,275" font="skyreg;18" selectionPixmap="Blue-HD/buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="country" position="130,445" size="450,300" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
+		<panel name="MenuInfoButton" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 		<panel name="MenuYellow1Panel" />
@@ -381,6 +381,12 @@
 		<panel name="MenuGreen1Panel" />
 		<eLabel text="Cancel" position="75,662" size="100,26" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" zPosition="1" font="skyreg;22" halign="left"/>
 		<eLabel text="Save" position="75,690" size="100,26" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" zPosition="1" font="skyreg;22" halign="left"/>
+	</screen>
+	
+	<!-- ## Sat Keys Updater by rossi2000## -->
+	<screen name="KeyUpdate" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="Sat Keys Updater by rossi2000">
+        <panel name="MenuPanel" />
+        <widget name="myMenu" position="10,107" size="503,430" font="skyreg;18" selectionPixmap="Blue-HD/buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 
 	
