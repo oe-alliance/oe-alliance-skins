@@ -1,10 +1,11 @@
+﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: Nou_HD_Weather vs.3.6 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
+  <!--	Skin: Nou_HD_Weather vs.5.5 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
   <!--	Skin: ViXBMC Vs 1.0 based on ViX-Night-HD Vs 0.39 by AndyBlac @www.world-of-satellite.com	-->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
   <!--	Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
-  <!--	THX AndyBlac, marcus625, Delagroov, Gruffy, Ghost, iMaxxx, Vali and vlamo.  -->
+  <!--	THX AndyBlac, marcus625, Delagroov.  -->
   <!--	## Head ## -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
@@ -69,6 +70,7 @@
     <color name="preTrans70" value="#70ffffff" />
     <color name="preTrans90" value="#90ffffff" />
     <color name="red" value="#27d7361d" />
+    <color name="red1" value="#00d7361d" />
     <color name="redtransparent" value="#084c0000" />
     <color name="secondBG" value="#002b3447" />
     <color name="secondFG" value="#00fcc000" />
@@ -86,7 +88,7 @@
     <color name="un111112" value="#00111112" />
     <color name="un13919191" value="#13919191" />
     <color name="un1481FF" value="#001481ff" />
-    <color name="un1594EF" value="#001594EF" />
+    <color name="un1594EF" value="#001594ef" />
     <color name="un18188b" value="#0018188b" />
     <color name="un181A1C" value="#00181a1c" />
     <color name="un181d20" value="#00181d20" />
@@ -103,6 +105,7 @@
     <color name="un222224" value="#0f222224" />
     <color name="un232325" value="#00232325" />
     <color name="un240256" value="#00240256" />
+    <color name="un242424" value="#00242424" />		
     <color name="un242426" value="#00242426" />
     <color name="un242426transp" value="#0f242426" />
     <color name="un242426transp1" value="#10242426" />
@@ -129,7 +132,7 @@
     <color name="un27ebebeb" value="#27ebebeb" />
     <color name="un28282A" value="#0028282a" />
     <color name="un2A2B2D" value="#002a2b2d" />
-    <color name="un2A7ED7" value="#ff2a7ed7" />
+    <color name="un2A7ED7" value="#002a7ed7" />
     <color name="un2C89B7" value="#002c89b7" />
     <color name="un2D3033" value="#002d3033" />
     <color name="un2D3033transp" value="#0f2d3033" />
@@ -150,12 +153,13 @@
     <color name="un3c3c3c" value="#003c3c3c" />
     <color name="un3d0e82" value="#003d0e82" />
     <color name="un3d3d3d" value="#003d3d3d" />
+	<color name="un42C0FB" value="#0042c0fb" />
     <color name="un444444" value="#00444444" />
     <color name="un486082" value="#00486082" />
     <color name="un4B85CC" value="#ff4b85cc" />
-    <color name="un4CB4FF" value="#004cb4ff" />
     <color name="un4c4c4c" value="#004c4c4c" />
     <color name="un4C4C4E" value="#004c4c4e" />
+    <color name="un4CB4FF" value="#004cb4ff" />
     <color name="un4d5375" value="#004d5375" />
     <color name="un4e5a74" value="#004e5a74" />
     <color name="un5678a4" value="#005678a4" />
@@ -210,7 +214,8 @@
     <color name="unf0b400" value="#00f0b400" />
     <color name="unf0f0f0" value="#00f0f0f0" />
     <color name="unf293d" value="#000f293d" />
-    <color name="unF6EB2" value="#000F6EB2" />
+	<color name="unF6EB2transp" value="#0f0f6eb2" /> 
+    <color name="unF6EB2" value="#000f6eb2" />
     <color name="unfcc000" value="#00fcc000" />
     <color name="unff" value="#000000ff" />
     <color name="unff0000" value="#00ff0000" />
@@ -236,7 +241,7 @@
     <color name="LabelForeground" color="lightgrey" />
     <color name="ListboxBackground" color="background40" />
     <color name="ListboxForeground" color="lightgrey" />
-    <color name="ListboxSelectedBackground" color="unF6EB2" />
+    <color name="ListboxSelectedBackground" color="unF6EB2transp" />
     <color name="ListboxSelectedForeground" color="window-sel-fg" />
     <color name="ListboxMarkedBackground" color="un579ADC" />
     <color name="ListboxMarkedForeground" color="una08500" />
@@ -1169,7 +1174,7 @@
     <widget source="key_red" render="Label" position="30,630" size="170,20" zPosition="1" font="Regular; 18" backgroundColor="background70" transparent="1" foregroundColor="menu-buttons-frgrnd" />
     <eLabel text="Skins" position="58,345" size="120,60" font="arial; 32" backgroundColor="un2D3033" transparent="1" valign="center" zPosition="0" halign="center" foregroundColor="un37ADEA" />
   </screen>
-  <!-- ## Menus ## -->
+  <!-- Menus -->
   <screen name="menu_mainmenu" position="0,0" size="1280,720" title="Main Menu" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="NOVUM_HD_Common/images/nouMain_menu.png" position="0,269" size="1197,402" alphatest="on" transparent="1" zPosition="-1" />
     <ePixmap pixmap="NOVUM_HD_Common/nouhd.png" position="83,500" size="74,59" transparent="1" alphatest="blend" />
