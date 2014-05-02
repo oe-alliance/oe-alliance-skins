@@ -7,8 +7,6 @@
 	
 	<!--  ## Head ##  -->
 	
-	
-	
 	<!-- ## ChannelSelection Panels ## --> 
 	<screen name="ChannelSelectionPicon">
 		<widget source="Service" render="Picon" position="46,20" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="1">
@@ -569,7 +567,5 @@
 		<ePixmap pixmap="Blue-HD/buttons/blue.png" position="880,688" size="25,25" alphatest="blend" transparent="1" />
 		<widget source="key_blue" render="Label" position="920,688" size="240,25" zPosition="1" font="skyreg;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
 	</screen>
-
-
 	
 </skin>
