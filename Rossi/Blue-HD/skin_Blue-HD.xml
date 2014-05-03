@@ -1578,8 +1578,8 @@ self.autoResize()
 		<widget name="timerlist" selectionPixmap="Blue-HD/buttons/FocusBar_H70x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="0" position="10,107" size="503,533" scrollbarMode="showOnDemand" />
 	</screen>
 	<screen name="Volume" position="e-330,10" zPosition="1" size="320,68" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="screens/volume_background.png" position="0,0" size="320,68" alphatest="on" />
-		<widget name="Volume" pixmap="screens/volume_up.png" position="62,14" zPosition="1" size="240,34" transparent="1" />
+		<ePixmap pixmap="screens/volume_background.png" position="0,0" size="320,68" alphatest="blend" />
+		<widget name="Volume" pixmap="screens/volume_up.png" position="62,14" size="240,34" alphatest="blend" transparent="1" zPosition="1" />
 	</screen>
 	<screen name="WebIfConfigScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -2539,7 +2539,7 @@ self.autoResize()
 	</screen>
 	<screen name="VIXAutoStartCam" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="connect" position="220,220" size="64,64" zPosition="2" pixmaps="Blue-HD/images/busy1.png,Blue-HD/images/busy2.png,Blue-HD/images/busy3.png,Blue-HD/images/busy4.png,Blue-HD/images/busy5.png,Blue-HD/images/busy6.png,Blue-HD/images/busy7.png,Blue-HD/images/busy8.png,Blue-HD/images/busy9.png,Blue-HD/images/busy9.png,Blue-HD/images/busy10.png,Blue-HD/images/busy11.png,Blue-HD/images/busy12.png,Blue-HD/images/busy13.png,Blue-HD/images/busy14.png,Blue-HD/images/busy15.png,Blue-HD/images/busy17.png,Blue-HD/images/busy18.png,Blue-HD/images/busy19.png,Blue-HD/images/busy20.png,Blue-HD/images/busy21.png,Blue-HD/images/busy22.png,Blue-HD/images/busy23.png,Blue-HD/images/busy24.png" transparent="1" alphatest="blend" />
+		<widget name="connect" position="220,220" size="64,64" zPosition="2" pixmaps="Blue-HD/spinner/wait1.png,Blue-HD/spinner/wait2.png,Blue-HD/spinner/wait3.png,Blue-HD/spinner/wait4.png,Blue-HD/spinner/wait5.png,Blue-HD/spinner/wait6.png,Blue-HD/spinner/wait7.png,Blue-HD/spinner/wait8.png,Blue-HD/spinner/wait9.png,Blue-HD/spinner/wait10.png,Blue-HD/spinner/wait11.png,Blue-HD/spinner/wait12.png,Blue-HD/spinner/wait13.png,Blue-HD/spinner/wait14.png,Blue-HD/spinner/wait15.png,Blue-HD/spinner/wait16.png" transparent="1" alphatest="blend" />
 		<widget name="lab1" position="10,133" halign="center" size="503,60" zPosition="1" font="skyreg;20" foregroundColor="skygold" backgroundColor="skydarkblue" valign="top" transparent="1" />
 	</screen>
 	<screen name="VIXSoftcamMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -2550,12 +2550,12 @@ self.autoResize()
 	</screen>
 	<screen name="VIXStartCam" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="connect" position="220,220" size="64,64" zPosition="2" pixmaps="Blue-HD/images/busy1.png,Blue-HD/images/busy2.png,Blue-HD/images/busy3.png,Blue-HD/images/busy4.png,Blue-HD/images/busy5.png,Blue-HD/images/busy6.png,Blue-HD/images/busy7.png,Blue-HD/images/busy8.png,Blue-HD/images/busy9.png,Blue-HD/images/busy9.png,Blue-HD/images/busy10.png,Blue-HD/images/busy11.png,Blue-HD/images/busy12.png,Blue-HD/images/busy13.png,Blue-HD/images/busy14.png,Blue-HD/images/busy15.png,Blue-HD/images/busy17.png,Blue-HD/images/busy18.png,Blue-HD/images/busy19.png,Blue-HD/images/busy20.png,Blue-HD/images/busy21.png,Blue-HD/images/busy22.png,Blue-HD/images/busy23.png,Blue-HD/images/busy24.png" transparent="1" alphatest="blend" />
+		<widget name="connect" position="220,220" size="64,64" zPosition="2" pixmaps="Blue-HD/spinner/wait1.png,Blue-HD/spinner/wait2.png,Blue-HD/spinner/wait3.png,Blue-HD/spinner/wait4.png,Blue-HD/spinner/wait5.png,Blue-HD/spinner/wait6.png,Blue-HD/spinner/wait7.png,Blue-HD/spinner/wait8.png,Blue-HD/spinner/wait9.png,Blue-HD/spinner/wait10.png,Blue-HD/spinner/wait11.png,Blue-HD/spinner/wait12.png,Blue-HD/spinner/wait13.png,Blue-HD/spinner/wait14.png,Blue-HD/spinner/wait15.png,Blue-HD/spinner/wait16.png" transparent="1" alphatest="blend" />
 		<widget name="lab1" position="10,133" halign="center" size="503,160" zPosition="1" font="skyreg;20" foregroundColor="skygold" backgroundColor="skydarkblue" valign="top" transparent="1" />
 	</screen>
 	<screen name="VIXStopCam" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="connect" position="220,220" size="64,64" zPosition="2" pixmaps="Blue-HD/images/busy1.png,Blue-HD/images/busy2.png,Blue-HD/images/busy3.png,Blue-HD/images/busy4.png,Blue-HD/images/busy5.png,Blue-HD/images/busy6.png,Blue-HD/images/busy7.png,Blue-HD/images/busy8.png,Blue-HD/images/busy9.png,Blue-HD/images/busy9.png,Blue-HD/images/busy10.png,Blue-HD/images/busy11.png,Blue-HD/images/busy12.png,Blue-HD/images/busy13.png,Blue-HD/images/busy14.png,Blue-HD/images/busy15.png,Blue-HD/images/busy17.png,Blue-HD/images/busy18.png,Blue-HD/images/busy19.png,Blue-HD/images/busy20.png,Blue-HD/images/busy21.png,Blue-HD/images/busy22.png,Blue-HD/images/busy23.png,Blue-HD/images/busy24.png" transparent="1" alphatest="blend" />
+		<widget name="connect" position="220,220" size="64,64" zPosition="2" pixmaps="Blue-HD/spinner/wait1.png,Blue-HD/spinner/wait2.png,Blue-HD/spinner/wait3.png,Blue-HD/spinner/wait4.png,Blue-HD/spinner/wait5.png,Blue-HD/spinner/wait6.png,Blue-HD/spinner/wait7.png,Blue-HD/spinner/wait8.png,Blue-HD/spinner/wait9.png,Blue-HD/spinner/wait10.png,Blue-HD/spinner/wait11.png,Blue-HD/spinner/wait12.png,Blue-HD/spinner/wait13.png,Blue-HD/spinner/wait14.png,Blue-HD/spinner/wait15.png,Blue-HD/spinner/wait16.png" transparent="1" alphatest="blend" />
 		<widget name="lab1" position="10,133" halign="center" size="503,160" zPosition="1" font="skyreg;20" foregroundColor="skygold" backgroundColor="skydarkblue" valign="top" transparent="1" />
 	</screen>
 	<screen name="VIXBackupManager" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
