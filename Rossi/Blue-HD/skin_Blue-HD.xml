@@ -2539,7 +2539,7 @@ self.autoResize()
 	</screen>
 	<screen name="VIXAutoStartCam" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="connect" position="220,220" size="64,64" zPosition="2" pixmaps="Blue-HD/spinner/wait1.png,Blue-HD/spinner/wait2.png,Blue-HD/spinner/wait3.png,Blue-HD/spinner/wait4.png,Blue-HD/spinner/wait5.png,Blue-HD/spinner/wait6.png,Blue-HD/spinner/wait7.png,Blue-HD/spinner/wait8.png,Blue-HD/spinner/wait9.png,Blue-HD/spinner/wait10.png,Blue-HD/spinner/wait11.png,Blue-HD/spinner/wait12.png,Blue-HD/spinner/wait13.png,Blue-HD/spinner/wait14.png,Blue-HD/spinner/wait15.png,Blue-HD/spinner/wait16.png" transparent="1" alphatest="blend" />
+		<widget name="connect" position="220,220" size="106,106" zPosition="2" pixmaps="Blue-HD/spinner/wait1.png,Blue-HD/spinner/wait2.png,Blue-HD/spinner/wait3.png,Blue-HD/spinner/wait4.png,Blue-HD/spinner/wait5.png,Blue-HD/spinner/wait6.png,Blue-HD/spinner/wait7.png,Blue-HD/spinner/wait8.png,Blue-HD/spinner/wait9.png,Blue-HD/spinner/wait10.png,Blue-HD/spinner/wait11.png,Blue-HD/spinner/wait12.png,Blue-HD/spinner/wait13.png,Blue-HD/spinner/wait14.png,Blue-HD/spinner/wait15.png,Blue-HD/spinner/wait16.png" transparent="1" alphatest="blend" />
 		<widget name="lab1" position="10,133" halign="center" size="503,60" zPosition="1" font="skyreg;20" foregroundColor="skygold" backgroundColor="skydarkblue" valign="top" transparent="1" />
 	</screen>
 	<screen name="VIXSoftcamMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -2550,12 +2550,12 @@ self.autoResize()
 	</screen>
 	<screen name="VIXStartCam" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="connect" position="220,220" size="64,64" zPosition="2" pixmaps="Blue-HD/spinner/wait1.png,Blue-HD/spinner/wait2.png,Blue-HD/spinner/wait3.png,Blue-HD/spinner/wait4.png,Blue-HD/spinner/wait5.png,Blue-HD/spinner/wait6.png,Blue-HD/spinner/wait7.png,Blue-HD/spinner/wait8.png,Blue-HD/spinner/wait9.png,Blue-HD/spinner/wait10.png,Blue-HD/spinner/wait11.png,Blue-HD/spinner/wait12.png,Blue-HD/spinner/wait13.png,Blue-HD/spinner/wait14.png,Blue-HD/spinner/wait15.png,Blue-HD/spinner/wait16.png" transparent="1" alphatest="blend" />
+		<widget name="connect" position="220,220" size="106,106" zPosition="2" pixmaps="Blue-HD/spinner/wait1.png,Blue-HD/spinner/wait2.png,Blue-HD/spinner/wait3.png,Blue-HD/spinner/wait4.png,Blue-HD/spinner/wait5.png,Blue-HD/spinner/wait6.png,Blue-HD/spinner/wait7.png,Blue-HD/spinner/wait8.png,Blue-HD/spinner/wait9.png,Blue-HD/spinner/wait10.png,Blue-HD/spinner/wait11.png,Blue-HD/spinner/wait12.png,Blue-HD/spinner/wait13.png,Blue-HD/spinner/wait14.png,Blue-HD/spinner/wait15.png,Blue-HD/spinner/wait16.png" transparent="1" alphatest="blend" />
 		<widget name="lab1" position="10,133" halign="center" size="503,160" zPosition="1" font="skyreg;20" foregroundColor="skygold" backgroundColor="skydarkblue" valign="top" transparent="1" />
 	</screen>
 	<screen name="VIXStopCam" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="connect" position="220,220" size="64,64" zPosition="2" pixmaps="Blue-HD/spinner/wait1.png,Blue-HD/spinner/wait2.png,Blue-HD/spinner/wait3.png,Blue-HD/spinner/wait4.png,Blue-HD/spinner/wait5.png,Blue-HD/spinner/wait6.png,Blue-HD/spinner/wait7.png,Blue-HD/spinner/wait8.png,Blue-HD/spinner/wait9.png,Blue-HD/spinner/wait10.png,Blue-HD/spinner/wait11.png,Blue-HD/spinner/wait12.png,Blue-HD/spinner/wait13.png,Blue-HD/spinner/wait14.png,Blue-HD/spinner/wait15.png,Blue-HD/spinner/wait16.png" transparent="1" alphatest="blend" />
+		<widget name="connect" position="220,220" size="106,106" zPosition="2" pixmaps="Blue-HD/spinner/wait1.png,Blue-HD/spinner/wait2.png,Blue-HD/spinner/wait3.png,Blue-HD/spinner/wait4.png,Blue-HD/spinner/wait5.png,Blue-HD/spinner/wait6.png,Blue-HD/spinner/wait7.png,Blue-HD/spinner/wait8.png,Blue-HD/spinner/wait9.png,Blue-HD/spinner/wait10.png,Blue-HD/spinner/wait11.png,Blue-HD/spinner/wait12.png,Blue-HD/spinner/wait13.png,Blue-HD/spinner/wait14.png,Blue-HD/spinner/wait15.png,Blue-HD/spinner/wait16.png" transparent="1" alphatest="blend" />
 		<widget name="lab1" position="10,133" halign="center" size="503,160" zPosition="1" font="skyreg;20" foregroundColor="skygold" backgroundColor="skydarkblue" valign="top" transparent="1" />
 	</screen>
 	<screen name="VIXBackupManager" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
