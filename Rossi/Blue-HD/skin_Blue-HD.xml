@@ -347,7 +347,7 @@
 		<widget source="Title" render="Label" position="80,496" size="850,43" font="skybold;28" transparent="1" foregroundColor="white" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<widget name="timeline_text" position="100,530" size="1280,30" font="skymed;20" foregroundColor="skylighterblue2" TimelineAlignment="right" transparent="1" zPosition="2" />
 		<widget name="bouquetlist" position="100,555" size="1075,85" font="skyreg;22" itemHeight="42" backgroundColor="skydarkblue" backgroundColorSelected="skygold" foregroundColorSelected="skydarkblue" scrollbarMode="showNever" zPosition="4" transparent="0" />
-		<widget name="list" position="100,555" size="1075,85" ServiceFont="skyreg;22" EntryBackgroundColor="skydarkblue" EntryBackgroundColorSelected="skygold" EntryBackgroundColorNowSelected="skygold" EntryBackgroundColorNow="skydarkblue" ServiceForegroundColorNow="skydarkblue"  ServiceBackgroundColor="skydarkblue"  ServiceBackgroundColorNow="skygold" backgroundColor="skydarkblue" EntryForegroundColorSelected="skydarkblue" EntryForegroundColorNowSelected="skydarkblue" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="1" EntryFontWrap="no" />
+		<widget name="list" position="100,555" size="1075,85" EntryBackgroundColor="skydarkblue" EntryBackgroundColorSelected="skygold" EntryBackgroundColorNowSelected="skygold" EntryBackgroundColorNow="skydarkblue" ServiceForegroundColorNow="skydarkblue"  ServiceBackgroundColor="skydarkblue"  ServiceBackgroundColorNow="skygold" backgroundColor="skydarkblue" EntryForegroundColorSelected="skydarkblue" EntryForegroundColorNowSelected="skydarkblue" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="1" EntryFontWrap="no" />
 <!--		<widget name="timeline_now" position="100,75" zPosition="3" size="19,85" pixmap="epg/timeline-now.png" alphatest="on" /> -->
 		<panel name="ChannelSelectionRedButton" />
 		<panel name="ChannelSelectionGreenButton" />
@@ -734,7 +734,7 @@
 	</screen>
 	<screen name="ChoiceBox" position="center,center" size="520,130" zPosition="5" >
 		<widget name="text" position="0,0" size="520,0" font="skyreg;22" />
-		<widget name="list" position="100,100" size="520,0" enableWrapAround="1" selectionPixmap="Blue-HD/buttons/FocusBar_H25x740.png" />
+		<widget name="list" position="100,100" size="520,0" font="skyreg;22" foregroundColor="white" enableWrapAround="1" selectionPixmap="Blue-HD/buttons/FocusBar_H25x740.png" />
 		<applet type="onLayoutFinish">
 self.autoResize()
 		</applet>
@@ -909,8 +909,11 @@ self.autoResize()
         <panel name="ChannelSelectionTimeDatePanel" />
         <panel name="PlannerText" />		
 		<panel name="PlannerBouquetName" />
-		<widget name="TrashcanSize" position="640,305" size="400,20" font="skyreg;20" foregroundColor="skylighterblue2" backgroundColor="skydarkblue" valign="center" halign="left" zPosition="2" transparent="1" />		
-		<widget name="freeDiskSpace" position="775,305" size="400,20" font="skyreg;20" foregroundColor="skylighterblue2" backgroundColor="skydarkblue" valign="center" halign="right" zPosition="2" transparent="1" />	
+		<widget source="Service" render="Label" font="skyreg;20" position="100,303" size="150,22" foregroundColor="skylighterblue2" backgroundColor="skydarkblue" halign="left" transparent="1">
+			<convert type="MovieInfo">FileSize</convert>
+		</widget>
+		<widget name="TrashcanSize" position="550,303" size="400,22" font="skyreg;20" foregroundColor="skylighterblue2" backgroundColor="skydarkblue" valign="center" halign="left" zPosition="2" transparent="1" />		
+		<widget name="freeDiskSpace" position="775,303" size="400,22" font="skyreg;20" foregroundColor="skylighterblue2" backgroundColor="skydarkblue" valign="center" halign="right" zPosition="2" transparent="1" />	
 		<widget name="waitingtext" position="100,332" size="1075,299" font="skyreg;25" transparent="0" foregroundColor="skylighterblue2" backgroundColor="skydarkblue" halign="center" valign="center" zPosition="4" />
 		<widget name="list" position="100,332" size="1075,310" font="skyreg;25" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="Blue-HD/buttons/FocusBar_H36x1075.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" />
         <panel name="ChannelSelectionRedButton" />
