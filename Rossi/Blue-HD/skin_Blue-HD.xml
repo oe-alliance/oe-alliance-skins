@@ -244,7 +244,7 @@
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 	</screen>
-	<screen name="PVRState" position="0,0" zPosition="2" size="200,200" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
+	<screen name="PVRState" position="0,515" size="150,200" backgroundColor="transparent" flags="wfNoBorder" zPosition="2"transparent="0">
 		<widget name="statusicon" position="15,50" size="125,144" pixmaps="Blue-HD/icons/play_large.png,Blue-HD/icons/pause_large.png,Blue-HD/icons/stop_large.png,Blue-HD/icons/forward_large.png,Blue-HD/icons/backward_large.png,Blue-HD/icons/slow_large.png,Blue-HD/icons/blank.png" zPosition="0" alphatest="blend" />
 		<widget name="speed" position="38,120" size="80,20" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" valign="center" halign="center" transparent="1" zPosition="4" />
 	</screen>
