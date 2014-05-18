@@ -248,6 +248,7 @@
 		<widget name="statusicon" position="15,50" size="125,144" pixmaps="Blue-HD/icons/play_large.png,Blue-HD/icons/pause_large.png,Blue-HD/icons/stop_large.png,Blue-HD/icons/forward_large.png,Blue-HD/icons/backward_large.png,Blue-HD/icons/slow_large.png,Blue-HD/icons/blank.png" zPosition="0" alphatest="blend" />
 		<widget name="speed" position="38,120" size="80,20" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" valign="center" halign="center" transparent="1" zPosition="4" />
 	</screen>
+	
 	<!-- EPG Screens -->
 	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="transparent" transparent="0" flags="wfNoBorder">
 		<ePixmap pixmap="Blue-HD/infobar/setup.png" position="0,0" size="597,720" alphatest="on" zPosition="-1" />
