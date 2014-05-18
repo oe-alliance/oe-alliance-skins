@@ -529,10 +529,10 @@
 		<panel name="MenuInfoText" />
 		<panel name="MenuLISTLog" />
 	</screen>
-	<screen name="AdapterSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AdapterSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="config" position="95,150" size="320,150" transparent="1" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="Red-HD/buttons/FocusBar_H25x322.png" />
-		<eLabel text=" " position="75,318" zPosition="1" size="360,2" backgroundColor="#008c8c8c" />
+		<panel name="MenuSetupText" />
+		<widget name="config" position="140,200" size="600,150" foregroundColor="white" backgroundColor="vmdarkred" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x600.png" transparent="1" zPosition="3" scrollbarMode="showOnDemand" />
 		<widget source="DNS1text" render="Label" position="95,328" size="180,21" zPosition="1" font="vmreg;19" transparent="1" foregroundColor="white" backgroundColor="skydarkblue" />
 		<widget source="DNS2text" render="Label" position="95,358" size="180,21" zPosition="1" font="vmreg;19" transparent="1" foregroundColor="white" backgroundColor="skydarkblue" />
 		<widget source="DNS1" render="Label" position="285,328" size="130,21" zPosition="1" font="vmreg;17" transparent="1" foregroundColor="skygold" backgroundColor="skydarkblue" />
@@ -548,24 +548,22 @@
 		<widget source="Adaptertext" render="Label" position="95,560" size="100,21" zPosition="10" foregroundColor="white" backgroundColor="skydarkblue" font="vmreg;19" transparent="1" />
 		<widget source="Adapter" render="Label" position="180,560" size="235,21" zPosition="10" backgroundColor="window-bg" font="vmreg;19" transparent="1" />
 		<widget source="introduction2" render="Label" position="10,615" size="503,30" font="vmreg;19" halign="center" valign="center" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<widget source="VKeyIcon" render="Pixmap" pixmap="Red-HD/buttons/key_text.png" position="280,663" zPosition="1" size="35,25" transparent="1" alphatest="on">
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget name="HelpWindow" pixmap="Red-HD/buttons/vkey_icon.png" position="100,399" zPosition="1" size="1,1" transparent="1" alphatest="on" />
-		<panel name="MenuRed2Panel" />
-		<panel name="MenuGreen2Panel" />
-		<panel name="MenuBlue2Panel" />
+		<panel name="MenuTextButtonVkey" />
+		<panel name="MenuHelpWindow" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuBlue2Panel" />
 	</screen>
 	<screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
 		<widget name="menulist" position="140,200" size="600,520" itemHeight="35" font="vmreg;24" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
 		<panel name="MenuDESCRIPTIONWidget" />
-		<widget source="IFtext" render="Label" position="780,650" size="100,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1" halign="right" transparent="1" valign="top" />
+		<widget source="IFtext" render="Label" position="780,650" size="100,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1" halign="left" transparent="1" valign="top" />
 		<widget source="IF" render="Label" position="885,650" size="220,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1" halign="left" transparent="1" valign="top" />
-		<widget source="Statustext" render="Label" position="780,690" size="190,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1" halign="left" transparent="1" valign="center" />
-		<widget name="statuspic" position="850,690" size="24,24" pixmaps="Red-HD/buttons/green.png,Red-HD/buttons/button_off.png" alphatest="blend" transparent="1" zPosition="10" />
-	    <panel name="MenuRed2Panel" />
+		<widget source="Statustext" render="Label" position="780,687" size="190,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1" halign="left" transparent="1" valign="center" />
+		<widget name="statuspic" position="830,690" size="24,24" pixmaps="Red-HD/buttons/green.png,Red-HD/buttons/button_off.png" alphatest="blend" transparent="1" zPosition="10" />
+	    <panel name="MenuRed2SourcePanel" />
 	</screen>
 	<screen name="AudioSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
