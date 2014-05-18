@@ -1,0 +1,273 @@
+<skin>
+	<!--  Skin: Red-HD based on ViX-Night-HD Vs 3.01 (Original) by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Red-HD based on ViX-Night-HD by rossi2000 and simonsez -->
+	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
+	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
+	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
+	
+	<!--  ## Head ##  -->
+		
+	<!-- ## Autobouquets 28.2E by Lraizer ## -->
+	<screen name="AutoBouquets" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="AutoBouquets E2 for 28.2E by Lraizer" >
+		<panel name="MenuPanel" />
+        <panel name="MenuSetupText" /> 		
+		<widget name="area" position="260,225" size="140,30" font="vmreg; 24" foregroundColor="white" backgroundColor="black" halign="right" zPosition="3" transparent="1" />
+		<widget name="areavalue" position="410,225" size="205,50" font="vmreg;24" foregroundColor="white" backgroundColor="black" zPosition="3" transparent="1" />
+		<widget name="otherx" position="240,290" size="140,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="right" zPosition="3" transparent="1" />
+		<widget name="otherextra" position="390,290" size="32,32" alphatest="blend" zPosition="3" pixmaps="Red-HD/icons/lock_off.png,Red-HD/icons/lock_on.png"/>
+		<widget name="scriptc" position="420,290" size="140,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="right" zPosition="3" transparent="1" />
+		<widget name="scriptcheck" position="570,290" size="32,32" alphatest="blend" zPosition="3" pixmaps="Red-HD/icons/lock_off.png,Red-HD/icons/lock_on.png"/>
+		<widget name="picons" position="240,330" size="140,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="right" zPosition="3" transparent="1" />
+		<widget name="piconscheck" position="390,330" size="32,32" alphatest="blend" zPosition="3" pixmaps="Red-HD/icons/lock_off.png,Red-HD/icons/lock_on.png"/>
+		<widget name="num" position="420,330" size="140,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="right" zPosition="3" transparent="1" />
+		<widget name="numcheck" position="570,330" size="32,32" alphatest="blend" zPosition="3" pixmaps="Red-HD/icons/lock_off.png,Red-HD/icons/lock_on.png"/>
+		<widget name="nit" position="240,370" size="140,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="right" zPosition="3" transparent="1" />
+		<widget name="nitcheck" position="390,370" size="32,32" alphatest="blend" zPosition="3" pixmaps="Red-HD/icons/lock_off.png,Red-HD/icons/lock_on.png"/>
+		<widget name="placeh" position="420,370" size="140,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="right" zPosition="3" transparent="1" />
+		<widget name="placehcheck" position="570,370" size="32,32" alphatest="blend" zPosition="3" pixmaps="Red-HD/icons/lock_off.png,Red-HD/icons/lock_on.png"/>
+		<widget name="parental" position="240,410" size="140,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="right" zPosition="3" transparent="1" />
+		<widget name="parentalcheck" position="390,410" size="32,32" alphatest="blend" zPosition="3" pixmaps="Red-HD/icons/lock_off.png,Red-HD/icons/lock_on.png"/>
+		<widget name="def" position="420,410" size="140,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="right" zPosition="3" transparent="1" />
+		<widget name="defcheck" position="570,410" size="32,32" alphatest="blend" zPosition="3" pixmaps="Red-HD/icons/lock_off.png,Red-HD/icons/lock_on.png"/>
+		<widget name="ordering" position="240,450" size="140,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="right" zPosition="3" transparent="1" />
+		<widget name="orderingcheck" position="390,450" size="32,32" alphatest="blend" zPosition="3" pixmaps="Red-HD/icons/lock_off.png,Red-HD/icons/lock_on.png"/>
+		<widget name="fta" position="420,450" size="140,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="right" zPosition="3" transparent="1" />
+		<widget name="ftacheck" position="570,450" size="32,32" alphatest="blend" zPosition="3" pixmaps="Red-HD/icons/lock_off.png,Red-HD/icons/lock_on.png"/>
+		<widget name="status" position="240,520" size="140,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="right" zPosition="3" transparent="1" />
+		<widget name="status2" position="390,520" size="205,30" font="vmreg;22" foregroundColor="white" backgroundColor="black" zPosition="3" transparent="1" />
+		<panel name="MenuMenuButton" />
+		<panel name="MenuInfoButton" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+		<panel name="FullScreenMenuBlue2Panel" />
+	</screen>
+	<screen name="AutoBouquetsMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuCONFIGWidget" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+	</screen>
+	<screen name="AutoBouquetsLogView" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuInfoText" />
+		<panel name="MenuLISTLog" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+	</screen>
+	<screen name="AutoBouquetsAbout" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuInfoText" />
+		<widget name="about" position="140,200" size="600,520" font="vmreg;22" itemHeight="28" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="5" />
+		<panel name="MenuRed1Panel" />
+	</screen>
+	<screen name="AutoBouquetsDownloader" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="CrossEPGDownloadBar" />
+	</screen>
+	
+	<!-- ## AutoBouquetsMaker ## -->
+    <screen name="AutoBouquetsMaker" position="0,0" size="1280,720" title="CrossEPG" flags="wfNoBorder" backgroundColor="transparent" >
+	    <panel name="CrossEPGDownloadBar" />
+	</screen>
+	<screen name="AutoBouquetsMaker_Menu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<widget source="list" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" >
+			<convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (555,38), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 1 ) ],
+				"fonts": [gFont("vmreg",28)],
+				"itemHeight": 38
+				}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="AutoBouquetsMaker_ProvidersSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<panel name="MenuCONFIGWidget" />
+		<panel name="MenuDESCRIPTIONWidget" />
+		<panel name="MenuPLEASEWAITWidget" />
+	</screen>
+	<screen name="AutoBouquetsMaker_Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<panel name="MenuCONFIGWidget" />
+		<panel name="MenuDESCRIPTIONWidget" />
+		<panel name="MenuPLEASEWAITWidget" />
+	</screen>
+	<screen name="AutoBouquetsMaker_Ordering" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<panel name="MenuYellow1Panel" />
+		<panel name="MenuBlue1Panel" />
+		<widget source="list" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (10, 1), size = (440, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					],
+					"fonts": [gFont("vmreg", 28)],
+					"itemHeight": 38
+				}
+			</convert>
+		</widget>
+		<panel name="MenuPLEASEWAITWidget" />
+	</screen>
+	<screen name="AutoBouquetsMaker_Providers" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<widget source="list" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
+					MultiContentEntryText(pos = (450, 0), size = (120, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					],
+					"fonts": [gFont("vmreg", 28)],
+					"itemHeight": 38
+				}
+			</convert>
+		</widget>
+		<panel name="MenuPLEASEWAITWidget" />
+	</screen>
+	<screen name="AutoBouquetsMaker_HideSections" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<widget source="list" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (10, 5), size = (32, 32), png = 0),
+					MultiContentEntryText(pos = (45, 0), size = (225, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (260, 0), size = (225, 38), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_TOP, text = 2),
+					],
+					"fonts": [gFont("vmreg", 28)],
+					"itemHeight": 38
+				}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="AutoBouquetsMaker_KeepBouquets" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<widget source="list" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (10, 5), size = (32, 32), png = 0),
+					MultiContentEntryText(pos = (45, 0), size = (200, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (260, 0), size = (225, 28), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_TOP, text = 2),
+					],
+					"fonts": [gFont("vmreg", 28)],
+					"itemHeight": 38
+				}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="AutoBouquetsMaker_Log" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuInfoText" />
+		<panel name="MenuLISTLog" />
+	</screen>
+	<screen name="AutoBouquetsMaker_About" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuInfoText" />
+		<panel name="MenuRed1Panel" />
+		<widget name="about" position="140,200" size="600,520" font="vmreg;22" itemHeight="28" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
+	</screen>
+	
+	<!-- ## FastScan ## -->
+	<screen name="FastScanScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuCONFIGWidget" />
+		<panel name="MenuINTRODUCTIONWidget" />
+	</screen>
+	<screen name="FastScanStatus" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuInfoText" />
+		<widget name="scan_state" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" baeckgroundColor="black" transparent="1" zPosition="1"  />
+		<widget name="scan_progress" position="760,685" size="400,30" pixmap="progress_big.png" borderWidth="2" borderColor="black" />
+	</screen>
+	
+	<!-- ## IPTV List Updater by Nobody and Satinfo## 
+	<screen name="Start" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater" >
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<widget name="title" position="110,125" size="300,30" font="vmreg;24" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
+		<widget name="maintain" position="110,195" size="300,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
+		<widget name="link1" position="110,230" size="300,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
+		<widget name="link2" position="110,265" size="300,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
+		<widget name="description" position="30,300" size="450,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
+		<widget name="description2" position="90,335" size="350,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
+		<widget name="thanks" position="30,370" size="450,70" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
+		<panel name="MenuMenuButton" />
+		<panel name="MenuInfoButton" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+		<panel name="FullScreenMenuBlue2Panel" />
+	</screen>
+	<screen name="Changelog" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater - Changelog" >
+		<panel name="MenuPanel" />
+		<panel name="MenuInfoText" />
+		<widget name="text" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" />
+		<panel name="MenuRed1Panel" />
+	</screen>
+	<screen name="Credits" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater - Credits" >
+		<panel name="MenuPanel" />
+		<panel name="MenuInfoText" />
+		<widget name="text" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" />
+		<panel name="MenuRed1Panel" />
+	</screen>
+	<screen name="FAQ" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater - FAQ" >
+		<panel name="MenuPanel" />
+		<panel name="MenuInfoText" />
+		<widget name="text" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" />
+		<panel name="MenuRed1Panel" />
+	</screen>
+	<screen name="IPTV" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater" >
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<widget name="text1" position="center,220" size="450,30" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" valign="center" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="IPTVList" render="Listbox" position="center,260" size="400,260" font="vmreg;22" selectionPixmap="Red-HD/buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="country" position="130,520" size="450,300" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" />
+		<panel name="MenuInfoButton" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+		<panel name="FullScreenMenuBlue2Panel" />
+	</screen>
+	<screen name="IPTV_Mod" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater" >
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<widget name="text1" position="center,220" size="450,30" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" valign="center" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="IPTVList" render="Listbox" position="center,260" size="400,260" font="vmreg;22" selectionPixmap="Red-HD/buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="country" position="130,520" size="450,300" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" />
+		<panel name="MenuInfoButton" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+		<panel name="FullScreenMenuBlue2Panel" />
+	</screen> -->
+			
+	<!-- ## Sat Keys Updater by rossi2000## -->
+	<screen name="KeyUpdate" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="Sat Keys Updater by rossi2000">
+        <panel name="MenuPanel" />
+		<panel name="MenuSetupText" /> 	
+        <widget name="myMenu" position="140,200" size="600,520" font="vmreg;24" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" halign="center" valign="center" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
+	    <applet type="onLayoutFinish">
+			self["myMenu"].instance.setItemHeight(35)
+		</applet>
+	</screen>
+	
+</skin>
