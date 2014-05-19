@@ -11,7 +11,7 @@
 	<screen name="LanguageSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<widget source="languages" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/buttons/FocusBar_H45x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3">
+		<widget source="languages" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H45x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (100,0), size = (360,44), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the language name,
@@ -279,9 +279,9 @@
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 	</screen>
-	<screen name="PVRState" position="0,0" size="250,250" backgroundColor="transparent" flags="wfNoBorder" transparent="0" zPosition="2">
-		<widget name="statusicon" position="70,50" size="125,144" pixmaps="Red-HD/icons/play_large.png,Red-HD/icons/pause_large.png,Red-HD/icons/stop_large.png,Red-HD/icons/forward_large.png,Red-HD/icons/backward_large.png,Red-HD/icons/slow_large.png,Red-HD/icons/blank.png" zPosition="2" alphatest="blend" />
-		<widget name="speed" position="93,120" size="80,20" font="vmreg;18" foregroundColor="white" backgroundColor="vmdarkred" valign="center" halign="center" transparent="1" zPosition="4" />
+	<screen name="PVRState" position="50,0" size="220,40" backgroundColor="transparent" flags="wfNoBorder" transparent="0" zPosition="3">
+		<widget name="statusicon" position="51,0" size="218,35" pixmaps="Red-HD/icons/play_large.png,Red-HD/icons/pause_large.png,Red-HD/icons/stop_large.png,Red-HD/icons/forward_large.png,Red-HD/icons/backward_large.png,Red-HD/icons/slow_large.png,Red-HD/icons/blank.png" zPosition="2" alphatest="blend" />
+		<widget name="speed" position="100,5" size="80,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" valign="center" halign="center" transparent="1" zPosition="4" />
 	</screen>
 	<!-- EPG Screens -->
 	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="transparent" transparent="0" flags="wfNoBorder">
@@ -533,21 +533,20 @@
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
 		<widget name="config" position="140,200" size="600,150" foregroundColor="white" backgroundColor="vmdarkred" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x600.png" transparent="1" zPosition="3" scrollbarMode="showOnDemand" />
-		<widget source="DNS1text" render="Label" position="95,328" size="180,21" zPosition="1" font="vmreg;19" transparent="1" foregroundColor="white" backgroundColor="skydarkblue" />
-		<widget source="DNS2text" render="Label" position="95,358" size="180,21" zPosition="1" font="vmreg;19" transparent="1" foregroundColor="white" backgroundColor="skydarkblue" />
-		<widget source="DNS1" render="Label" position="285,328" size="130,21" zPosition="1" font="vmreg;17" transparent="1" foregroundColor="skygold" backgroundColor="skydarkblue" />
-		<widget source="DNS2" render="Label" position="285,358" size="130,21" zPosition="1" font="vmreg;17" transparent="1" foregroundColor="skygold" backgroundColor="skydarkblue" />
-		<eLabel text=" " position="75,388" zPosition="1" size="360,2" backgroundColor="#008c8c8c" />
-		<widget source="introduction" render="Label" position="95,398" size="320,20" font="vmreg;19" halign="center" transparent="1" foregroundColor="white" backgroundColor="skydarkblue" />
-		<widget source="IPtext" render="Label" position="95,428" size="180,21" zPosition="1" font="vmreg;19" transparent="1" foregroundColor="white" backgroundColor="skydarkblue" />
-		<widget source="Netmasktext" render="Label" position="95,451" size="180,21" zPosition="1" font="vmreg;19" transparent="1" foregroundColor="white" backgroundColor="skydarkblue" />
-		<widget source="Gatewaytext" render="Label" position="95,474" size="180,21" zPosition="1" font="vmreg;19" transparent="1" foregroundColor="white" backgroundColor="skydarkblue" />
-		<widget source="IP" render="Label" position="285,428" size="130,21" zPosition="1" font="vmreg;19" transparent="1" foregroundColor="skygold" backgroundColor="skydarkblue" />
-		<widget source="Mask" render="Label" position="285,451" size="130,21" zPosition="1" font="vmreg;19" transparent="1" foregroundColor="skygold" backgroundColor="skydarkblue" />
-		<widget source="Gateway" render="Label" position="285,474" size="130,21" zPosition="1" font="vmreg;19" transparent="1" foregroundColor="skygold" backgroundColor="skydarkblue" />
-		<widget source="Adaptertext" render="Label" position="95,560" size="100,21" zPosition="10" foregroundColor="white" backgroundColor="skydarkblue" font="vmreg;19" transparent="1" />
-		<widget source="Adapter" render="Label" position="180,560" size="235,21" zPosition="10" backgroundColor="window-bg" font="vmreg;19" transparent="1" />
-		<widget source="introduction2" render="Label" position="10,615" size="503,30" font="vmreg;19" halign="center" valign="center" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
+		<widget source="DNS1text" render="Label" position="295,378" size="180,21" zPosition="3" font="vmreg;19" transparent="1" foregroundColor="white" backgroundColor="black" />
+		<widget source="DNS2text" render="Label" position="295,408" size="180,21" zPosition="3" font="vmreg;19" transparent="1" foregroundColor="white" backgroundColor="black" />
+		<widget source="DNS1" render="Label" position="485,378" size="130,21" zPosition="3" font="vmreg;17" transparent="1" foregroundColor="skygold" backgroundColor="black" />
+		<widget source="DNS2" render="Label" position="485,408" size="130,21" zPosition="3" font="vmreg;17" transparent="1" foregroundColor="skygold" backgroundColor="black" />
+		<widget source="introduction" render="Label" position="295,445" size="320,30" font="vmreg;22" halign="center" transparent="1" foregroundColor="white" backgroundColor="black" zPosition="3" />
+		<widget source="IPtext" render="Label" position="295,478" size="180,21" zPosition="3" font="vmreg;19" transparent="1" foregroundColor="white" backgroundColor="black" />
+		<widget source="Netmasktext" render="Label" position="295,501" size="180,21" zPosition="3" font="vmreg;19" transparent="1" foregroundColor="white" backgroundColor="black" />
+		<widget source="Gatewaytext" render="Label" position="295,524" size="180,21" zPosition="3" font="vmreg;19" transparent="1" foregroundColor="white" backgroundColor="black" />
+		<widget source="IP" render="Label" position="485,478" size="130,21" zPosition="3" font="vmreg;19" transparent="1" foregroundColor="skygold" backgroundColor="black" />
+		<widget source="Mask" render="Label" position="485,501" size="130,21" zPosition="3" font="vmreg;19" transparent="1" foregroundColor="skygold" backgroundColor="black" />
+		<widget source="Gateway" render="Label" position="485,524" size="130,21" zPosition="3" font="vmreg;19" transparent="1" foregroundColor="skygold" backgroundColor="black" />
+		<widget source="Adaptertext" render="Label" position="295,610" size="100,21" zPosition="10" foregroundColor="white" backgroundColor="black" font="vmreg;19" transparent="1" />
+		<widget source="Adapter" render="Label" position="380,610" size="235,21" zPosition="10" backgroundColor="window-bg" font="vmreg;19" transparent="1" />
+		<widget source="introduction2" render="Label" position="780,340" size="450,110" font="vmreg;24" halign="center" valign="center" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" />
 		<panel name="MenuTextButtonVkey" />
 		<panel name="MenuHelpWindow" />
 		<panel name="FullScreenMenuRed2Panel" />
@@ -559,10 +558,10 @@
 		<panel name="MenuSetupText" />
 		<widget name="menulist" position="140,200" size="600,520" itemHeight="35" font="vmreg;24" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
 		<panel name="MenuDESCRIPTIONWidget" />
-		<widget source="IFtext" render="Label" position="780,650" size="100,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1" halign="left" transparent="1" valign="top" />
-		<widget source="IF" render="Label" position="885,650" size="220,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1" halign="left" transparent="1" valign="top" />
-		<widget source="Statustext" render="Label" position="780,687" size="190,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1" halign="left" transparent="1" valign="center" />
-		<widget name="statuspic" position="830,690" size="24,24" pixmaps="Red-HD/buttons/green.png,Red-HD/buttons/button_off.png" alphatest="blend" transparent="1" zPosition="10" />
+		<widget source="IFtext" render="Label" position="180,650" size="100,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1" halign="left" transparent="1" valign="top" />
+		<widget source="IF" render="Label" position="285,650" size="220,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1" halign="left" transparent="1" valign="top" />
+		<widget source="Statustext" render="Label" position="180,687" size="190,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1" halign="left" transparent="1" valign="center" />
+		<widget name="statuspic" position="230,690" size="24,24" pixmaps="Red-HD/buttons/green.png,Red-HD/buttons/button_off.png" alphatest="blend" transparent="1" zPosition="10" />
 	    <panel name="MenuRed2SourcePanel" />
 	</screen>
 	<screen name="AudioSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -1231,41 +1230,41 @@ self.autoResize()
 	<screen name="Satfinder" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<ePixmap pixmap="icons/dish_scan.png" position="40,143" size="119,110" transparent="1" alphatest="blend" zPosition="3" />
-		<widget source="Frontend" render="Label" position="235,133" size="195,20" font="vmreg;19" foregroundColor="white" backgroundColor="black" transparent="1" halign="center" valign="center" zPosition="3" >
+		<ePixmap pixmap="icons/dish_scan.png" position="140,243" size="119,110" transparent="1" alphatest="blend" zPosition="3" />
+		<widget source="Frontend" render="Label" position="335,233" size="195,20" font="vmreg;19" foregroundColor="white" backgroundColor="black" transparent="1" halign="center" valign="center" zPosition="3" >
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
-		<eLabel name="snr" text="SNR:" position="170,158" size="60,22" font="vmreg;22" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
-		<widget source="Frontend" render="Progress" position="235,158" size="195,20" pixmap="bar_snr.png" borderWidth="2" borderColor="window-fg" zPosition="3">
+		<eLabel name="snr" text="SNR:" position="270,258" size="60,22" font="vmreg;22" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget source="Frontend" render="Progress" position="335,258" size="195,20" pixmap="bar_snr.png" borderWidth="2" borderColor="window-fg" zPosition="3">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="435,158" size="60,22" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" >
+		<widget source="Frontend" render="Label" position="535,258" size="60,22" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" >
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<eLabel name="agc" text="AGC:" position="170,183" size="60,22" font="vmreg;22" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
-		<widget source="Frontend" render="Progress" position="235,183" size="195,20" pixmap="bar_snr.png" borderWidth="2" borderColor="window-fg" zPosition="3">
+		<eLabel name="agc" text="AGC:" position="270,283" size="60,22" font="vmreg;22" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget source="Frontend" render="Progress" position="335,283" size="195,20" pixmap="bar_snr.png" borderWidth="2" borderColor="window-fg" zPosition="3">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="435,183" size="60,22" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" >
+		<widget source="Frontend" render="Label" position="535,283" size="60,22" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" >
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<eLabel name="ber" text="BER:" position="170,208" size="60,22" font="vmreg;22" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
-		<widget source="Frontend" render="Progress" position="235,208" size="195,20" pixmap="bar_ber.png" borderWidth="2" borderColor="window-fg" zPosition="3">
+		<eLabel name="ber" text="BER:" position="270,308" size="60,22" font="vmreg;22" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget source="Frontend" render="Progress" position="335,308" size="195,20" pixmap="bar_ber.png" borderWidth="2" borderColor="window-fg" zPosition="3">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="435,208" size="60,22" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" >
+		<widget source="Frontend" render="Label" position="535,308" size="60,22" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" >
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
-		<eLabel name="lock" text="Lock:" position="170,238" size="60,22" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" halign="right" zPosition="3"/>
-		<widget source="Frontend" render="Pixmap" pixmap="icons/lock_on.png" position="235,235" size="38,31" alphatest="blend" zPosition="3">
+		<eLabel name="lock" text="Lock:" position="270,338" size="60,22" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" halign="right" zPosition="3"/>
+		<widget source="Frontend" render="Pixmap" pixmap="icons/lock_on.png" position="334,336" size="38,31" alphatest="blend" zPosition="3">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="Frontend" render="Pixmap" pixmap="icons/lock_off.png" position="235,235" size="38,31" alphatest="blend" zPosition="3">
+		<widget source="Frontend" render="Pixmap" pixmap="icons/lock_off.png" position="334,336" size="38,31" alphatest="blend" zPosition="3">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
-		<widget name="config" position="140,288" size="455,340" font="vmreg;24" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
+		<widget name="config" position="140,388" size="600,335" font="vmreg;24" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
 		<panel name="MenuINTRODUCTIONWidget" />
 		<applet type="onLayoutFinish">
 			self["config"].instance.setItemHeight(35)
@@ -1273,6 +1272,7 @@ self.autoResize()
 	</screen>
 	<screen name="ScanSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
 		<panel name="MenuCONFIGWidget" />
 		<panel name="MenuINTRODUCTIONWidget" />
 		<panel name="MenuRed1SourcePanel" />
@@ -1280,6 +1280,7 @@ self.autoResize()
 	</screen>
 	<screen name="ScanSimple" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
 		<panel name="MenuCONFIGWidget" />
 		<widget name="footer" position="10,565" size="503,40" font="vmreg;20" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="center" />
 		<panel name="MenuRed1SourcePanel" />
@@ -1287,26 +1288,32 @@ self.autoResize()
 	</screen>
 	<screen name="RemoteControlCode" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
 		<panel name="MenuCONFIGWidget" />
 		<panel name="MenuRed1SourcePanel" />
 		<panel name="MenuGreen1SourcePanel" />
 	</screen>
-	<screen name="RCSetupScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="RCSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="config" position="10,107" size="503,495" selectionPixmap="Red-HD/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
-		<ePixmap pixmap="Red-HD/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="cancel" position="75,663" size="190,24" zPosition="1" font="vmreg;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd1" />
-		<ePixmap pixmap="Red-HD/buttons/green.png" position="40,690" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="ok" position="75,690" size="190,24" zPosition="1" font="vmreg;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd2" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuCONFIGWidget" />
+		<ePixmap pixmap="Red-HD/buttons/red.png" position="555,160" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="cancel" position="590,160" size="60,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
+		<ePixmap pixmap="Red-HD/buttons/green.png" position="670,160" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="ok" position="705,160" size="60,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
 	</screen>
-	<screen name="FPGAUpgrade" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="FPGAUpgrade" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget source="status" render="Label" position="20,107" size="503,40" zPosition="1" font="vmreg;18" halign="left" valign="center" transparent="1" />
-		<widget name="file_list" position="10,147" size="503,495" selectionPixmap="Red-HD/buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
-		<panel name="MenuRed2Panel" />
-		<panel name="MenuGreen2Panel" />
-		<panel name="MenuYellow2Panel" />
-		<panel name="MenuBlue2Panel" />
+		<panel name="MenuSetupText" />
+		<widget source="status" render="Label" position="760,685" size="503,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1" halign="left" valign="center" transparent="1" />
+		<widget name="file_list" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+		<panel name="FullScreenMenuBlue2Panel" />
+		<applet type="onLayoutFinish">
+			self["file_list"].instance.setItemHeight(35)
+		</applet>
 	</screen>
 	<screen name="ManualFancontrol" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -1320,37 +1327,43 @@ self.autoResize()
 			<widget source="SensorFan0" render="Label" position="145,590" zPosition="1" size="150,20" font="vmreg;20" halign="left" >
 				<convert type="SensorToText"></convert>
 			</widget>
-		<panel name="MenuRed2Panel" />
-		<panel name="MenuGreen2Panel" />
+		<panel name="MenuRed1SourcePanel" />
+		<panel name="MenuGreen1SourcePanel" />
 	</screen>
-	<screen name="FanSetupConfiguration" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="FanSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="config" position="10,107" size="503,495" selectionPixmap="Red-HD/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
-		<panel name="MenuRed2Panel" />
-		<panel name="MenuGreen2Panel" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuCONFIGWidget" />
+		<panel name="MenuRed1SourcePanel" />
+		<panel name="MenuGreen1SourcePanel" />
 	</screen>
-	<screen name="VFD_GigaSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="VFD_Giga Setup" >
+	<screen name="VFD_GigaSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="VFD_Giga Setup" >
 		<panel name="MenuPanel" />
-		<widget name="config" position="10,107" size="503,533" selectionPixmap="Red-HD/buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuCONFIGWidget" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 	</screen>
-	<screen name="TunerServer" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="TunerServer" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	    <panel name="MenuPanel" />
 		<widget name="lab1" position="15,100" size="503,510" selectionPixmap="Red-HD/buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" font="vmreg;20" scrollbarMode="showOnDemand" />
 		<widget name="lab2" position="10,610" size="200,30" font="vmreg;20" valign="center" halign="right" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
 		<widget name="labstop" position="220,610" size="260,30" font="vmreg;20" valign="center" halign="center" backgroundColor="red"/>
 		<widget name="labrun" position="220,610" size="260,30" zPosition="1" font="vmreg;20" valign="center" halign="center" backgroundColor="green"/>
-		<panel name="MenuPanel" />
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
-		<panel name="MenuYellow1Panel" />
+		
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
 	</screen>
-	<screen name="OpenWebifConfig" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="OpenWebifConfig" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="lab1" position="10,107" halign="center" size="503,30" zPosition="1" font="vmreg;24" valign="top" transparent="0" />
-		<widget name="config" selectionPixmap="Red-HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,147" size="503,493" scrollbarMode="showOnDemand" />
+		<widget name="lab1" position="140,227" size="600,30" font="vmreg;22" halign="center" valign="top" transparent="1" zPosition="1" />
+		<widget name="config" position="140,267" size="600,493" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
+		<applet type="onLayoutFinish">
+			self["config"].instance.setItemHeight(35)
+		</applet>
 	</screen>
 	<screen name="Scart" position="0,0" size="1280,720" backgroundColor="transparent" />
 	<screen name="ServiceInfoSimple" position="center,center" size="650,300" title="Service info">
@@ -1588,17 +1601,18 @@ self.autoResize()
 		<panel name="MenuRed2Panel" />
 	</screen>
 	<screen name="SoftwareUpdateChanges" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
-		<ePixmap pixmap="Red-HD/infobar/setup.png" position="0,0" size="597,720" alphatest="on" zPosition="-1" />
-		<widget source="Title" render="Label" position="40,25" size="800,43" font="vmreg;32" transparent="1" foregroundColor="white" backgroundColor="skydarkblue" zPosition="1" />
-		<widget name="text" position="10,84" size="573,575" font="vmreg;20" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-	</screen>
-	<screen name="SoftwareUpdateChoices" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="list" position="10,107" size="503,200" itemHeight="28" font="vmreg;22" selectionPixmap="Red-HD/buttons/FocusBar_H30x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
-		<widget name="text" position="15,310" size="495,200" font="vmreg;22" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" halign="center" />
+		<panel name="MenuInfoText" />
+		<widget name="text" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+	</screen>
+	<screen name="SoftwareUpdateChoices" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<widget name="list" position="140,220" size="600,220" itemHeight="30" font="vmreg;24" selectionPixmap="Red-HD/selectionbars/SelectionBar_H30x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
+		<widget name="text" position="145,460" size="600,200" font="vmreg;24" foregroundColor="white" backgroundColor="black" transparent="1" halign="center" zPosition="3" />
 	</screen>
 	<screen name="PluginManager" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -1674,12 +1688,13 @@ self.autoResize()
 		<panel name="MenuRed2Panel" />
 		<panel name="MenuGreen2Panel" />
 	</screen>
-	<screen name="UpdatePlugin" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="UpdatePlugin" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="activityslider" position="10,140" size="503,5" transparent="1" />
-		<widget source="package" render="Label" position="10,160" size="503,20" font="vmreg;18" halign="center" valign="center" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
-		<widget source="status" render="Label" position="10,190" size="503,95" font="vmreg;20" halign="center" valign="center" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="slider" position="10,300" size="503,30" transparent="1" />
+		<panel name="MenuInfoText" />
+		<widget name="activityslider" position="340,240" size="400,5" transparent="1" zPosition="3" />
+		<widget source="package" render="Label" position="140,260" size="600,30" font="vmreg;22" halign="center" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget source="status" render="Label" position="140,300" size="600,95" font="vmreg;20" halign="center" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget name="slider" position="340,410" size="400,30" transparent="1" zPosition="3" />
 	</screen>
 	<screen name="IPKGMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />

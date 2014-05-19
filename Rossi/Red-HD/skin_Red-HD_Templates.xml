@@ -332,7 +332,7 @@
 		<widget name="description" position="780,340" size="450,110" font="vmreg;24" foregroundColor="white" backgroundColor="vmdarkred" halign="center" valign="top" transparent="1" zPosition="1" />
 	</screen>
 	<screen name="MenuINTRODUCTIONWidget">
-		<widget source="introduction" render="Label" position="780,340" size="450,110" font="vmreg;24" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="center" valign="center" zPosition="1"/>
+		<widget source="introduction" render="Label" position="780,340" size="450,110" font="vmreg;24" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="center" valign="top" zPosition="1"/>
 	</screen>
 	<screen name="MenuFOOTNOTEWidget">
 		<widget name="footnote" position="760,685" size="350,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="top" zPosition="1" />
