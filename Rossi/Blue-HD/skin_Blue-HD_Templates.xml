@@ -33,7 +33,7 @@
 		</widget>	
 	</screen>
 	<screen name="ChannelSelectionProgramNowStartTime">
-		<widget source="Event" render="Label" position="43,93" size="75,30" halign="right" foregroundColor="skylighterblue2" backgroundColor="black" font="skyreg;26" noWrap="1" transparent="1">
+		<widget source="Event" render="Label" position="43,93" size="80,30" halign="right" foregroundColor="skylighterblue2" backgroundColor="black" font="skyreg;26" noWrap="1" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>	
