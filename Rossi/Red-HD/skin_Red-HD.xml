@@ -30,7 +30,7 @@
 		<panel name="MenuHomeText" />	
 		<widget source="menu" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3">
 			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,0), size = (555,38), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 0	) ],
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (555,37), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 0	) ],
 				"fonts": [gFont("vmreg",28)],
 				"itemHeight": 38
 				}
@@ -1094,16 +1094,16 @@ self.autoResize()
 		<widget source="nimlist" render="Listbox" position="140,200" size="600,520" foregroundColor="white" backgroundColor="vmdarkred" selectionPixmap="Red-HD/selectionbars/SelectionBar_H85x600.png" transparent="1" scrollbarMode="showOnDemand" zPosition="3">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (5,0), size = (493,25), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
-				MultiContentEntryText(pos = (5,25), size = (493,60), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+				MultiContentEntryText(pos = (15,3), size = (550,25), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
+				MultiContentEntryText(pos = (15,25), size = (550,60), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
 				],
 				"fonts": [gFont("vmreg",20), gFont("vmreg",17)],
 				"itemHeight": 85
 				}
 			</convert>
 		</widget>
-		<panel name="MenuRed2Panel" />
-		<panel name="MenuGreen2Panel" />
+		<panel name="MenuRed1SourcePanel" />
+		<panel name="MenuGreen1SourcePanel" />
 	</screen>
 	<screen name="NimSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -1231,41 +1231,41 @@ self.autoResize()
 	<screen name="Satfinder" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<ePixmap pixmap="icons/dish_scan.png" position="140,243" size="119,110" transparent="1" alphatest="blend" zPosition="3" />
-		<widget source="Frontend" render="Label" position="335,233" size="195,20" font="vmreg;19" foregroundColor="white" backgroundColor="black" transparent="1" halign="center" valign="center" zPosition="3" >
+		<ePixmap pixmap="icons/dish_scan.png" position="170,243" size="119,110" transparent="1" alphatest="blend" zPosition="3" />
+		<widget source="Frontend" render="Label" position="365,233" size="195,20" font="vmreg;19" foregroundColor="white" backgroundColor="black" transparent="1" halign="center" valign="center" zPosition="3" >
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
-		<eLabel name="snr" text="SNR:" position="270,258" size="60,22" font="vmreg;22" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
-		<widget source="Frontend" render="Progress" position="335,258" size="195,20" pixmap="bar_snr.png" borderWidth="2" borderColor="window-fg" zPosition="3">
+		<eLabel name="snr" text="SNR:" position="300,258" size="60,22" font="vmreg;22" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget source="Frontend" render="Progress" position="365,258" size="195,20" pixmap="bar_snr.png" borderWidth="2" borderColor="window-fg" zPosition="3">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="535,258" size="60,22" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" >
+		<widget source="Frontend" render="Label" position="565,258" size="60,22" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" >
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<eLabel name="agc" text="AGC:" position="270,283" size="60,22" font="vmreg;22" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
-		<widget source="Frontend" render="Progress" position="335,283" size="195,20" pixmap="bar_snr.png" borderWidth="2" borderColor="window-fg" zPosition="3">
+		<eLabel name="agc" text="AGC:" position="300,283" size="60,22" font="vmreg;22" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget source="Frontend" render="Progress" position="365,283" size="195,20" pixmap="bar_snr.png" borderWidth="2" borderColor="window-fg" zPosition="3">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="535,283" size="60,22" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" >
+		<widget source="Frontend" render="Label" position="565,283" size="60,22" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" >
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<eLabel name="ber" text="BER:" position="270,308" size="60,22" font="vmreg;22" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
-		<widget source="Frontend" render="Progress" position="335,308" size="195,20" pixmap="bar_ber.png" borderWidth="2" borderColor="window-fg" zPosition="3">
+		<eLabel name="ber" text="BER:" position="300,308" size="60,22" font="vmreg;22" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget source="Frontend" render="Progress" position="365,308" size="195,20" pixmap="bar_ber.png" borderWidth="2" borderColor="window-fg" zPosition="3">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="535,308" size="60,22" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" >
+		<widget source="Frontend" render="Label" position="565,308" size="60,22" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" >
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
-		<eLabel name="lock" text="Lock:" position="270,338" size="60,22" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" halign="right" zPosition="3"/>
-		<widget source="Frontend" render="Pixmap" pixmap="icons/lock_on.png" position="334,336" size="38,31" alphatest="blend" zPosition="3">
+		<eLabel name="lock" text="Lock:" position="300,338" size="60,22" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" halign="right" zPosition="3"/>
+		<widget source="Frontend" render="Pixmap" pixmap="icons/lock_on.png" position="364,336" size="38,31" alphatest="blend" zPosition="3">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="Frontend" render="Pixmap" pixmap="icons/lock_off.png" position="334,336" size="38,31" alphatest="blend" zPosition="3">
+		<widget source="Frontend" render="Pixmap" pixmap="icons/lock_off.png" position="364,336" size="38,31" alphatest="blend" zPosition="3">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
-		<widget name="config" position="140,388" size="600,335" font="vmreg;24" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
+		<widget name="config" position="140,388" size="600,335" font="vmreg;24" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
 		<panel name="MenuINTRODUCTIONWidget" />
 		<applet type="onLayoutFinish">
 			self["config"].instance.setItemHeight(35)
@@ -1283,7 +1283,7 @@ self.autoResize()
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuCONFIGWidget" />
-		<widget name="footer" position="10,565" size="503,40" font="vmreg;20" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="center" />
+		<widget name="footer" position="780,340" size="450,110" font="vmreg;24" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="center" />
 		<panel name="MenuRed1SourcePanel" />
 		<panel name="MenuGreen1SourcePanel" />
 	</screen>
@@ -1444,9 +1444,10 @@ self.autoResize()
 			<convert type="ServiceName">Name</convert>
 		</widget>
 	</screen>
-	<screen name="Subtitles" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="Subtitles" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="config" position="10,107" size="503,494" itemHeight="36" selectionPixmap="Red-HD/buttons/FocusBar_H36x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuCONFIGWidget" />
 	</screen>
 	<screen name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent" />
 	<screen name="TempFanControl" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" >
@@ -1568,9 +1569,10 @@ self.autoResize()
 		<ePixmap pixmap="screens/volume_background.png" position="0,0" size="320,68" alphatest="blend" />
 		<widget name="Volume" pixmap="screens/volume_up.png" position="62,14" size="240,34" alphatest="blend" transparent="1" zPosition="1" />
 	</screen>
-	<screen name="WebIfConfigScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="WebIfConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="config" selectionPixmap="Red-HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,107" size="503,533" scrollbarMode="showOnDemand" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuCONFIGWidget" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 	</screen>
@@ -1697,10 +1699,10 @@ self.autoResize()
 	<screen name="UpdatePlugin" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuInfoText" />
-		<widget name="activityslider" position="340,240" size="400,5" transparent="1" zPosition="3" />
+		<widget name="activityslider" position="240,240" size="400,5" pixmap="Red-HD/infobar/moviebarprogressbar.png" transparent="0" zPosition="3" />
 		<widget source="package" render="Label" position="140,260" size="600,30" font="vmreg;22" halign="center" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
 		<widget source="status" render="Label" position="140,300" size="600,95" font="vmreg;20" halign="center" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
-		<widget name="slider" position="340,410" size="400,30" transparent="1" zPosition="3" />
+		<widget name="slider" position="240,410" size="400,30" transparent="1" zPosition="3" />
 	</screen>
 	<screen name="IPKGMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -2242,27 +2244,28 @@ self.autoResize()
 		<panel name="MenuSetupText" />
 		<widget name="nimlist" position="140,200" size="600,520" itemHeight="45" selectionPixmap="Red-HD/selectionbars/SelectionBar_H45x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
 	</screen>
-	<screen name="PositionerSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="Positioner setup" >
+	<screen name="PositionerSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="Positioner setup" >
 		<panel name="MenuPanel" />
-		<widget name="list" position="25,133" size="458,210" selectionPixmap="Red-HD/buttons/FocusBar_H25x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" zPosition="1" />
-		<widget name="snr_db" position="80,355" size="120,22" halign="center" valign="center" font="vmreg;19" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<eLabel text="SNR:" position="25,380" size="50,22" font="vmreg;19" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<eLabel text="BER:" position="25,405" size="50,22" font="vmreg;19" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<eLabel text="Lock:" position="25,430" size="50,22" font="vmreg;19" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="snr_percentage" position="205,380" size="60,22" font="vmreg;19" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="ber_value" position="205,405" size="60,22" font="vmreg;20" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="lock_state" position="80,430" size="120,22" font="vmreg;19" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="snr_bar" position="80,380" size="120,22" backgroundColor="skydarkblue" transparent="1" borderWidth="2" borderColor="window-fg" />
-		<widget name="ber_bar" position="80,405" size="120,22" backgroundColor="skydarkblue" transparent="1" borderWidth="2" borderColor="window-fg" />
-		<eLabel text="Frequency:" position="275,380" size="105,22" font="vmreg;19" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<eLabel text="Symbolrate:" position="275,405" size="105,22" font="vmreg;19" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<eLabel text="FEC:" position="275,430" size="105,22" font="vmreg;19" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="frequency_value" position="385,380" size="95,22" font="vmreg;19" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="symbolrate_value" position="385,405" size="95,22" font="vmreg;19" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="fec_value" position="385,430" size="95,22" font="vmreg;21" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<eLabel text="Polarisation:" position="275,455" size="105,22" font="vmreg;19" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="polarisation" position="385,455" size="95,22" font="vmreg;19" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="status_bar" position="25,600" size="458,24" halign="center" foregroundColor="white" backgroundColor="skydarkblue" zPosition="1" transparent="1" font="vmreg;21" />
+		<panel name="MenuSetupText" />
+		<widget name="list" position="140,223" size="600,210" font="vmreg;22" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
+		<widget name="snr_db" position="195,445" size="120,22" halign="center" valign="center" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<eLabel text="SNR:" position="140,470" size="50,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<eLabel text="BER:" position="140,495" size="50,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<eLabel text="Lock:" position="140,530" size="50,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget name="snr_percentage" position="320,470" size="60,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget name="ber_value" position="320,495" size="60,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget name="lock_state" position="195,520" size="120,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget name="snr_bar" position="195,470" size="120,22" backgroundColor="black" transparent="1" borderWidth="2" borderColor="vmdarkred" zPosition="3" />
+		<widget name="ber_bar" position="195,495" size="120,22" backgroundColor="black" transparent="1" borderWidth="2" borderColor="vmdarkred" zPosition="3" />
+		<eLabel text="Frequency:" position="390,470" size="105,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<eLabel text="Symbolrate:" position="390,495" size="105,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<eLabel text="FEC:" position="390,520" size="105,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget name="frequency_value" position="500,470" size="95,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget name="symbolrate_value" position="500,495" size="95,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget name="fec_value" position="500,520" size="95,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<eLabel text="Polarisation:" position="390,545" size="105,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget name="polarisation" position="500,545" size="95,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget name="status_bar" position="140,690" size="600,24" font="vmreg;20" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
 		<panel name="FullScreenMenuRed2Panel" />
 		<panel name="FullScreenMenuGreen2Panel" />
 		<panel name="FullScreenMenuYellow2Panel" />
@@ -2927,7 +2930,7 @@ self.autoResize()
 		<panel name="FullScreenMenuYellow2Panel" />
 		<panel name="FullScreenMenuBlue2Panel" />
 	</screen>
-	<screen name="MultiQuickButton" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="MultiQuickButton" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="MultiQuickButton">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuLISTWidget" />
