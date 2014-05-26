@@ -152,19 +152,19 @@
 		<widget source="session.CurrentService" render="Label" position="160,512" size="102,35" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="center" valign="center" >
 			<convert type="PliExtraInfo">OrbitalPosition</convert>
 		</widget>
-		<eLabel text="SNR" position="151,602" size="50,22" font="vmbold;19" foregroundColor="white" backgroundColor="black" transparent="1" halign="right" valign="center" noWrap="1" />
-		<widget source="session.FrontendStatus" render="Label" position="213,603" size="80,22" font="vmreg;19" foregroundColor="white" backgroundColor="black" halign="left" valign="center" transparent="1" noWrap="1">
+		<eLabel text="SNR" position="151,604" size="50,22" font="vmbold;19" foregroundColor="white" backgroundColor="black" transparent="1" halign="right" valign="center" noWrap="1" />
+		<widget source="session.FrontendStatus" render="Label" position="213,605" size="80,22" font="vmreg;19" foregroundColor="white" backgroundColor="black" halign="left" valign="center" transparent="1" noWrap="1">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<eLabel text="AGC" position="151,645" size="50,22" font="vmbold;19" foregroundColor="white" backgroundColor="black" transparent="1" halign="right" valign="center" noWrap="1" />
 		<widget source="session.FrontendStatus" render="Label" position="213,646" size="80,22" font="vmreg;19" foregroundColor="white" backgroundColor="black" halign="left" valign="center" transparent="1" noWrap="1">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<widget name="epg_description" position="288,520" size="450,125" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="left" valign="top" transparent="1" zPosition="2" />
+		<widget name="epg_description" position="288,515" size="450,125" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="left" valign="top" transparent="1" zPosition="2" />
         <widget source="session.CurrentService" render="Label" position="722,515" size="390,55" font="vmreg;22" foregroundColor="vmgrey" backgroundColor="black" transparent="1" halign="right" valign="top">
 			<convert type="PliExtraInfo">TransponderInfo2line</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="vmreg;22" position="720,610" size="390,55" foregroundColor="vmgrey" backgroundColor="black" halign="right" valign="top" transparent="1" noWrap="1" zPosition="1" >
+		<widget source="session.CurrentService" render="Label" font="vmreg;22" position="720,615" size="390,55" foregroundColor="vmgrey" backgroundColor="black" halign="right" valign="top" transparent="1" noWrap="1" zPosition="1" >
 			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
 		<eLabel text="UP NEXT" position="288,647" size="150,25" font="vmbold;22" foregroundColor="vmgrey" backgroundColor="black" halign="left" valign="center" transparent="1" zPosition="1"/>
@@ -511,7 +511,7 @@
 	<screen name="Devices" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuInfoText" />
-		<widget source="TunerHeader" render="Label" position="140,227" size="458,36" font="vmbold;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget source="TunerHeader" render="Label" position="140,222" size="458,36" font="vmbold;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
 		<widget source="nims" render="Label" position="140,242" size="458,142" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" enableWrapAround="0"/>
 		<widget source="HDDHeader" render="Label" position="140,384" size="458,36" font="vmbold;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
 		<widget source="hdd" render="Label" position="140,409" size="458,175" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" enableWrapAround="0"/>
@@ -947,34 +947,34 @@ self.autoResize()
 		</widget>
 		<panel name="MenuINTRODUCTIONWidget" />
 	</screen>
-	<screen name="NetworkAdapterTest" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="NetworkAdapterTest" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="Adaptertext" position="10,176" size="120,26" zPosition="1" font="vmreg;21" backgroundColor="skydarkblue" foregroundColors="white,white" transparent="1" />
-		<widget name="Adapter" position="130,176" size="200,26" zPosition="1" font="vmreg;21" halign="right" foregroundColors="#cccccc,#a72c25,#5d984d" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="AdapterInfo_Text" position="385,176" size="150,26" zPosition="2" font="vmreg;21" backgroundColor="window-bg" transparent="1" foregroundColors="#18000000,#cccccc,#446bb7" text="Info" />
-		<widget name="AdapterInfo_OK" pixmap="icons/lock_on.png" position="340,173" size="38,31" alphatest="blend" zPosition="2" />
-		<widget name="Networktext" position="10,248" size="120,26" zPosition="1" font="vmreg;21" backgroundColor="skydarkblue" foregroundColors="white,white" transparent="1" />
-		<widget name="Network" position="130,248" size="200,26" zPosition="1" font="vmreg;21" halign="right" foregroundColors="#cccccc,#a72c25,#5d984d" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="NetworkInfo_Text" position="385,248" size="150,26" zPosition="2" font="vmreg;21" backgroundColor="window-bg" transparent="1" foregroundColors="#18000000,#cccccc,#446bb7" text="Info" />
-		<widget name="NetworkInfo_Check" pixmaps="icons/lock_on.png,icons/lock_error.png" position="340,245" size="38,31" alphatest="blend" zPosition="2" />
-		<widget name="Dhcptext" position="10,320" size="120,26" zPosition="1" font="vmreg;21" backgroundColor="skydarkblue" foregroundColors="white,white" transparent="1" />
-		<widget name="Dhcp" position="130,320" size="200,26" zPosition="1" font="vmreg;24" halign="right" foregroundColors="#cccccc,#a72c25,#5d984d" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="DhcpInfo_Text" position="385,320" size="150,26" zPosition="2" font="vmreg;21" backgroundColor="window-bg" transparent="1" foregroundColors="#18000000,#cccccc,#446bb7" text="Info" />
-		<widget name="DhcpInfo_Check" pixmaps="icons/lock_on.png,icons/lock_error.png" position="340,317" size="38,31" alphatest="blend" zPosition="2" />
-		<widget name="IPtext" position="10,392" size="120,26" zPosition="1" font="vmreg;21" backgroundColor="skydarkblue" foregroundColors="white,white" transparent="1" />
-		<widget name="IP" position="130,392" size="200,26" zPosition="1" font="vmreg;21" halign="right" foregroundColors="#cccccc,#a72c25,#5d984d" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="IPInfo_Text" position="385,392" size="150,26" zPosition="2" font="vmreg;21" backgroundColor="window-bg" transparent="1" foregroundColors="#18000000,#cccccc,#446bb7" text="Info" />
-		<widget name="IPInfo_Check" pixmaps="icons/lock_on.png,icons/lock_error.png" position="340,389" size="38,31" alphatest="blend" zPosition="2" />
-		<widget name="DNStext" position="10,464" size="120,26" zPosition="1" font="vmreg;21" backgroundColor="skydarkblue" foregroundColors="white,white" transparent="1" />
-		<widget name="DNS" position="130,464" size="200,26" zPosition="1" font="vmreg;21" halign="right" foregroundColors="#cccccc,#a72c25,#5d984d" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="DNSInfo_Text" position="385,464" size="150,26" zPosition="2" font="vmreg;21" backgroundColor="window-bg" transparent="1" foregroundColors="#18000000,#cccccc,#446bb7" text="Info" />
-		<widget name="DNSInfo_Check" pixmaps="icons/lock_on.png,icons/lock_error.png" position="340,461" size="38,31" alphatest="blend" zPosition="2" />
-		<widget name="EditSettingsButton" pixmaps="Red-HD/buttons/button_bluekey.png,Red-HD/buttons/button_bluekey.png" position="250,531" zPosition="1" size="222,36" transparent="1" alphatest="blend" />
-		<widget name="EditSettings_Text" position="280,535" size="160,26" zPosition="2" font="vmreg;24" backgroundColor="#00868686" halign="center" transparent="1" foregroundColors="#1c1c1c,#1c1c1c,#07255d" />
-		<widget name="InfoText" position="10,160" size="503,430" zPosition="25" backgroundColor="black" font="vmreg;21" />
-		<panel name="FullScreenMenuRedPanel" />
-		<panel name="FullScreenMenuGreenPanel" />
-		<panel name="FullScreenMenuYellowPanel" />
+		<widget name="Adaptertext" position="210,276" size="120,26" zPosition="3" font="vmreg;21" backgroundColor="black" foregroundColors="white,white" transparent="1" />
+		<widget name="Adapter" position="330,276" size="200,26" zPosition="3" font="vmreg;21" halign="right" foregroundColors="#cccccc,#a72c25,#5d984d" backgroundColor="black" transparent="1" />
+		<widget name="AdapterInfo_Text" position="585,276" size="150,26" zPosition="3" font="vmreg;21" backgroundColor="window-bg" transparent="1" foregroundColors="#919598,#cccccc,#ffffff" text="Info" />
+		<widget name="AdapterInfo_OK" pixmap="icons/lock_on.png" position="545,273" size="38,31" alphatest="blend" zPosition="3" />
+		<widget name="Networktext" position="210,348" size="120,26" zPosition="3" font="vmreg;21" backgroundColor="black" foregroundColors="white,white" transparent="1" />
+		<widget name="Network" position="330,348" size="200,26" zPosition="3" font="vmreg;21" halign="right" foregroundColors="#cccccc,#a72c25,#5d984d" backgroundColor="black" transparent="1" />
+		<widget name="NetworkInfo_Text" position="585,348" size="150,26" zPosition="3" font="vmreg;21" backgroundColor="window-bg" transparent="1" foregroundColors="#919598,#cccccc,#ffffff" text="Info" />
+		<widget name="NetworkInfo_Check" pixmaps="icons/lock_on.png,icons/lock_error.png" position="545,345" size="38,31" alphatest="blend" zPosition="3" />
+		<widget name="Dhcptext" position="210,420" size="120,26" zPosition="3" font="vmreg;21" backgroundColor="black" foregroundColors="white,white" transparent="1" />
+		<widget name="Dhcp" position="330,420" size="200,26" zPosition="3" font="vmreg;24" halign="right" foregroundColors="#cccccc,#a72c25,#5d984d" backgroundColor="black" transparent="1" />
+		<widget name="DhcpInfo_Text" position="585,420" size="150,26" zPosition="3" font="vmreg;21" backgroundColor="black" transparent="1" foregroundColors="#919598,#cccccc,#ffffff" text="Info" />
+		<widget name="DhcpInfo_Check" pixmaps="icons/lock_on.png,icons/lock_error.png" position="545,419" size="38,31" alphatest="blend" zPosition="3" />
+		<widget name="IPtext" position="210,492" size="120,26" zPosition="3" font="vmreg;21" backgroundColor="black" foregroundColors="white,white" transparent="1" />
+		<widget name="IP" position="330,492" size="200,26" zPosition="3" font="vmreg;21" halign="right" foregroundColors="#cccccc,#a72c25,#5d984d" backgroundColor="black" transparent="1" />
+		<widget name="IPInfo_Text" position="585,492" size="150,26" zPosition="3" font="vmreg;21" backgroundColor="window-bg" transparent="1" foregroundColors="#919598,#cccccc,#ffffff" text="Info" />
+		<widget name="IPInfo_Check" pixmaps="icons/lock_on.png,icons/lock_error.png" position="545,489" size="38,31" alphatest="blend" zPosition="3" />
+		<widget name="DNStext" position="210,564" size="120,26" zPosition="3" font="vmreg;21" backgroundColor="black" foregroundColors="white,white" transparent="1" />
+		<widget name="DNS" position="330,564" size="200,26" zPosition="3" font="vmreg;21" halign="right" foregroundColors="#cccccc,#a72c25,#5d984d" backgroundColor="black" transparent="1" />
+		<widget name="DNSInfo_Text" position="585,564" size="150,26" zPosition="3" font="vmreg;21" backgroundColor="window-bg" transparent="1" foregroundColors="#919598,#cccccc,#ffffff" text="Info" />
+		<widget name="DNSInfo_Check" pixmaps="icons/lock_on.png,icons/lock_error.png" position="545,561" size="38,31" alphatest="blend" zPosition="3" />
+		<widget name="EditSettingsButton" pixmaps="Red-HD/buttons/blue.png,Red-HD/buttons/blue.png" position="250,635" zPosition="3" size="25,25" transparent="1" alphatest="blend" />
+		<widget name="EditSettings_Text" position="285,635" size="160,26" zPosition="3" font="vmreg;22" backgroundColor="black" halign="left" transparent="1" foregroundColors="#1c1c1c,#1c1c1c,#ffffff" />
+		<widget name="InfoText" position="140,200" size="600,520" zPosition="5" backgroundColor="black" font="vmreg;22" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
 	</screen>
 	<screen name="NetworkMountsMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />

@@ -259,6 +259,260 @@
 		<panel name="FullScreenMenuYellow2Panel" />
 		<panel name="FullScreenMenuBlue2Panel" />
 	</screen> -->
+	
+	<!-- ## OnDemand ## -->
+	<screen name="OnDemand_Screen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/ondemandmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<widget name="PlayerList" position="160,91" size="220,573" selectionPixmap="Blue-HD/buttons/FocusBar_H106x503.png" transparent="1" scrollbarMode="showOnDemand" />
+		<panel name="MenuMenuButton" />
+		<panel name="MenuInfoButton" />
+	</screen>	
+	<screen name="OnDemand_About" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/ondemandmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<widget name="about" position="10,107" size="503,533" font="vmreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<panel name="MenuRed1Panel" />
+	</screen>
+	<screen name="OnDemandScreenSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/ondemandsetupmenu.png" position="0,0" size="597,720" alphatest="on" zPosition="-1" />
+		<widget name="config" position="10,107" size="573,500" font="vmreg;19" selectionPixmap="Blue-HD/buttons/FocusBar_H25x670.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+	</screen>
+	<screen name="BBCiMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/bbciplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="bbcpink" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="bbcpink" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget name="BBCiMenu" position="100,332" size="1075,310" font="vmreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="BBCiStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/bbciplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="bbcpink" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="bbcpink" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget source="Title" render="Label" position="80,268" size="850,43" font="vmbold;26" foregroundColor="white" backgroundColor="bbcpink" transparent="1" />
+		<widget name="lab1" position="100,332" size="1075,310" font="vmreg;24" foregroundColor="bbcpink" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" zPosition="5" />
+		<widget name="list" position="100,332" size="1075,310" font="vmreg;24" scrollbarMode="showOnDemand" transparent="1" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(78)
+		</applet>
+	</screen>
+	<screen name="ITVplayer" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/itvplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="itvblack" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="itvblack" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget name="ITVMenu" position="100,332" size="1075,310" font="vmreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="ITVStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/itvplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="itvblack" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="itvblack" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget source="Title" render="Label" position="80,268" size="850,43" font="vmbold;26" foregroundColor="white" backgroundColor="itvblack" transparent="1" />
+		<widget name="lab1" position="100,332" size="1075,310" font="vmreg;24" foregroundColor="itvblack" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" zPosition="5" />
+		<widget name="list" position="100,332" size="1075,310" font="vmreg;24" scrollbarMode="showOnDemand" transparent="1" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(78)
+		</applet>
+	</screen>
+	<screen name="fourODMainMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/4odmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="4odblue" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="4odblue" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget name="fourODMainMenu" position="100,332" size="1075,310" font="vmreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="4ODStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/4odmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="4odblue" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="4odblue" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget source="Title" render="Label" position="80,268" size="850,43" font="vmbold;26" foregroundColor="white" backgroundColor="4odblue" transparent="1" />
+		<widget name="lab1" position="100,332" size="1075,310" font="vmreg;24" foregroundColor="white" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" zPosition="5" />
+		<widget name="list" position="100,332" size="1075,310" font="vmreg;24" scrollbarMode="showOnDemand" transparent="1" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(78)
+		</applet>
+	</screen>
+	<screen name="threeMainMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/3playermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="threepurple" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="threepurple" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget name="threeMainMenu" position="100,332" size="1075,310" font="vmreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="TV3StreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/3playermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="threepurple" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="threepurple" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget source="Title" render="Label" position="80,268" size="850,43" font="vmbold;26" foregroundColor="white" backgroundColor="threepurple" transparent="1" />
+		<widget name="lab1" position="100,332" size="1075,310" font="vmreg;24" foregroundColor="white" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" zPosition="5" />
+		<widget name="list" position="100,332" size="1075,310" font="vmreg;24" scrollbarMode="showOnDemand" transparent="1" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(78)
+		</applet>
+	</screen>
+	<screen name="RTEMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/rteplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="rteyellow" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="rteyellow" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget name="RTEMenu" position="100,332" size="1075,310" font="vmreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="RTEStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/rteplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="rteyellow" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="rteyellow" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget source="Title" render="Label" position="80,268" size="850,43" font="vmbold;26" foregroundColor="white" backgroundColor="black" transparent="1" />
+		<widget name="lab1" position="100,332" size="1075,310" font="vmreg;24" foregroundColor="rteyellow" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" zPosition="5" />
+		<widget name="list" position="100,332" size="1075,310" font="vmreg;24" scrollbarMode="showOnDemand" transparent="1" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(78)
+		</applet>
+	</screen>
+	<screen name="iViewMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/iviewmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="iviewlightblue" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="iviewlightblue" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget name="iViewMenu" position="100,332" size="1075,310" font="vmreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="ABCiViewStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/iviewmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="iviewlightblue" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="iviewlightblue" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget source="Title" render="Label" position="80,268" size="850,43" font="vmbold;26" foregroundColor="white" backgroundColor="black" transparent="1" />
+		<widget name="lab1" position="100,332" size="1075,310" font="vmreg;24" foregroundColor="iviewlightblue" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" zPosition="5" />
+		<widget name="list" position="100,332" size="1075,310" font="vmreg;24" scrollbarMode="showOnDemand" transparent="1" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(78)
+		</applet>
+	</screen>
+	<screen name="iRadioMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/radioplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="radiolightblue" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="radiolightblue" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget name="iRadioMenu" position="100,332" size="1075,310" font="vmreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="RadioFavStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/radioplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="radiolightblue" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="radiolightblue" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget source="Title" render="Label" position="80,268" size="850,43" font="vmbold;26" foregroundColor="white" backgroundColor="radiolightblue" transparent="1" />
+		<widget name="lab1" position="100,332" size="1075,310" font="vmreg;24" foregroundColor="white" backgroundColor="radiolightblue" halign="center" valign="center" transparent="1" zPosition="5" />
+		<widget name="list" position="100,332" size="1075,310" font="vmreg;24" foregroundColor="white" scrollbarMode="showOnDemand" transparent="1" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(78)
+		</applet>
+	</screen>
+	<screen name="shoutGenresMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/shoutcastmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="shoutcastorange" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="shoutcastorange" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget name="shoutGenresMenu" position="100,332" size="1075,310" font="vmreg;19" itemHeight="28" foregroundColor="black" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="shoutSubGenresMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/shoutcastmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="shoutcastorange" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="shoutcastorange" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget name="shoutSubGenresMenu" position="100,332" size="1075,310" font="vmreg;19" itemHeight="28" foregroundColor="black" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="ShoutStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/shoutcastmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="shoutcastorange" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="shoutcastorange" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget source="Title" render="Label" position="80,268" size="850,43" font="vmbold;26" foregroundColor="shoutcastorange" backgroundColor="white" transparent="1" />
+		<widget name="lab1" position="100,332" size="1075,310" font="vmreg;24" foregroundColor="black" backgroundColor="white" halign="center" valign="center" transparent="1" zPosition="5" />
+		<widget name="list" position="100,332" size="1075,310" font="vmreg;24" foregroundColor="black" backgroundColor="white" scrollbarMode="showOnDemand" transparent="1" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(78)
+		</applet>
+	</screen>
+	<screen name="tuneinGenresMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/tuneinmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="tuneinwhite" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="tuneinwhite" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget name="tuneinGenresMenu" position="100,332" size="1075,310" font="vmreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="TuneinStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Blue-HD/ondemand/tuneinmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="vmreg;25" foregroundColor="tuneinwhite" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1105,238" size="125,25" font="vmreg;25" foregroundColor="tuneinwhite" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a %d/%m</convert>
+		</widget>
+		<widget source="Title" render="Label" position="80,268" size="850,43" font="vmbold;26" foregroundColor="white" backgroundColor="black" transparent="1" />
+		<widget name="lab1" position="100,332" size="1075,310" font="vmreg;24" foregroundColor="tuneinwhite" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" zPosition="5" />
+		<widget name="list" position="100,332" size="1075,310" font="vmreg;24" scrollbarMode="showOnDemand" transparent="1" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(78)
+		</applet>
+	</screen>
 			
 	<!-- ## Sat Keys Updater by rossi2000## -->
 	<screen name="KeyUpdate" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="Sat Keys Updater by rossi2000">

@@ -9,12 +9,12 @@
 	
 	<!-- ## Channel Selection ## -->
 	<screen name="ChannelSelectionRedButton">
-		<ePixmap pixmap="Red-HD/buttons/red.png" position="215,110" size="35,25" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="250,110" size="50,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />	
+		<ePixmap pixmap="Red-HD/buttons/red.png" position="220,110" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="255,110" size="50,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />	
 	</screen>
 	<screen name="ChannelSelectionGreenButton">
-		<ePixmap pixmap="Red-HD/buttons/green.png" position="290,110" size="35,25" alphatest="blend" transparent="1" />
-		<widget name="key_green" position="320,110" size="100,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
+		<ePixmap pixmap="Red-HD/buttons/green.png" position="295,110" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_green" position="325,110" size="100,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
 	</screen>
 	<screen name="ChannelSelectionYellowButton">
 		<ePixmap pixmap="Red-HD/buttons/yellow.png" position="420,110" size="35,25" alphatest="blend" transparent="1" />
@@ -148,19 +148,19 @@
 		</widget>	
 	</screen>
 	<screen name="EPGPIGSelectionProgramNowStartTime">
-		<widget source="Event" render="Label" position="160,70" size="75,30" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="vmdarkred" halign="right" noWrap="1" transparent="1">
+		<widget source="Event" render="Label" position="160,70" size="75,30" font="vmreg;25" foregroundColor="white" backgroundColor="vmdarkred" halign="right" noWrap="1" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>	
 	</screen>
 	<screen name="EPGPIGSelectionProgramNowEndTime">
-		<widget source="Event" render="Label" position="211,70" size="100,30" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="vmdarkred" halign="right" noWrap="1" transparent="1">
+		<widget source="Event" render="Label" position="211,70" size="100,30" font="vmreg;25" foregroundColor="white" backgroundColor="vmdarkred" halign="right" noWrap="1" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>	
 	</screen>
 	<screen name="EPGPIGSelectionProgramNowRemainingTime">
-	<widget source="Event" render="Label" position="345,70" size="130,30" font="vmreg;25" halign="left" valign="center" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" noWrap="1">
+	<widget source="Event" render="Label" position="345,70" size="130,30" font="vmreg;25" halign="left" valign="center" foregroundColor="vmlightred" backgroundColor="vmdarkred" transparent="1" noWrap="1">
             <convert type="EventTime">Remaining</convert>
             <convert type="RemainingToText">InMinutes</convert>
         </widget>
@@ -174,30 +174,30 @@
 		<widget source="Title" render="Label" position="46,282" size="850,43" font="vmbold;25" transparent="1" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1" />	
 	</screen>
 	<screen name="EPGPIGSelectionRedButton">
-		<ePixmap pixmap="Red-HD/buttons/red.png" position="100,656" size="35,25" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="140,655" size="240,25" foregroundColor="white" backgroundColor="vmdarkred" font="vmreg;22" halign="left" transparent="1" valign="center" noWrap="1" zPosition="1" />	
+		<ePixmap pixmap="Red-HD/buttons/red.png" position="50,656" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="90,655" size="240,25" foregroundColor="white" backgroundColor="vmdarkred" font="vmreg;22" halign="left" transparent="1" valign="center" noWrap="1" zPosition="1" />	
 	</screen>
 	<screen name="EPGPIGSelectionGreenButton">
-		<ePixmap pixmap="Red-HD/buttons/green.png" position="390,656" size="35,25" alphatest="blend" transparent="1" />
-		<widget name="key_green" position="430,655" size="240,25" foregroundColor="white" backgroundColor="vmdarkred" font="vmreg;22" halign="left" transparent="1" valign="center" noWrap="1" zPosition="1" />
+		<ePixmap pixmap="Red-HD/buttons/green.png" position="290,656" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_green" position="330,655" size="240,25" foregroundColor="white" backgroundColor="vmdarkred" font="vmreg;22" halign="left" transparent="1" valign="center" noWrap="1" zPosition="1" />
 	</screen>
 	<screen name="EPGPIGSelectionYellowButton">
-		<ePixmap pixmap="Red-HD/buttons/yellow.png" position="680,656" size="35,25" alphatest="blend" transparent="1" />
-		<widget name="key_yellow" position="720,655" size="240,25" foregroundColor="white" backgroundColor="vmdarkred" font="vmreg;22" halign="left" transparent="1" valign="center" noWrap="1" zPosition="1" />	
+		<ePixmap pixmap="Red-HD/buttons/yellow.png" position="580,656" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_yellow" position="620,655" size="240,25" foregroundColor="white" backgroundColor="vmdarkred" font="vmreg;22" halign="left" transparent="1" valign="center" noWrap="1" zPosition="1" />	
 	</screen>
 	<screen name="EPGPIGSelectionBlueButton">
-		<ePixmap pixmap="Red-HD/buttons/blue.png" position="970,656" size="35,25" alphatest="blend" transparent="1" />
-		<widget name="key_blue" position="1010,655" size="240,25" foregroundColor="white" backgroundColor="vmdarkred" font="vmreg;22" halign="left" transparent="1" valign="center" noWrap="1" zPosition="1" />	
+		<ePixmap pixmap="Red-HD/buttons/blue.png" position="870,656" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_blue" position="910,655" size="240,25" foregroundColor="white" backgroundColor="vmdarkred" font="vmreg;22" halign="left" transparent="1" valign="center" noWrap="1" zPosition="1" />	
 	</screen>
 	<screen name="EPGPIGSelectionChangeBouquetText">
-		<ePixmap pixmap="buttons/arrowright.png" position="669,685" size="25,25" zPosition="3" alphatest="blend" />
-		<ePixmap pixmap="buttons/arrowleft.png" position="694,685" size="25,25" zPosition="3" alphatest="blend" />
-		<eLabel text="Change Bouquet" position="725,685" size="170,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="buttons/arrowright.png" position="699,685" size="25,25" zPosition="3" alphatest="blend" />
+		<ePixmap pixmap="buttons/arrowleft.png" position="724,685" size="25,25" zPosition="3" alphatest="blend" />
+		<eLabel text="Change Bouquet" position="755,685" size="170,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="EPGPIGSelectionChangeDayText">
-		<ePixmap pixmap="buttons/chup.png" position="959,685" size="25,25" zPosition="3" alphatest="blend" />
-		<ePixmap pixmap="buttons/chdown.png" position="984,685" size="25,25" zPosition="3" alphatest="blend" />
-		<eLabel text="Change Day" position="1015,685" size="170,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>	
+		<ePixmap pixmap="buttons/chup.png" position="989,685" size="25,25" zPosition="3" alphatest="blend" />
+		<ePixmap pixmap="buttons/chdown.png" position="1014,685" size="25,25" zPosition="3" alphatest="blend" />
+		<eLabel text="Change Day" position="1045,685" size="170,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>	
 	</screen>
 	
 	<!-- ## EventView Panels ## -->
@@ -367,7 +367,6 @@
             <convert type="ServicePosition">Remaining</convert>
         </widget>
 	</screen>
-	
 	
 	<!-- ## Planner Selection ## -->
 	<screen name="PlannerRedButton">
