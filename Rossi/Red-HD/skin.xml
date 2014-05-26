@@ -17,9 +17,6 @@
 	<fonts>
 	    <font name="vmreg" filename="/usr/share/enigma2/Red-HD/fonts/VMReg.ttf" scale="100" />		
 		<font name="vmbold" filename="/usr/share/enigma2/Red-HD/fonts/VMBold.ttf" scale="100" />
-	    <font name="skyreg" filename="/usr/share/enigma2/Red-HD/fonts/SkyFinalRegular.ttf" scale="100" />		
-		<font name="skymed" filename="/usr/share/enigma2/Red-HD/fonts/SkyFinalMedium.ttf" scale="100" />
-		<font name="skybold" filename="/usr/share/enigma2/Red-HD/fonts/SkyFinalBold.ttf" scale="100" />
 	</fonts>
 	<colors>
 		<color name="foreground" value="#001c1c1c" />
