@@ -1729,13 +1729,14 @@ self.autoResize()
 		<panel name="MenuRed2Panel" />
 		<panel name="MenuGreen2Panel" />
 	</screen>
-	<screen name="IpkgInstaller" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="IpkgInstaller" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="list" position="10,165" size="503,450" selectionPixmap="Red-HD/buttons/FocusBar_H30x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
-		<widget source="introduction" render="Label" position="10,107" size="503,25" font="vmreg;20" zPosition="2" transparent="0" halign="center" />
-		<panel name="MenuRed2Panel" />
-		<panel name="MenuGreen2Panel" />
-		<ePixmap pixmap="buttons/key_menu.png" position="470,663" size="35,25" alphatest="blend" transparent="1" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuMenuButton" />
+		<panel name="MenuLISTWidget" />
+		<panel name="MenuINTRODUCTIONWidget" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
 	</screen>
 	<screen name="BackupSelection" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -2678,7 +2679,7 @@ self.autoResize()
 	<screen name="CCcamInfoMain" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<panel name="MenuLISTWidget" />
+		<panel name="MenuMENUWidget" />
 	</screen>
 	<screen name="CCcamInfoEcmInfoSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -2693,7 +2694,7 @@ self.autoResize()
 	<screen name="CCcamShareViewMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuInfoText" />
-		<widget name="list" position="140,207" size="600,370" selectionPixmap="Red-HD/buttons/FocusBar_H25x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" zPosition="3" />
+		<widget name="list" position="140,207" size="600,370" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" zPosition="3" />
 		<widget name="uphops" position="140,640" size="240,25" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
 		<widget name="cards" position="400,640" size="220,25" halign="right" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
 		<widget name="providers" position="140,670" size="240,25" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
@@ -2752,20 +2753,29 @@ self.autoResize()
 		<panel name="MenuGreen1Panel" />
 		<panel name="MenuYellow1Panel" />
 	</screen>
-	<screen name="OscamInfoMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="OscamInfoMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="mainmenu" position="10,107" size="503,450" selectionPixmap="Red-HD/buttons/FocusBar_H25x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
-		</screen>
-		<screen name="oscECMInfo" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuSetupText" />
+		<widget name="mainmenu" position="140,200" size="600,520" font="vmreg;24" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" zPosition="3" />
+	    <applet type="onLayoutFinish">
+			self["mainmenu"].instance.setItemHeight(35)
+		</applet>
+	</screen>
+		<screen name="oscECMInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="output" position="10,107" size="503,450" selectionPixmap="Red-HD/buttons/FocusBar_H25x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
-		</screen>
-		<screen name="OscamInfoConfigScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuSetupText" />
+		<widget name="output" position="140,200" size="600,520" font="vmreg;24" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" zPosition="3" />
+	     <applet type="onLayoutFinish">
+			self["output"].instance.setItemHeight(35)
+		</applet>
+	</screen>
+		<screen name="OscamInfoConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="config" position="10,107" size="503,250" selectionPixmap="Red-HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" scrollbarMode="showOnDemand" transparent="0" />
-		<widget name="status" position="10,390" size="503,240" selectionPixmap="Red-HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
-		<panel name="MenuRed2Panel" />
-		<panel name="MenuGreen2Panel" />
+		<panel name="MenuSetupText" />
+		<widget name="config" position="140,227" size="600,250" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x600.png" foregroundColor="white" backgroundColor="vmdarkred" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
+		<widget name="status" position="140,510" size="600,240" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" zPosition="3" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
 	</screen>
 	<screen name="VIXIPKInstaller" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
