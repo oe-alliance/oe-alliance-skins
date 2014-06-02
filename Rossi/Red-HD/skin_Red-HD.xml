@@ -279,19 +279,17 @@
 	</screen>
 	<!-- EPG Screens -->
 	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="transparent" transparent="0" flags="wfNoBorder">
-		<ePixmap pixmap="Red-HD/infobar/setup.png" position="0,0" size="597,720" alphatest="on" zPosition="-1" />
-		<widget source="Title" render="Label" position="35,25" size="850,43" font="vmreg;28" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" zPosition="1" />
-		<widget name="lab1" position="10,82" size="573,485" font="vmreg;22" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
-		<widget name="number" position="10,82" size="573,485" zPosition="5" backgroundColor="transparent" transparent="0" font="vmreg;48" borderColor="black" borderWidth="2" valign="center" halign="center" />
-		<widget name="list" position="10,82" size="573,485" foregroundColor="white" backgroundColor="vmdarkred" selectionPixmap="Red-HD/selectionbars/SelectionBar_H36x660.png" zPosition="3" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
-		<widget source="Event" render="Label" position="10,574" size="560,100" font="vmreg;20" backgroundColor="vmdarkred" foregroundColor="skygold" transparent="1" halign="left" valign="top" zPosition="2">
+		<panel name="MenuPanel" />
+		<panel name="MenuChannelsText" />
+		<widget name="list" position="140,200" size="600,520" foregroundColor="white" backgroundColor="vmdarkred" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x660.png" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
+		<widget source="Event" render="Label" position="740,340" size="540,100" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="left" valign="top" zPosition="1">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<ePixmap pixmap="buttons/key_menu.png" position="561,688" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+		<panel name="MenuMenuButton" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+		<panel name="FullScreenMenuBlue2Panel" />
 	</screen>
 	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" backgroundColor="transparent" transparent="0" flags="wfNoBorder">
 		<ePixmap pixmap="Red-HD/infobar/setup.png" position="0,0" size="597,720" alphatest="on" zPosition="-1" />
@@ -989,17 +987,17 @@ self.autoResize()
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuCONFIGWidget" />
-		<panel name="FullScreenMenuRedPanel" />
-		<panel name="FullScreenMenuGreenPanel" />
-		<panel name="FullScreenMenuYellowPanel" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
 	</screen>
 	<screen name="NetworkBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<panel name="FullScreenMenuRedPanel" />
-		<panel name="FullScreenMenuGreenPanel" />
-		<panel name="FullScreenMenuYellowPanel" />
-		<panel name="FullScreenMenuBluePanel" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+		<panel name="FullScreenMenuBlue2Panel" />
 		<widget source="list" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H50x600.png" transparent="1" zPosition="3" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
