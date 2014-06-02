@@ -349,6 +349,7 @@
 	    <ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" zPosition="-1"/>			
 		<panel name="FullScreenRedHDLogo" />
 		<panel name="FullScreenPicon" />
+		<panel name="FullScreenProviderPicon" />
 		<panel name="FullScreenPIGPanel" />
         <panel name="FullScreenTimePanel" />
         <panel name="EPGPIGSelectionProgramNowName" />		
@@ -489,7 +490,6 @@
 		<widget source="lab2" render="Label" position="140,248" size="600,25" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" transparent="1" zPosition="3" />
 		<widget source="lab3" render="Label" position="140,279" size="600,45" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" transparent="1" zPosition="3" />
 		<widget name="AboutScrollLabel" position="280,325" size="600,400" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
-		<ePixmap pixmap="picon_default.png" position="380,580" size="110,66" alphatest="blend" transparent="1" zPosition="3" />
 		<eLabel text="v1 by rossi2000 and simonsez" position="140,660" size="600,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="center" transparent="1" zPosition="3"/>
 		<panel name="MenuInfoButton" />
 	</screen>
@@ -512,7 +512,7 @@
 	<screen name="Devices" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuInfoText" />
-		<widget source="TunerHeader" render="Label" position="140,222" size="458,36" font="vmbold;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget source="TunerHeader" render="Label" position="140,217" size="458,36" font="vmbold;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
 		<widget source="nims" render="Label" position="140,242" size="458,142" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" enableWrapAround="0"/>
 		<widget source="HDDHeader" render="Label" position="140,384" size="458,36" font="vmbold;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
 		<widget source="hdd" render="Label" position="140,409" size="458,175" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" enableWrapAround="0"/>
@@ -632,8 +632,8 @@
 	</screen>
 	<screen name="ChannelSelection" position="0,0" size="1280,720" backgroundColor="vmdarkred" flags="wfNoBorder">
 	    <ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" zPosition="-1"/>
-		<panel name="FullScreenRedHDLogo" />
 		<panel name="FullScreenPicon" />
+		<panel name="FullScreenProviderPicon" />
 		<panel name="FullScreenPIGPanel" />
         <panel name="FullScreenTimePanel" />
 		<panel name="MenuChannelsText" />
@@ -654,8 +654,8 @@
 		<panel name="ChannelSelectionProgramNextDescription" />
 		<panel name="ChannelSelectionProgramLaterName" />
 		<panel name="ChannelSelectionProgramLaterStartTime" />
-		<panel name="ChannelSelectionProgramLaterEndTime" />	
-        <panel name="ChannelSelectionProgramLaterDescription" />		
+		<panel name="ChannelSelectionProgramLaterEndTime" />
+        <panel name="ChannelSelectionProgramLaterDescription" />	
 	</screen>
 	<screen name="SlimChannelSelection" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -775,13 +775,13 @@ self.autoResize()
 	<screen name="HdmiCECSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<panel name="FullScreenMenuRedPanel" />
-		<panel name="FullScreenMenuGreenPanel" />
-		<panel name="FullScreenMenuYellowPanel" />
-		<panel name="FullScreenMenuBluePanel" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+		<panel name="FullScreenMenuBlue2Panel" />
 		<panel name="MenuCONFIGWidget" />
-		<widget source="current_address" render="Label" position="695,650" size="503,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="left" valign="center" zPosition="10" />
-		<widget source="fixed_address" render="Label" position="695,685" size="503,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="left" valign="center" zPosition="10" />
+		<widget source="current_address" render="Label" position="140,652" size="600,30" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" halign="center" valign="center" zPosition="3" />
+		<widget source="fixed_address" render="Label" position="140,685" size="600,30" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" halign="center" valign="center" zPosition="3" />
 	</screen>
 	<screen name="InputBox" position="center,center" size=" 600,95">
 		<widget name="text" position="10,10" size="580,30" font="vmreg;24" />
@@ -2033,9 +2033,9 @@ self.autoResize()
 	<screen name="CIselectMainMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<widget name="CiList" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H50x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
-		<panel name="MenuRed2Panel" />
-		<panel name="MenuGreen2Panel" />
+		<widget name="CiList" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
 	</screen>
 	<screen name="CIconfigMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -2044,10 +2044,10 @@ self.autoResize()
 		<widget source="ServiceList_desc" render="Label" position="10,338" size="503,22" font="vmreg;20" zPosition="1" backgroundColor="#27d9dee2" transparent="1" />
 		<widget name="ServiceList" position="10,197" size="503,360" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="Red-HD/buttons/FocusBar_H50x503.png" />
 		<widget source="infotext" render="Label" position="10,615" size="503,30" font="vmreg;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
-		<panel name="MenuRed2Panel" />
-		<panel name="MenuGreen2Panel" />
-		<panel name="MenuYellow2Panel" />
-		<panel name="MenuBlue2Panel" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+		<panel name="FullScreenMenuBlue2Panel" />
 	</screen>
 	<screen name="easyCIconfigMenu" position="209,48" size="865,623" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
@@ -2072,8 +2072,8 @@ self.autoResize()
 		<panel name="MenuSetupText" />
 		<widget name="list" position="140,200" size="600,520" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="Red-HD/selectionbars/SelectionBar_H50x600.png" />
 		<panel name="MenuINTRODUCTIONWidget" />
-		<panel name="MenuRed2Panel" />
-		<panel name="MenuGreen2Panel" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
 	</screen>
 	<screen name="myProviderSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -2265,7 +2265,7 @@ self.autoResize()
 		<eLabel text="Lock:" position="140,530" size="50,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
 		<widget name="snr_percentage" position="320,470" size="60,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
 		<widget name="ber_value" position="320,495" size="60,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
-		<widget name="lock_state" position="195,520" size="120,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget name="lock_state" position="195,530" size="120,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
 		<widget name="snr_bar" position="195,470" size="120,22" backgroundColor="black" transparent="1" borderWidth="2" borderColor="vmdarkred" zPosition="3" />
 		<widget name="ber_bar" position="195,495" size="120,22" backgroundColor="black" transparent="1" borderWidth="2" borderColor="vmdarkred" zPosition="3" />
 		<eLabel text="Frequency:" position="390,470" size="105,22" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
@@ -2503,8 +2503,8 @@ self.autoResize()
 		<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(25)
 		</applet>
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
+		<panel name="MenuRed3Panel" />
+		<panel name="MenuGreen3Panel" />
 	</screen>
 	<screen name="NetworkServiceSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />

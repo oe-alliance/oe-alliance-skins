@@ -140,7 +140,7 @@
 		</widget>	
 	</screen>
 	<screen name="EPGSelectionBouquetName">
-		<widget source="Title" render="Label" position="20,94" size="850,44" font="vmbold;28" transparent="1" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1" />	
+		<widget source="Title" render="Label" position="20,92" size="850,44" font="vmbold;28" transparent="1" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1" />	
 	</screen>
 	<screen name="EPGPIGSelectionProgramNowName">
 		<widget source="Event" render="Label" position="176,30" size="510,35" font="vmbold;30" foregroundColor="white" backgroundColor="vmdarkred" halign="left" noWrap="1" transparent="1">
@@ -328,6 +328,10 @@
 		<widget name="menu" position="140,200" size="600,520" font="vmreg;24" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
 	    <panel name="MenuAppletMenuItemHeight35" />
 	</screen>
+	<screen name="MenuABOUTWidget">
+		<widget name="about" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
+	    <panel name="MenuAppletAboutItemHeight28" />
+	</screen>
 	<screen name="MenuDESCRIPTIONWidget">
 		<widget name="description" position="780,340" size="450,110" font="vmreg;24" foregroundColor="white" backgroundColor="vmdarkred" halign="center" valign="top" transparent="1" zPosition="1" />
 	</screen>
@@ -353,6 +357,11 @@
 	<screen name="MenuAppletMenuItemHeight35">
 		<applet type="onLayoutFinish">
 			self["menu"].instance.setItemHeight(35)
+		</applet>
+	</screen>
+	<screen name="MenuAppletAboutItemHeight28">
+		<applet type="onLayoutFinish">
+			self["about"].instance.setItemHeight(28)
 		</applet>
 	</screen>
 	
@@ -392,13 +401,18 @@
 		<ePixmap pixmap="Red-HD/infobar/logo.png" position="46,30" size="110,66" transparent="1" alphatest="blend" zPosition="-1"/>
 	</screen>
 	<screen name="FullScreenPicon">
+		<widget source="Service" render="Picon" position="46,30" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="1">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+	</screen>
+	<screen name="FullScreenPicon2">
 		<widget source="Service" render="Picon" position="700,30" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 	</screen>
-	<screen name="FullScreenHDPicon">
-		<widget source="Service" render="Picon" position="665,30" size="165,99" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="1">
-			<convert type="ServiceName">Reference</convert>
+	<screen name="FullScreenProviderPicon">
+		<widget source="session.CurrentService" render="Picon" position="700,30" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="1">
+			<convert type="ServiceName">Provider</convert>
 		</widget>
 	</screen>
     <screen name="FullScreenPIGPanel">
