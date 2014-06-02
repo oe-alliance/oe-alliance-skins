@@ -59,7 +59,7 @@
 	<screen name="AutoBouquetsAbout" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuInfoText" />
-		<widget name="about" position="140,200" size="600,520" font="vmreg;22" itemHeight="28" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="5" />
+		<panel name="MenuABOUTWidget" />
 		<panel name="MenuRed1Panel" />
 	</screen>
 	<screen name="AutoBouquetsDownloader" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -182,9 +182,39 @@
 		<panel name="MenuPanel" />
 		<panel name="MenuInfoText" />
 		<panel name="MenuRed1Panel" />
-		<widget name="about" position="140,200" size="600,520" font="vmreg;22" itemHeight="28" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
+		<panel name="MenuABOUTWidget" />
 	</screen>
 	
+	<!-- ## DreamPlex ## -->
+	<screen name="DPS_MainMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" zPosition="-1"/>
+		<panel name="FullScreenRedHDLogo" />
+		<panel name="FullScreenPIGPanel" />
+        <panel name="FullScreenTimePanel" />
+		<panel name="ChannelSelectionBlackBackgroundBox" />
+		<widget source="menu" render="Listbox" position="50,190" size="600,530" foregroundColor="white" selectionPixmap="Red-HD/selectionbars/SelectionBar_H38x600.png" transparent="1" scrollbarMode="showOnDemand" zPosition="3">
+            <convert type="TemplatedMultiContent">
+                {"template": [ MultiContentEntryText(pos = (20,0), size = (555, 37), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 0) ],
+				"fonts": [gFont("vmreg", 28)],
+				"itemHeight": 38 }
+            </convert>
+        </widget>
+	</screen>
+	<screen name="DPS_Settings" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuRed1SourcePanel" />
+		<panel name="MenuGreen1SourcePanel" />
+		<panel name="MenuCONFIGWidget" />
+		<widget source="help" render="Label" position="780,340" size="450,110" font="vmreg;24" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1"/>
+	</screen>
+	<screen name="DPS_About" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuInfoText" />
+		<panel name="MenuRed1SourcePanel" />
+		<panel name="MenuABOUTWidget" />
+	</screen>
+
 	<!-- ## FastScan ## -->
 	<screen name="FastScanScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -199,17 +229,17 @@
 		<widget name="scan_progress" position="760,685" size="400,30" pixmap="progress_big.png" borderWidth="2" borderColor="black" />
 	</screen>
 	
-	<!-- ## IPTV List Updater by Nobody and Satinfo## 
+    <!-- ## IPTV List Updater ## --> 
 	<screen name="Start" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater" >
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<widget name="title" position="110,125" size="300,30" font="vmreg;24" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
-		<widget name="maintain" position="110,195" size="300,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
-		<widget name="link1" position="110,230" size="300,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
-		<widget name="link2" position="110,265" size="300,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
-		<widget name="description" position="30,300" size="450,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
-		<widget name="description2" position="90,335" size="350,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
-		<widget name="thanks" position="30,370" size="450,70" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
+		<widget name="title" position="140,225" size="600,30" font="vmreg;24" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
+		<widget name="maintain" position="140,295" size="600,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
+		<widget name="link1" position="140,330" size="600,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
+		<widget name="link2" position="140,365" size="600,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
+		<widget name="description" position="140,400" size="600,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
+		<widget name="description2" position="140,435" size="600,30" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
+		<widget name="thanks" position="140,470" size="600,70" font="vmreg; 22" foregroundColor="white" backgroundColor="black" halign="center" zPosition="3" transparent="1" />
 		<panel name="MenuMenuButton" />
 		<panel name="MenuInfoButton" />
 		<panel name="FullScreenMenuRed2Panel" />
@@ -220,63 +250,72 @@
 	<screen name="Changelog" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater - Changelog" >
 		<panel name="MenuPanel" />
 		<panel name="MenuInfoText" />
-		<widget name="text" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="text" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
 		<panel name="MenuRed1Panel" />
 	</screen>
 	<screen name="Credits" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater - Credits" >
 		<panel name="MenuPanel" />
 		<panel name="MenuInfoText" />
-		<widget name="text" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="text" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
 		<panel name="MenuRed1Panel" />
 	</screen>
 	<screen name="FAQ" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater - FAQ" >
 		<panel name="MenuPanel" />
 		<panel name="MenuInfoText" />
-		<widget name="text" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="text" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
 		<panel name="MenuRed1Panel" />
 	</screen>
 	<screen name="IPTV" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater" >
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<widget name="text1" position="center,220" size="450,30" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" valign="center" transparent="1" scrollbarMode="showOnDemand" />
-		<widget name="IPTVList" render="Listbox" position="center,260" size="400,260" font="vmreg;22" selectionPixmap="Red-HD/buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
-		<widget name="country" position="130,520" size="450,300" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="text1" position="140,200" size="600,30" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" valign="center" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
+		<widget name="IPTVList" render="Listbox" position="140,240" size="600,480" font="vmreg;24" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
+		<widget name="country" position="880,340" size="450,300" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" zPosition="1" />
 		<panel name="MenuInfoButton" />
 		<panel name="FullScreenMenuRed2Panel" />
 		<panel name="FullScreenMenuGreen2Panel" />
 		<panel name="FullScreenMenuYellow2Panel" />
 		<panel name="FullScreenMenuBlue2Panel" />
+		<applet type="onLayoutFinish">
+			self["IPTVList"].instance.setItemHeight(35)
+		</applet>
 	</screen>
-	<screen name="IPTV_Mod" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater" >
+	<screen name="IPTV_Mod" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater" >
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<widget name="text1" position="center,220" size="450,30" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" valign="center" transparent="1" scrollbarMode="showOnDemand" />
-		<widget name="IPTVList" render="Listbox" position="center,260" size="400,260" font="vmreg;22" selectionPixmap="Red-HD/buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
-		<widget name="country" position="130,520" size="450,300" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="text1" position="140,200" size="600,30" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" valign="center" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
+		<widget name="IPTVList" render="Listbox" position="140,240" size="600,480" font="vmreg;24" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
+		<widget name="country" position="880,340" size="450,300" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" zPosition="1" />
 		<panel name="MenuInfoButton" />
 		<panel name="FullScreenMenuRed2Panel" />
 		<panel name="FullScreenMenuGreen2Panel" />
 		<panel name="FullScreenMenuYellow2Panel" />
 		<panel name="FullScreenMenuBlue2Panel" />
-	</screen> -->
+		<applet type="onLayoutFinish">
+			self["IPTVList"].instance.setItemHeight(35)
+		</applet>
+	</screen>
 	
 	<!-- ## OnDemand ## -->
-	<screen name="OnDemand_Screen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Red-HD/ondemand/ondemandmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget name="PlayerList" position="160,91" size="220,573" selectionPixmap="Red-HD/buttons/FocusBar_H106x503.png" transparent="1" scrollbarMode="showOnDemand" />
+	<screen name="OnDemand_Screen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<widget name="PlayerList" position="340,225" size="350,500" selectionPixmap="Red-HD/selectionbars/SelectionBar_H106x600.png" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
 		<panel name="MenuMenuButton" />
 		<panel name="MenuInfoButton" />
 	</screen>	
-	<screen name="OnDemand_About" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Red-HD/ondemand/ondemandmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget name="about" position="10,107" size="503,533" font="vmreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	<screen name="OnDemand_About" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuInfoText" />
+		<panel name="MenuABOUTWidget" />
 		<panel name="MenuRed1Panel" />
 	</screen>
 	<screen name="OnDemandScreenSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Red-HD/ondemand/ondemandsetupmenu.png" position="0,0" size="597,720" alphatest="on" zPosition="-1" />
-		<widget name="config" position="10,107" size="573,500" font="vmreg;19" selectionPixmap="Red-HD/buttons/FocusBar_H25x670.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuCONFIGWidget" />
+		<panel name="MenuRed1SourcePanel" />
+		<panel name="MenuGreen1SourcePanel" />
 	</screen>
 	<screen name="BBCiMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Red-HD/ondemand/bbciplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
