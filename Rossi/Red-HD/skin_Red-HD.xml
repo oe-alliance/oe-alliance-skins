@@ -273,15 +273,15 @@
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 	</screen>
-	<screen name="PVRState" position="50,0" size="220,40" backgroundColor="transparent" flags="wfNoBorder" transparent="0" zPosition="3">
-		<widget name="statusicon" position="51,0" size="218,35" pixmaps="Red-HD/icons/play_large.png,Red-HD/icons/pause_large.png,Red-HD/icons/stop_large.png,Red-HD/icons/forward_large.png,Red-HD/icons/backward_large.png,Red-HD/icons/slow_large.png,Red-HD/icons/blank.png" zPosition="2" alphatest="blend" />
+	<screen name="PVRState" position="50,0" size="300,40" backgroundColor="transparent" flags="wfNoBorder" transparent="0" zPosition="3">
+		<widget name="statusicon" position="51,0" size="188,35" pixmaps="Red-HD/icons/play_large.png,Red-HD/icons/pause_large.png,Red-HD/icons/stop_large.png,Red-HD/icons/forward_large.png,Red-HD/icons/backward_large.png,Red-HD/icons/slow_large.png,Red-HD/icons/blank.png" zPosition="2" alphatest="blend" />
 		<widget name="speed" position="100,5" size="80,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" valign="center" halign="center" transparent="1" zPosition="4" />
 	</screen>
 	<!-- EPG Screens -->
 	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="transparent" transparent="0" flags="wfNoBorder">
 		<panel name="MenuPanel" />
 		<panel name="MenuChannelsText" />
-		<widget name="list" position="140,200" size="600,520" foregroundColor="white" backgroundColor="vmdarkred" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x660.png" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
+		<widget name="list" position="140,200" size="600,520" foregroundColor="white" backgroundColor="vmdarkred" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x600.png" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
 		<widget source="Event" render="Label" position="740,340" size="540,100" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="left" valign="top" zPosition="1">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
@@ -318,7 +318,7 @@
 	</screen>
 	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="vmdarkred" transparent="0" flags="wfNoBorder" >
 		<ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" zPosition="-1"/>
-		<ePixmap pixmap="picon_default.png" position="20,10" size="110,66" transparent="1" alphatest="blend" zPosition="-1"/>
+		<ePixmap pixmap="picon_default.png" position="20,10" size="110,66"  alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="1"/>
 		<panel name="EPGSelectionProgramNowName" />		
 		<panel name="EPGSelectionProgramNowStartTime" />
         <panel name="EPGSelectionProgramNowEndTime" />	
@@ -346,8 +346,7 @@
 	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="vmdarkred" transparent="0" flags="wfNoBorder">
 	    <ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" zPosition="-1"/>			
 		<panel name="FullScreenRedHDLogo" />
-		<panel name="FullScreenPicon" />
-		<panel name="FullScreenProviderPicon" />
+		<panel name="FullScreenPicon2" />
 		<panel name="FullScreenPIGPanel" />
         <panel name="FullScreenTimePanel" />
         <panel name="EPGPIGSelectionProgramNowName" />		
@@ -1515,13 +1514,13 @@ self.autoResize()
 	<screen name="TimerEditList" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<widget name="timerlist" position="140,200" size="600,520" itemHeight="50" selectionPixmap="Red-HD/selectionbars/SelectionBar_H50x600.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
-		<panel name="MenuDESCRIPTIONWidget" />
-		<panel name="FullScreenMenuRed2Panel" />
-		<panel name="FullScreenMenuGreen2Panel" />
-		<panel name="FullScreenMenuYellow2Panel" />
-		<panel name="FullScreenMenuBlue2Panel" />
 		<panel name="MenuInfoButton" />
+		<widget name="timerlist" position="140,200" size="600,520" itemHeight="51" selectionPixmap="Red-HD/selectionbars/SelectionBar_H50x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
+		<panel name="MenuDESCRIPTIONWidget" />
+		<panel name="FullScreenMenuRedPanel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellowPanel" />
+		<panel name="FullScreenMenuBluePanel" />
 	</screen>
 	<screen name="TimerEntry" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -1558,7 +1557,7 @@ self.autoResize()
 		<panel name="MenuSetupText" />
 		<widget name="timerlist" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H70x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
 	</screen>
-	<screen name="Volume" position="center,250" zPosition="1" size="320,68" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="Volume" position="center,50" size="320,68" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="1">
 		<ePixmap pixmap="screens/volume_background.png" position="0,0" size="320,68" alphatest="blend" />
 		<widget name="Volume" pixmap="screens/volume_up.png" position="62,14" size="240,34" alphatest="blend" transparent="1" zPosition="1" />
 	</screen>
