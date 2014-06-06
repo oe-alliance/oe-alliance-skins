@@ -292,6 +292,7 @@
 	<screen name="BBCiMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="OnDemandMenuScreen" />
 		<panel name="OnDemandBBCiPlayerText" />
+		<panel name="OnDemandBBCiPlayerLogo" />
 		<widget name="BBCiMenu" position="40,160" size="600,550" font="vmreg;24" itemHeight="35" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
 	</screen>
 	<screen name="BBCiStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -300,6 +301,7 @@
 	<screen name="ITVplayer" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="OnDemandMenuScreen" />
 		<panel name="OnDemandITVPlayerText" />
+		<panel name="OnDemandITVPlayerLogo" />
 		<widget name="ITVMenu" position="40,160" size="600,550" font="vmreg;24" itemHeight="35" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
 	</screen>
 	<screen name="ITVStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -308,6 +310,7 @@
 	<screen name="fourODMainMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="OnDemandMenuScreen" />
 		<panel name="OnDemand4ODText" />
+		<panel name="OnDemand4ODLogo" />
 		<widget name="fourODMainMenu" position="40,160" size="600,550" font="vmreg;24" itemHeight="35" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
 	</screen>
 	<screen name="4ODStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -316,6 +319,7 @@
 	<screen name="threeMainMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="OnDemandMenuScreen" />
 		<panel name="OnDemand3PlayerText" />
+		<panel name="OnDemand3PlayerLogo" />
 		<widget name="threeMainMenu" position="40,160" size="600,550" font="vmreg;24" itemHeight="35" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
 	</screen>
 	<screen name="TV3StreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -324,6 +328,7 @@
 	<screen name="RTEMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="OnDemandMenuScreen" />
 		<panel name="OnDemandRTEPlayerText" />
+		<panel name="OnDemandRTEPlayerLogo" />
 		<widget name="RTEMenu" position="40,160" size="600,550" font="vmreg;24" itemHeight="35" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
 	</screen>
 	<screen name="RTEStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -332,6 +337,7 @@
 	<screen name="iViewMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="OnDemandMenuScreen" />
 		<panel name="OnDemandIVIEWPlayerText" />
+		<panel name="OnDemandIVIEWPlayerLogo" />
 		<widget name="iViewMenu" position="40,160" size="600,550" font="vmreg;24" itemHeight="35" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
 	</screen>
 	<screen name="ABCiViewStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -340,6 +346,7 @@
 	<screen name="iRadioMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="OnDemandMenuScreen" />
 		<panel name="OnDemandiRadioPlayerText" />
+		<panel name="OnDemandiRadioPlayerLogo" />
 		<widget name="iRadioMenu" position="40,160" size="600,550" font="vmreg;24" itemHeight="35" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
 	</screen>
 	<screen name="RadioFavStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -348,11 +355,13 @@
 	<screen name="shoutGenresMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="OnDemandMenuScreen" />
 		<panel name="OnDemandShoutcastText" />
+		<panel name="OnDemandShoutcastLogo" />
 		<widget name="shoutGenresMenu" position="40,160" size="600,550" font="vmreg;24" itemHeight="35" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
 	</screen>
 	<screen name="shoutSubGenresMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="OnDemandMenuScreen" />
 		<panel name="OnDemandShoutcastText" />
+		<panel name="OnDemandShoutcastLogo" />
 		<widget name="shoutSubGenresMenu" position="40,160" size="600,550" font="vmreg;24" itemHeight="35" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
 	</screen>
 	<screen name="ShoutStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -361,6 +370,7 @@
 	<screen name="tuneinGenresMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="OnDemandMenuScreen" />
 		<panel name="OnDemandTuneINText" />
+		<panel name="OnDemandTuneINLogo" />
 		<widget name="tuneinGenresMenu" position="40,160" size="600,550" font="vmreg;24" itemHeight="35" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
 	</screen>
 	<screen name="TuneinStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
