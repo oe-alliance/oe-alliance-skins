@@ -2407,7 +2407,7 @@ self.autoResize()
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
 		<widget name="lab1" position="140,300" size="170,25" font="vmreg;22" halign="right" zPosition="3" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" />
-		<widget name="list" position="325,300" size="240,150" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x503.png" foregroundColor="white" backgroundColor="vmdarkred" zPosition="3" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="list" position="325,300" size="300,150" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x300.png" foregroundColor="white" backgroundColor="vmdarkred" zPosition="3" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="lab2" position="140,220" size="170,25" font="vmreg;22" halign="right" zPosition="3" foregroundColor="white" backgroundColor="black" transparent="1" />
 		<widget name="activecam" position="325,220" size="240,25" font="vmreg;22" halign="left" zPosition="3" backgroundColor="black" transparent="1" noWrap="1" />
 		<panel name="MenuMenuButton" />
