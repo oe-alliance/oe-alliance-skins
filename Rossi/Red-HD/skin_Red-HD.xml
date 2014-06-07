@@ -690,7 +690,7 @@
 	</screen>
 	<screen name="ChoiceBox" position="center,center" size="520,130" zPosition="5" >
 		<widget name="text" position="0,0" size="520,0" font="vmreg;22" />
-		<widget name="list" position="100,100" size="520,0" font="vmreg;22" foregroundColor="white" enableWrapAround="1" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x740.png" />
+		<widget name="list" position="100,100" size="520,0" font="vmreg;22" foregroundColor="white" enableWrapAround="1" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x520.png" />
 		<applet type="onLayoutFinish">
 self.autoResize()
 		</applet>
