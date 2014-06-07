@@ -528,36 +528,36 @@
 		</widget>
 	</screen>
     <screen name="FullScreenMenuRedPanel">
-		<ePixmap pixmap="Red-HD/buttons/red.png" position="135,160" size="35,25" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="170,160" size="130,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
+		<ePixmap pixmap="Red-HD/buttons/red.png" position="145,160" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="180,160" size="130,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
 	</screen>
 	<screen name="FullScreenMenuGreenPanel">
-		<ePixmap pixmap="Red-HD/buttons/green.png" position="290,160" size="35,25" alphatest="blend" transparent="1" />
-		<widget name="key_green" position="320,160" size="130,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
+		<ePixmap pixmap="Red-HD/buttons/green.png" position="300,160" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_green" position="330,160" size="130,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
 	</screen>
 	<screen name="FullScreenMenuYellowPanel">
-		<ePixmap pixmap="Red-HD/buttons/yellow.png" position="440,160" size="35,25" alphatest="blend" transparent="1" />
-		<widget name="key_yellow" position="475,160" size="130,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />	
+		<ePixmap pixmap="Red-HD/buttons/yellow.png" position="450,160" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_yellow" position="485,160" size="130,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />	
 	</screen>
 	<screen name="FullScreenMenuBluePanel">
-		<ePixmap pixmap="Red-HD/buttons/blue.png" position="585,160" size="35,25" alphatest="blend" transparent="1" />
-		<widget name="key_blue" position="620,160" size="130,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />	
+		<ePixmap pixmap="Red-HD/buttons/blue.png" position="595,160" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_blue" position="630,160" size="140,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />	
 	</screen>
 	<screen name="FullScreenMenuRed2Panel">
 		<ePixmap pixmap="Red-HD/buttons/red.png" position="145,160" size="35,25" alphatest="blend" transparent="1" />
-		<widget source="key_red" render="Label" position="180,160" size="120,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
+		<widget source="key_red" render="Label" position="180,160" size="130,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
 	</screen>
 	<screen name="FullScreenMenuGreen2Panel">
 		<ePixmap pixmap="Red-HD/buttons/green.png" position="300,160" size="35,25" alphatest="blend" transparent="1" />
-		<widget source="key_green" render="Label" position="330,160" size="120,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
+		<widget source="key_green" render="Label" position="330,160" size="130,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
 	</screen>
 	<screen name="FullScreenMenuYellow2Panel">
 		<ePixmap pixmap="Red-HD/buttons/yellow.png" position="450,160" size="35,25" alphatest="blend" transparent="1" />
-		<widget source="key_yellow" render="Label" position="485,160" size="120,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
+		<widget source="key_yellow" render="Label" position="485,160" size="130,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
 	</screen>
 	<screen name="FullScreenMenuBlue2Panel">
 		<ePixmap pixmap="Red-HD/buttons/blue.png" position="595,160" size="35,25" alphatest="blend" transparent="1" />
-		<widget source="key_blue" render="Label" position="630,160" size="120,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
+		<widget source="key_blue" render="Label" position="630,160" size="140,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
 	</screen>
 
 

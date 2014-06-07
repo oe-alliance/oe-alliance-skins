@@ -930,19 +930,19 @@ self.autoResize()
 	<screen name="NetworkAdapterSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<panel name="FullScreenMenuRedPanel" />
-		<panel name="FullScreenMenuGreenPanel" />
-		<panel name="FullScreenMenuYellowPanel" />
-		<panel name="FullScreenMenuBluePanel" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+		<panel name="FullScreenMenuBlue2Panel" />
 		<widget source="list" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H70x600.png" scrollbarMode="showOnDemand" zPosition="3" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (85, 8), size = (440, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
-				MultiContentEntryText(pos = (85, 43), size = (440, 25), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text = 2), # index 2 is the description
-				MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 3), # index 3 is the interface pixmap
-				MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # index 4 is the default pixmap
+				MultiContentEntryText(pos = (85, 5), size = (440, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
+				MultiContentEntryText(pos = (85, 40), size = (440, 25), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text = 2), # index 2 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (12, 8), size = (54, 54), png = 3), # index 3 is the interface pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (73, 46), size = (15, 16), png = 4), # index 4 is the default pixmap
 				],
-				"fonts": [gFont("vmreg", 28),gFont("vmreg", 20)],
+				"fonts": [gFont("vmreg", 28),gFont("vmreg", 22)],
 				"itemHeight": 70
 				}
 			</convert>
@@ -1542,7 +1542,7 @@ self.autoResize()
 	<screen name="TimerLog" position="0,0" size="1280,720" backgroundColor="transparent" >
 	    <panel name="MenuPanel" />
 		<panel name="MenuInfoText" />
-		<widget name="loglist" position="140,222" size="600,300" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
+		<widget name="loglist" position="140,220" size="600,300" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
 		<widget name="logentry" position="140,550" size="600,150" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" />
 		<panel name="FullScreenMenuRed2Panel" />
 		<panel name="FullScreenMenuBlue2Panel" />
@@ -1550,9 +1550,9 @@ self.autoResize()
 	<screen name="TimerSanityConflict" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<widget name="timer1" position="140,227" size="600,50" selectionDisabled="1" scrollbarMode="showNever" />
-		<widget name="timer2" position="140,333" size="600,50" selectionDisabled="1" scrollbarMode="showNever" />
-		<widget name="list" position="140,423" size="600,325" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
+		<widget name="timer1" position="140,220" size="600,50" selectionDisabled="1" scrollbarMode="showNever" zPosition="3" />
+		<widget name="timer2" position="140,275" size="600,50" selectionDisabled="1" scrollbarMode="showNever" zPosition="3" />
+		<widget name="list" position="140,350" size="600,325" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
 		<panel name="FullScreenMenuRed2Panel" />
 		<panel name="FullScreenMenuGreen2Panel" />
 		<panel name="FullScreenMenuYellow2Panel" />
@@ -3233,5 +3233,8 @@ self.autoResize()
 		<panel name="MenuSetupText" />
 		<widget name="list" position="140,200" size="600,520" itemHeight="50" selectionPixmap="Red-HD/selectionbars/SelectionBar_H50x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
 	</screen>
+	<!-- <screen name="Screensaver" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="picture" pixmap="Red-HD/infobar/reboot.png" position="0,0" size="1280,720" alphatest="blend" zPosition="1"/>
+	</screen> -->
 
 </skin>
