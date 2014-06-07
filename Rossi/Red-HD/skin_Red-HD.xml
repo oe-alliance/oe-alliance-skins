@@ -1212,15 +1212,15 @@ self.autoResize()
 	</screen>
 	<screen name="Dish" flags="wfNoBorder" position="20,20" size="165,275" zPosition="-1" backgroundColor="transparent">
 		<widget name="Dishpixmap" position="12,0" size="130,160" zPosition="1" pixmap="Red-HD/icons/dish.png" transparent="1" alphatest="blend" />
-		<widget name="turnTime" position="60,150" size="120,20" zPosition="1" font="vmreg;19" halign="left" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="From" position="10,170" size="55,20" zPosition="1" font="vmreg;17" halign="right" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="posFrom" position="72,170" size="70,20" zPosition="1" font="vmreg;20" halign="left" borderWidth="1" borderColor="black" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="Goto" position="10,192" size="55,20" zPosition="1" font="vmreg;17" halign="right" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="posGoto" position="72,192" size="70,20" zPosition="1" font="vmreg;20" halign="left" borderWidth="1" borderColor="black" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="Tuner" position="11,214" size="55,20" zPosition="2" font="vmreg;18" halign="left" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="tunerName" position="72,214" size="70,20" zPosition="2" font="vmreg;18" halign="left" borderWidth="1" borderColor="black" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="turnSpeed" position="72,234" size="120,20" zPosition="2" font="vmreg;18" halign="left" borderWidth="1" borderColor="black" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<widget source="session.FrontendStatus" render="Progress" position="25,254" size="120,10" pixmap="bar_snr.png" zPosition="2" borderWidth="2" borderColor="#cccccc">
+		<widget name="turnTime" position="60,160" size="120,20" zPosition="1" font="vmreg;19" halign="left" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
+		<widget name="From" position="10,180" size="55,20" zPosition="1" font="vmreg;17" halign="right" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
+		<widget name="posFrom" position="72,180" size="70,20" zPosition="1" font="vmreg;20" halign="left" borderWidth="1" borderColor="black" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
+		<widget name="Goto" position="10,202" size="55,20" zPosition="1" font="vmreg;17" halign="right" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
+		<widget name="posGoto" position="72,202" size="70,20" zPosition="1" font="vmreg;20" halign="left" borderWidth="1" borderColor="black" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
+		<widget name="Tuner" position="11,224" size="55,20" zPosition="2" font="vmreg;18" halign="left" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
+		<widget name="tunerName" position="72,224" size="70,20" zPosition="2" font="vmreg;18" halign="left" borderWidth="1" borderColor="black" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
+		<widget name="turnSpeed" position="72,244" size="120,20" zPosition="2" font="vmreg;18" halign="left" borderWidth="1" borderColor="black" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
+		<widget source="session.FrontendStatus" render="Progress" position="25,264" size="120,10" pixmap="bar_snr.png" zPosition="2" borderWidth="2" borderColor="#cccccc">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 	</screen>
@@ -1782,30 +1782,30 @@ self.autoResize()
 	</screen>
 	<!-- Misc Screens -->
 	<screen name="JobView" position="center,center" size="520,250" >
-		<widget source="job_name" render="Label" position="20,0" size="480,60" font="vmreg;28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
-		<widget source="job_task" render="Label" position="20,30" size="480,50" font="vmreg;23" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<widget source="job_progress" render="Progress" position="20,62" size="480,36" borderWidth="2" backgroundColor="skygold" />
-		<widget source="job_progress" render="Label" position="120,66" size="280,32" font="vmreg;28" foregroundColor="skydarkblue" zPosition="2" halign="center" transparent="1">
+		<widget source="job_name" render="Label" position="20,0" size="480,60" font="vmreg;26" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" />
+		<widget source="job_task" render="Label" position="20,30" size="480,50" font="vmreg;22" foregroundColor="#002b851d" backgroundColor="vmdarkred" transparent="1" />
+		<widget source="job_progress" render="Progress" position="20,62" size="480,36" borderWidth="2" backgroundColor="#002b851d" />
+		<widget source="job_progress" render="Label" position="120,63" size="280,32" font="vmreg;28" foregroundColor="black" zPosition="2" halign="center" transparent="1">
 			<convert type="ProgressToText" />
 		</widget>
-		<widget source="job_status" render="Label" position="20,112" size="480,26" font="vmreg;23" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
+		<widget source="job_status" render="Label" position="20,112" size="480,26" font="vmreg;23" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" />
 		<widget name="config" position="20,154" size="480,20" />
 		<widget source="cancelable" render="Pixmap" pixmap="Red-HD/buttons/red.png" position="20,200" size="136,25" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="cancelable" render="FixedLabel" text="Cancel" position="50,203" size="115,25" font="vmreg;20" halign="left" valign="center" transparent="1" >
+		<widget source="cancelable" render="FixedLabel" text="Cancel" position="50,203" size="115,25" font="vmreg;22" halign="left" valign="center" transparent="1" >
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="finished" render="Pixmap" pixmap="Red-HD/buttons/green.png" position="240,200" size="136,25" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="finished" render="FixedLabel" text="OK" position="270,203" size="115,25" font="vmreg;20" halign="left" valign="center" transparent="1" >
+		<widget source="finished" render="FixedLabel" text="OK" position="270,203" size="115,25" font="vmreg;22" halign="left" valign="center" transparent="1" >
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="backgroundable" render="Pixmap" pixmap="Red-HD/buttons/blue.png" position="250,200" size="136,25" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="280,200" size="260,25" font="vmreg;20" foregroundColor="white" backgroundColor="skydarkblue" halign="left" valign="center" transparent="1" >
+		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="280,200" size="260,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" valign="center" transparent="1" >
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
