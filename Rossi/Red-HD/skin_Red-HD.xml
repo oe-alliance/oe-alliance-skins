@@ -2679,7 +2679,7 @@ self.autoResize()
 		<panel name="MenuSetupText" />
 		<panel name="MenuCONFIGWidget" />
 		<widget name="status" position="780,340" size="503,70" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" />
-		<widget name="statusbar" position="780,400" size="503,20" font="vmreg;20" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" />
+		<widget name="statusbar" position="780,410" size="503,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" />
 		<panel name="FullScreenMenuRed2Panel" />
 		<panel name="FullScreenMenuGreen2Panel" />
 		<panel name="FullScreenMenuYellow2Panel" />
