@@ -374,10 +374,9 @@
 	    <ePixmap position="170,437" size="546,39" pixmap="Red-HD/infobar/infobartitlebar.png" alphatest="on" zPosition="-1"/>
 	    <widget source="Title" render="Label" position="175,438" size="850,40" font="vmbold;28" foregroundColor="vmgrey" backgroundColor="vmdarkred" zPosition="1" transparent="1" />
 		<ePixmap position="center,476" size="973,84" pixmap="Red-HD/infobar/1stinfobar.png" alphatest="on" zPosition="-1"/>
-		<ePixmap pixmap="picon_default.png" position="160,483" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="1" />
-		<!-- <widget source="Service" render="Picon" position="160,483" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="1">
+	    <widget source="Service" render="Picon" position="160,483" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
-		</widget> -->
+		</widget>
 		<!-- <ePixmap pixmap="icons/icon_rec.png" position="285,488" size="25,25" zPosition="0" alphatest="blend" /> -->
 		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec.png" position="285,488" size="25,25" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
