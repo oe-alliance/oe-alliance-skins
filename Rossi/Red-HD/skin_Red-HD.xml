@@ -810,7 +810,7 @@ self.autoResize()
 		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="0,0" size="53,53" alphatest="blend" />
 		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="0,0" size="53,53" alphatest="blend" />
 		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="0,0" size="53,53" alphatest="blend" />
-		<widget name="list" position="100,100" size="520,0" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x740.png"/>
+		<widget name="list" position="100,100" size="520,0" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x520.png"/>
 		<applet type="onLayoutFinish">
 self.autoResize()
 		</applet>
