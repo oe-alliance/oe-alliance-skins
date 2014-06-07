@@ -2994,7 +2994,7 @@ self.autoResize()
 	<screen name="AutoTimerImporter" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<panel name="MenuListWidget" />
+		<panel name="MenuLISTWidget" />
 		<panel name="FullScreenMenuRed2Panel" />
 		<panel name="FullScreenMenuGreen2Panel" />
 		<panel name="FullScreenMenuYellow2Panel" />
