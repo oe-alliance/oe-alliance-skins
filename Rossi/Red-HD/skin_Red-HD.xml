@@ -1401,13 +1401,14 @@ self.autoResize()
 		<widget name="scan_progress" position="240,350" size="400,5" pixmap="Red-HD/infobar/moviebarprogressbar.png" transparent="0" zPosition="3"/>
 		<widget name="servicelist" position="140,370" size="600,360" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" zPosition="3" />
 	</screen>
-	<screen name="SimpleChannelSelection" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SimpleChannelSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="list" position="10,107" size="503,533" itemHeight="30" selectionPixmap="Red-HD/buttons/FocusBar_H30x503.png" foregroundColorEvent="event-frgrnd" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="verydarkgrey" backgroundColor="window-bg" transparent="0" enableWrapAround="1" />
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
-		<panel name="MenuYellow1Panel" />
-		<panel name="MenuBlue1Panel" />
+		<panel name="MenuSetupText" />
+		<widget name="list" position="140,200" size="600,520" itemHeight="35" font="vmreg;24" selectionPixmap="Red-HD/selectionbars/SelectionBar_H35x600.png" foregroundColorEvent="white" foregroundColorEventSelected="white" foregroundColorServiceNotAvail="vmgrey" backgroundColor="vmdarkred" transparent="1" enableWrapAround="1" zPosition="3" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+		<panel name="FullScreenMenuBlue2Panel" />
 	</screen>
 	<screen name="SkinSelector" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
