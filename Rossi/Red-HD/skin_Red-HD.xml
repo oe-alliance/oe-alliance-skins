@@ -14,7 +14,7 @@
 		<widget source="languages" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H45x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (100,0), size = (360,44), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the language name,
+				MultiContentEntryText(pos = (100,0), size = (360,43), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the language name,
 				MultiContentEntryPixmapAlphaTest(pos = (20,2), size = (60,40), png = 2), # index 2 is the pixmap
 				],
 				"fonts": [gFont("vmreg",22)],
@@ -30,7 +30,7 @@
 		<panel name="MenuHomeText" />	
 		<widget source="menu" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3">
 			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,0), size = (555,37), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 0	) ],
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (555,36), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 0	) ],
 				"fonts": [gFont("vmreg",28)],
 				"itemHeight": 38
 				}
@@ -3098,7 +3098,7 @@ self.autoResize()
 				{"template": [
 				MultiContentEntryText(pos = (20,2), size = (555,38), font=0, flags = RT_HALIGN_CENTER|RT_VALIGN_TOP, text = 1),
 				],
-				"fonts": [gFont("vmreg", 24)],
+				"fonts": [gFont("vmreg", 28)],
 				"itemHeight": 38
 				}
 			</convert>
@@ -3110,10 +3110,10 @@ self.autoResize()
 		<widget source="list" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (12, 1), size = (555, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
-				MultiContentEntryPixmapAlphaTest(pos = (438, 2), size = (40, 40), png = 1),
+				MultiContentEntryText(pos = (12, 2), size = (555, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+				MultiContentEntryPixmapAlphaTest(pos = (438, 7), size = (40, 40), png = 1),
 				],
-				"fonts": [gFont("vmreg", 24)],
+				"fonts": [gFont("vmreg", 28)],
 				"itemHeight": 38
 				}
 			</convert>
@@ -3129,10 +3129,10 @@ self.autoResize()
 		<widget source="list" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (12, 1), size = (555, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
-				MultiContentEntryPixmapAlphaTest(pos = (438, 2), size = (40, 40), png = 1),
+				MultiContentEntryText(pos = (12, 2), size = (555, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+				MultiContentEntryPixmapAlphaTest(pos = (438, 7), size = (40, 40), png = 1),
 				],
-				"fonts": [gFont("vmreg", 24)],
+				"fonts": [gFont("vmreg", 28)],
 				"itemHeight": 38
 				}
 			</convert>
