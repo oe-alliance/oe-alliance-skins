@@ -519,7 +519,7 @@
 		<widget source="MountsHeader" render="Label" position="140,584" size="458,36" font="vmbold;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
 		<widget source="mounts" render="Label" position="140,609" size="458,143" font="vmreg;20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" enableWrapAround="0"/>
 	</screen>
-	<screen name="AboutReleaseNotes" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AboutReleaseNotes" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuInfoText" />
 		<panel name="MenuLISTLog" />
@@ -1376,29 +1376,30 @@ self.autoResize()
 		<widget name="yellow" position="423,325" size="150,20" zPosition="1" font="vmreg;20" halign="left" valign="center" backgroundColor="window-bg" transparent="1" />
 		<widget name="blue" position="618,325" size="150,20" zPosition="1" font="vmreg;20" halign="left" valign="center" backgroundColor="window-bg" transparent="1" />
 	</screen>
-	<screen name="ServiceScan" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ServiceScan" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-s.png" position="45,135" size="64,64" transparent="1" alphatest="blend">
+		<panel name="MenuInfoText" />
+		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-s.png" position="230,235" size="64,64" transparent="1" alphatest="blend" zPosition="3">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-c.png" position="45,135" size="64,64" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-c.png" position="230,235" size="64,64" transparent="1" alphatest="blend" zPosition="3">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-t.png" position="45,135" size="64,64" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-t.png" position="230,235" size="64,64" transparent="1" alphatest="blend" zPosition="3">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget name="network" position="120,145" size="330,20" font="vmreg;20" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="transponder" position="120,170" size="330,20" font="vmreg;20" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="scan_state" position="50,210" zPosition="2" size="400,20" font="vmreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="pass" position="50,210" size="400,20" font="vmreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="scan_progress" position="50,235" size="400,20" pixmap="servicescan_progress_big.png" borderWidth="2" borderColor="window-fg" />
-		<widget name="servicelist" position="50,265" size="400,360" selectionDisabled="1" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
+		<widget name="network" position="320,245" size="330,25" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget name="transponder" position="320,270" size="330,25" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget name="scan_state" position="140,315" size="600,25" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" valign="center" transparent="1" zPosition="3" />
+		<widget name="pass" position="140,315" size="600,25" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" valign="center" transparent="1" zPosition="3" />
+		<widget name="scan_progress" position="240,350" size="400,5" pixmap="Red-HD/infobar/moviebarprogressbar.png" transparent="0" zPosition="3"/>
+		<widget name="servicelist" position="140,370" size="600,360" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" zPosition="3" />
 	</screen>
 	<screen name="SimpleChannelSelection" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -1417,9 +1418,10 @@ self.autoResize()
 		<widget name="SkinList" position="140,460" size="600,250" itemHeight="30" selectionPixmap="Red-HD/selectionbars/SelectionBar_H30x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />		
 		<panel name="MenuINTRODUCTIONWidget" />
 	</screen>
-	<screen name="SleepTimerEdit" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SleepTimerEdit" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="config" position="10,107" size="503,464" selectionPixmap="Red-HD/buttons/FocusBar_H25x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuCONFIGWidget" />
 		<widget name="current_status" position="52,570" size="400,30" valign="center" font="vmreg;20" transparent="0" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
@@ -2094,28 +2096,30 @@ self.autoResize()
 		<panel name="FullScreenMenuGreen2Panel" />
 		<panel name="FullScreenMenuBlue2Panel" />
 	</screen>
-	<screen name="DefaultServiceScan" position="150,115" size="420,390">
-		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-s.png" position="5,5" size="64,64" transparent="1" alphatest="blend">
+	<screen name="DefaultServiceScan" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuInfoText" />
+		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-s.png" position="230,235" size="64,64" transparent="1" alphatest="blend" zPosition="3">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-c.png" position="5,5" size="64,64" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-c.png" position="230,235" size="64,64" transparent="1" alphatest="blend" zPosition="3">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-t.png" position="5,5" size="64,64" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-t.png" position="230,235" size="64,64" transparent="1" alphatest="blend" zPosition="3">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget name="network" position="80,15" size="330,20" font="vmreg;20" />
-		<widget name="transponder" position="80,40" size="330,20" font="vmreg;20" />
-		<widget name="scan_state" position="10,80" zPosition="2" size="400,20" font="vmreg;18" />
-		<widget name="pass" position="10,80" size="400,20" font="vmreg;18" />
-		<widget name="scan_progress" position="10,105" size="400,15" pixmap="progress_big.png" borderWidth="2" borderColor="window-fg" />
-		<widget name="servicelist" position="10,135" size="400,265" selectionDisabled="1" />
+		<widget name="network" position="320,245" size="330,25" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget name="transponder" position="320,270" size="330,25" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget name="scan_state" position="140,315" size="600,25" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" valign="center" transparent="1" zPosition="3" />
+		<widget name="pass" position="140,315" size="600,25" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" valign="center" transparent="1" zPosition="3" />
+		<widget name="scan_progress" position="240,350" size="400,5" pixmap="Red-HD/infobar/moviebarprogressbar.png" transparent="0" zPosition="3"/>
+		<widget name="servicelist" position="140,370" size="600,360" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" zPosition="3" />
 	</screen>
 	<screen name="DiseqcTester" position="90,100" size="520,400" >
 		<!--ePixmap pixmap="icons/dish_scan.png" position="5,25" zPosition="0" size="119,110" transparent="1" alphatest="blend" />
@@ -2947,13 +2951,12 @@ self.autoResize()
 		<panel name="MenuPanel" />
 		<widget name="progress" position="10,107" size="503,100" />
 	</screen>
-	<screen name="Execute" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="Execute" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="linelist" position="10,107" size="503,450" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" />
-		<ePixmap pixmap="Red-HD/buttons/yellow.png" position="40,640" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="Red-HD/buttons/blue.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="key_yellow" position="75,641" size="190,24" zPosition="1" font="vmreg;20" halign="left" transparent="1" valign="center" backgroundColor="#009c9c9c" foregroundColor="foreground" />
-		<widget name="key_blue" position="75,674" size="190,20" zPosition="1" font="vmreg;20" halign="left" transparent="1" valign="center" backgroundColor="#00868686" foregroundColor="foreground" />
+		<panel name="MenuInfoText" />
+		<widget name="linelist" position="140,200" size="600,520" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<panel name="FullScreenMenuYellowPanel" />
+		<panel name="FullScreenMenuBluePanel" />
 	</screen>
 	<screen name="AutoTimerHelp" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" >
 		<panel name="MenuPanel" />
