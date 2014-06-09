@@ -9,7 +9,7 @@
 
 	<!-- Wizard's -->
 	<screen name="StartWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
-	    <ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+	    <ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<panel name="FullScreenRedHDLogo" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuSourceTitle" />
@@ -25,7 +25,7 @@
 		<panel name="WizardRedButton" />
 	</screen>
 	<screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent" >
-	    <ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+	    <ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<panel name="FullScreenRedHDLogo" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuSourceTitle" />
@@ -43,13 +43,13 @@
 		<panel name="WizardRedButton" />
 	</screen>
 	<screen name="LanguageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-	    <ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+	    <ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<panel name="FullScreenRedHDLogo" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuSourceTitle" />
 		<panel name="MenuBlackBackgroundBox" />
 		<panel name="WizardText" />
-		<widget source="languages" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H45x600.png" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" zPosition="3">
+		<widget source="languages" render="Listbox" position="140,200" size="600,520" selectionPixmap="selectionbars/SelectionBar_H45x600.png" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" zPosition="3">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (100,0), size = (360,44), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the language name,
@@ -66,7 +66,7 @@
 		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="ImageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-	    <ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+	    <ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<panel name="FullScreenRedHDLogo" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuSourceTitle" />
@@ -81,7 +81,7 @@
 		<panel name="WizardRedButton" />
 	</screen>
 	<screen name="DefaultWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-	    <ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+	    <ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<panel name="FullScreenRedHDLogo" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuSourceTitle" />
@@ -96,7 +96,7 @@
 		<panel name="WizardRedButton" />
 	</screen>
 	<screen name="VideoWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-	    <ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+	    <ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<panel name="FullScreenRedHDLogo" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuSourceTitle" />
@@ -113,7 +113,7 @@
 		<panel name="WizardRedButton" />
 	</screen>
 	<screen name="DreamPackageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-	    <ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+	    <ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<panel name="FullScreenRedHDLogo" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuSourceTitle" />
@@ -128,7 +128,7 @@
 		<panel name="WizardRedButton" />
 	</screen>
 	<screen name="TutorialWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-	    <ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+	    <ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<panel name="FullScreenRedHDLogo" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuSourceTitle" />
@@ -141,7 +141,7 @@
 		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
 	</screen>
 	<screen name="CleanupWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-	    <ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+	    <ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<panel name="FullScreenRedHDLogo" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuSourceTitle" />
@@ -158,20 +158,20 @@
 		<panel name="WizardRedButton" />
 	</screen>
 	<screen name="CleanupWizardConfiguration" position="209,48" size="865,623" flags="wfNoBorder" backgroundColor="black" >
-	    <ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+	    <ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<ePixmap pixmap="Bg_EPG_list.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<panel name="MenuSourceTitle" />
-		<ePixmap pixmap="Red-HD/buttons/red.png" position="45,98" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="Red-HD/buttons/green.png" position="240,98" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="Red-HD/buttons/button_off.png" position="435,98" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="Red-HD/buttons/button_off.png" position="630,98" size="25,25" alphatest="blend" />
+		<ePixmap pixmap="buttons/red.png" position="45,98" size="25,25" alphatest="blend" />
+		<ePixmap pixmap="buttons/green.png" position="240,98" size="25,25" alphatest="blend" />
+		<ePixmap pixmap="buttons/button_off.png" position="435,98" size="25,25" alphatest="blend" />
+		<ePixmap pixmap="buttons/button_off.png" position="630,98" size="25,25" alphatest="blend" />
 		<widget source="key_red" render="Label" position="66,97" zPosition="1" size="150,25" font="vmreg;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="foreground" transparent="1" />
 		<widget source="key_green" render="Label" position="268,97" zPosition="1" size="150,25" font="vmreg;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="foreground" transparent="1" />
 		<widget name="config" zPosition="2" position="50,130" itemHeight="36" size="750,324" scrollbarMode="showOnDemand" transparent="1" />
 		<widget source="status" render="Label" position="160,525" size="540,60" zPosition="10" foregroundColor="#003c3c3c" backgroundColor="#27aeaeae" font="vmreg;20" halign="center" valign="center" transparent="1" />
 	</screen>
 	<screen name="DefaultSatLists" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-	    <ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+	    <ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<panel name="FullScreenRedHDLogo" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuSourceTitle" />
@@ -185,7 +185,7 @@
 		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="MessageBoxWizard" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black" >
-	    <ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+	    <ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<panel name="FullScreenRedHDLogo" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuSourceTitle" />
@@ -198,7 +198,7 @@
 		<widget name="rc" pixmap="rc.png" position="950,140" zPosition="10" size="154,500" transparent="0" alphatest="blend" />
 	</screen>
 	<screen name="InstallWizardIpkgUpdater" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
-	    <ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+	    <ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<panel name="FullScreenRedHDLogo" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuSourceTitle" />

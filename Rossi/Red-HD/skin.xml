@@ -101,14 +101,14 @@
 		<color name="WindowTitleForeground" color="white" />
 		<color name="WindowTitleBackground" color="vmdarkred" />
 		<borderset name="bsWindow">
-			<pixmap pos="bpTopLeft" filename="Red-HD/screens/b_tl.png" />
-			<pixmap pos="bpTop" filename="Red-HD/screens/b_t.png" />
-			<pixmap pos="bpTopRight" filename="Red-HD/screens/b_tr.png" />
-			<pixmap pos="bpLeft" filename="Red-HD/screens/b_l.png" />
-			<pixmap pos="bpRight" filename="Red-HD/screens/b_r.png" />
-			<pixmap pos="bpBottomLeft" filename="Red-HD/screens/b_bl.png" />
-			<pixmap pos="bpBottom" filename="Red-HD/screens/b_b.png" />
-			<pixmap pos="bpBottomRight" filename="Red-HD/screens/b_br.png" />
+			<pixmap pos="bpTopLeft" filename="screens/b_tl.png" />
+			<pixmap pos="bpTop" filename="screens/b_t.png" />
+			<pixmap pos="bpTopRight" filename="screens/b_tr.png" />
+			<pixmap pos="bpLeft" filename="screens/b_l.png" />
+			<pixmap pos="bpRight" filename="screens/b_r.png" />
+			<pixmap pos="bpBottomLeft" filename="screens/b_bl.png" />
+			<pixmap pos="bpBottom" filename="screens/b_b.png" />
+			<pixmap pos="bpBottomRight" filename="screens/b_br.png" />
 		</borderset>
 	</windowstyle>	
 	
