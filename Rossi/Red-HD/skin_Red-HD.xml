@@ -8,23 +8,7 @@
 	<!--  ## Head ##  -->
 
     <!-- System Menu's -->
-	<screen name="LanguageSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MenuPanel" />
-		<panel name="MenuSetupText" />
-		<widget source="languages" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H45x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-				MultiContentEntryText(pos = (100,0), size = (360,43), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the language name,
-				MultiContentEntryPixmapAlphaTest(pos = (20,2), size = (60,40), png = 2), # index 2 is the pixmap
-				],
-				"fonts": [gFont("vmreg",22)],
-				"itemHeight": 45
-				}
-			</convert>
-		</widget>
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
-	</screen>
+	
 	<screen name="Menu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuHomeText" />	
@@ -37,6 +21,27 @@
 			</convert>
 		</widget>
 	</screen>
+    <!-- <screen name="menu_mainmenu" position="0,0" size="1280,720" title="Main Menu" flags="wfNoBorder" backgroundColor="transparent">
+	    <ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<panel name="MenuHomeText" />	
+		<panel name="FullScreenPIGPanel" />
+        <panel name="FullScreenTimePanel" />
+		<panel name="MenuSourceTitle" />
+		<panel name="MenuBlackBackgroundBox" />
+		<widget source="menu" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3">
+			<convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (555,36), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("vmreg",28)],
+				"itemHeight": 38
+				}
+			</convert>
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="Red-HD/menuicons/timers.png" position="30,10" size="110,110" alphatest="blend" zPosition="3">
+			<convert type="MenuEntryCompare">timer_menu</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen> -->
+	
 	<screen name="Setup" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<panel name="FullScreenRedHDLogo" />
@@ -85,13 +90,18 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<!-- <ePixmap pixmap="Red-HD/icons/icon_hd.png" position="475,611" size="30,23" zPosition="1" alphatest="blend" /> -->
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Red-HD/icons/icon_hd.png" position="475,611" size="30,23" zPosition="1" alphatest="blend">
+		<!-- <ePixmap pixmap="Red-HD/icons/icon_crypt.png" position="475,611" size="30,23" zPosition="1" alphatest="blend" /> -->
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Red-HD/icons/icon_crypt.png" position="475,611" size="30,23" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget> 	
+		<!-- <ePixmap pixmap="Red-HD/icons/icon_hd.png" position="510,611" size="30,23" zPosition="1" alphatest="blend" /> -->
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Red-HD/icons/icon_hd.png" position="510,611" size="30,23" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide" />
 		</widget> 	
-	    <!-- <ePixmap pixmap="Red-HD/icons/icon_hbbtv.png" position="510,611" size="52,23" zPosition="1" alphatest="blend" /> -->
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Red-HD/icons/icon_hbbtv.png" position="510,611" size="52,23" zPosition="1" alphatest="blend">
+	    <!-- <ePixmap pixmap="Red-HD/icons/icon_hbbtv.png" position="545,611" size="52,23" zPosition="1" alphatest="blend" /> -->
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Red-HD/icons/icon_hbbtv.png" position="545,611" size="52,23" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -135,13 +145,18 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<!-- <ePixmap pixmap="icons/icon_hd.png" position="475,476" size="30,23" zPosition="1" alphatest="blend" /> -->
-		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/icon_hd.png" position="475,476" size="30,23" zPosition="1" alphatest="blend">
+		<!-- <ePixmap pixmap="Red-HD/icons/icon_crypt.png" position="475,611" size="30,23" zPosition="1" alphatest="blend" /> -->
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Red-HD/icons/icon_crypt.png" position="475,611" size="30,23" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget> 
+		<!-- <ePixmap pixmap="icons/icon_hd.png" position="510,476" size="30,23" zPosition="1" alphatest="blend" /> -->
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/icon_hd.png" position="510,476" size="30,23" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide" />
 		</widget> 
-	    <!-- <ePixmap pixmap="icons/icon_hbbtv.png" position="510,476" size="52,23" zPosition="1" alphatest="blend" /> -->
-		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/icon_hbbtv.png" position="510,476" size="52,23" zPosition="1" alphatest="blend">
+	    <!-- <ePixmap pixmap="icons/icon_hbbtv.png" position="545,476" size="52,23" zPosition="1" alphatest="blend" /> -->
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/icon_hbbtv.png" position="545,476" size="52,23" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -164,13 +179,94 @@
         <widget source="session.CurrentService" render="Label" position="722,515" size="390,55" font="vmreg;22" foregroundColor="vmgrey" backgroundColor="black" transparent="1" halign="right" valign="top">
 			<convert type="PliExtraInfo">TransponderInfo2line</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="vmreg;22" position="720,617" size="390,55" foregroundColor="vmgrey" backgroundColor="black" halign="right" valign="top" transparent="1" noWrap="1" zPosition="1" >
+		<widget source="session.CurrentService" render="Label" font="vmreg;22" position="720,620" size="390,55" foregroundColor="vmgrey" backgroundColor="black" halign="right" valign="top" transparent="1" noWrap="1" zPosition="1" >
 			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
 		<eLabel text="UP NEXT" position="288,647" size="150,25" font="vmreg;22" foregroundColor="vmgrey" backgroundColor="black" halign="left" valign="center" transparent="1" zPosition="1"/>
 		<widget source="session.Event_Next" render="Label" position="394,645" size="350,30" font="vmreg;22" foregroundColor="vmgrey" backgroundColor="black" transparent="1" halign="left" valign="center" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
+		<panel name="InfobarProgressBar" />
+	</screen>
+    <screen name="MoviePlayer" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
+		<ePixmap position="center,593" size="973,84" pixmap="Red-HD/infobar/1stinfobar.png" alphatest="on" zPosition="-1"/>
+		<widget source="session.CurrentService" render="Picon" position="160,600" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="0" zPosition="1">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<!-- <ePixmap pixmap="icons/icon_rec.png" position="285,605" size="25,25" zPosition="0" alphatest="blend" /> -->
+		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec.png" position="285,605" size="25,25" zPosition="1" alphatest="blend" >
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<!-- <ePixmap pixmap="icons/icon_stableupdate.png" position="285,636" size="25,25" zPosition="0" alphatest="blend" /> -->
+		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="icons/icon_stableupdate.png" position="285,636" size="25,25" zPosition="1" alphatest="blend" >
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="285,636" size="25,25" zPosition="1" alphatest="blend" >
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="324,595" size="600,40" font="vmreg;34" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="left" valign="center" noWrap="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1050,593" zPosition="1" size="55,40" font="vmbold;25" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1" halign="right" valign="center">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+        <widget source="session.CurrentService" render="Label" position="325,641" size="100,25" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" transparent="1" zPosition="2" valign="center" halign="left">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+        <!-- <ePixmap pixmap="Red-HD/icons/icon_hd.png" position="510,645" size="30,23" zPosition="1" alphatest="blend" /> -->
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Red-HD/icons/icon_hd.png" position="510,645" size="30,23" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">IsHD</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+        <widget source="session.CurrentService" render="Label" position="985,641" size="60,25" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" halign="right" transparent="1" zPosition="1">
+			<convert type="ServiceInfo">VideoWidth</convert>
+		</widget>
+		<eLabel text="x" position="1049,641" size="15,25" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" halign="center" transparent="1" zPosition="1" />
+		<widget source="session.CurrentService" render="Label" position="1066,641" size="60,25" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" halign="left" transparent="1" zPosition="1">
+			<convert type="ServiceInfo">VideoHeight</convert>
+		</widget>		
+        <panel name="InfoBarMovieProgressBar" />
+	    <widget name="statusicon" position="250,684" size="20,20" pixmaps="Red-HD/icons/play.png,Red-HD/icons/pause.png,Red-HD/icons/stop.png,Red-HD/icons/forward.png,Red-HD/icons/backward.png,Red-HD/icons/slow.png,Red-HD/icons/blank.png" zPosition="3" alphatest="blend" />
+		<widget name="speed" position="980,680" size="80,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="center" valign="center" transparent="1" zPosition="1" />
+	</screen>
+    <screen name="RadioInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
+		<ePixmap position="center,560" size="973,84" pixmap="Red-HD/infobar/1stinfobar.png" alphatest="on" zPosition="-1"/>
+		<widget source="session.CurrentService" render="Picon" position="160,567" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="0" zPosition="1">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<!-- <ePixmap pixmap="icons/icon_rec.png" position="285,572" size="25,25" zPosition="0" alphatest="blend" /> -->
+		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec.png" position="285,572" size="25,25" zPosition="1" alphatest="blend" >
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<!-- <ePixmap pixmap="icons/icon_stableupdate.png" position="285,603" size="25,25" zPosition="0" alphatest="blend" /> -->
+		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="icons/icon_stableupdate.png" position="285,603" size="25,25" zPosition="1" alphatest="blend" >
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="285,603" size="25,25" zPosition="1" alphatest="blend" >
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="324,562" size="600,40" font="vmreg;34" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="left" valign="center" noWrap="1">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1050,560" zPosition="1" size="55,40" font="vmbold;25" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1" halign="right" valign="center">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>			
+		<widget source="session.Event_Now" render="Label" position="309,605" size="70,35" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" transparent="1" noWrap="1" halign="right" valign="center">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="385,605" size="70,35" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" transparent="1" noWrap="1" halign="left" valign="center">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:- %H:%M</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="470,605" size="550,35" font="vmreg;25" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="right" valign="center" noWrap="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+        <ePixmap position="center,644" size="973,33" pixmap="Red-HD/infobar/secondchannelpanel.png" alphatest="blend" zPosition="-1"/>		
+		<eLabel text="UP NEXT" position="288,647" size="150,25" font="vmbold;22" foregroundColor="vmgrey" backgroundColor="black" halign="left" valign="center" transparent="1" zPosition="1"/>
+		<widget source="session.Event_Next" render="Label" position="394,645" size="350,30" font="vmbold;22" foregroundColor="vmgrey" backgroundColor="black" transparent="1" halign="left" valign="center" noWrap="1">
+			<convert type="EventName">Name</convert>
+		</widget>		
 		<panel name="InfobarProgressBar" />
 	</screen>	
 	<screen name="QuickEPG" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
@@ -199,7 +295,6 @@
 		<widget name="list" position="center,610" size="600,60" font="vmreg;24" selectionPixmap="Red-HD/selectionbars/SelectionBar_H30x600.png" foregroundColor="white" backgroundColor="vmdarkred" EntryBackgroundColorNow="vmdarkred" transparent="1" />	
 		<panel name="InfobarProgressBar" />
 	</screen>
-	
 	<screen name="EventView" position="center,0" size="980,250" backgroundColor="transparent" flags="wfNoBorder" zPosition="1" >
 		<panel name="EventInfoBackground" />
 		<panel name="EventInfoProgramName" />
@@ -231,68 +326,7 @@
 		<panel name="EventInfoDateTime" />
 		<panel name="EventInfoDuration" />
         <panel name="EventInfoFullDescription" />
-	</screen>	
-	
-	<screen name="MoviePlayer" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
-		<ePixmap position="center,593" size="973,84" pixmap="Red-HD/infobar/1stinfobar.png" alphatest="on" zPosition="-1"/>
-		<widget source="session.CurrentService" render="Picon" position="160,600" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="0" zPosition="1">
-			<convert type="ServiceName">Reference</convert>
-		</widget>
-		<!-- <ePixmap pixmap="icons/icon_rec.png" position="285,605" size="25,25" zPosition="0" alphatest="blend" /> -->
-		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec.png" position="285,605" size="25,25" zPosition="1" alphatest="blend" >
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-		<!-- <ePixmap pixmap="icons/icon_stableupdate.png" position="285,636" size="25,25" zPosition="0" alphatest="blend" /> -->
-		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="icons/icon_stableupdate.png" position="285,636" size="25,25" zPosition="1" alphatest="blend" >
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="285,636" size="25,25" zPosition="1" alphatest="blend" >
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="324,595" size="600,40" font="vmreg;34" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="left" valign="center" noWrap="1">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1050,593" zPosition="1" size="55,40" font="vmbold;25" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1" halign="right" valign="center">
-			<convert type="ClockToText">Format:%H:%M</convert>
-		</widget>
-        <widget source="session.CurrentService" render="Label" position="325,641" size="100,25" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" transparent="1" zPosition="2" valign="center" halign="left">
-			<convert type="ServicePosition">Length</convert>
-		</widget>
-        <!-- <ePixmap pixmap="Red-HD/icons/icon_hd.png" position="475,645" size="30,23" zPosition="1" alphatest="blend" /> -->
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Red-HD/icons/icon_hd.png" position="475,645" size="30,23" zPosition="1" alphatest="blend">
-			<convert type="ServiceInfo">IsHD</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-        <widget source="session.CurrentService" render="Label" position="985,641" size="60,25" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" halign="right" transparent="1" zPosition="1">
-			<convert type="ServiceInfo">VideoWidth</convert>
-		</widget>
-		<eLabel text="x" position="1049,641" size="15,25" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" halign="center" transparent="1" zPosition="1" />
-		<widget source="session.CurrentService" render="Label" position="1066,641" size="60,25" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" halign="left" transparent="1" zPosition="1">
-			<convert type="ServiceInfo">VideoHeight</convert>
-		</widget>		
-        <panel name="InfoBarMovieProgressBar" />
-	    <widget name="statusicon" position="250,684" size="20,20" pixmaps="Red-HD/icons/play.png,Red-HD/icons/pause.png,Red-HD/icons/stop.png,Red-HD/icons/forward.png,Red-HD/icons/backward.png,Red-HD/icons/slow.png,Red-HD/icons/blank.png" zPosition="3" alphatest="blend" />
-		<widget name="speed" position="980,680" size="80,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="center" valign="center" transparent="1" zPosition="1" />
-	</screen>	
-	<screen name="TimeshiftState" position="0,677" size="1280,43" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
-	    <widget name="PTSSeekBack" position="center,0" size="996,35" pixmap="Red-HD/infobar/infobarprogressbarbackground.png" alphatest="blend" zPosition="1"/>
-		<widget source="session.CurrentService" render="Label" position="155,4" size="120,25" font="vmreg;20" foregroundColor="white" backgroundColor="vmdarkred" valign="center" halign="left" transparent="1" zPosition="2" >
-			<convert type="ServicePosition">Position</convert>
-		</widget>	
-		<widget name="statusicon" position="250,7" size="20,20" pixmaps="Red-HD/icons/play.png,Red-HD/icons/pause.png,Red-HD/icons/stop.png,Red-HD/icons/forward.png,Red-HD/icons/backward.png,Red-HD/icons/slow.png,Red-HD/icons/blank.png" zPosition="3" alphatest="blend" />
-		<widget source="session.CurrentService" render="Progress" position="center,12" size="713,12" pixmap="Red-HD/infobar/infobarprogressbar.png" transparent="1" zPosition="5">
-			<convert type="ServicePosition">Position</convert>
-		</widget>
-		<widget name="speed" position="980,3" size="80,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" valign="center" halign="center" transparent="1" zPosition="2" />
-		<widget source="session.CurrentService" render="Label" position="1005,4" size="120,25" font="vmreg;20" foregroundColor="white" backgroundColor="vmdarkred" valign="center" halign="right" transparent="1" zPosition="2" >
-			<convert type="ServicePosition">Length</convert>
-		</widget>
-	</screen>
-	<screen name="PVRState" position="50,0" size="300,40" backgroundColor="transparent" flags="wfNoBorder" transparent="0" zPosition="3">
-		<widget name="statusicon" position="51,0" size="188,35" pixmaps="Red-HD/icons/play_large.png,Red-HD/icons/pause_large.png,Red-HD/icons/stop_large.png,Red-HD/icons/forward_large.png,Red-HD/icons/backward_large.png,Red-HD/icons/slow_large.png,Red-HD/icons/blank.png" zPosition="2" alphatest="blend" />
-		<widget name="speed" position="100,5" size="80,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" valign="center" halign="center" transparent="1" zPosition="4" />
-	</screen>
-	<!-- EPG Screens -->
+	</screen>		
 	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="transparent" transparent="0" flags="wfNoBorder">
 		<panel name="MenuPanel" />
 		<panel name="MenuChannelsText" />
@@ -336,7 +370,7 @@
 	</screen>
 	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="vmdarkred" transparent="0" flags="wfNoBorder" >
 		<ePixmap pixmap="Red-HD/infobar/fullscreenbackground.png" position="0,0" size="1280,720" zPosition="-1"/>
-		<ePixmap pixmap="picon_default.png" position="20,10" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="Red-HD/infobar/logo.png" position="20,10" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="1"/>
 		<panel name="EPGSelectionProgramNowName" />		
 		<panel name="EPGSelectionProgramNowStartTime" />
         <panel name="EPGSelectionProgramNowEndTime" />	
@@ -405,21 +439,21 @@
 		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="285,519" size="25,25" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="324,478" size="600,40" font="vmreg;34" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="left" valign="center" noWrap="1">
+		<widget source="Event" render="Label" position="324,478" size="600,40" font="vmreg;34" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="left" valign="center" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1050,476" zPosition="1" size="55,40" font="vmbold;25" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1" halign="right" valign="center">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>			
-		<widget source="session.Event_Now" render="Label" position="309,521" size="70,35" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" transparent="1" noWrap="1" halign="right" valign="center">
+		<widget source="Event" render="Label" position="309,521" size="70,35" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" transparent="1" noWrap="1" halign="right" valign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="385,521" size="70,35" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" transparent="1" noWrap="1" halign="left" valign="center">
+		<widget source="Event" render="Label" position="385,521" size="70,35" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" transparent="1" noWrap="1" halign="left" valign="center">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="470,521" size="550,35" font="vmreg;25" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="right" valign="center" noWrap="1">
+		<widget source="Service" render="Label" position="470,521" size="550,35" font="vmreg;25" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="right" valign="center" noWrap="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<ePixmap pixmap="buttons/leftarrow.png" position="170,563" size="25,25" zPosition="3" alphatest="blend" />
@@ -429,46 +463,6 @@
 		<widget name="lab1" position="center,585" size="973,85" font="vmreg;24" halign="center" valign="center" zPosition="1" backgroundColor="vmdarkred" transparent="0" />
 		<widget name="list" position="center,585" size="973,85" ServiceFontGraphical="vmreg;22" EntryFontGraphical="vmreg;22" EntryBackgroundColor="white" EntryBackgroundColorSelected="vmdarkred" EntryBackgroundColorNowSelected="vmdarkred" EntryBackgroundColorNow="white" ServiceForegroundColorNow="white"  ServiceBackgroundColor="white"  ServiceBackgroundColorNow="vmdarkred" backgroundColor="vmdarkred" EntryForegroundColorSelected="white" EntryForegroundColorNowSelected="white" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="1" EntryFontWrap="no" />
 	</screen>		
-	<screen name="RadioInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
-		<ePixmap position="center,560" size="973,84" pixmap="Red-HD/infobar/1stinfobar.png" alphatest="on" zPosition="-1"/>
-		<widget source="session.CurrentService" render="Picon" position="160,567" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="0" zPosition="1">
-			<convert type="ServiceName">Reference</convert>
-		</widget>
-		<!-- <ePixmap pixmap="icons/icon_rec.png" position="285,572" size="25,25" zPosition="0" alphatest="blend" /> -->
-		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec.png" position="285,572" size="25,25" zPosition="1" alphatest="blend" >
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-		<!-- <ePixmap pixmap="icons/icon_stableupdate.png" position="285,603" size="25,25" zPosition="0" alphatest="blend" /> -->
-		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="icons/icon_stableupdate.png" position="285,603" size="25,25" zPosition="1" alphatest="blend" >
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="285,603" size="25,25" zPosition="1" alphatest="blend" >
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-		<widget source="session.Event_Now" render="Label" position="324,562" size="600,40" font="vmreg;34" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="left" valign="center" noWrap="1">
-			<convert type="EventName">Name</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1050,560" zPosition="1" size="55,40" font="vmbold;25" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1" halign="right" valign="center">
-			<convert type="ClockToText">Format:%H:%M</convert>
-		</widget>			
-		<widget source="session.Event_Now" render="Label" position="309,605" size="70,35" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" transparent="1" noWrap="1" halign="right" valign="center">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="session.Event_Now" render="Label" position="385,605" size="70,35" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" transparent="1" noWrap="1" halign="left" valign="center">
-			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Format:- %H:%M</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="470,605" size="550,35" font="vmreg;25" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="right" valign="center" noWrap="1">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-        <ePixmap position="center,644" size="973,33" pixmap="Red-HD/infobar/secondchannelpanel.png" alphatest="blend" zPosition="-1"/>		
-		<eLabel text="UP NEXT" position="288,647" size="150,25" font="vmbold;22" foregroundColor="vmgrey" backgroundColor="black" halign="left" valign="center" transparent="1" zPosition="1"/>
-		<widget source="session.Event_Next" render="Label" position="394,645" size="350,30" font="vmbold;22" foregroundColor="vmgrey" backgroundColor="black" transparent="1" halign="left" valign="center" noWrap="1">
-			<convert type="EventName">Name</convert>
-		</widget>		
-		<panel name="InfobarProgressBar" />
-	</screen>
 	<screen name="MediaPlayer" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<eLabel name="Filelist" position="20,75" size="110,22" text="File List" font="vmreg;22" foregroundColor="infobar_service_frgrnd" transparent="1" />
@@ -499,7 +493,24 @@
 		</widget>
 		<ePixmap pixmap="buttons/key_menu.png" position="20,686" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
 	</screen>
-
+    <screen name="TimeshiftState" position="0,677" size="1280,43" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
+	    <widget name="PTSSeekBack" position="center,0" size="996,35" pixmap="Red-HD/infobar/infobarprogressbarbackground.png" alphatest="blend" zPosition="1"/>
+		<widget source="session.CurrentService" render="Label" position="155,4" size="120,25" font="vmreg;20" foregroundColor="white" backgroundColor="vmdarkred" valign="center" halign="left" transparent="1" zPosition="2" >
+			<convert type="ServicePosition">Position</convert>
+		</widget>	
+		<widget name="statusicon" position="250,7" size="20,20" pixmaps="Red-HD/icons/play.png,Red-HD/icons/pause.png,Red-HD/icons/stop.png,Red-HD/icons/forward.png,Red-HD/icons/backward.png,Red-HD/icons/slow.png,Red-HD/icons/blank.png" zPosition="3" alphatest="blend" />
+		<widget source="session.CurrentService" render="Progress" position="center,12" size="713,12" pixmap="Red-HD/infobar/infobarprogressbar.png" transparent="1" zPosition="5">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget name="speed" position="980,3" size="80,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" valign="center" halign="center" transparent="1" zPosition="2" />
+		<widget source="session.CurrentService" render="Label" position="1005,4" size="120,25" font="vmreg;20" foregroundColor="white" backgroundColor="vmdarkred" valign="center" halign="right" transparent="1" zPosition="2" >
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+	</screen>
+	<screen name="PVRState" position="50,0" size="300,40" backgroundColor="transparent" flags="wfNoBorder" transparent="0" zPosition="3">
+		<widget name="statusicon" position="51,0" size="188,35" pixmaps="Red-HD/icons/play_large.png,Red-HD/icons/pause_large.png,Red-HD/icons/stop_large.png,Red-HD/icons/forward_large.png,Red-HD/icons/backward_large.png,Red-HD/icons/slow_large.png,Red-HD/icons/blank.png" zPosition="2" alphatest="blend" />
+		<widget name="speed" position="100,5" size="80,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" valign="center" halign="center" transparent="1" zPosition="4" />
+	</screen>
 	<screen name="AboutOE" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuInfoText" />
@@ -616,20 +627,14 @@
 			</convert>
 		</widget>
 	</screen>
-	<screen name="AudioEffect" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AudioEffect" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuCONFIGWidget" />
-		<widget source="description" render="Label" position="25,295" size="450,170" font="vmreg;22" itemHeight="28" selectionPixmap="Red-HD/buttons/FocusBar_H25x420.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" />
-		<widget source="key_red" render="Pixmap" pixmap="Red-HD/buttons/red.png" position="40,120" size="25,25" alphatest="blend" zPosition="1">
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="key_green" render="Pixmap" pixmap="Red-HD/buttons/green.png" position="40,145" size="25,25" alphatest="blend" zPosition="1">
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="key_yellow" render="Pixmap" pixmap="Red-HD/buttons/yellow.png" position="40,170" size="25,25" alphatest="blend" zPosition="1">
-			<convert type="ConditionalShowHide" />
-		</widget>
+		<panel name="MenuDESCRIPTIONWidget" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
 	</screen>
 	<screen name="BouquetSelector" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -841,17 +846,17 @@ self.autoResize()
 	<screen name="InputDeviceSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<panel name="FullScreenMenuRedPanel" />
-		<panel name="FullScreenMenuGreenPanel" />
-		<panel name="FullScreenMenuYellowPanel" />
-		<panel name="FullScreenMenuBluePanel" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+		<panel name="FullScreenMenuBlue2Panel" />
 		<widget source="list" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H70x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" >
 			<convert type="TemplatedMultiContent">
 							{"template": [
-									MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 2), # index 3 is the interface pixmap
+									MultiContentEntryPixmapAlphaTest(pos = (10, 8), size = (54, 54), png = 2), # index 3 is the interface pixmap
 									MultiContentEntryText(pos = (65, 6), size = (450, 54), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
 								],
-							"fonts": [gFont("vmreg", 20),gFont("vmreg", 20)],
+							"fonts": [gFont("vmreg", 22),gFont("vmreg", 22)],
 							"itemHeight": 70
 							}
 			</convert>
@@ -861,12 +866,29 @@ self.autoResize()
 	<screen name="InputDeviceSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<panel name="FullScreenMenuRedPanel" />
-		<panel name="FullScreenMenuGreenPanel" />
-		<panel name="FullScreenMenuYellowPanel" />
-		<panel name="FullScreenMenuBluePanel" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+		<panel name="FullScreenMenuBlue2Panel" />
 		<panel name="MenuCONFIGWidget" />
 		<panel name="MenuINTRODUCTIONWidget" />
+	</screen>
+	<screen name="LanguageSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<widget source="languages" render="Listbox" position="140,200" size="600,520" selectionPixmap="Red-HD/selectionbars/SelectionBar_H45x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (100,0), size = (360,43), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the language name,
+				MultiContentEntryPixmapAlphaTest(pos = (20,2), size = (60,40), png = 2), # index 2 is the pixmap
+				],
+				"fonts": [gFont("vmreg",22)],
+				"itemHeight": 45
+				}
+			</convert>
+		</widget>
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
 	</screen>
 	<screen name="MinuteInput" position="center,center" size="280,60">
 		<widget name="minutes" position="80,15" size="160,25" halign="right" font="vmreg;22" transparent="1" />
@@ -968,6 +990,7 @@ self.autoResize()
 	</screen>
 	<screen name="NetworkAdapterTest" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
+		<panel name="MenuInfoText" />
 		<widget name="Adaptertext" position="210,276" size="120,26" zPosition="3" font="vmreg;21" backgroundColor="black" foregroundColors="white,white" transparent="1" />
 		<widget name="Adapter" position="330,276" size="200,26" zPosition="3" font="vmreg;21" halign="right" foregroundColors="#cccccc,#a72c25,#5d984d" backgroundColor="black" transparent="1" />
 		<widget name="AdapterInfo_Text" position="585,276" size="150,26" zPosition="3" font="vmreg;21" backgroundColor="window-bg" transparent="1" foregroundColors="#919598,#cccccc,#ffffff" text="Info" />
@@ -1329,18 +1352,46 @@ self.autoResize()
 			self["file_list"].instance.setItemHeight(35)
 		</applet>
 	</screen>
-	<screen name="ManualFancontrol" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ManualFancontrol" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="config" position="10,107" size="503,395" selectionPixmap="Red-HD/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
-		<widget source="current" render="Label" position="20,490" size="503,40" zPosition="1" font="vmreg;18" halign="center" valign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" />
-			<widget source="SensorTempText0" render="Label" position="10,560" zPosition="1" size="120,40" font="vmreg;20" halign="right" valign="top" transparent="1" />
-			<widget source="SensorTemp0" render="Label" position="145,560" zPosition="1" size="100,20" font="vmreg;20" halign="left" >
+		<panel name="MenuSetupText" />
+		<widget name="config" position="140,200" size="600,395" selectionPixmap="Red-HD/selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
+		<widget source="current" render="Label" position="140,490" size="600,40" font="vmreg;22" halign="center" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+			<widget source="SensorTempText0" render="Label" position="180,560" size="120,40" font="vmreg;22" halign="right" valign="top" transparent="1" zPosition="3" />
+			<widget source="SensorTemp0" render="Label" position="270,560" size="100,20" font="vmreg;22" halign="left" zPosition="3" >
 				<convert type="SensorToText"></convert>
 			</widget>
-			<widget source="SensorFanText0" render="Label" position="10,590" zPosition="1" size="120,40" font="vmreg;20" halign="right" valign="top" transparent="1" />
-			<widget source="SensorFan0" render="Label" position="145,590" zPosition="1" size="150,20" font="vmreg;20" halign="left" >
+			<widget source="SensorFanText0" render="Label" position="470,590" size="120,40" font="vmreg;22" halign="right" valign="top" transparent="1" zPosition="3" />
+			<widget source="SensorFan0" render="Label" position="560,590" size="150,20" font="vmreg;22" halign="left" zPosition="3" >
 				<convert type="SensorToText"></convert>
 			</widget>
+		<panel name="MenuRed1SourcePanel" />
+		<panel name="MenuGreen1SourcePanel" />
+	</screen>
+	<screen name="TempFanControl" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" >
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<widget name="config" position="140,200" size="600,120" selectionPixmap="Red-HD/selectionbars/SelectionBar_H25x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
+		<widget source="SensorTempText0" render="Label" position="180,350" zPosition="3" size="90,40" font="vmreg;22" halign="left" transparent="1" />
+		<widget source="SensorTemp0" render="Label" position="270,350" zPosition="3" size="100,25" font="vmreg;22" halign="right" transparent="1">
+			<convert type="SensorToText"></convert>
+		</widget>
+		<widget source="SensorTempText1" render="Label" position="180,380" zPosition="3" size="90,40" font="vmreg;22" halign="left" transparent="1" />
+		<widget source="SensorTemp1" render="Label" position="270,380" zPosition="3" size="100,25" font="vmreg;22" halign="right" transparent="1">
+			<convert type="SensorToText"></convert>
+		</widget>
+		<widget source="SensorTempText2" render="Label" position="180,400" zPosition="3" size="90,40" font="vmreg;22" halign="left" transparent="1" />
+		<widget source="SensorTemp2" render="Label" position="270,400" zPosition="3" size="100,25" font="vmreg;22" halign="right" transparent="1">
+			<convert type="SensorToText"></convert>
+		</widget>
+		<widget source="SensorFanText0" render="Label" position="470,350" zPosition="3" size="90,40" font="vmreg;22" halign="left" transparent="1" />
+		<widget source="SensorFan0" render="Label" position="560,350" zPosition="3" size="130,25" font="vmreg;22" halign="right" transparent="1">
+			<convert type="SensorToText"></convert>
+		</widget>
+		<widget source="SensorFanText1" render="Label" position="470,370" zPosition="3" size="90,40" font="vmreg;22" halign="left" transparent="1" />
+		<widget source="SensorFan1" render="Label" position="560,370" zPosition="3" size="130,25" font="vmreg;22" halign="right" transparent="1">
+			<convert type="SensorToText"></convert>
+		</widget>
 		<panel name="MenuRed1SourcePanel" />
 		<panel name="MenuGreen1SourcePanel" />
 	</screen>
@@ -1351,22 +1402,19 @@ self.autoResize()
 		<panel name="MenuRed1SourcePanel" />
 		<panel name="MenuGreen1SourcePanel" />
 	</screen>
+	<screen name="FancontrolConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuCONFIGWidget" />
+		<panel name="MenuRed2SourcePanel" />
+		<panel name="MenuGreen2SourcePanel" />
+	</screen>
 	<screen name="VFD_GigaSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="VFD_Giga Setup" >
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuCONFIGWidget" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
-	</screen>
-	<screen name="TunerServer" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-	    <panel name="MenuPanel" />
-		<widget name="lab1" position="15,100" size="503,510" selectionPixmap="Red-HD/buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" font="vmreg;20" scrollbarMode="showOnDemand" />
-		<widget name="lab2" position="10,610" size="200,30" font="vmreg;20" valign="center" halign="right" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" />
-		<widget name="labstop" position="220,610" size="260,30" font="vmreg;20" valign="center" halign="center" backgroundColor="red"/>
-		<widget name="labrun" position="220,610" size="260,30" zPosition="1" font="vmreg;20" valign="center" halign="center" backgroundColor="green"/>
-		<panel name="FullScreenMenuRed2Panel" />
-		<panel name="FullScreenMenuGreen2Panel" />
-		<panel name="FullScreenMenuYellow2Panel" />
 	</screen>
 	<screen name="OpenWebifConfig" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -1465,34 +1513,6 @@ self.autoResize()
 		<panel name="MenuCONFIGWidget" />
 	</screen>
 	<screen name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent" />
-	<screen name="TempFanControl" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" >
-		<panel name="MenuPanel" />
-		<widget name="config" position="10,107" size="503,120" selectionPixmap="Red-HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
-		<widget source="SensorTempText0" render="Label" position="10,250" zPosition="1" size="90,40" font="vmreg;20" halign="left" />
-		<widget source="SensorTemp0" render="Label" position="100,250" zPosition="1" size="100,20" font="vmreg;19" halign="right">
-			<convert type="SensorToText"></convert>
-		</widget>
-		<widget source="SensorTempText1" render="Label" position="10,270" zPosition="1" size="90,40" font="vmreg;20" halign="left" />
-		<widget source="SensorTemp1" render="Label" position="100,270" zPosition="1" size="100,20" font="vmreg;19" halign="right">
-			<convert type="SensorToText"></convert>
-		</widget>
-		<widget source="SensorTempText2" render="Label" position="10,290" zPosition="1" size="90,40" font="vmreg;20" halign="left" />
-		<widget source="SensorTemp2" render="Label" position="100,290" zPosition="1" size="100,20" font="vmreg;19" halign="right">
-			<convert type="SensorToText"></convert>
-		</widget>
-		<widget source="SensorFanText0" render="Label" position="290,250" zPosition="1" size="90,40" font="vmreg;20" halign="left" />
-		<widget source="SensorFan0" render="Label" position="380,250" zPosition="1" size="130,20" font="vmreg;19" halign="right">
-			<convert type="SensorToText"></convert>
-		</widget>
-		<widget source="SensorFanText1" render="Label" position="290,270" zPosition="1" size="90,40" font="vmreg;20" halign="left" />
-		<widget source="SensorFan1" render="Label" position="380,270" zPosition="1" size="130,20" font="vmreg;19" halign="right">
-			<convert type="SensorToText"></convert>
-		</widget>
-		<ePixmap pixmap="Red-HD/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
-		<widget source="red" render="Label" position="75,663" size="190,24" zPosition="1" font="vmreg;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd1" />
-		<ePixmap pixmap="Red-HD/buttons/green.png" position="40,690" size="24,24" alphatest="blend" transparent="1" />
-		<widget source="green" render="Label" position="75,690" size="190,24" zPosition="1" font="vmreg;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd2" />
-	</screen>
 	<screen name="TimeDateInput" position="center,center" size="400,200" >
 		<widget name="cancel" pixmap="Red-HD/buttons/red.png" position="10,0" size="24,24" alphatest="blend" />
 		<widget name="ok" pixmap="Red-HD/buttons/green.png" position="260,0" size="24,24" alphatest="blend" />
@@ -1593,9 +1613,9 @@ self.autoResize()
 	</screen>
 	<screen name="VirtualKeyBoard" position="center,center" size="560,350" zPosition="99" >
 		<ePixmap pixmap="buttons/vkey_text.png" position="9,35" zPosition="-4" size="542,52" alphatest="on" />
-		<widget name="header" position="10,10" size="500,20" font="vmreg;20" transparent="1" noWrap="1" />
+		<widget name="header" position="10,10" size="500,25" font="vmreg;22" transparent="1" noWrap="1" />
 		<widget name="text" position="12,35" size="536,46" font="vmreg;46" transparent="1" noWrap="1" halign="right" />
-		<widget name="list" position="10,100" size="540,225" selectionDisabled="1" foregroundColor="window-fg" backgroundColor="#001c2c5c" transparent="1" />
+		<widget name="list" position="10,100" size="540,225" selectionDisabled="1" foregroundColor="white" backgroundColor="black" transparent="1" />
 	</screen>
 
 	<!-- Software Manger Screens -->
@@ -1622,20 +1642,6 @@ self.autoResize()
 			</convert>
 		</widget>
 		<panel name="MenuRed2Panel" />
-	</screen>
-	<screen name="SoftwareUpdateChanges" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="MenuPanel" />
-		<panel name="MenuInfoText" />
-		<widget name="text" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
-		<panel name="FullScreenMenuRed2Panel" />
-		<panel name="FullScreenMenuGreen2Panel" />
-		<panel name="FullScreenMenuYellow2Panel" />
-	</screen>
-	<screen name="SoftwareUpdateChoices" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MenuPanel" />
-		<panel name="MenuSetupText" />
-		<widget name="list" position="140,220" size="600,220" itemHeight="30" font="vmreg;24" selectionPixmap="Red-HD/selectionbars/SelectionBar_H30x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
-		<widget name="text" position="145,460" size="600,200" font="vmreg;24" foregroundColor="white" backgroundColor="black" transparent="1" halign="center" zPosition="3" />
 	</screen>
 	<screen name="PluginManager" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -1711,6 +1717,20 @@ self.autoResize()
 		<panel name="MenuRed2Panel" />
 		<panel name="MenuGreen2Panel" />
 	</screen>
+	<screen name="SoftwareUpdateChanges" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="MenuPanel" />
+		<panel name="MenuInfoText" />
+		<widget name="text" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+	</screen>
+	<screen name="SoftwareUpdateChoices" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<widget name="list" position="140,220" size="600,220" itemHeight="30" font="vmreg;24" selectionPixmap="Red-HD/selectionbars/SelectionBar_H30x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
+		<widget name="text" position="145,460" size="600,200" font="vmreg;24" foregroundColor="white" backgroundColor="black" transparent="1" halign="center" zPosition="3" />
+	</screen>
 	<screen name="UpdatePlugin" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuInfoText" />
@@ -1761,8 +1781,8 @@ self.autoResize()
 		<panel name="MenuMenuButton" />
 		<panel name="MenuLISTWidget" />
 		<panel name="MenuINTRODUCTIONWidget" />
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
+		<panel name="MenuRed1SourcePanel" />
+		<panel name="MenuGreen1SourcePanel" />
 	</screen>
 	<screen name="BackupSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -2325,13 +2345,6 @@ self.autoResize()
 		<eLabel text=" " position="0,130" size="560,2" font="vmreg;32" foregroundColor="#005d5d5d" backgroundColor="#005c5c5c" />
 		<widget source="introduction" render="Label" position="0,140" size="550,25" zPosition="10" font="vmreg;21" halign="center" valign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" />
 	</screen>
-	<screen name="FancontrolConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MenuPanel" />
-		<panel name="MenuSetupText" />
-		<panel name="MenuCONFIGWidget" />
-		<panel name="MenuRed2SourcePanel" />
-		<panel name="MenuGreen2SourcePanel" />
-	</screen>
 	<screen name="FactoryTest" position="300,100" size="660,550" >
 		<widget name="testlist" position="10,0" size="440,455" font="vmreg;30" itemHeight="35" />
 		<widget name="resultlist" position="470,0" size="60,455" font="vmreg;30" itemHeight="35" />
@@ -2583,6 +2596,17 @@ self.autoResize()
 		<panel name="MenuPanel" />
 		<panel name="MenuInfoText" />
 		<widget name="infotext" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" />
+	</screen>
+	<screen name="TunerServer" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	    <panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<widget name="lab1" position="170,240" size="363,80" font="vmreg;22" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget name="lab2" position="170,360" size="150,30" font="vmreg;22" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
+		<widget name="labstop" position="330,360" size="100,30" font="vmreg;22" valign="center" halign="center" backgroundColor="red" zPosition="3" />
+		<widget name="labrun" position="330,360" size="100,30" font="vmreg;22" valign="center" halign="center" backgroundColor="green" zPosition="3" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
 	</screen>
 	<screen name="NetworkTelnet" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
