@@ -206,8 +206,8 @@
 	</screen>
 	
 	<screen name="MoviePlayer" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
-		<widget name="statusicon" position="70,50" size="125,144" pixmaps="icons/play_large.png,icons/pause_large.png,icons/stop_large.png,icons/forward_large.png,icons/backward_large.png,icons/slow_large.png,icons/blank.png" zPosition="0" alphatest="blend" />
-		<widget name="speed" position="93,161" size="80,20" font="skyreg;22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" zPosition="1" />
+		<widget name="statusicon" position="15,563" size="125,144" pixmaps="icons/play_large.png,icons/pause_large.png,icons/stop_large.png,icons/forward_large.png,icons/backward_large.png,icons/slow_large.png,icons/blank.png" zPosition="0" alphatest="blend" />
+		<widget name="speed" position="38,674" size="80,20" font="skyreg;22" foregroundColor="white" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" zPosition="1" />
 		<ePixmap position="150,560" zPosition="-1" size="1000,190" pixmap="infobar/movie_infobar-bg.png" />
 		<widget source="global.CurrentTime" render="Label" position="914,570" zPosition="1" size="90,20" font="skyreg;22" foregroundColor="skylighterblue" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="left" valign="top">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
