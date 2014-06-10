@@ -13,25 +13,25 @@
 		<widget name="area" position="90,125" size="140,30" font="skyreg; 24" foregroundColor="white" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
 		<widget name="areavalue" position="240,125" size="205,50" font="skyreg;24" foregroundColor="white" backgroundColor="skydarkblue" zPosition="2" transparent="1" />
 		<widget name="otherx" position="70,190" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
-		<widget name="otherextra" position="220,190" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
+		<widget name="otherextra" position="220,190" size="32,32" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,icons/lock_on.png"/>
 		<widget name="scriptc" position="250,190" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
-		<widget name="scriptcheck" position="400,190" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
+		<widget name="scriptcheck" position="400,190" size="32,32" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,icons/lock_on.png"/>
 		<widget name="picons" position="70,230" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
-		<widget name="piconscheck" position="220,230" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
+		<widget name="piconscheck" position="220,230" size="32,32" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,icons/lock_on.png"/>
 		<widget name="num" position="250,230" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
-		<widget name="numcheck" position="400,230" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
+		<widget name="numcheck" position="400,230" size="32,32" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,icons/lock_on.png"/>
 		<widget name="nit" position="70,270" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
-		<widget name="nitcheck" position="220,270" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
+		<widget name="nitcheck" position="220,270" size="32,32" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,icons/lock_on.png"/>
 		<widget name="placeh" position="250,270" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
-		<widget name="placehcheck" position="400,270" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
+		<widget name="placehcheck" position="400,270" size="32,32" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,icons/lock_on.png"/>
 		<widget name="parental" position="70,310" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
-		<widget name="parentalcheck" position="220,310" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
+		<widget name="parentalcheck" position="220,310" size="32,32" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,icons/lock_on.png"/>
 		<widget name="def" position="250,310" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
-		<widget name="defcheck" position="400,310" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
+		<widget name="defcheck" position="400,310" size="32,32" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,icons/lock_on.png"/>
 		<widget name="ordering" position="70,350" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
-		<widget name="orderingcheck" position="220,350" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
+		<widget name="orderingcheck" position="220,350" size="32,32" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,icons/lock_on.png"/>
 		<widget name="fta" position="250,350" size="140,30" font="skyreg; 22" foregroundColor="skygold" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
-		<widget name="ftacheck" position="400,350" size="32,32" alphatest="blend" zPosition="1" pixmaps="Blue-HD/icons/lock_off.png,Blue-HD/icons/lock_on.png"/>
+		<widget name="ftacheck" position="400,350" size="32,32" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,icons/lock_on.png"/>
 		<widget name="status" position="70,420" size="140,30" font="skyreg; 22" foregroundColor="white" backgroundColor="skydarkblue" halign="right" zPosition="2" transparent="1" />
 		<widget name="status2" position="220,420" size="205,30" font="skyreg;22" foregroundColor="white" backgroundColor="skydarkblue" zPosition="5" transparent="1" />
 		<panel name="MenuMenuButton" />
@@ -68,7 +68,7 @@
 	</screen>
 	<screen name="AutoBouquetsMaker_Menu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget source="list" render="Listbox" position="10,107" size="503,535" selectionPixmap="Blue-HD/buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" >
+		<widget source="list" render="Listbox" position="10,107" size="503,535" selectionPixmap="buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (20,0), size = (465,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1 ) ],
 				"fonts": [gFont("skyreg",28)],
@@ -81,7 +81,7 @@
 		<panel name="MenuPanel" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
-		<widget name="config" position="10,107" size="503,450" font="skyreg;22" itemHeight="28" selectionPixmap="Blue-HD/buttons/FocusBar_H30x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="config" position="10,107" size="503,450" font="skyreg;22" itemHeight="28" selectionPixmap="buttons/FocusBar_H30x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="description" position="10,558" size="503,82" font="skyreg;19" halign="center" valign="center" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" zPosition="1" />
 		<widget name="pleasewait" position="10,107" size="503,535" font="skyreg;22" halign="center" valign="center" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" zPosition="5" />
 	</screen>
@@ -89,7 +89,7 @@
 		<panel name="MenuPanel" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
-		<widget name="config" position="10,107" size="503,450" font="skyreg;22" itemHeight="28" selectionPixmap="Blue-HD/buttons/FocusBar_H30x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="config" position="10,107" size="503,450" font="skyreg;22" itemHeight="28" selectionPixmap="buttons/FocusBar_H30x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="description" position="10,558" size="503,82" font="skyreg;19" halign="center" valign="center" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" zPosition="1" />
 		<widget name="pleasewait" position="10,107" size="503,535" font="skyreg;22" halign="center" valign="center" foregroundColor="skygold" backgroundColor="skydarkblue" transparent="1" zPosition="5" />
 	</screen>
@@ -99,7 +99,7 @@
 		<panel name="MenuGreen1Panel" />
 		<panel name="MenuYellow1Panel" />
 		<panel name="MenuBlue1Panel" />
-		<widget source="list" render="Listbox" position="10,107" size="503,535" selectionPixmap="Blue-HD/buttons/FocusBar_H30x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" >
+		<widget source="list" render="Listbox" position="10,107" size="503,535" selectionPixmap="buttons/FocusBar_H30x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (10, 1), size = (440, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -115,7 +115,7 @@
 		<panel name="MenuPanel" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
-		<widget source="list" render="Listbox" position="10,107" size="503,535" selectionPixmap="Blue-HD/buttons/FocusBar_H30x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" >
+		<widget source="list" render="Listbox" position="10,107" size="503,535" selectionPixmap="buttons/FocusBar_H30x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
@@ -132,7 +132,7 @@
 		<panel name="MenuPanel" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
-		<widget source="list" render="Listbox" position="10,107" size="503,535" selectionPixmap="Blue-HD/buttons/FocusBar_H30x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" >
+		<widget source="list" render="Listbox" position="10,107" size="503,535" selectionPixmap="buttons/FocusBar_H30x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
@@ -149,7 +149,7 @@
 		<panel name="MenuPanel" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
-		<widget source="list" render="Listbox" position="10,107" size="503,535" selectionPixmap="Blue-HD/buttons/FocusBar_H30x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" >
+		<widget source="list" render="Listbox" position="10,107" size="503,535" selectionPixmap="buttons/FocusBar_H30x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
@@ -197,7 +197,7 @@
 	<!-- ## FastScan ## -->
 	<screen name="FastScanScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="config" position="10,107" size="503,485" itemHeight="28" font="skyreg;22" selectionPixmap="Blue-HD/buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="config" position="10,107" size="503,485" itemHeight="28" font="skyreg;22" selectionPixmap="buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="introduction" position="20,590" size="495,45" font="skyreg;22" foregroundColor="window-fg" backgroundColor="window-bg" halign="center" transparent="0" />
 	</screen>
 	<screen name="FastScanStatus" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -241,7 +241,7 @@
 	<screen name="IPTV" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater" >
 		<panel name="MenuPanel" />
 		<widget name="text1" position="center,100" size="450,45" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" scrollbarMode="showOnDemand" />
-		<widget name="IPTVList" render="Listbox" position="center,155" size="400,275" font="skyreg;18" selectionPixmap="Blue-HD/buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="IPTVList" render="Listbox" position="center,155" size="400,275" font="skyreg;18" selectionPixmap="buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
 		<widget name="country" position="130,445" size="450,300" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
 		<panel name="MenuInfoButton" />
 		<panel name="MenuRed1Panel" />
@@ -252,7 +252,7 @@
 	<screen name="IPTV_Mod" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater" >
 		<panel name="MenuPanel" />
 		<widget name="text1" position="center,100" size="450,45" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" scrollbarMode="showOnDemand" />
-		<widget name="IPTVList" render="Listbox" position="center,155" size="400,275" font="skyreg;18" selectionPixmap="Blue-HD/buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="IPTVList" render="Listbox" position="center,155" size="400,275" font="skyreg;18" selectionPixmap="buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
 		<widget name="country" position="130,445" size="450,300" font="skyreg;18" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" />
 		<panel name="MenuInfoButton" />
 		<panel name="MenuRed1Panel" />
@@ -274,24 +274,24 @@
 	
 	<!-- ## OnDemand ## -->
 	<screen name="OnDemand_Screen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/ondemandmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget name="PlayerList" position="160,91" size="220,573" selectionPixmap="Blue-HD/buttons/FocusBar_H106x503.png" transparent="1" scrollbarMode="showOnDemand" />
+		<ePixmap pixmap="ondemand/ondemandmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<widget name="PlayerList" position="160,91" size="220,573" selectionPixmap="buttons/FocusBar_H106x503.png" transparent="1" scrollbarMode="showOnDemand" />
 		<panel name="MenuMenuButton" />
 		<panel name="MenuInfoButton" />
 	</screen>	
 	<screen name="OnDemand_About" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/ondemandmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/ondemandmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
 		<widget name="about" position="10,107" size="503,533" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<panel name="MenuRed1Panel" />
 	</screen>
 	<screen name="OnDemandScreenSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/ondemandsetupmenu.png" position="0,0" size="597,720" alphatest="on" zPosition="-1" />
-		<widget name="config" position="10,107" size="573,500" font="skyreg;19" selectionPixmap="Blue-HD/buttons/FocusBar_H25x670.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
+		<ePixmap pixmap="ondemand/ondemandsetupmenu.png" position="0,0" size="597,720" alphatest="on" zPosition="-1" />
+		<widget name="config" position="10,107" size="573,500" font="skyreg;19" selectionPixmap="buttons/FocusBar_H25x670.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
 		<panel name="FullscreenRed2Panel" />
 		<panel name="FullscreenGreen2Panel" />
 	</screen>
 	<screen name="BBCiMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/bbciplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/bbciplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="bbcpink" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -301,7 +301,7 @@
 		<widget name="BBCiMenu" position="100,332" size="1075,310" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="BBCiStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/bbciplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/bbciplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="bbcpink" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -316,7 +316,7 @@
 		</applet>
 	</screen>
 	<screen name="ITVplayer" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/itvplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/itvplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="itvblack" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -326,7 +326,7 @@
 		<widget name="ITVMenu" position="100,332" size="1075,310" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="ITVStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/itvplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/itvplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="itvblack" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -341,7 +341,7 @@
 		</applet>
 	</screen>
 	<screen name="fourODMainMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/4odmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/4odmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="4odblue" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -351,7 +351,7 @@
 		<widget name="fourODMainMenu" position="100,332" size="1075,310" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="4ODStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/4odmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/4odmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="4odblue" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -366,7 +366,7 @@
 		</applet>
 	</screen>
 	<screen name="threeMainMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/3playermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/3playermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="threepurple" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -376,7 +376,7 @@
 		<widget name="threeMainMenu" position="100,332" size="1075,310" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="TV3StreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/3playermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/3playermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="threepurple" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -391,7 +391,7 @@
 		</applet>
 	</screen>
 	<screen name="RTEMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/rteplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/rteplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="rteyellow" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -401,7 +401,7 @@
 		<widget name="RTEMenu" position="100,332" size="1075,310" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="RTEStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/rteplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/rteplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="rteyellow" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -416,7 +416,7 @@
 		</applet>
 	</screen>
 	<screen name="iViewMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/iviewmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/iviewmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="iviewlightblue" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -426,7 +426,7 @@
 		<widget name="iViewMenu" position="100,332" size="1075,310" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="ABCiViewStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/iviewmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/iviewmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="iviewlightblue" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -441,7 +441,7 @@
 		</applet>
 	</screen>
 	<screen name="iRadioMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/radioplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/radioplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="radiolightblue" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -451,7 +451,7 @@
 		<widget name="iRadioMenu" position="100,332" size="1075,310" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="RadioFavStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/radioplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/radioplayermenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="radiolightblue" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -466,7 +466,7 @@
 		</applet>
 	</screen>
 	<screen name="shoutGenresMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/shoutcastmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/shoutcastmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="shoutcastorange" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -476,7 +476,7 @@
 		<widget name="shoutGenresMenu" position="100,332" size="1075,310" font="skyreg;19" itemHeight="28" foregroundColor="black" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="shoutSubGenresMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/shoutcastmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/shoutcastmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="shoutcastorange" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -486,7 +486,7 @@
 		<widget name="shoutSubGenresMenu" position="100,332" size="1075,310" font="skyreg;19" itemHeight="28" foregroundColor="black" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="ShoutStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/shoutcastmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/shoutcastmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="shoutcastorange" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -501,7 +501,7 @@
 		</applet>
 	</screen>
 	<screen name="tuneinGenresMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/tuneinmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/tuneinmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="tuneinwhite" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -511,7 +511,7 @@
 		<widget name="tuneinGenresMenu" position="100,332" size="1075,310" font="skyreg;19" itemHeight="28" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="TuneinStreamsThumbCommon" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Blue-HD/ondemand/tuneinmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ondemand/tuneinmenu.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1000,238" size="100,25" font="skyreg;25" foregroundColor="tuneinwhite" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -529,7 +529,7 @@
 <!-- ## RemoteChannelStreamConverter ## -->
 	<screen name="StreamingChannelFromServerScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="list" position="10,107" size="503,500" itemHeight="28" font="skyreg;22" selectionPixmap="Blue-HD/buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="list" position="10,107" size="503,500" itemHeight="28" font="skyreg;22" selectionPixmap="buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget source="statusbar" render="Label" position="20,607" size="495,30" font="skyreg;22" foregroundColor="window-fg" backgroundColor="window-bg" halign="center" transparent="0" />
 		<panel name="MenuRed2Panel" />
 		<panel name="MenuGreen2Panel" />
@@ -538,7 +538,7 @@
 	</screen>
 	<screen name="ServerEditor" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="config" position="10,107" size="503,536" itemHeight="28" font="skyreg;22" selectionPixmap="Blue-HD/buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="config" position="10,107" size="503,536" itemHeight="28" font="skyreg;22" selectionPixmap="buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<panel name="MenuRed2Panel" />
 		<panel name="MenuGreen2Panel" />
 		<panel name="MenuYellow2Panel" />
@@ -547,7 +547,7 @@
 <!-- ## RemoteTimer ## -->
 	<screen name="RemoteTimerScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="timerlist" position="10,107" size="503,500" itemHeight="48" font="skyreg;22" selectionPixmap="Blue-HD/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="timerlist" position="10,107" size="503,500" itemHeight="48" font="skyreg;22" selectionPixmap="buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="text" position="20,607" size="495,30" font="skyreg;22" foregroundColor="window-fg" backgroundColor="window-bg" halign="center" transparent="0" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
@@ -556,29 +556,16 @@
 	</screen>
 	<screen name="RemoteTimerSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="config" position="10,107" size="503,536" itemHeight="48" font="skyreg;22" selectionPixmap="Blue-HD/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="config" position="10,107" size="503,536" itemHeight="48" font="skyreg;22" selectionPixmap="buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="15,440" zPosition="1" size="541,720" transparent="1" alphatest="on" />
-	</screen>
-	<!-- ## RecInfoBar ## -->
-	<screen name="RecInfoBar" flags="wfNoBorder" position="0,0" size="1280,25" zPosition="1" >
-		<widget source="session.RecordState" render="Pixmap" pixmap="icons/record.png" position="5,5" zPosition="1" size="14,14" alphatest="on" >
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-		<widget name="chTuner" position="25,2" size="20,18" zPosition="1" font="skyreg;18" halign="left" transparent="1" noWrap="1" foregroundColor="blue" backgroundColor="black" />
-		<widget name="chProv" position="50,2" size="250,18" zPosition="1" font="skyreg;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="black" />
-		<widget name="chBouq" position="300,2" size="250,18" zPosition="1" font="skyreg;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="black" />
-		<widget name="chNum" position="550,2"  size="50,18"  zPosition="1" font="skyreg;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
-		<widget name="chName" position="605,2" size="250,18" zPosition="1" font="skyreg;18" halign="left"  transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
-		<widget name="timelen" position="850,2" size="80,18"  zPosition="1" font="skyreg;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
-		<widget name="recName" position="950,2" size="250,18"  zPosition="1" font="skyreg;18" halign="left" transparent="1" noWrap="1" foregroundColor="grey" backgroundColor="black" />
 	</screen>
 			
 	<!-- ## Sat Keys Updater by rossi2000## -->
 	<screen name="KeyUpdate" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="Sat Keys Updater by rossi2000">
         <panel name="MenuPanel" />
-        <widget name="myMenu" position="10,107" size="503,430" font="skyreg;18" selectionPixmap="Blue-HD/buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+        <widget name="myMenu" position="10,107" size="503,430" font="skyreg;18" selectionPixmap="buttons/FocusBar_H38x503.png" foregroundColor="white" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	
 </skin>
