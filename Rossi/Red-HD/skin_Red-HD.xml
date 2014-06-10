@@ -2407,7 +2407,7 @@ self.autoResize()
 		<widget source="menu" render="Listbox" position="140,200" size="600,520" selectionPixmap="selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="5">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (20,0), size = (555,38), flags = RT_HALIGN_CENTER, text = 1), # index 0 is the MenuText,
+				MultiContentEntryText(pos = (20,0), size = (555,37), flags = RT_HALIGN_CENTER, text = 1), # index 0 is the MenuText,
 				],
 				"fonts": [gFont("vmreg",28)],
 				"itemHeight": 38
@@ -2949,12 +2949,12 @@ self.autoResize()
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
 		<widget name="lab1" position="140,220" size="600,30" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" transparent="1" zPosition="3" />
-		<widget source="list" render="Listbox" position="140,260" size="600,425" selectionPixmap="selectionbars/SelectionBar_H85x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3">
+		<widget source="list" render="Listbox" position="140,200" size="600,425" selectionPixmap="selectionbars/SelectionBar_H85x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (90, 0), size = (368, 30), font=0, text = 0),
+				MultiContentEntryText(pos = (110, 5), size = (368, 30), font=0, text = 0),
 				MultiContentEntryText(pos = (110, 30), size = (348, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
-				MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
+				MultiContentEntryPixmapAlphaBlend(pos = (15, 0), size = (80, 80), png = 2),
 				],
 				"fonts": [gFont("vmreg", 22),gFont("vmreg", 18)],
 				"itemHeight": 85
@@ -2980,9 +2980,9 @@ self.autoResize()
 		<widget source="list" render="Listbox" position="140,260" size="600,425" selectionPixmap="selectionbars/SelectionBar_H85x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (90, 0), size = (368, 30), font=0, text = 0),
+				MultiContentEntryText(pos = (110, 5), size = (368, 30), font=0, text = 0),
 				MultiContentEntryText(pos = (110, 30), size = (348, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
-				MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
+				MultiContentEntryPixmapAlphaBlend(pos = (15, 0), size = (80, 80), png = 2),
 				],
 				"fonts": [gFont("vmreg", 22),gFont("vmreg", 18)],
 				"itemHeight": 85
