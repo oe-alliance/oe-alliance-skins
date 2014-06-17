@@ -36,28 +36,61 @@
 				}
 			</convert>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="menuicons/dreamplex.png" position="30,10" size="110,110" alphatest="blend" zPosition="3">
+		<widget source="menu" render="Pixmap" pixmap="menuicons/menu_dreamplex.png" position="30,10" size="110,110" alphatest="blend" zPosition="3">
 			<convert type="MenuEntryCompare">dreamplex</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="menuicons/timers.png" position="30,10" size="110,110" alphatest="blend" zPosition="3">
+		<widget source="menu" render="Pixmap" pixmap="menuicons/menu_timers.png" position="30,10" size="110,110" alphatest="blend" zPosition="3">
 			<convert type="MenuEntryCompare">timer_menu</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="menuicons/information.png" position="30,10" size="110,110" alphatest="blend" zPosition="3">
+		<widget source="menu" render="Pixmap" pixmap="menuicons/menu_information.png" position="30,10" size="110,110" alphatest="blend" zPosition="3">
 			<convert type="MenuEntryCompare">info_screen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="menuicons/plugins.png" position="30,10" size="110,110" alphatest="blend" zPosition="3">
+		<widget source="menu" render="Pixmap" pixmap="menuicons/menu_plugins.png" position="30,10" size="110,110" alphatest="blend" zPosition="3">
 			<convert type="MenuEntryCompare">plugin_selection</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="menuicons/setup.png" position="30,10" size="110,110" alphatest="blend" zPosition="3">
+		<widget source="menu" render="Pixmap" pixmap="menuicons/menu_setup.png" position="30,10" size="110,110" alphatest="blend" zPosition="3">
 			<convert type="MenuEntryCompare">setup_selection</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="menuicons/standbyrestart.png" position="30,10" size="110,110" alphatest="blend" zPosition="3">
+		<widget source="menu" render="Pixmap" pixmap="menuicons/menu_standbyrestart.png" position="30,10" size="110,110" alphatest="blend" zPosition="3">
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+		
+	<screen name="menu_timermenu" position="0,0" size="1280,720" title="Main Menu" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<panel name="MenuHomeText" />	
+		<panel name="FullScreenPIGPanel" />
+        <panel name="FullScreenTimePanel" />
+		<panel name="MenuSourceTitle" />
+		<panel name="MenuBlackBackgroundBox" />
+		<widget source="menu" render="Listbox" position="140,200" size="600,520" selectionPixmap="selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3">
+			<convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (555,36), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("vmreg",28)],
+				"itemHeight": 38
+				}
+			</convert>
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="menuicons/menu_timers.png" position="30,10" size="110,110" alphatest="blend" zPosition="3">
+			<convert type="MenuEntryCompare">autotimer_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="menuicons/menu_timers.png" position="30,10" size="110,110" alphatest="blend" zPosition="3">
+			<convert type="MenuEntryCompare">crontimer_edit</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="menuicons/menu_timers.png" position="30,10" size="110,110" alphatest="blend" zPosition="3">
+			<convert type="MenuEntryCompare">timer_edit</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="menuicons/menu_timers.png" position="30,10" size="110,110" alphatest="blend" zPosition="3">
+			<convert type="MenuEntryCompare">powertimer_edit</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen> -->
@@ -233,6 +266,11 @@
         <widget source="session.CurrentService" render="Label" position="325,641" size="100,25" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" transparent="1" zPosition="2" valign="center" halign="left">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
+		<!-- <ePixmap pixmap="icons/icon_crypt.png" position="475,645" size="30,23" zPosition="1" alphatest="blend" /> -->
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/icon_crypt.png" position="475,645" size="30,23" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget> 
         <!-- <ePixmap pixmap="icons/icon_hd.png" position="510,645" size="30,23" zPosition="1" alphatest="blend" /> -->
 		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/icon_hd.png" position="510,645" size="30,23" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsHD</convert>
@@ -1139,6 +1177,19 @@ self.autoResize()
 		<panel name="FullScreenMenuYellow2Panel" />
 		<panel name="FullScreenMenuBlue2Panel" />
 	</screen>
+	<screen name="LogManagerViewLog" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuInfoText" />
+		<panel name="MenuLISTLog" />
+	</screen>
+	<screen name="NetworkMacSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuCONFIGWidget" />
+		<panel name="MenuINTRODUCTIONWidget" />
+		<panel name="MenuRed1SourcePanel" />
+		<panel name="MenuGreen1SourcePanel" />
+	</screen>
 	<screen name="NetworkSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
@@ -1485,6 +1536,18 @@ self.autoResize()
 		<widget name="pass" position="140,315" size="600,25" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" valign="center" transparent="1" zPosition="3" />
 		<widget name="scan_progress" position="240,350" size="400,5" pixmap="infobar/moviebarprogressbar.png" transparent="0" zPosition="3"/>
 		<widget name="servicelist" position="140,370" size="600,360" selectionPixmap="selectionbars/SelectionBar_H25x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" zPosition="3" />
+	</screen>
+	<screen name="CableScanScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="Cable Scan">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuCONFIGWidget" />
+		<panel name="MenuINTRODUCTIONWidget" />
+	</screen>
+	<screen name="CableScanStatus" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="Cable Scan">
+		<panel name="MenuPanel" />
+		<panel name="MenuInfoText" />
+		<widget name="scan_state" position="140,315" size="600,25" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" valign="center" transparent="1" zPosition="3" />
+		<widget name="scan_progress" position="240,350" size="400,5" pixmap="infobar/moviebarprogressbar.png" transparent="0" zPosition="3"/>
 	</screen>
 	<screen name="SimpleChannelSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />

@@ -380,15 +380,13 @@
 	<!-- ## OnDemand Panels ## -->
 	<screen name="OnDemandMenuScreen">
 		<ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
-		<panel name="FullScreenRedHDLogo" />
 		<panel name="FullScreenPIGPanel" />
         <panel name="FullScreenTimePanel" />
 		<panel name="ChannelSelectionBlackBackgroundBox" />		
 	</screen>
 	<screen name="OnDemandThumbsCommon">
 		<ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
-		<panel name="FullScreenRedHDLogo" />
-        <widget source="Title" render="Label" position="170,35" size="900,55" font="vmbold;48" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" />		
+        <widget source="Title" render="Label" position="620,40" size="600,60" font="vmbold;26" foregroundColor="white" backgroundColor="vmdarkred" halign="center" valign="center" transparent="1" />		
 		<panel name="OnDemandBlackBackgroundBox" />	
 		<widget name="lab1" position="40,165" size="1195,540" font="vmreg;24" foregroundColor="white" backgroundColor="black" halign="center" valign="center" transparent="1" zPosition="5" />
 		<widget name="list" position="40,165" size="1195,540" font="vmreg;24" selectionPixmap="selectionbars/SelectionBar_H78x1195.png" foregroundColor="white" backgroundColor="vmdarkred" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
@@ -411,59 +409,32 @@
 	<screen name="OnDemandAboutText">
 		<eLabel text="About" position="170,35" size="230,55" font="vmbold;48" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
 	</screen>
-	<screen name="OnDemandBBCiPlayerText">
-		<eLabel text="BBC iPlayer" position="170,35" size="770,55" font="vmbold;48" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
-	</screen>
 	<screen name="OnDemandBBCiPlayerLogo">
-		<ePixmap pixmap="ondemand/bbciplayer.png" position="695,440" size="551,60" transparent="1" alphatest="blend" zPosition="1" />
-	</screen>
-	<screen name="OnDemandITVPlayerText">
-		<eLabel text="ITVPlayer" position="170,35" size="770,55" font="vmbold;48" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="ondemand/bbciplayer.png" position="50,40" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	<screen name="OnDemandITVPlayerLogo">
-		<ePixmap pixmap="ondemand/itvplayer.png" position="695,440" size="551,60" transparent="1" alphatest="blend" zPosition="1" />
-	</screen>
-	<screen name="OnDemand4ODText">
-		<eLabel text="4OD" position="170,35" size="770,55" font="vmbold;48" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="ondemand/itvplayer.png" position="50,40" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	<screen name="OnDemand4ODLogo">
-		<ePixmap pixmap="ondemand/4od.png" position="695,440" size="551,60" transparent="1" alphatest="blend" zPosition="1" />
-	</screen>
-	<screen name="OnDemand3PlayerText">
-		<eLabel text="3Player" position="170,35" size="770,55" font="vmbold;48" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="ondemand/4od.png" position="50,40" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	<screen name="OnDemand3PlayerLogo">
-		<ePixmap pixmap="ondemand/3player.png" position="695,440" size="551,60" transparent="1" alphatest="blend" zPosition="1" />
-	</screen>
-	<screen name="OnDemandIVIEWPlayerText">
-		<eLabel text="ABC iView" position="170,35" size="770,55" font="vmbold;48" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="ondemand/3player.png" position="50,40" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	<screen name="OnDemandIVIEWPlayerLogo">
-		<ePixmap pixmap="ondemand/iviewplayer.png" position="695,440" size="551,60" transparent="1" alphatest="blend" zPosition="1" />
-	</screen>
-	<screen name="OnDemandRTEPlayerText">
-		<eLabel text="RTE Player" position="170,35" size="770,55" font="vmbold;48" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="ondemand/iviewplayer.png" position="50,40" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	<screen name="OnDemandRTEPlayerLogo">
-		<ePixmap pixmap="ondemand/rteplayer.png" position="695,440" size="551,60" transparent="1" alphatest="blend" zPosition="1" />
-	</screen>
-	<screen name="OnDemandiRadioPlayerText">
-		<eLabel text="iRadio" position="170,35" size="770,55" font="vmbold;48" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="ondemand/rteplayer.png" position="50,40" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	<screen name="OnDemandiRadioPlayerLogo">
-		<ePixmap pixmap="ondemand/iradioplayer.png" position="695,440" size="551,60" transparent="1" alphatest="blend" zPosition="1" />
-	</screen>
-	<screen name="OnDemandShoutcastText">
-		<eLabel text="SHOUTcast" position="170,35" size="770,55" font="vmbold;48" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="ondemand/iradioplayer.png" position="50,40" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	<screen name="OnDemandShoutcastLogo">
-		<ePixmap pixmap="ondemand/shoutcast.png" position="695,440" size="551,60" transparent="1" alphatest="blend" zPosition="1" />
-	</screen>
-	<screen name="OnDemandTuneINText">
-		<eLabel text="Tunein" position="170,35" size="770,55" font="vmbold;48" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="ondemand/shoutcast.png" position="50,40" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	<screen name="OnDemandTuneINLogo">
-		<ePixmap pixmap="ondemand/tunein.png" position="695,440" size="551,60" transparent="1" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="ondemand/tunein.png" position="50,40" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	<screen name="OnDemandRed1SourcePanel">
 		<ePixmap pixmap="buttons/red.png" position="465,110" size="35,25" alphatest="blend" transparent="1" />
