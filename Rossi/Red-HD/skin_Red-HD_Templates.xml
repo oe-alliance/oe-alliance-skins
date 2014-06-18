@@ -171,33 +171,33 @@
 		</widget>	
 	</screen>
 	<screen name="EPGPIGSelectionBouquetName">
-		<widget source="Title" render="Label" position="46,282" size="850,43" font="vmbold;25" transparent="1" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1" />	
+		<widget source="Title" render="Label" position="46,277" size="850,43" font="vmbold;25" transparent="1" foregroundColor="white" backgroundColor="vmdarkred" zPosition="1" />	
 	</screen>
 	<screen name="EPGPIGSelectionRedButton">
-		<ePixmap pixmap="buttons/red.png" position="50,656" size="35,25" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="90,655" size="240,25" foregroundColor="white" backgroundColor="vmdarkred" font="vmreg;22" halign="left" transparent="1" valign="center" noWrap="1" zPosition="1" />	
+		<ePixmap pixmap="buttons/red.png" position="50,661" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="90,660" size="240,25" foregroundColor="white" backgroundColor="vmdarkred" font="vmreg;22" halign="left" transparent="1" valign="center" noWrap="1" zPosition="1" />	
 	</screen>
 	<screen name="EPGPIGSelectionGreenButton">
-		<ePixmap pixmap="buttons/green.png" position="240,656" size="35,25" alphatest="blend" transparent="1" />
-		<widget name="key_green" position="280,655" size="240,25" foregroundColor="white" backgroundColor="vmdarkred" font="vmreg;22" halign="left" transparent="1" valign="center" noWrap="1" zPosition="1" />
+		<ePixmap pixmap="buttons/green.png" position="240,661" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_green" position="280,660" size="240,25" foregroundColor="white" backgroundColor="vmdarkred" font="vmreg;22" halign="left" transparent="1" valign="center" noWrap="1" zPosition="1" />
 	</screen>
 	<screen name="EPGPIGSelectionYellowButton">
-		<ePixmap pixmap="buttons/yellow.png" position="420,656" size="35,25" alphatest="blend" transparent="1" />
-		<widget name="key_yellow" position="460,655" size="240,25" foregroundColor="white" backgroundColor="vmdarkred" font="vmreg;22" halign="left" transparent="1" valign="center" noWrap="1" zPosition="1" />	
+		<ePixmap pixmap="buttons/yellow.png" position="420,661" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_yellow" position="460,660" size="240,25" foregroundColor="white" backgroundColor="vmdarkred" font="vmreg;22" halign="left" transparent="1" valign="center" noWrap="1" zPosition="1" />	
 	</screen>
 	<screen name="EPGPIGSelectionBlueButton">
-		<ePixmap pixmap="buttons/blue.png" position="620,656" size="35,25" alphatest="blend" transparent="1" />
-		<widget name="key_blue" position="660,655" size="240,25" foregroundColor="white" backgroundColor="vmdarkred" font="vmreg;22" halign="left" transparent="1" valign="center" noWrap="1" zPosition="1" />	
+		<ePixmap pixmap="buttons/blue.png" position="620,661" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_blue" position="660,660" size="240,25" foregroundColor="white" backgroundColor="vmdarkred" font="vmreg;22" halign="left" transparent="1" valign="center" noWrap="1" zPosition="1" />	
 	</screen>
 	<screen name="EPGPIGSelectionChangeBouquetText">
-		<ePixmap pixmap="buttons/arrowright.png" position="829,656" size="25,25" zPosition="3" alphatest="blend" />
-		<ePixmap pixmap="buttons/arrowleft.png" position="854,656" size="25,25" zPosition="3" alphatest="blend" />
-		<eLabel text="Change Bouquet" position="885,655" size="170,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="buttons/arrowright.png" position="829,661" size="25,25" zPosition="3" alphatest="blend" />
+		<ePixmap pixmap="buttons/arrowleft.png" position="854,661" size="25,25" zPosition="3" alphatest="blend" />
+		<eLabel text="Change Bouquet" position="885,660" size="170,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="EPGPIGSelectionChangeDayText">
-		<ePixmap pixmap="buttons/chup.png" position="1089,656" size="25,25" zPosition="3" alphatest="blend" />
-		<ePixmap pixmap="buttons/chdown.png" position="1114,656" size="25,25" zPosition="3" alphatest="blend" />
-		<eLabel text="Change Day" position="1145,655" size="170,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>	
+		<ePixmap pixmap="buttons/chup.png" position="1089,661" size="25,25" zPosition="3" alphatest="blend" />
+		<ePixmap pixmap="buttons/chdown.png" position="1114,661" size="25,25" zPosition="3" alphatest="blend" />
+		<eLabel text="Change Day" position="1145,660" size="170,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>	
 	</screen>
 	
 	<!-- ## EventView Panels ## -->
@@ -254,8 +254,8 @@
 	<screen name="MenuInfoText">
 		<eLabel text="Info" position="170,35" size="170,55" font="vmbold;48" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
 	</screen>
-	<screen name="MenuChannelsText">
-		<eLabel text="Channels" position="170,35" size="200,55" font="vmbold;48" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
+	<screen name="MenuMyChannelsText">
+		<eLabel text="MyChannels" position="170,35" size="250,55" font="vmbold;48" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="MenuMyShowsText">
 		<eLabel text="MyShows" position="170,35" size="200,55" font="vmbold;48" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
