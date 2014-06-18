@@ -198,7 +198,7 @@
 		</widget>
 	</screen>
 	<screen name="InfobarProgramNowName">
-		<widget source="session.Event_Now" render="Label" position="29,75" size="430,35" font="skyreg;22" noWrap="1" foregroundColor="skydarkblue" backgroundColor="skygold" transparent="1" valign="center">
+		<widget source="session.Event_Now" render="Label" position="29,75" size="450,35" font="skyreg;22" noWrap="1" foregroundColor="skydarkblue" backgroundColor="skygold" transparent="1" valign="center">
 			<convert type="EventName">Name</convert>
 		</widget>
 	</screen>
