@@ -272,6 +272,29 @@
 		<eLabel text="Save" position="75,690" size="100,26" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" zPosition="1" font="skyreg;22" halign="left"/>
 	</screen>
 	
+	<!-- ## LinuxsatAddons ## -->
+	<screen name="addonsupdatesScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="LinuxsatSupportAddons Update" >
+		<panel name="MenuPanel" />
+        <widget name="text" position="10,107" size="503,531" font="skyreg;22" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
+	</screen>
+	<screen name="AboutScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="About" >
+		<panel name="MenuPanel" />
+        <widget name="text" position="10,107" size="503,531" font="skyreg;20" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
+	</screen>
+	<screen name="AddonsGroups" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="LinuxsatSupportAddons" >
+		<panel name="MenuPanel" />
+		<widget name="info" position="10,107" size="503,531" font="skyreg;22" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" halign="center" valign="center" zPosition="2"/>
+        <widget name="list" position="10,107" size="503,531" font="skyreg;22" selectionPixmap="buttons/FocusBar_H30x503.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
+		<panel name="MenuRed2Panel" />
+		<panel name="MenuGreen2Panel" />
+		<panel name="MenuYellow2Panel" />
+		<panel name="MenuBlue2Panel" />
+	</screen>
+	<screen name="IpkgPackages" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="LinuxsatSupportAddons" >
+		<panel name="MenuPanel" />
+        <widget name="countrymenu" position="10,107" size="503,531" font="skyreg;22" selectionPixmap="buttons/FocusBar_H25x503.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
+	</screen>
+	
 	<!-- ## OnDemand ## -->
 	<screen name="OnDemand_Screen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ondemand/ondemandmenu.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
