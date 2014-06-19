@@ -266,6 +266,36 @@
 		</applet>
 	</screen>
 	
+	<!-- ## LinuxsatAddons ## -->
+	<screen name="addonsupdatesScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="LinuxsatSupportAddons Update" >
+		<panel name="MenuPanel" />
+		<panel name="MenuInfoText" />
+        <widget name="text" position="140,200" size="600,520" font="vmreg;24" foregroundColor="white" backgroundColor="black" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
+	</screen>
+	<screen name="AboutScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="About" >
+		<panel name="MenuPanel" />
+		<panel name="MenuInfoText" />
+        <widget name="text" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
+	</screen>
+	<screen name="AddonsGroups" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="LinuxsatSupportAddons" >
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<widget name="info" position="140,200" size="600,530" font="vmreg;24" foregroundColor="white" backgroundColor="black" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" halign="center" valign="center" zPosition="2"/>
+        <panel name="MenuLISTWidget" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+		<panel name="FullScreenMenuBlue2Panel" />
+	</screen>
+	<screen name="IpkgPackages" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="LinuxsatSupportAddons" >
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+        <widget name="countrymenu" position="140,200" size="600,520" font="vmreg;22" selectionPixmap="selectionbars/SelectionBar_H30x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
+		<applet type="onLayoutFinish">
+			self["countrymenu"].instance.setItemHeight(30)
+		</applet>
+	</screen>
+
 	<!-- ## OnDemand ## -->
 	<screen name="OnDemand_Screen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="OnDemandMenuScreen" />
