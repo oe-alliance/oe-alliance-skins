@@ -24,9 +24,6 @@
 		<ePixmap pixmap="buttons/blue.png" position="545,110" size="35,25" alphatest="blend" transparent="1" />
 		<widget name="key_blue" position="580,110" size="100,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />	
 	</screen>
-	<screen name="ChannelSelectionBlackBackgroundBox">
-		<ePixmap pixmap="infobar/bigblackbox.png" position="0,140" size="670,590" alphatest="blend" transparent="1" zPosition="1" />	
-	</screen>
 	<screen name="ChannelSelectionBouquetName">
 		<widget source="Title" render="Label" position="50,160" size="850,40" font="vmreg;25" transparent="1" foregroundColor="white" backgroundColor="black" zPosition="2" />	
 	</screen>
@@ -99,7 +96,6 @@
 			<convert type="EventName">ThirdDescription</convert>
 		</widget>	
 	</screen>
-	
 	
 	<!-- ## CrossEPG Panel ## -->
 	<screen name="CrossEPGDownloadBar">
@@ -222,8 +218,6 @@
 	    <widget name="FullDescription" position="54,50" size="870,160" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" valign="top" halign="left" />
 	</screen>
 	
-	
-	
 	<!-- ## Infobar Panels ## -->
 	<screen name="InfobarProgressBar">
 	    <ePixmap position="center,677" size="996,35" pixmap="infobar/infobarprogressbarbackground.png" alphatest="blend" zPosition="-1"/>
@@ -238,12 +232,11 @@
 	
 	<!-- ## Menu Panels ## -->
 	<screen name="MenuPanel">
-	    <ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+	    <ePixmap pixmap="infobar/menufullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<panel name="FullScreenRedHDLogo" />
 		<panel name="FullScreenPIGPanel" />
         <panel name="FullScreenTimePanel" />
 		<panel name="MenuSourceTitle" />
-		<panel name="MenuBlackBackgroundBox" />
 	</screen>
 	<screen name="MenuHomeText">
 		<eLabel text="Home" position="170,35" size="170,55" font="vmbold;48" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" zPosition="1"/>
@@ -310,9 +303,6 @@
 	<screen name="MenuHelpWindow">
 		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="800,500" size="541,720" transparent="1" alphatest="blend" zPosition="1" />
 	</screen>
-	<screen name="MenuBlackBackgroundBox">
-		<ePixmap pixmap="infobar/smallblackbox.png" position="130,190" size="620,540" alphatest="blend" transparent="1" zPosition="1" />
-	</screen>
 	<screen name="MenuLISTLog">
 		<widget name="list" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="5" />
 	</screen>
@@ -364,7 +354,6 @@
 			self["about"].instance.setItemHeight(28)
 		</applet>
 	</screen>
-	
 	
 	<!-- ## Movie Bar Panel ## -->
 	<screen name="InfoBarMovieProgressBar">
@@ -465,7 +454,6 @@
 		<widget name="key_blue" position="620,110" size="100,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />	
 	</screen>
 
-	
 	<!-- ## FullScreen Panels ## -->
 	<screen name="FullScreenRedHDLogo">
 		<ePixmap pixmap="infobar/logo.png" position="46,30" size="110,66" transparent="1" alphatest="blend" zPosition="-1"/>

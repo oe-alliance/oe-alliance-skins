@@ -23,7 +23,7 @@
 	</screen>
 	
 	<screen name="Setup" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
-		<ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="infobar/menufullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<panel name="FullScreenRedHDLogo" />
 		<panel name="MenuSetupText" />
 		<panel name="FullScreenPIGPanel" />
@@ -31,7 +31,6 @@
 		<panel name="MenuSourceTitle" />
         <panel name="MenuRed1SourcePanel" />
 		<panel name="MenuGreen1SourcePanel" />		
-		<panel name="MenuBlackBackgroundBox" />
 		<panel name="MenuCONFIGWidget" />
 		<panel name="MenuDESCRIPTIONWidget" />	
 		<panel name="MenuTextButtonVkey" />
@@ -171,7 +170,7 @@
     <screen name="MoviePlayer" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
 		<ePixmap position="center,593" size="973,84" pixmap="infobar/1stinfobar.png" alphatest="on" zPosition="-1"/>
 		<widget source="session.CurrentService" render="Picon" position="160,600" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="0" zPosition="1">
-			<convert type="ServiceName">Reference</convert>
+			<convert type="MovieReference"/>
 		</widget>
 		<!-- <ePixmap pixmap="icons/icon_rec.png" position="285,605" size="25,25" zPosition="0" alphatest="blend" /> -->
 		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec.png" position="285,605" size="25,25" zPosition="1" alphatest="blend" >
@@ -203,11 +202,11 @@
 			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-        <widget source="session.CurrentService" render="Label" position="985,641" size="60,25" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" halign="right" transparent="1" zPosition="1">
+        <widget source="session.CurrentService" render="Label" position="984,641" size="60,25" font="vmreg;24" foregroundColor="vmlightred" backgroundColor="black" halign="right" transparent="1" zPosition="1">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
-		<eLabel text="x" position="1049,641" size="15,25" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" halign="center" transparent="1" zPosition="1" />
-		<widget source="session.CurrentService" render="Label" position="1066,641" size="60,25" font="vmreg;25" foregroundColor="vmlightred" backgroundColor="black" halign="left" transparent="1" zPosition="1">
+		<eLabel text="x" position="1049,641" size="15,25" font="vmreg;24" foregroundColor="vmlightred" backgroundColor="black" halign="center" transparent="1" zPosition="1" />
+		<widget source="session.CurrentService" render="Label" position="1066,641" size="60,25" font="vmreg;24" foregroundColor="vmlightred" backgroundColor="black" halign="left" transparent="1" zPosition="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>		
         <panel name="InfoBarMovieProgressBar" />
@@ -608,7 +607,7 @@
 		</applet>
 	</screen>
 	<screen name="ChannelSelection" position="0,0" size="1280,720" backgroundColor="vmdarkred" flags="wfNoBorder">
-	    <ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" zPosition="-1"/>
+	    <ePixmap pixmap="infobar/channelselectionfullscreenbackground.png" position="0,0" size="1280,720" zPosition="-1"/>
 		<panel name="FullScreenRedHDLogo" />
 		<panel name="FullScreenPicon2" />
 		<panel name="FullScreenPIGPanel" />
@@ -618,7 +617,6 @@
 		<panel name="ChannelSelectionGreenButton" />
 		<panel name="ChannelSelectionYellowButton" />
 		<panel name="ChannelSelectionBlueButton" />
-		<panel name="ChannelSelectionBlackBackgroundBox" />
         <panel name="ChannelSelectionBouquetName" />	
 		<widget name="list" position="50,190" size="600,530" selectionPixmap="selectionbars/SelectionBar_H36x600.png" foregroundColorService="white" backgroundColor="vmdarkred" foregroundColorServiceSelected="white" foregroundColorEvent="vmlightred" backgroundColorService="vmdarkred" foregroundColorEventSelected="white" foregroundColorServiceNotAvail="vmgrey" serviceItemHeight="36" serviceNumberFont="vmbold;22" serviceNameFont="vmbold;22" serviceInfoFont="vmreg;22" transparent="1" zPosition="3" scrollbarMode="showOnDemand" />
 		<panel name="ChannelSelectionProgramNowName" />		
@@ -725,11 +723,10 @@ self.autoResize()
 		<widget name="initializetext" position="655,160" size="190,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" zPosition="1" />
 	</screen>
 	<screen name="HelpMenu" position="0,0" size="1280,720" backgroundColor="transparent" title="Help.." flags="wfNoBorder">
-	    <ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" zPosition="-1"/>
+	    <ePixmap pixmap="infobar/menufullscreenbackground.png" position="0,0" size="1280,720" zPosition="-1"/>
 		<panel name="FullScreenRedHDLogo" />
 		<panel name="MenuInfoText" />
 		<panel name="MenuSourceTitle" />
-		<panel name="MenuBlackBackgroundBox" />
 		<widget name="list" position="140,200" size="600,520" font="vmreg;24" itemHeight="35" transparent="1" selectionPixmap="selectionbars/SelectionBar_H35x600.png" scrollbarMode="showOnDemand" zPosition="3" />
 		<widget name="rc" pixmaps="rc.png,rcold.png" position="950,140" zPosition="10" size="154,500" alphatest="blend" transparent="0" />
 		<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
@@ -838,9 +835,11 @@ self.autoResize()
 		<widget name="minutes" position="80,15" size="160,25" halign="right" font="vmreg;22" transparent="1" />
 	</screen>
 	<screen name="MovieSelection" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" >
-	    <ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" zPosition="-1"/>
+	    <ePixmap pixmap="infobar/channelselectionfullscreenbackground.png" position="0,0" size="1280,720" zPosition="-1"/>
 	    <panel name="FullScreenRedHDLogo" />
-		<panel name="FullScreenPicon" />
+		<widget source="Service" render="Picon" position="700,30" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="1">
+			<convert type="MovieReference"/>
+		</widget>
 		<panel name="FullScreenPIGPanel" />
         <panel name="FullScreenTimePanel" />
 		<panel name="MenuMyShowsText" />  		
@@ -848,7 +847,6 @@ self.autoResize()
 		<panel name="PlannerGreenButton" />
 		<panel name="PlannerYellowButton" />
 		<panel name="PlannerBlueButton" />
-		<panel name="ChannelSelectionBlackBackgroundBox" />
         <panel name="ChannelSelectionBouquetName" />
 		<widget name="waitingtext" position="50,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" valign="center" transparent="1" zPosition="4" />
 		<widget name="list" position="50,200" size="600,520" font="vmreg;24" selectionPixmap="selectionbars/SelectionBar_H36x600.png" foregroundColorService="white" backgroundColor="vmdarkred" zPosition="3" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1" valign="center" />
