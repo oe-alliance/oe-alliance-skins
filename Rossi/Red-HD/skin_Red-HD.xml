@@ -170,7 +170,7 @@
     <screen name="MoviePlayer" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
 		<ePixmap position="center,593" size="973,84" pixmap="infobar/1stinfobar.png" alphatest="on" zPosition="-1"/>
 		<widget source="session.CurrentService" render="Picon" position="160,600" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="0" zPosition="1">
-			<convert type="MovieReference"/>
+			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<!-- <ePixmap pixmap="icons/icon_rec.png" position="285,605" size="25,25" zPosition="0" alphatest="blend" /> -->
 		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec.png" position="285,605" size="25,25" zPosition="1" alphatest="blend" >
@@ -838,7 +838,7 @@ self.autoResize()
 	    <ePixmap pixmap="infobar/channelselectionfullscreenbackground.png" position="0,0" size="1280,720" zPosition="-1"/>
 	    <panel name="FullScreenRedHDLogo" />
 		<widget source="Service" render="Picon" position="700,30" size="110,66" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="1">
-			<convert type="MovieReference"/>
+			<convert type="MovieInfo">RecordServiceRef</convert>
 		</widget>
 		<panel name="FullScreenPIGPanel" />
         <panel name="FullScreenTimePanel" />
