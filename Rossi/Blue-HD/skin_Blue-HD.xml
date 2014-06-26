@@ -767,7 +767,7 @@ self.autoResize()
 	<screen name="MovieSelection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder" >
 		<ePixmap pixmap="infobar/planner.png" position="0,0" size="1280,720" zPosition="-1"/>
 	    <widget source="Service" render="Picon" position="46,20" size="110,66" backgroundColor="transparent" alphatest="blend" transparent="1" zPosition="1">
-			<convert type="MovieReference"/>
+			<convert type="MovieInfo">RecordServiceRef</convert>
 		</widget>
 		<panel name="PlannerIconBar" />
 		<widget source="Service" render="Label" position="46,93" size="100,25" font="skyreg;26" foregroundColor="skylighterblue2" backgroundColor="black" zPosition="2" transparent="1" halign="left" >
