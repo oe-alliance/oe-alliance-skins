@@ -1100,8 +1100,13 @@ self.autoResize()
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
 		<panel name="MenuCONFIGWidget" />
-		<panel name="MenuRed1SourcePanel" />
-		<panel name="MenuGreen1SourcePanel" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<ePixmap pixmap="buttons/green.png" position="250,160" size="35,25" alphatest="blend" transparent="1" />
+		<widget source="key_green" render="Label" position="280,160" size="130,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
+		<ePixmap pixmap="buttons/yellow.png" position="340,160" size="35,25" alphatest="blend" transparent="1" />
+		<widget source="key_yellow" render="Label" position="375,160" size="200,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
+		<ePixmap pixmap="buttons/blue.png" position="545,160" size="35,25" alphatest="blend" transparent="1" />
+		<widget source="key_blue" render="Label" position="580,160" size="200,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />
 	</screen>
 	<screen name="AutoDiseqc" position="c-250,c-100" size="500,250" title=" ">
 		<widget source="statusbar" render="Label" position="10,5" zPosition="10" size="e-10,60" halign="center" valign="center" font="vmreg;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
