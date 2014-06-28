@@ -320,7 +320,6 @@
 	</screen>
 	<screen name="MenuABOUTWidget">
 		<widget name="about" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
-	    <panel name="MenuAppletAboutItemHeight28" />
 	</screen>
 	<screen name="MenuDESCRIPTIONWidget">
 		<widget name="description" position="780,340" size="450,110" font="vmreg;24" foregroundColor="white" backgroundColor="vmdarkred" halign="center" valign="top" transparent="1" zPosition="1" />
