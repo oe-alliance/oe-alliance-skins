@@ -25,7 +25,7 @@
 		<widget name="key_blue" position="580,110" size="100,25" zPosition="1" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="left" transparent="1" valign="center" noWrap="1" />	
 	</screen>
 	<screen name="ChannelSelectionBouquetName">
-		<widget source="Title" render="Label" position="50,160" size="850,40" font="vmreg;25" transparent="1" foregroundColor="white" backgroundColor="black" zPosition="2" />	
+		<widget source="Title" render="Label" position="50,160" size="850,40" font="vmreg;24" transparent="1" foregroundColor="white" backgroundColor="black" zPosition="2" />	
 	</screen>
 	<screen name="ChannelSelectionProgramNowName">
 		<widget source="ServiceEvent" render="Label" position="695,310" size="385,30" font="vmbold;23" foregroundColor="white" backgroundColor="vmdarkred" halign="left" valign="center" noWrap="1" transparent="1">

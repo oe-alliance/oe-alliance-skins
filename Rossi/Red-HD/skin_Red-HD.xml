@@ -87,7 +87,7 @@
 		<widget source="session.CurrentService" render="Label" position="490,605" size="550,35" font="vmreg;25" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="right" valign="center" noWrap="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-        <ePixmap position="center,644" size="973,33" pixmap="infobar/secondchannelpanel.png" alphatest="blend" zPosition="-1"/>		
+        <ePixmap position="center,644" size="973,33" pixmap="infobar/secondchannelpanel.png" alphatest="blend" zPosition="-1"/>				
 		<eLabel text="UP NEXT" position="288,647" size="150,25" font="vmreg;22" foregroundColor="vmgrey" backgroundColor="black" halign="left" valign="center" transparent="1" zPosition="1"/>
 		<widget source="session.Event_Next" render="Label" position="394,645" size="350,30" font="vmreg;22" foregroundColor="vmgrey" backgroundColor="black" transparent="1" halign="left" valign="center" noWrap="1">
 			<convert type="EventName">Name</convert>
@@ -154,12 +154,21 @@
 		<widget source="session.FrontendStatus" render="Label" position="213,646" size="80,22" font="vmreg;19" foregroundColor="white" backgroundColor="black" halign="left" valign="center" transparent="1" noWrap="1">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<widget name="epg_description" position="288,515" size="450,125" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="left" valign="top" transparent="1" zPosition="2" />
-        <widget source="session.CurrentService" render="Label" position="722,515" size="390,55" font="vmreg;22" foregroundColor="vmgrey" backgroundColor="black" transparent="1" halign="right" valign="top">
+		<widget name="epg_description" position="288,515" size="410,125" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="left" valign="top" transparent="0" zPosition="2" />
+        <widget source="session.CurrentService" render="Label" position="722,511" size="390,55" font="vmreg;22" foregroundColor="vmgrey" backgroundColor="black" transparent="1" halign="right" valign="center">
 			<convert type="PliExtraInfo">TransponderInfo2line</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="vmreg;22" position="720,620" size="390,55" foregroundColor="vmgrey" backgroundColor="black" halign="right" valign="top" transparent="1" noWrap="1" zPosition="1" >
+		<widget source="session.CurrentService" render="Label" position="882,561" size="90,30" font="vmreg;22" foregroundColor="vmgrey" backgroundColor="black" transparent="1" halign="right" valign="center">
+			<convert type="PliExtraInfo">VideoCodec</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="968,561" size="140,30" font="vmreg;22" foregroundColor="vmgrey" backgroundColor="black" transparent="1" halign="right" valign="center">
+			<convert type="PliExtraInfo">ResolutionString</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="vmreg;22" position="720,593" size="390,55" foregroundColor="vmgrey" backgroundColor="black" halign="right" valign="bottom" transparent="1" noWrap="1" zPosition="1" >
 			<convert type="CryptoInfo">VerboseInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="741,645" size="370,30" font="vmreg;22" foregroundColor="vmgrey" backgroundColor="black" transparent="1" halign="right" valign="center">
+			<convert type="PliExtraInfo">CryptoSpecial</convert>
 		</widget>
 		<eLabel text="UP NEXT" position="288,647" size="150,25" font="vmreg;22" foregroundColor="vmgrey" backgroundColor="black" halign="left" valign="center" transparent="1" zPosition="1"/>
 		<widget source="session.Event_Next" render="Label" position="394,645" size="350,30" font="vmreg;22" foregroundColor="vmgrey" backgroundColor="black" transparent="1" halign="left" valign="center" noWrap="1">
@@ -472,7 +481,7 @@
 		<widget source="lab2" render="Label" position="140,248" size="600,25" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" transparent="1" zPosition="3" />
 		<widget source="lab3" render="Label" position="140,279" size="600,45" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" transparent="1" zPosition="3" />
 		<widget name="AboutScrollLabel" position="280,325" size="600,400" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
-		<eLabel text="v1.2 by rossi2000 and simonsez" position="140,660" size="600,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="center" transparent="1" zPosition="3"/>
+		<eLabel text="v1.3 by rossi2000 and simonsez" position="140,660" size="600,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="center" transparent="1" zPosition="3"/>
 		<panel name="MenuInfoButton" />
 	</screen>
 	<screen name="SystemMemoryInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -617,8 +626,12 @@
 		<panel name="ChannelSelectionGreenButton" />
 		<panel name="ChannelSelectionYellowButton" />
 		<panel name="ChannelSelectionBlueButton" />
-        <panel name="ChannelSelectionBouquetName" />	
-		<widget name="list" position="50,190" size="600,530" selectionPixmap="selectionbars/SelectionBar_H36x600.png" foregroundColorService="white" backgroundColor="vmdarkred" foregroundColorServiceSelected="white" foregroundColorEvent="vmlightred" backgroundColorService="vmdarkred" foregroundColorEventSelected="white" foregroundColorServiceNotAvail="vmgrey" serviceItemHeight="36" serviceNumberFont="vmbold;22" serviceNameFont="vmbold;22" serviceInfoFont="vmreg;22" transparent="1" zPosition="3" scrollbarMode="showOnDemand" />
+        <panel name="ChannelSelectionBouquetName" />
+        <widget source="ServiceEvent" render="Label" position="565,160" size="85,30" font="vmreg;22" foregroundColor="white" backgroundColor="black" zPosition="2" transparent="1" halign="right" >
+			<convert type="ServiceOrbitalPosition">
+			</convert>
+		</widget>		
+		<widget name="list" position="50,190" size="600,530" selectionPixmap="selectionbars/SelectionBar_H36x600.png" foregroundColorService="white" backgroundColor="vmdarkred" foregroundColorServiceSelected="white" foregroundColorEvent="vmlightred" backgroundColorService="vmdarkred" foregroundColorEventSelected="white" foregroundColorServiceNotAvail="vmgrey" foregroundColorMarked="white" foregroundColorMarkedSelected="progressbargreen" backgroundColorMarked="vmdarkred" backgroundColorMarkedSelected="vmdarkred" serviceItemHeight="36" serviceNumberFont="vmbold;22" serviceNameFont="vmbold;22" serviceInfoFont="vmreg;22" transparent="1" zPosition="3" scrollbarMode="showOnDemand" />
 		<panel name="ChannelSelectionProgramNowName" />		
 		<panel name="ChannelSelectionProgramNowStartTime" />
 		<panel name="ChannelSelectionProgramNowEndTime" />		
@@ -865,9 +878,6 @@ self.autoResize()
 		</widget>
 		<widget name="TrashcanSize" position="695,650" size="400,30" font="vmreg;24" foregroundColor="white" backgroundColor="vmdarkred" valign="center" halign="left" zPosition="2" transparent="1" />		
 		<widget name="freeDiskSpace" position="695,685" size="400,30" font="vmreg;24" foregroundColor="white" backgroundColor="vmdarkred" valign="center" halign="left" zPosition="2" transparent="1" />				
-	    <applet type="onLayoutFinish">
-			self["list"].instance.setItemHeight(36)
-		</applet>
 	</screen>
 	<screen name="MovieSelectionSlim" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -1207,7 +1217,7 @@ self.autoResize()
 	<screen name="PluginDownloadBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<widget name="text" position="140,155" size="600,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="center" valign="center" transparent="1" zPosition="1" />
+		<widget name="text" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="center" valign="center" transparent="1" zPosition="1" />
 		<widget name="list" position="140,200" size="600,520" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3" enableWrapAround="1" />
 	</screen>
 	<screen name="Dish" flags="wfNoBorder" position="20,20" size="165,275" zPosition="-1" backgroundColor="transparent">
@@ -1391,7 +1401,7 @@ self.autoResize()
 		<widget name="infolist" position="0,0" size="650,300" selectionDisabled="1" />
 	</screen>
 	<screen name="ServiceInfo" position="center,center" size="780,350" title="Service info">
-		<panel name="ServiceInfoSimple"/>
+		<widget name="infolist" position="0,0" size="700,300" selectionDisabled="1" />
 		<ePixmap pixmap="buttons/red.png" position="0,325" size="25,25" alphatest="blend" />
 		<ePixmap pixmap="buttons/green.png" position="200,325" size="25,25" alphatest="blend" />
 		<ePixmap pixmap="buttons/yellow.png" position="395,325" size="25,25" alphatest="blend" />
@@ -2943,8 +2953,30 @@ self.autoResize()
 		<panel name="MenuSetupText" />
 		<widget name="list" position="140,200" size="600,520" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
 	</screen>
-	<!-- <screen name="Screensaver" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="picture" pixmap="infobar/reboot.png" position="0,0" size="1280,720" alphatest="blend" zPosition="1"/>
-	</screen> -->
+	
+	<!-- ## ATV Screens ## -->
+	<screen name="Infopanel" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="infobar/menufullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<panel name="FullScreenRedHDLogo" />
+		<panel name="FullScreenPIGPanel" />
+        <panel name="FullScreenTimePanel" />
+		<panel name="MenuSetupText" />
+		<widget name="label1" position="140,115" size="600,40" font="vmbold;28" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" />
+		<widget name="Mlist" position="140,200" size="600,520" font="vmreg;24" selectionPixmap="selectionbars/SelectionBar_H45x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
+		<applet type="onLayoutFinish">
+			self["Mlist"].instance.setItemHeight(45)
+		</applet>
+	</screen>
+	<screen name="QuickMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	    <panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<widget name="list" position="140,200" size="600,520" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
+		<widget name="sublist" position="820,325" size="400,400" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x400.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
+		<widget name="description" position="140,645" size="600,75" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" valign="center" transparent="1" zPosition="3" />
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+		<panel name="FullScreenMenuBlue2Panel" />
+	</screen>
 
 </skin>
