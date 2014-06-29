@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: myNOVUM_HD2 vs.2.4 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
+  <!--	Skin: myNOVUM_HD2 vs.3.0 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
   <!--	Skin: ViXBMC Vs 1.0 based on ViX-Night-HD Vs 0.39 by AndyBlac @www.world-of-satellite.com	-->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
@@ -3351,8 +3351,8 @@ self.autoResize()
     <widget source="key_red" render="Label" position="330,560" size="190,20" zPosition="4" font="Regular; 17" halign="left" backgroundColor="bluetransparent" transparent="1" foregroundColor="ivorywhite" />
     <widget source="key_green" render="Label" position="565,560" size="190,20" zPosition="4" font="Regular; 17" halign="left" backgroundColor="bluetransparent" transparent="1" foregroundColor="ivorywhite" />
     <widget source="key_yellow" render="Label" position="800,560" size="190,20" zPosition="4" font="Regular; 17" halign="left" backgroundColor="bluetransparent" transparent="1" foregroundColor="ivorywhite" />
-    <widget name="config" position="440,280" size="400,130" foregroundColor="preTrans10" font="Regular; 20" backgroundColor="bluetransparent" />
-    <widget source="status" render="Label" position="290,460" size="700,70" zPosition="10" font="Regular; 21" foregroundColor="white" halign="center" valign="center" transparent="1" backgroundColor="bluetransparent" />
+    <widget name="config" position="440,230" size="400,130" foregroundColor="preTrans10" font="Regular; 20" backgroundColor="bluetransparent" />
+    <widget source="status" render="Label" position="center,410" size="800,100" zPosition="10" font="Regular; 21" foregroundColor="white" halign="center" valign="center" transparent="1" backgroundColor="bluetransparent" />
   </screen>
   <!-- Virtual Zap -->
   <screen name="VirtualZap" position="0,570" size="1280,150" title="Virtual Zap" flags="wfNoBorder" backgroundColor="transparent">
@@ -7944,17 +7944,16 @@ self.autoResize()
     </widget>
     <widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=3,always=1,oneshot=1,startdelay=4000" position="70,47" size="960,38" font="Robo-Regular; 30" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1060,120" size="200,160" pixmap="myNOVUM_HD2/menu/imdb.png" transparent="1" alphatest="blend" />
-    <widget name="runtime" position="140,200" size="560,30" font="Regular; 22" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" halign="center" zPosition="0" />
-    <widget name="titellabel" position="140,160" size="560,30" font="Regular;22" valign="center" transparent="1" />
-    <widget name="detailslabel" position="280,240" size="660,175" font="Regular;20" backgroundColor="background2" transparent="1" />
-    <widget name="castlabel" position="140,435" size="800,220" font="Regular;20" backgroundColor="background2" transparent="1" />
-    <widget name="extralabel" position="140,240" size="800,350" font="Regular;20" backgroundColor="background2" transparent="1" />
-    <widget name="ratinglabel" position="730,200" size="210,30" font="Rerular;20" halign="center" foregroundColor="unf0b400" transparent="1" />
-    <widget name="statusbar" position="140,670" size="800,30" font="Regular; 18" foregroundColor="lightgrey" backgroundColor="background40" transparent="1" />
-    <widget name="poster" position="140,240" size="110,180" alphatest="blend" />
-    <widget name="menu" position="140,240" size="800,360" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="starsbg" position="730,165" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="2" alphatest="blend" />
-    <widget name="stars" position="730,165" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="3" transparent="1" />
+    <widget name="titellabel" position="140,160" size="670,45" font="Regular; 23" valign="center" transparent="1" backgroundColor="background2" foregroundColor="white" />
+    <widget name="detailslabel" position="140,213" size="680,200" font="Regular;20" backgroundColor="background2" transparent="1" foregroundColor="unFFFFF4" />
+    <widget name="castlabel" position="140,450" size="680,200" font="Regular; 19" backgroundColor="background2" transparent="1" />
+    <widget name="extralabel" position="140,245" size="680,360" font="Regular; 19" backgroundColor="background2" transparent="1" />
+    <widget name="ratinglabel" position="830,185" size="200,20" font="Regular; 16" halign="center" foregroundColor="unf0b400" transparent="1" backgroundColor="background2" />
+    <widget name="statusbar" position="140,660" size="800,50" font="Regular; 18" foregroundColor="unc0d7ff" backgroundColor="background2" transparent="1" />
+    <widget name="poster" position="860,218" size="141,230" alphatest="blend" backgroundColor="background30" />
+    <widget name="menu" position="140,245" size="800,360" itemHeight="30" font="Regular;19" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="starsbg" position="825,160" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="2" alphatest="blend" />
+    <widget name="stars" position="825,160" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="3" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/key_menu.png" position="1060,570" size="55,25" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/red.png" position="1045,600" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="1045,625" size="25,25" alphatest="blend" transparent="1" />
@@ -8966,7 +8965,7 @@ self.autoResize()
     <eLabel text="OPEN SOURCE" position="210,645" size="200,28" font="Regular;22" backgroundColor="background2" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="210,310" size="650,320" font="Regular; 22" backgroundColor="background40" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
     <ePixmap position="1060,570" size="45,25" pixmap="myNOVUM_HD2/buttons/key_info.png" alphatest="blend" />
-    <eLabel text="Skin myNOVUM_HD2 vs.2.4 by Nashu" position="580,645" size="270,70" backgroundColor="background2" foregroundColor="white" transparent="1" font="Robo-Regular; 20" halign="center" />
+    <eLabel text="Skin myNOVUM_HD2 vs.3.0 by Nashu" position="580,645" size="270,70" backgroundColor="background2" foregroundColor="white" transparent="1" font="Robo-Regular; 20" halign="center" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2/images/sidebar.png" position="1040,95" size="240,625" alphatest="on" transparent="1" zPosition="-2" />
@@ -16274,12 +16273,11 @@ self.autoResize()
     <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="1045,625" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/yellow.png" position="1045,650" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/blue.png" position="1045,675" size="25,25" alphatest="blend" transparent="1" />
-    <widget name="label" position="1080,650" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label2" position="1080,625" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label3" position="1080,675" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label4" position="1080,600" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="mainmenu" position="270,160" size="530,510" backgroundColor="background2" scrollbarMode="showNever" zPosition="1" transparent="1" />
-    <widget name="secondmenu" position="270,160" size="530,510" backgroundColor="background2" scrollbarMode="showNever" zPosition="1" transparent="1" />
+    <eLabel text="Favorites" position="1080,600" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <eLabel text="Search" position="1080,650" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <eLabel text="Hide" position="1080,675" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <widget name="mainmenu" position="275,160" size="530,510" backgroundColor="background2" scrollbarMode="showNever" zPosition="1" transparent="1" />
+    <widget name="secondmenu" position="275,160" size="530,510" backgroundColor="background2" scrollbarMode="showNever" zPosition="1" transparent="1" />
   </screen>
   <screen name="MUZUtvMain" position="0,0" size="1280,720" backgroundColor="transparent" title=" " flags="wfNoBorder">
     <ePixmap pixmap="myNOVUM_HD2/images/sidebar.png" position="1040,95" size="240,625" alphatest="on" transparent="1" zPosition="-2" />
@@ -16297,10 +16295,10 @@ self.autoResize()
     <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="1045,625" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/yellow.png" position="1045,650" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/blue.png" position="1045,675" size="25,25" alphatest="blend" transparent="1" />
-    <widget name="label" position="1080,650" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label2" position="1080,625" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label3" position="1080,675" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label4" position="1080,600" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <eLabel text="Favorites" position="1080,600" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <eLabel text="Download" position="1080,625" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <eLabel text="Search" position="1080,650" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <eLabel text="Hide" position="1080,675" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
     <widget name="menu" position="395,160" size="410,525" backgroundColor="background2" scrollbarMode="showNever" zPosition="1" transparent="1" />
     <widget name="pic1" position="270,165" size="115,65" alphatest="blend" zPosition="1" backgroundColor="background30" />
     <widget name="pic2" position="270,240" size="115,65" alphatest="blend" zPosition="1" backgroundColor="background30" />
@@ -16309,28 +16307,6 @@ self.autoResize()
     <widget name="pic5" position="270,465" size="115,65" alphatest="blend" zPosition="1" backgroundColor="background30" />
     <widget name="pic6" position="270,540" size="115,65" alphatest="blend" zPosition="1" backgroundColor="background30" />
     <widget name="pic7" position="270,615" size="115,65" alphatest="blend" zPosition="1" backgroundColor="background30" />
-  </screen>
-  <screen name="MUZUtv" position="0,0" size="1280,720" backgroundColor="transparent" title=" " flags="wfNoBorder">
-    <ePixmap pixmap="myNOVUM_HD2/images/sidebar.png" position="1040,95" size="240,625" alphatest="on" transparent="1" zPosition="-2" />
-    <eLabel position="1040,95" size="1,625" backgroundColor="background80" zPosition="-1" />
-    <eLabel position="0,0" size="1280,94" backgroundColor="un181A1C" zPosition="-2" />
-    <eLabel position="0,94" size="1280,1" backgroundColor="background80" zPosition="-1" />
-    <eLabel position="0,94" size="1040,626" backgroundColor="background70" zPosition="-10" />
-    <eLabel position="40,120" size="1000,600" backgroundColor="background30" zPosition="-2" />
-    <widget source="global.CurrentTime" render="Label" position="1040,52" size="240,38" font="scoutcondWide; 24" foregroundColor="transpWhite" backgroundColor="un181A1C" halign="center" transparent="1">
-      <convert type="ClockToText">Full</convert>
-    </widget>
-    <widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=3,always=1,oneshot=1,startdelay=4000" position="70,47" size="960,38" font="Robo-Regular; 30" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
-    <ePixmap position="1060,120" size="200,160" pixmap="myNOVUM_HD2/menu/muzu.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="myNOVUM_HD2/buttons/red.png" position="1045,600" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="1045,625" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2/buttons/yellow.png" position="1045,650" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2/buttons/blue.png" position="1045,675" size="25,25" alphatest="blend" transparent="1" />
-    <widget name="label" position="1080,650" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label2" position="1080,625" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label3" position="1080,675" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label4" position="1080,600" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="menu" position="220,160" size="630,525" backgroundColor="background2" zPosition="1" transparent="1" />
   </screen>
   <screen name="muzuBlog" position="0,0" size="1280,720" backgroundColor="transparent" title=" " flags="wfNoBorder">
     <ePixmap pixmap="myNOVUM_HD2/images/sidebar.png" position="1040,95" size="240,625" alphatest="on" transparent="1" zPosition="-2" />
@@ -16352,10 +16328,10 @@ self.autoResize()
     <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="1045,625" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/yellow.png" position="1045,650" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/blue.png" position="1045,675" size="25,25" alphatest="blend" transparent="1" />
-    <widget name="label" position="1080,650" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label2" position="1080,625" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label3" position="1080,675" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label4" position="1080,600" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <eLabel text="Playlist" position="1080,600" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <eLabel text="Download" position="1080,625" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <eLabel text="Video" position="1080,650" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <eLabel text="Hide" position="1080,675" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
     <eLabel position="100,700" size="870,15" backgroundColor="background30" zPosition="2" />
   </screen>
   <screen name="MUZUtvBlog" position="0,0" size="1280,720" backgroundColor="transparent" title=" " flags="wfNoBorder">
@@ -16370,59 +16346,12 @@ self.autoResize()
     </widget>
     <widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=3,always=1,oneshot=1,startdelay=4000" position="70,47" size="960,38" font="Robo-Regular; 30" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1060,120" size="200,160" pixmap="myNOVUM_HD2/menu/muzu.png" transparent="1" alphatest="blend" />
-    <widget name="blog" position="270,160" size="530,510" backgroundColor="background2" scrollbarMode="showNever" zPosition="1" transparent="1" />
+    <widget name="blog" position="275,160" size="530,510" backgroundColor="background2" scrollbarMode="showNever" zPosition="1" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/red.png" position="1045,600" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="1045,625" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/yellow.png" position="1045,650" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/blue.png" position="1045,675" size="25,25" alphatest="blend" transparent="1" />
-    <widget name="label" position="1080,650" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label2" position="1080,625" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label3" position="1080,675" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label4" position="1080,600" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-  </screen>
-  <screen name="muzuGenres" position="0,0" size="1280,720" backgroundColor="transparent" title=" " flags="wfNoBorder" transparent="0">
-    <ePixmap pixmap="myNOVUM_HD2/images/sidebar.png" position="1040,95" size="240,625" alphatest="on" transparent="1" zPosition="-2" />
-    <eLabel position="1040,95" size="1,625" backgroundColor="background80" zPosition="-1" />
-    <eLabel position="0,0" size="1280,94" backgroundColor="un181A1C" zPosition="-2" />
-    <eLabel position="0,94" size="1280,1" backgroundColor="background80" zPosition="-1" />
-    <eLabel position="0,94" size="1040,626" backgroundColor="background70" zPosition="-10" />
-    <eLabel position="40,120" size="1000,600" backgroundColor="background30" zPosition="-2" />
-    <widget source="global.CurrentTime" render="Label" position="1040,52" size="240,38" font="scoutcondWide; 24" foregroundColor="transpWhite" backgroundColor="un181A1C" halign="center" transparent="1">
-      <convert type="ClockToText">Full</convert>
-    </widget>
-    <widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=3,always=1,oneshot=1,startdelay=4000" position="70,47" size="960,38" font="Robo-Regular; 30" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
-    <ePixmap position="1060,120" size="200,160" pixmap="myNOVUM_HD2/menu/muzu.png" transparent="1" alphatest="blend" />
-    <widget name="list" position="220,160" size="630,510" backgroundColor="background2" scrollbarMode="showNever" zPosition="1" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2/buttons/red.png" position="1045,600" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="1045,625" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2/buttons/yellow.png" position="1045,650" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2/buttons/blue.png" position="1045,675" size="25,25" alphatest="blend" transparent="1" />
-    <widget name="label" position="1080,650" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label2" position="1080,625" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label3" position="1080,675" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label4" position="1080,600" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-  </screen>
-  <screen name="muzuMenu" position="0,0" size="1280,720" backgroundColor="transparent" title=" " flags="wfNoBorder">
-    <ePixmap pixmap="myNOVUM_HD2/images/sidebar.png" position="1040,95" size="240,625" alphatest="on" transparent="1" zPosition="-2" />
-    <eLabel position="1040,95" size="1,625" backgroundColor="background80" zPosition="-1" />
-    <eLabel position="0,0" size="1280,94" backgroundColor="un181A1C" zPosition="-2" />
-    <eLabel position="0,94" size="1280,1" backgroundColor="background80" zPosition="-1" />
-    <eLabel position="0,94" size="1040,626" backgroundColor="background70" zPosition="-10" />
-    <eLabel position="40,120" size="1000,600" backgroundColor="background30" zPosition="-2" />
-    <widget source="global.CurrentTime" render="Label" position="1040,52" size="240,38" font="scoutcondWide; 24" foregroundColor="transpWhite" backgroundColor="un181A1C" halign="center" transparent="1">
-      <convert type="ClockToText">Full</convert>
-    </widget>
-    <widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=3,always=1,oneshot=1,startdelay=4000" position="70,47" size="960,38" font="Robo-Regular; 30" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
-    <ePixmap position="1060,120" size="200,160" pixmap="myNOVUM_HD2/menu/muzu.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="myNOVUM_HD2/buttons/red.png" position="1045,600" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="1045,625" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2/buttons/yellow.png" position="1045,650" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2/buttons/blue.png" position="1045,675" size="25,25" alphatest="blend" transparent="1" />
-    <widget name="label" position="1080,650" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label2" position="1080,625" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label3" position="1080,675" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label4" position="1080,600" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="favmenu" position="270,160" size="530,510" backgroundColor="background2" scrollbarMode="showNever" zPosition="1" transparent="1" />
+    <eLabel text="Hide" position="1080,675" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
   </screen>
   <screen name="muzuFav" position="0,0" size="1280,720" backgroundColor="transparent" title=" " flags="wfNoBorder">
     <ePixmap pixmap="myNOVUM_HD2/images/sidebar.png" position="1040,95" size="240,625" alphatest="on" transparent="1" zPosition="-2" />
@@ -16440,11 +16369,11 @@ self.autoResize()
     <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="1045,625" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/yellow.png" position="1045,650" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/blue.png" position="1045,675" size="25,25" alphatest="blend" transparent="1" />
-    <widget name="label" position="1080,650" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label2" position="1080,625" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label3" position="1080,675" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label4" position="1080,600" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="favmenu" position="270,160" size="530,510" backgroundColor="background2" scrollbarMode="showNever" zPosition="1" transparent="1" />
+    <eLabel text="Delete" position="1080,600" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <eLabel text="Download" position="1080,625" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <eLabel text="Search" position="1080,650" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <eLabel text="Hide" position="1080,675" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <widget name="favmenu" position="275,160" size="530,510" backgroundColor="background2" scrollbarMode="showNever" zPosition="1" transparent="1" />
   </screen>
   <screen name="muzuBlogVideos" position="0,0" size="1280,720" backgroundColor="transparent" title=" " flags="wfNoBorder">
     <ePixmap pixmap="myNOVUM_HD2/images/sidebar.png" position="1040,95" size="240,625" alphatest="on" transparent="1" zPosition="-2" />
@@ -16462,10 +16391,10 @@ self.autoResize()
     <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="1045,625" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/yellow.png" position="1045,650" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/blue.png" position="1045,675" size="25,25" alphatest="blend" transparent="1" />
-    <widget name="label" position="1080,650" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label2" position="1080,625" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label3" position="1080,675" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
-    <widget name="label4" position="1080,600" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <eLabel text="Favorites" position="1080,600" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <eLabel text="Download" position="1080,625" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <eLabel text="Video" position="1080,650" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
+    <eLabel text="Hide" position="1080,675" size="200,20" font="Regular;17" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" zPosition="2" />
     <widget name="list" position="220,160" size="630,510" backgroundColor="background2" scrollbarMode="showNever" zPosition="1" transparent="1" />
   </screen>
   <!-- MyTube -->
@@ -16930,17 +16859,16 @@ self.autoResize()
     </widget>
     <widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=3,always=1,oneshot=1,startdelay=4000" position="70,47" size="960,38" font="Robo-Regular; 30" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1060,120" size="200,160" pixmap="myNOVUM_HD2/menu/ofdb_logo.png" transparent="1" alphatest="blend" />
-    <widget name="runtime" position="140,195" size="560,30" font="Regular; 22" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" halign="left" zPosition="0" />
-    <widget name="titellabel" position="140,160" size="560,30" font="Regular;22" valign="center" transparent="1" backgroundColor="background2" />
-    <widget name="detailslabel" position="270,235" size="670,200" font="Regular;20" backgroundColor="background2" transparent="1" />
-    <widget name="castlabel" position="140,460" size="800,220" font="Regular; 19" backgroundColor="background2" transparent="1" />
-    <widget name="extralabel" position="140,265" size="800,360" font="Regular; 19" backgroundColor="background2" transparent="1" />
-    <widget name="ratinglabel" position="730,195" size="210,30" font="Rerular;20" halign="center" foregroundColor="unf0b400" transparent="1" />
-    <widget name="statusbar" position="140,685" size="800,30" font="Regular; 18" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" />
-    <widget name="poster" position="140,235" size="120,196" alphatest="blend" backgroundColor="background30" />
-    <widget name="menu" position="140,265" size="800,360" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="starsbg" position="730,165" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="2" alphatest="blend" />
-    <widget name="stars" position="730,165" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="3" transparent="1" />
+    <widget name="titellabel" position="140,160" size="670,45" font="Regular; 23" valign="center" transparent="1" backgroundColor="background2" foregroundColor="white" />
+    <widget name="detailslabel" position="140,213" size="680,200" font="Regular;20" backgroundColor="background2" transparent="1" foregroundColor="unFFFFF4" />
+    <widget name="castlabel" position="140,450" size="680,200" font="Regular; 19" backgroundColor="background2" transparent="1" />
+    <widget name="extralabel" position="140,245" size="680,360" font="Regular; 19" backgroundColor="background2" transparent="1" />
+    <widget name="ratinglabel" position="830,185" size="200,20" font="Regular; 16" halign="center" foregroundColor="unf0b400" transparent="1" backgroundColor="background2" />
+    <widget name="statusbar" position="140,660" size="800,50" font="Regular; 18" foregroundColor="unc0d7ff" backgroundColor="background2" transparent="1" />
+    <widget name="poster" position="860,218" size="141,230" alphatest="blend" backgroundColor="background30" />
+    <widget name="menu" position="140,245" size="800,360" itemHeight="30" font="Regular;19" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="starsbg" position="825,160" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/OFDb/starsbar_empty.png" zPosition="2" alphatest="blend" />
+    <widget name="stars" position="825,160" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/OFDb/starsbar_filled.png" zPosition="3" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/key_menu.png" position="1060,570" size="55,25" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/red.png" position="1045,600" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="1045,625" size="25,25" alphatest="blend" transparent="1" />
