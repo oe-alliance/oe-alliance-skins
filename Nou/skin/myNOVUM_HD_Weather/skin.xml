@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: myNOVUM_HD_Weather vs.6.4 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
+  <!--	Skin: myNOVUM_HD_Weather vs.7.0 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
   <!--	Skin: ViXBMC Vs 1.0 based on ViX-Night-HD Vs 0.39 by AndyBlac @www.world-of-satellite.com	-->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
@@ -920,7 +920,7 @@
   <widget source="ServiceEvent" render="Label" position="722,488" size="526,55" halign="left" Valign="top" backgroundColor="background2" font="Robo-Regular; 21" foregroundColor="preTrans70" transparent="1" zPosition="6" Wrap="0" valign="top">
     <convert type="EventName">ThirdName</convert>
   </widget>
-  <widget source="session.RecordState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_rec_on.png" position="360,89" size="50,25" zPosition="11" alphatest="blend" transparent="1">
+  <widget source="session.RecordState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_rec_on.png" position="400,80" size="50,25" zPosition="11" alphatest="blend" transparent="1">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
   <!-- Running Text Start -->
@@ -935,7 +935,7 @@
   </widget>
   <widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=3,always=1,oneshot=1,startdelay=4000" position="40,665" size="570,36" font="Roboto-Medium; 20" foregroundColor="preTrans60" backgroundColor="background30" transparent="1" zPosition="6" />
   <!-- Running Text End -->
-  <eLabel text="m y c h a n n e l s" position="35,89" size="180,26" halign="left" font="Robo-Regular; 15" foregroundColor="preTrans60" backgroundColor="background30" transparent="1" noWrap="1" zPosition="4" />
+  <eLabel text="m y C h a n n e l s" position="35,77" size="280,36" halign="left" font="Robo-Regular; 23" foregroundColor="preTrans60" backgroundColor="background30" transparent="1" noWrap="1" zPosition="4" />
   <eLabel text="E V E N T V I E W" position="722,66" size="240,48" halign="left" font="Robo-Regular; 27" foregroundColor="und9dee2" backgroundColor="background30" transparent="1" noWrap="1" valign="center" zPosition="4" />
   <widget source="Service" render="Picon" position="988,62" size="90,54" transparent="0" zPosition="3" alphatest="blend">
     <convert type="ServiceName">Reference</convert>
