@@ -6,7 +6,6 @@
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
 	
 	<!--  ## Head ##  -->
-	
 	<output id="0">
 		<resolution xres="1280" yres="720" bpp="32" />
 	</output>
@@ -15,7 +14,7 @@
 	<include filename="/usr/share/enigma2/Red-HD/skin_Red-HD_ExtPlugins.xml"/>
 	<include filename="/usr/share/enigma2/Red-HD/skin_Red-HD_Wizard.xml"/>
 	<fonts>
-	    <font name="vmreg" filename="/usr/share/enigma2/Red-HD/fonts/VMReg.ttf" scale="100" />		
+	    <font name="vmreg" filename="/usr/share/enigma2/Red-HD/fonts/VMReg.ttf" scale="100" />
 		<font name="vmbold" filename="/usr/share/enigma2/Red-HD/fonts/VMBold.ttf" scale="100" />
 	</fonts>
 	<colors>
@@ -31,9 +30,6 @@
 		<color name="infobar_sunken_frgnd_dark" value="#00666666" />
 		<color name="infobar_collab_back" value="#12131313" />
 		<color name="infobar_service_frgrnd" value="#00385896" />
-		<color name="infobar_tuner_rec" value="#00a66666" />
-		<color name="secondBG" value="#18101214" />
-		<color name="secondFG" value="#00879ce1" />
 		<color name="menu-title-frgrnd" value="#00b3b3b3" />
 		<color name="menu-title-bkgrnd" value="#12151515" />
 		<color name="menu-time-bkgrnd" value="#12151515" />
@@ -111,5 +107,4 @@
 			<pixmap pos="bpBottomRight" filename="screens/b_br.png" />
 		</borderset>
 	</windowstyle>	
-	
 </skin>

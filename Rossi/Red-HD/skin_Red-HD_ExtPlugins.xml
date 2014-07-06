@@ -5,8 +5,6 @@
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
 	
-	<!--  ## Head ##  -->
-		
 	<!-- ## Autobouquets 28.2E by Lraizer ## -->
 	<screen name="AutoBouquets" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="AutoBouquets E2 for 28.2E by Lraizer" >
 		<panel name="MenuPanel" />
@@ -73,7 +71,7 @@
 	<screen name="AutoBouquetsMaker_Menu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<widget source="list" render="Listbox" position="140,200" size="600,520" selectionPixmap="selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" >
+		<widget source="list" render="Listbox" position="140,215" size="600,494" selectionPixmap="selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" >
 			<convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (20,0), size = (555,38), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 1 ) ],
 				"fonts": [gFont("vmreg",28)],
@@ -107,7 +105,7 @@
 		<panel name="FullScreenMenuGreen2Panel" />
 		<panel name="FullScreenMenuYellowPanel" />
 		<panel name="FullScreenMenuBluePanel" />
-		<widget source="list" render="Listbox" position="140,200" size="600,520" selectionPixmap="selectionbars/SelectionBar_H45x600.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" >
+		<widget source="list" render="Listbox" position="140,210" size="600,495" selectionPixmap="selectionbars/SelectionBar_H45x600.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (10, 3), size = (440, 33), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -124,7 +122,7 @@
 		<panel name="MenuSetupText" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
-		<widget source="list" render="Listbox" position="140,200" size="600,520" selectionPixmap="selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" >
+		<widget source="list" render="Listbox" position="140,215" size="600,494" selectionPixmap="selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
@@ -142,7 +140,7 @@
 		<panel name="MenuSetupText" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
-		<widget source="list" render="Listbox" position="140,200" size="600,520" selectionPixmap="selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" >
+		<widget source="list" render="Listbox" position="140,215" size="600,494" selectionPixmap="selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 5), size = (32, 32), png = 0),
@@ -160,7 +158,7 @@
 		<panel name="MenuSetupText" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
-		<widget source="list" render="Listbox" position="140,200" size="600,520" selectionPixmap="selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" >
+		<widget source="list" render="Listbox" position="140,215" size="600,494" selectionPixmap="selectionbars/SelectionBar_H38x600.png" foregroundColor="white" backgroundColor="skydarkblue" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 5), size = (32, 32), png = 0),
@@ -270,17 +268,17 @@
 	<screen name="addonsupdatesScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="LinuxsatSupportAddons Update" >
 		<panel name="MenuPanel" />
 		<panel name="MenuInfoText" />
-        <widget name="text" position="140,200" size="600,520" font="vmreg;24" foregroundColor="white" backgroundColor="black" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
+        <widget name="text" position="140,205" size="600,520" font="vmreg;24" foregroundColor="white" backgroundColor="black" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
 	</screen>
 	<screen name="AboutScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="About" >
 		<panel name="MenuPanel" />
 		<panel name="MenuInfoText" />
-        <widget name="text" position="140,200" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
+        <widget name="text" position="140,205" size="600,520" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
 	</screen>
 	<screen name="AddonsGroups" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="LinuxsatSupportAddons" >
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-		<widget name="info" position="140,200" size="600,530" font="vmreg;24" foregroundColor="white" backgroundColor="black" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" halign="center" valign="center" zPosition="2"/>
+		<widget name="info" position="140,205" size="600,520" font="vmreg;24" foregroundColor="white" backgroundColor="black" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" halign="center" valign="center" zPosition="2"/>
         <panel name="MenuLISTWidget" />
 		<panel name="FullScreenMenuRed2Panel" />
 		<panel name="FullScreenMenuGreen2Panel" />
@@ -290,7 +288,7 @@
 	<screen name="IpkgPackages" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="LinuxsatSupportAddons" >
 		<panel name="MenuPanel" />
 		<panel name="MenuSetupText" />
-        <widget name="countrymenu" position="140,200" size="600,520" font="vmreg;22" selectionPixmap="selectionbars/SelectionBar_H30x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
+        <widget name="countrymenu" position="140,205" size="600,510" font="vmreg;22" selectionPixmap="selectionbars/SelectionBar_H30x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
 		<applet type="onLayoutFinish">
 			self["countrymenu"].instance.setItemHeight(30)
 		</applet>
@@ -415,5 +413,4 @@
 			self["myMenu"].instance.setItemHeight(35)
 		</applet>
 	</screen>
-	
 </skin>
