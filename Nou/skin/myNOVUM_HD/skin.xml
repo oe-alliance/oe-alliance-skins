@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: myNOVUM_HD vs.7.0 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
+  <!--	Skin: myNOVUM_HD vs.7.4 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
   <!--	Skin: ViXBMC Vs 1.0 based on ViX-Night-HD Vs 0.39 by AndyBlac @www.world-of-satellite.com	-->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
@@ -315,7 +315,7 @@
     <widget source="session.CurrentService" render="Label" position="0,490" size="1280,80" font="Robo-Regular; 43" valign="center" halign="center" backgroundColor="transparent" transparent="1" foregroundColor="preTrans60" zPosition="-10" alphatest="on">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="session.CurrentService" render="Picon" position="10,568" size="220,132" zPosition="10" backgroundColor="un2D3033" transparent="0" alphatest="blend">
+    <widget source="session.CurrentService" render="Picon" position="10,560" size="220,132" zPosition="10" backgroundColor="un2D3033" transparent="0" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget source="session.Event_Now" render="Progress" pixmap="NOVUM_HD_Common/images/title_progress_bar_blue-fs8.png" position="287,595" size="700,1" zPosition="2" alphatest="blend" transparent="1">
@@ -353,8 +353,7 @@
     </widget>
     <ePixmap pixmap="NOVUM_HD_Common/icons/ico_hd_off.png" position="1190,688" size="41,20" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" position="1190,688" size="41,20" zPosition="2" pixmap="NOVUM_HD_Common/icons/ico_hd_on.png" alphatest="blend">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">721,1980</convert>
+      <convert type="ServiceInfo">IsHD</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap pixmap="NOVUM_HD_Common/icons/ico_format_off.png" position="1235,687" size="32,20" zPosition="1" alphatest="blend" />
@@ -450,20 +449,8 @@
     <widget source="session.FrontendStatus" render="Label" position="825,692" size="60,20" font="Regular; 18" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/images/1080-fs8.png" position="87,702" size="58,13" zPosition="2" alphatest="blend">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">1440,1920</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/images/720-fs8.png" position="87,702" size="58,13" zPosition="2" alphatest="blend">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">1280,1439</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/images/icon_sd.png" position="87,702" size="58,13" zPosition="2" alphatest="blend">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">0,720</convert>
-      <convert type="ConditionalShowHide" />
+    <widget source="session.CurrentService" render="Label" position="58,696" size="125,18" font="Regular2; 14" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" halign="center" valign="top">
+      <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/icon_dolby.png" position="1110,635" size="108,40" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsMultichannel</convert>
@@ -504,7 +491,14 @@
     </widget>
     <!--		<widget source="session.CurrentService" render="Label" backgroundColor="un2D3033" font="Regular1; 18" foregroundColor="transpWhite" halign="left" valign="center" noWrap="1" position="295,693" size="925,22" transparent="1" zPosition="1">
 			<convert type="DMCHDCaidDisplay">EcmInfo</convert>
-    </widget>-->
+  </widget>-->
+    <!-- <ePixmap pixmap="NOVUM_HD_Common/icons/icon_stableupdate.png" position="244,603" size="25,25" zPosition="0" alphatest="blend" /> -->
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/icon_stableupdate.png" position="244,603" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/icon_unstableupdate.png" position="244,603" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
     <!-- Running Text Start -->
     <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=1,oneshot=1,startdelay=5000" position="282,558" size="710,40" zPosition="4" font="Roboto-Light; 26" backgroundColor="un2D3033" transparent="1" foregroundColor="transpWhite">
       <convert type="EventName">Name</convert>
@@ -535,7 +529,7 @@
     <widget source="session.CurrentService" render="Label" position="0,490" size="1280,80" font="Robo-Regular; 43" valign="center" halign="center" backgroundColor="transparent" transparent="1" foregroundColor="preTrans60" zPosition="-10" alphatest="on">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="session.CurrentService" render="Picon" position="10,568" size="220,132" zPosition="10" backgroundColor="un2D3033" transparent="0" alphatest="blend">
+    <widget source="session.CurrentService" render="Picon" position="10,560" size="220,132" zPosition="10" backgroundColor="un2D3033" transparent="0" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget source="session.Event_Now" render="Progress" pixmap="NOVUM_HD_Common/images/title_progress_bar_blue-fs8.png" position="287,595" size="700,1" zPosition="2" alphatest="blend" transparent="1">
@@ -573,8 +567,7 @@
     </widget>
     <ePixmap pixmap="NOVUM_HD_Common/icons/ico_hd_off.png" position="1190,688" size="41,20" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" position="1190,688" size="41,20" zPosition="2" pixmap="NOVUM_HD_Common/icons/ico_hd_on.png" alphatest="blend">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">721,1980</convert>
+      <convert type="ServiceInfo">IsHD</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap pixmap="NOVUM_HD_Common/icons/ico_format_off.png" position="1235,687" size="32,20" zPosition="1" alphatest="blend" />
@@ -670,20 +663,8 @@
     <widget source="session.FrontendStatus" render="Label" position="825,692" size="60,20" font="Regular; 18" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/images/1080-fs8.png" position="87,702" size="58,13" zPosition="2" alphatest="blend">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">1440,1920</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/images/720-fs8.png" position="87,702" size="58,13" zPosition="2" alphatest="blend">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">1280,1439</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/images/icon_sd.png" position="87,702" size="58,13" zPosition="2" alphatest="blend">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">0,720</convert>
-      <convert type="ConditionalShowHide" />
+    <widget source="session.CurrentService" render="Label" position="58,696" size="125,18" font="Regular2; 14" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" halign="center" valign="top">
+      <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/icon_dolby.png" position="1110,635" size="108,40" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsMultichannel</convert>
@@ -724,7 +705,14 @@
     </widget>
     <!--		<widget source="session.CurrentService" render="Label" backgroundColor="un2D3033" font="Regular1; 18" foregroundColor="transpWhite" halign="left" valign="center" noWrap="1" position="295,693" size="925,22" transparent="1" zPosition="1">
 			<convert type="DMCHDCaidDisplay">EcmInfo</convert>
-    </widget>-->
+  </widget>-->
+    <!-- <ePixmap pixmap="NOVUM_HD_Common/icons/icon_stableupdate.png" position="244,603" size="25,25" zPosition="0" alphatest="blend" /> -->
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/icon_stableupdate.png" position="244,603" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/icon_unstableupdate.png" position="244,603" size="25,25" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
     <eLabel text="Now" position="766,238" size="100,30" zPosition="0" foregroundColor="ivorywhite" backgroundColor="background90" font="arial; 26" transparent="1" />
     <eLabel text="Next" position="1035,187" size="100,30" zPosition="0" foregroundColor="transpWhite" backgroundColor="background90" font="arial; 24" transparent="1" halign="right" />
     <!-- Running Text Start -->
