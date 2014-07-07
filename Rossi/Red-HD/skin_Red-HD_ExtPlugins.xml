@@ -297,6 +297,7 @@
 	<!-- ## OnDemand ## -->
 	<screen name="OnDemand_Screen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="OnDemandMenuScreen" />
+		<panel name="FullScreenRedHDLogo" />
 		<panel name="OnDemandText" />
 		<widget name="PlayerList" position="200,190" size="500,530" selectionPixmap="ondemand/OnDemandSelectionBar_H106x600.png" transparent="1" scrollbarMode="showOnDemand" zPosition="3" />
 		<panel name="MenuMenuButton" />
@@ -306,7 +307,6 @@
 		<panel name="OnDemandMenuScreen" />
 		<panel name="OnDemandAboutText" />
 		<widget name="about" position="40,165" size="600,530" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="3" />
-	    <panel name="MenuAppletAboutItemHeight28" />
 		<panel name="OnDemandRed1Panel" />
 	</screen>
 	<screen name="OnDemandScreenSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">

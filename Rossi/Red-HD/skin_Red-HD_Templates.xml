@@ -361,10 +361,9 @@
 	
 	<!-- ## OnDemand Panels ## -->
 	<screen name="OnDemandMenuScreen">
-		<ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="infobar/channelselectionfullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
 		<panel name="FullScreenPIGPanel" />
-        <panel name="FullScreenTimePanel" />
-		<panel name="ChannelSelectionBlackBackgroundBox" />		
+        <panel name="FullScreenTimePanel" />	
 	</screen>
 	<screen name="OnDemandThumbsCommon">
 		<ePixmap pixmap="infobar/fullscreenbackground.png" position="0,0" size="1280,720" alphatest="on" zPosition="-1" />
