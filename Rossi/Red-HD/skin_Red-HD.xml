@@ -88,7 +88,8 @@
 		<eLabel text="UP NEXT" position="288,647" size="150,25" font="vmreg;22" foregroundColor="vmgrey" backgroundColor="black" halign="left" valign="center" transparent="1" zPosition="1"/>
 		<widget source="session.Event_Next" render="Label" position="394,645" size="350,30" font="vmreg;22" foregroundColor="vmgrey" backgroundColor="black" transparent="1" halign="left" valign="center" noWrap="1">
 			<convert type="EventName">Name</convert>
-		</widget>		
+		</widget>
+        <panel name="InfobarTunerState" />		
 		<panel name="InfobarProgressBar" />
 	</screen>		
 	<screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
@@ -171,6 +172,7 @@
 		<widget source="session.Event_Next" render="Label" position="394,645" size="350,30" font="vmreg;22" foregroundColor="vmgrey" backgroundColor="black" transparent="1" halign="left" valign="center" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
+		<panel name="InfobarTunerState" />
 		<panel name="InfobarProgressBar" />
 	</screen>
     <screen name="MoviePlayer" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
@@ -256,7 +258,8 @@
 		<eLabel text="UP NEXT" position="288,647" size="150,25" font="vmbold;22" foregroundColor="vmgrey" backgroundColor="black" halign="left" valign="center" transparent="1" zPosition="1"/>
 		<widget source="session.Event_Next" render="Label" position="394,645" size="350,30" font="vmbold;22" foregroundColor="vmgrey" backgroundColor="black" transparent="1" halign="left" valign="center" noWrap="1">
 			<convert type="EventName">Name</convert>
-		</widget>		
+		</widget>
+        <panel name="InfobarTunerState" />		
 		<panel name="InfobarProgressBar" />
 	</screen>	
 	<screen name="QuickEPG" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
@@ -283,6 +286,7 @@
 		</widget>			
 		<widget name="number" position="center,525" size="647,60" font="vmreg;28" foregroundColor="white" backgroundColor="vmdarkred" transparent="0" borderColor="black" borderWidth="2" valign="center" halign="center"  zPosition="5"/>
 		<widget name="list" position="center,610" size="600,60" font="vmreg;24" selectionPixmap="selectionbars/SelectionBar_H30x600.png" foregroundColor="white" backgroundColor="vmdarkred" EntryBackgroundColorNow="vmdarkred" transparent="1" />	
+		<panel name="InfobarTunerState" />
 		<panel name="InfobarProgressBar" />
 	</screen>
 	
@@ -415,7 +419,7 @@
 		<panel name="EPGPIGSelectionChangeBouquetText" />
 		<panel name="EPGPIGSelectionChangeDayText" />
 	</screen>
-	<screen name="GraphicalInfoBarEPG" position="0,0" size="1280,720" backgroundColor="transparent" transparent="0" flags="wfNoBorder" >
+	<screen name="GraphicalInfoBarEPG" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" >
 	    <ePixmap position="170,437" size="546,39" pixmap="infobar/infobartitlebar.png" alphatest="on" zPosition="-1"/>
 	    <widget source="Title" render="Label" position="175,438" size="850,40" font="vmbold;28" foregroundColor="vmgrey" backgroundColor="vmdarkred" zPosition="1" transparent="1" />
 		<ePixmap position="center,476" size="973,84" pixmap="infobar/1stinfobar.png" alphatest="on" zPosition="-1"/>
@@ -486,7 +490,7 @@
 		<widget source="lab2" render="Label" position="140,248" size="600,25" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" transparent="1" zPosition="3" />
 		<widget source="lab3" render="Label" position="140,279" size="600,45" font="vmreg;22" foregroundColor="white" backgroundColor="black" halign="center" transparent="1" zPosition="3" />
 		<widget name="AboutScrollLabel" position="280,325" size="600,400" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
-		<eLabel text="v1.5 by rossi2000 and simonsez" position="140,660" size="600,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="center" transparent="1" zPosition="3"/>
+		<eLabel text="v1.6 by rossi2000 and simonsez" position="140,660" size="600,25" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" halign="center" transparent="1" zPosition="3"/>
 		<panel name="MenuInfoButton" />
 		<panel name="MenuGreen3Panel" />
 	</screen>
@@ -583,7 +587,7 @@
 		<widget source="key_blue" render="Pixmap" pixmap="buttons/blue.png" position="200,285" size="25,25" alphatest="blend" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="streams" render="Listbox" position="140,400" size="600,200" selectionPixmap="selectionbars/SelectionBar_H25x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="0" scrollbarMode="showOnDemand" zPosition="3">
+		<widget source="streams" render="Listbox" position="140,400" size="600,200" selectionPixmap="selectionbars/SelectionBar_H25x600.png" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" scrollbarMode="showOnDemand" zPosition="3">
 			<convert type="TemplatedMultiContent">
 				{"templates":
 				{"default": (25, [
@@ -847,8 +851,8 @@ self.autoResize()
 		<panel name="FullScreenMenuYellow2Panel" />
 		<panel name="FullScreenMenuBlue2Panel" />
 		<panel name="MenuCONFIGWidget" />
-		<widget source="current_address" render="Label" position="140,652" size="600,30" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" halign="center" valign="center" zPosition="3" />
-		<widget source="fixed_address" render="Label" position="140,685" size="600,30" font="vmreg;22" foregroundColor="white" backgroundColor="black" transparent="1" halign="center" valign="center" zPosition="3" />
+		<widget source="current_address" render="Label" position="780,340" size="450,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="center" valign="center" zPosition="1" />
+		<widget source="fixed_address" render="Label" position="780,375" size="450,30" font="vmreg;22" foregroundColor="white" backgroundColor="vmdarkred" transparent="1" halign="center" valign="center" zPosition="1" />
 	</screen>
 	<screen name="InputBox" position="center,center" size=" 600,95">
 		<widget name="text" position="10,10" size="580,30" font="vmreg;24" />
@@ -2065,6 +2069,21 @@ self.autoResize()
 		<widget name="text1" position="10,10" size="330,40" font="vmreg;30" />
 		<widget name="text2" position="10,60" size="330,40" font="vmreg;30" />
 	</screen>
+	
+	<!-- ## Transcoding Setup ## -->
+	<screen name="TranscodingSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuSetupText" />
+		<panel name="MenuCONFIGWidget" />
+		<panel name="MenuDESCRIPTIONWidget" />
+		<widget name="text" position="780,690" size="450,30" font="vmreg;22" halign="center" valign="center" transparent="1" zPosition="1"/>
+		<panel name="FullScreenMenuRed2Panel" />
+		<panel name="FullScreenMenuGreen2Panel" />
+		<panel name="FullScreenMenuYellow2Panel" />
+		<panel name="FullScreenMenuBluePanel" />
+	</screen>
+	
+	<!-- ## ViX Menus ## -->
 	<screen name="VIXMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuHomeText" />
