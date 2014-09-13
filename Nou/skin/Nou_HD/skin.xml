@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: Nou_HD vs.10.9 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
+  <!--	Skin: Nou_HD vs.11.9 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
   <!--	Skin: ViXBMC Vs 1.0 based on ViX-Night-HD Vs 0.39 by AndyBlac @www.world-of-satellite.com	-->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
@@ -56,6 +56,24 @@
     <color name="menu-time-bkgrnd" value="#12151515" />
     <color name="menu-title_frgrnd" value="#00b3b3b3" />
     <color name="menu-title-bkgrnd" value="#12151515" />
+    <color name="myblue" value="#00005aef" />
+    <color name="myblue1" value="#000050ef" />
+    <color name="myblue1transp" value="#f00050ef" />
+    <color name="myblue1transp1" value="#100050ef" />
+    <color name="myblue1transp2" value="#200050ef" />
+    <color name="myblue1transp3" value="#300050ef" />
+    <color name="myblue1transp4" value="#400050ef" />
+    <color name="myblue2" value="#00006eef" />
+    <color name="myblue2transp" value="#f0006eef" />
+    <color name="myblue2transp1" value="#10006eef" />
+    <color name="myblue2transp2" value="#20006eef" />
+    <color name="myblue2transp3" value="#30006eef" />
+    <color name="myblue2transp4" value="#40006eef" />
+    <color name="mybluetransp" value="#f0005aef" />
+    <color name="mybluetransp1" value="#10005aef" />
+    <color name="mybluetransp2" value="#20005aef" />
+    <color name="mybluetransp3" value="#30005aef" />
+    <color name="mybluetransp4" value="#40005aef" />
     <color name="orange" value="#00f47d19" />
     <color name="preTrans" value="#ccffffff" />
     <color name="preTrans10" value="#10ffffff" />
@@ -85,6 +103,7 @@
     <color name="transpWhite" value="#70f0f0f0" />
     <color name="transpWhite1" value="#77ffffff" />
     <color name="turcois" value="#ff149bae" />
+    <color name="un101214" value="#00101214" />
     <color name="un111112" value="#00111112" />
     <color name="un13919191" value="#13919191" />
     <color name="un1481FF" value="#001481ff" />
@@ -92,6 +111,7 @@
     <color name="un18188b" value="#0018188b" />
     <color name="un181A1C" value="#00181a1c" />
     <color name="un181d20" value="#00181d20" />
+    <color name="un191a15" value="#00191a15" />
     <color name="un1a53bb" value="#001a53bb" />
     <color name="un1B1B1D" value="#001b1b1d" />
     <color name="un1c2c5c" value="#001c2c5c" />
@@ -153,7 +173,9 @@
     <color name="un3c3c3c" value="#003c3c3c" />
     <color name="un3d0e82" value="#003d0e82" />
     <color name="un3d3d3d" value="#003d3d3d" />
+    <color name="un404040" value="#00404040" />
     <color name="un42C0FB" value="#0042c0fb" />
+    <color name="un4385d" value="#0004385d" />
     <color name="un444444" value="#00444444" />
     <color name="un486082" value="#00486082" />
     <color name="un4B85CC" value="#ff4b85cc" />
@@ -162,6 +184,7 @@
     <color name="un4CB4FF" value="#004cb4ff" />
     <color name="un4d5375" value="#004d5375" />
     <color name="un4e5a74" value="#004e5a74" />
+    <color name="un555556" value="#00555556" />
     <color name="un5678a4" value="#005678a4" />
     <color name="un579ADC" value="#00579adc" />
     <color name="un596A7A" value="#00596a7a" />
@@ -173,11 +196,13 @@
     <color name="un67999A" value="#0067999a" />
     <color name="un688EFF" value="#00688eff" />
     <color name="un696969" value="#00696969" />
+    <color name="un697279" value="#00697279" />
     <color name="un6c6c6c" value="#006c6c6c" />
     <color name="un777777" value="#00777777" />
     <color name="un7FA5FF" value="#007fa5ff" />
     <color name="un800000" value="#00800000" />
     <color name="un808080" value="#00808080" />
+    <color name="un808888" value="#00808888" />
     <color name="un80ffff" value="#0080ffff" />
     <color name="un84858a" value="#0084858a" />
     <color name="un868686" value="#00868686" />
@@ -187,17 +212,20 @@
     <color name="un9c9c9c" value="#009c9c9c" />
     <color name="un9f1313" value="#009f1313" />
     <color name="una08500" value="#00a08500" />
+    <color name="unaaaaaa" value="#00aaaaaa" />
     <color name="unaaaaac" value="#00aaaaac" />
     <color name="unaab2ba" value="#00aab2ba" />
     <color name="unacacac" value="#00acacac" />
     <color name="unaeaeae" value="#00aeaeae" />
     <color name="unb59e01" value="#00b59e01" />
-    <color name="unb5b9bd" value="#00b5b9bd" />
+    <color name="unb5cadd" value="#00b5cadd" />
     <color name="unc0c0c0" value="#00c0c0c0" />
     <color name="unc0d7ff" value="#00c0d7ff" />
+    <color name="unc10100" value="#00c10100" />
     <color name="unc5c9cc" value="#00c5c9cc" />
     <color name="unc6e0f3" value="#00c6e0f3" />
     <color name="unc8eaff" value="#cdd8eaff" />
+    <color name="uncbfe00" value="#00cbfe00" />
     <color name="uncdd8f7" value="#00cdd8f7" />
     <color name="und2dee2" value="#00d2dee2" />
     <color name="und9dee2" value="#00d9dee2" />
@@ -213,6 +241,7 @@
     <color name="unefefef" value="#00efefef" />
     <color name="unf0b400" value="#00f0b400" />
     <color name="unf0f0f0" value="#00f0f0f0" />
+    <color name="unf23d21" value="#00f23d21" />
     <color name="unf293d" value="#000f293d" />
     <color name="unF6EB2" value="#000f6eb2" />
     <color name="unF6EB2transp" value="#0f0f6eb2" />
@@ -353,8 +382,8 @@
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_txt_off.png" position="1156,661" size="30,25" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_txt_on.png" position="1156,661" size="30,25" zPosition="2" alphatest="blend">
+    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_txt_off.png" position="1156,665" size="30,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_txt_on.png" position="1156,665" size="30,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -565,8 +594,8 @@
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_txt_off.png" position="1156,661" size="30,25" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_txt_on.png" position="1156,661" size="30,25" zPosition="2" alphatest="blend">
+    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_txt_off.png" position="1156,665" size="30,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_txt_on.png" position="1156,665" size="30,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>

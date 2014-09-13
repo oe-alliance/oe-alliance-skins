@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: myNOVUM_HD vs.10.9 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
+  <!--	Skin: myNOVUM_HD vs.11.9 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
   <!--	Skin: ViXBMC Vs 1.0 based on ViX-Night-HD Vs 0.39 by AndyBlac @www.world-of-satellite.com	-->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
@@ -56,6 +56,24 @@
     <color name="menu-time-bkgrnd" value="#12151515" />
     <color name="menu-title_frgrnd" value="#00b3b3b3" />
     <color name="menu-title-bkgrnd" value="#12151515" />
+    <color name="myblue" value="#00005aef" />
+    <color name="myblue1" value="#000050ef" />
+    <color name="myblue1transp" value="#f00050ef" />
+    <color name="myblue1transp1" value="#100050ef" />
+    <color name="myblue1transp2" value="#200050ef" />
+    <color name="myblue1transp3" value="#300050ef" />
+    <color name="myblue1transp4" value="#400050ef" />
+    <color name="myblue2" value="#00006eef" />
+    <color name="myblue2transp" value="#f0006eef" />
+    <color name="myblue2transp1" value="#10006eef" />
+    <color name="myblue2transp2" value="#20006eef" />
+    <color name="myblue2transp3" value="#30006eef" />
+    <color name="myblue2transp4" value="#40006eef" />
+    <color name="mybluetransp" value="#f0005aef" />
+    <color name="mybluetransp1" value="#10005aef" />
+    <color name="mybluetransp2" value="#20005aef" />
+    <color name="mybluetransp3" value="#30005aef" />
+    <color name="mybluetransp4" value="#40005aef" />
     <color name="orange" value="#00f47d19" />
     <color name="preTrans" value="#ccffffff" />
     <color name="preTrans10" value="#10ffffff" />
@@ -85,6 +103,7 @@
     <color name="transpWhite" value="#70f0f0f0" />
     <color name="transpWhite1" value="#77ffffff" />
     <color name="turcois" value="#ff149bae" />
+    <color name="un101214" value="#00101214" />
     <color name="un111112" value="#00111112" />
     <color name="un13919191" value="#13919191" />
     <color name="un1481FF" value="#001481ff" />
@@ -92,6 +111,7 @@
     <color name="un18188b" value="#0018188b" />
     <color name="un181A1C" value="#00181a1c" />
     <color name="un181d20" value="#00181d20" />
+    <color name="un191a15" value="#00191a15" />
     <color name="un1a53bb" value="#001a53bb" />
     <color name="un1B1B1D" value="#001b1b1d" />
     <color name="un1c2c5c" value="#001c2c5c" />
@@ -153,7 +173,9 @@
     <color name="un3c3c3c" value="#003c3c3c" />
     <color name="un3d0e82" value="#003d0e82" />
     <color name="un3d3d3d" value="#003d3d3d" />
+    <color name="un404040" value="#00404040" />
     <color name="un42C0FB" value="#0042c0fb" />
+    <color name="un4385d" value="#0004385d" />
     <color name="un444444" value="#00444444" />
     <color name="un486082" value="#00486082" />
     <color name="un4B85CC" value="#ff4b85cc" />
@@ -162,6 +184,7 @@
     <color name="un4CB4FF" value="#004cb4ff" />
     <color name="un4d5375" value="#004d5375" />
     <color name="un4e5a74" value="#004e5a74" />
+    <color name="un555556" value="#00555556" />
     <color name="un5678a4" value="#005678a4" />
     <color name="un579ADC" value="#00579adc" />
     <color name="un596A7A" value="#00596a7a" />
@@ -173,11 +196,13 @@
     <color name="un67999A" value="#0067999a" />
     <color name="un688EFF" value="#00688eff" />
     <color name="un696969" value="#00696969" />
+    <color name="un697279" value="#00697279" />
     <color name="un6c6c6c" value="#006c6c6c" />
     <color name="un777777" value="#00777777" />
     <color name="un7FA5FF" value="#007fa5ff" />
     <color name="un800000" value="#00800000" />
     <color name="un808080" value="#00808080" />
+    <color name="un808888" value="#00808888" />
     <color name="un80ffff" value="#0080ffff" />
     <color name="un84858a" value="#0084858a" />
     <color name="un868686" value="#00868686" />
@@ -187,17 +212,20 @@
     <color name="un9c9c9c" value="#009c9c9c" />
     <color name="un9f1313" value="#009f1313" />
     <color name="una08500" value="#00a08500" />
+    <color name="unaaaaaa" value="#00aaaaaa" />
     <color name="unaaaaac" value="#00aaaaac" />
     <color name="unaab2ba" value="#00aab2ba" />
     <color name="unacacac" value="#00acacac" />
     <color name="unaeaeae" value="#00aeaeae" />
     <color name="unb59e01" value="#00b59e01" />
-    <color name="unb5b9bd" value="#00b5b9bd" />
+    <color name="unb5cadd" value="#00b5cadd" />
     <color name="unc0c0c0" value="#00c0c0c0" />
     <color name="unc0d7ff" value="#00c0d7ff" />
+    <color name="unc10100" value="#00c10100" />
     <color name="unc5c9cc" value="#00c5c9cc" />
     <color name="unc6e0f3" value="#00c6e0f3" />
     <color name="unc8eaff" value="#cdd8eaff" />
+    <color name="uncbfe00" value="#00cbfe00" />
     <color name="uncdd8f7" value="#00cdd8f7" />
     <color name="und2dee2" value="#00d2dee2" />
     <color name="und9dee2" value="#00d9dee2" />
@@ -213,6 +241,7 @@
     <color name="unefefef" value="#00efefef" />
     <color name="unf0b400" value="#00f0b400" />
     <color name="unf0f0f0" value="#00f0f0f0" />
+    <color name="unf23d21" value="#00f23d21" />
     <color name="unf293d" value="#000f293d" />
     <color name="unF6EB2" value="#000f6eb2" />
     <color name="unF6EB2transp" value="#0f0f6eb2" />
@@ -309,201 +338,200 @@
     <widget source="global.CurrentTime" render="Label" position="1163,220" size="90,40" font="scoutcond; 38" halign="center" valign="center" foregroundColor="light_blue1" backgroundColor="background2" transparent="1" zPosition="1">
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="session.RecordState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_rec_on.png" position="232,643" size="50,25" zPosition="11" alphatest="blend" transparent="1">
+    <widget source="session.RecordState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_rec_on.png" position="258,643" size="50,25" zPosition="11" alphatest="blend" transparent="1">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="0,490" size="1280,80" font="Robo-Regular; 43" valign="center" halign="center" backgroundColor="transparent" transparent="1" foregroundColor="preTrans60" zPosition="-10" alphatest="on">
+    <widget source="session.CurrentService" render="Label" position="0,490" size="1280,80" font="Robo-Regular; 43" valign="center" halign="center" backgroundColor="transparent" transparent="1" foregroundColor="preTrans60" zPosition="0" alphatest="on">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="session.CurrentService" render="Picon" position="10,560" size="220,132" zPosition="10" backgroundColor="un2D3033" transparent="0" alphatest="blend">
+    <widget source="session.CurrentService" render="Picon" position="25,560" size="220,132" zPosition="10" backgroundColor="un2D3033" transparent="0" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="NOVUM_HD_Common/images/title_progress_bar_blue-fs8.png" position="287,595" size="700,1" zPosition="2" alphatest="blend" transparent="1">
+    <widget source="session.Event_Now" render="Progress" pixmap="NOVUM_HD_Common/images/title_progress_bar_blue-fs8.png" position="405,595" size="610,1" zPosition="2" alphatest="blend" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="1000,563" size="80,30" halign="right" font="scoutcondWide; 23" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" noWrap="1" zPosition="5">
+    <widget source="session.Event_Now" render="Label" position="320,563" size="80,30" halign="left" font="scoutcondWide; 23" foregroundColor="preTrans30" backgroundColor="un2D3033" transparent="1" noWrap="1" zPosition="5">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <eLabel text="-" position="1080,563" size="15,30" halign="center" font="scoutcondWide; 23" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" noWrap="1" zPosition="5" />
-    <widget source="session.Event_Now" render="Label" position="1095,563" size="80,30" halign="left" font="scoutcondWide; 23" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" noWrap="1" zPosition="5">
+    <widget source="session.Event_Now" render="Label" position="1020,563" size="80,30" halign="right" font="scoutcondWide; 23" foregroundColor="preTrans30" backgroundColor="un2D3033" transparent="1" noWrap="1" zPosition="5">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="1000,602" size="80,30" halign="right" font="scoutcondWide; 23" backgroundColor="un2D3033" foregroundColor="darkgrey" transparent="1" valign="center" zPosition="5">
+    <widget source="session.Event_Next" render="Label" position="320,602" size="80,30" halign="left" font="scoutcondWide; 23" backgroundColor="background2" foregroundColor="darkgrey" transparent="1" valign="center" zPosition="5">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <eLabel text="-" position="1080,602" size="15,30" halign="center" font="scoutcondWide; 23" backgroundColor="un2D3033" foregroundColor="darkgrey" transparent="1" zPosition="5" noWrap="1" valign="center" />
-    <widget source="session.Event_Next" render="Label" position="1095,602" size="80,30" halign="left" font="scoutcondWide; 23" backgroundColor="un2D3033" foregroundColor="darkgrey" transparent="1" valign="center" zPosition="5">
+    <widget source="session.Event_Next" render="Label" position="1020,602" size="80,30" halign="right" font="scoutcondWide; 23" backgroundColor="un2D3033" foregroundColor="darkgrey" transparent="1" valign="center" zPosition="5">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="1175,563" size="105,30" halign="left" font="scoutcondWide; 23" backgroundColor="un2D3033" foregroundColor="light_blue" transparent="1" zPosition="5">
+    <widget source="session.Event_Now" render="Label" position="1125,563" size="125,30" halign="left" font="scoutcondWide; 23" backgroundColor="un2D3033" foregroundColor="light_blue" transparent="1" zPosition="5">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="1175,602" size="105,30" halign="left" font="scoutcondWide; 23" backgroundColor="un2D3033" foregroundColor="un5678a4" transparent="1" valign="center" zPosition="5">
+    <widget source="session.Event_Next" render="Label" position="1125,602" size="125,30" halign="left" font="scoutcondWide; 23" backgroundColor="un2D3033" foregroundColor="un5678a4" transparent="1" valign="center" zPosition="5">
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_crypt_on.png" position="245,565" size="20,22" zPosition="11" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_crypt_on.png" position="270,566" size="20,20" zPosition="11" alphatest="blend">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_hd_off.png" position="1190,689" size="41,20" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="1190,689" size="41,20" zPosition="2" pixmap="NOVUM_HD_Common/icons/ico_hd_on.png" alphatest="blend">
+    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_hd_off.png" position="1183,690" size="38,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="1183,690" size="38,20" zPosition="2" pixmap="NOVUM_HD_Common/icons/ico_hd_on.png" alphatest="blend">
       <convert type="ServiceInfo">IsHD</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_format_off.png" position="1235,688" size="32,20" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_format_on.png" position="1235,688" size="32,20" zPosition="2" alphatest="blend">
+    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_format_off.png" position="1225,689" size="32,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_format_on.png" position="1225,689" size="32,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_txt_off.png" position="1153,685" size="35,25" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_txt_on.png" position="1153,685" size="35,25" zPosition="2" alphatest="blend">
+    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_txt_off.png" position="1095,690" size="33,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_txt_on.png" position="1095,690" size="33,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_hbbtv_off.png" position="1060,686" size="53,20" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="1060,686" size="53,20" zPosition="2" pixmap="NOVUM_HD_Common/icons/ico_hbbtv_on.png" alphatest="blend">
+    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_hbbtv_off.png" position="1010,687" size="53,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="1010,687" size="53,20" zPosition="2" pixmap="NOVUM_HD_Common/icons/ico_hbbtv_on.png" alphatest="blend">
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_sub_off.png" position="1120,688" size="27,20" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_sub_on.png" position="1120,688" size="27,20" zPosition="2" alphatest="blend">
+    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_sub_off.png" position="1065,689" size="27,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_sub_on.png" position="1065,689" size="27,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="550,692" size="100,20" foregroundColor="un579ADC" backgroundColor="un2D3033" transparent="1" zPosition="10" font="Regular; 18" halign="center">
+    <widget source="session.CurrentService" render="Label" position="530,692" size="100,20" foregroundColor="un579ADC" backgroundColor="un2D3033" transparent="1" zPosition="10" font="Regular; 18" halign="center">
       <convert type="ServiceOrbitalPosition" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="282,638" size="380,44" font="Regular2; 17" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" halign="left">
+    <widget source="session.CurrentService" render="Label" position="320,638" size="400,44" font="Regular2; 17" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" halign="left">
       <convert type="PliExtraInfo">TransponderInfo2line</convert>
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="892,692" size="73,20" font="Regular; 18" backgroundColor="un2D3033" transparent="1" halign="center" valign="center">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="850,692" size="73,20" font="Regular; 18" backgroundColor="background2" transparent="1" halign="center" valign="center">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="892,692" size="73,20" font="Regular; 18" backgroundColor="un2D3033" transparent="1" halign="center" valign="center">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="850,692" size="73,20" font="Regular; 18" backgroundColor="background2" transparent="1" halign="center" valign="center">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="892,692" size="73,20" font="Regular; 18" backgroundColor="un2D3033" transparent="1" halign="center" valign="center">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="850,692" size="73,20" font="Regular; 18" backgroundColor="background2" transparent="1" halign="center" valign="center">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="A" position="965,692" zPosition="1" size="20,20" font="Regular; 18" halign="center" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" valign="center" />
-    <eLabel text="B" position="985,692" zPosition="1" size="20,20" font="Regular; 18" halign="center" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" valign="center" />
-    <eLabel text="C" position="1005,692" zPosition="1" size="20,20" font="Regular; 18" halign="center" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" valign="center" />
-    <eLabel text="D" position="1025,692" zPosition="1" size="20,20" font="Regular; 18" halign="center" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" valign="center" />
-    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="965,692" zPosition="2" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1" valign="center">
+    <eLabel text="A" position="925,692" zPosition="1" size="20,20" font="Regular; 18" halign="center" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" valign="center" />
+    <eLabel text="B" position="945,692" zPosition="1" size="20,20" font="Regular; 18" halign="center" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" valign="center" />
+    <eLabel text="C" position="965,692" zPosition="1" size="20,20" font="Regular; 18" halign="center" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" valign="center" />
+    <eLabel text="D" position="985,692" zPosition="1" size="20,20" font="Regular; 18" halign="center" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" valign="center" />
+    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="925,692" zPosition="2" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="background2" transparent="1" valign="center">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="B" position="985,692" zPosition="2" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1" valign="center">
+    <widget source="session.TunerInfo" render="FixedLabel" text="B" position="945,692" zPosition="2" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="background2" transparent="1" valign="center">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="1005,692" zPosition="2" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1" valign="center">
+    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="965,692" zPosition="2" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="background2" transparent="1" valign="center">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">4</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="1025,692" zPosition="2" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1" valign="center">
+    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="985,692" zPosition="2" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="background2" transparent="1" valign="center">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">8</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="A" position="965,692" zPosition="3" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1" valign="center">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="A" position="925,692" zPosition="3" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="background2" transparent="1" valign="center">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="B" position="985,692" zPosition="3" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1" valign="center">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="B" position="945,692" zPosition="3" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="background2" transparent="1" valign="center">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="C" position="1005,692" zPosition="3" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1" valign="center">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="C" position="965,692" zPosition="3" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="background2" transparent="1" valign="center">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="D" position="1025,692" zPosition="3" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1" valign="center">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="D" position="985,692" zPosition="3" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="background2" transparent="1" valign="center">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">3,3</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="SNR" position="650,692" size="50,20" halign="left" font="Regular; 18" backgroundColor="un2D3033" foregroundColor="transpWhite" transparent="1" valign="center" />
-    <widget source="session.FrontendStatus" render="Label" position="700,692" size="60,20" font="Regular; 18" backgroundColor="un2D3033" foregroundColor="light_blue1" transparent="1">
+    <eLabel text="SNR" position="630,692" size="50,20" halign="left" font="Regular; 18" backgroundColor="background2" foregroundColor="transpWhite" transparent="1" valign="center" />
+    <widget source="session.FrontendStatus" render="Label" position="680,692" size="60,20" font="Regular; 18" backgroundColor="background2" foregroundColor="light_blue1" transparent="1">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <eLabel text="AGC" position="771,692" size="50,20" font="Regular; 18" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" halign="left" />
-    <widget source="session.FrontendStatus" render="Label" position="825,692" size="60,20" font="Regular; 18" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1">
+    <eLabel text="AGC" position="740,692" size="50,20" font="Regular; 18" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" halign="left" />
+    <widget source="session.FrontendStatus" render="Label" position="790,692" size="60,20" font="Regular; 18" foregroundColor="light_blue" backgroundColor="background2" transparent="1">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="58,697" size="125,18" font="Regular2; 14" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" halign="center" valign="top">
+    <widget source="session.CurrentService" render="Label" position="73,697" size="125,18" font="Regular2; 14" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" halign="center" valign="top">
       <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/icon_dolby.png" position="1110,635" size="108,40" zPosition="2" alphatest="blend">
+    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_dolby_off.png" position="1128,690" size="55,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_dolby_on.png" position="1128,690" size="55,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="282,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="262,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoBeta</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="300,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1" valign="center">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="280,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1" valign="center">
       <convert type="PliExtraInfo">CryptoIrdeto</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="318,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="298,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoSeca</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="336,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="316,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoVia</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="354,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="334,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoNagra</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="372,692" size="45,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="352,692" size="45,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoCryptoW</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="417,692" size="30,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="397,692" size="30,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoNDS</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="447,692" size="43,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="427,692" size="43,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoConax</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="490,692" size="30,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="470,692" size="30,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoBiss</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="520,692" size="30,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="500,692" size="30,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoDre</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 17" position="670,638" size="430,44" halign="left" zPosition="1" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" noWrap="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 17" position="730,638" size="440,44" halign="left" zPosition="1" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" noWrap="1">
       <convert type="CryptoInfo">VerboseInfo</convert>
     </widget>
     <!--		<widget source="session.CurrentService" render="Label" backgroundColor="un2D3033" font="Regular1; 18" foregroundColor="transpWhite" halign="left" valign="center" noWrap="1" position="295,693" size="925,22" transparent="1" zPosition="1">
 			<convert type="DMCHDCaidDisplay">EcmInfo</convert>
     </widget>-->
-    <!-- <ePixmap pixmap="NOVUM_HD_Common/icons/icon_stableupdate.png" position="244,603" size="25,25" zPosition="0" alphatest="blend" /> -->
-    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/icon_stableupdate.png" position="244,603" size="25,25" zPosition="1" alphatest="blend">
+    <!-- <ePixmap pixmap="NOVUM_HD_Common/icons/icon_stableupdate.png" position="244,643" size="25,25" zPosition="0" alphatest="blend" /> -->
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/icon_stableupdate.png" position="270,605" size="25,25" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/icon_unstableupdate.png" position="244,603" size="25,25" zPosition="1" alphatest="blend">
+    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/icon_unstableupdate.png" position="270,605" size="25,25" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <!-- Running Text Start -->
-    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=1,oneshot=1,startdelay=5000" position="282,559" size="710,40" zPosition="4" font="Roboto-Light; 26" backgroundColor="un2D3033" transparent="1" foregroundColor="transpWhite">
+    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=1,oneshot=1,startdelay=5000" position="405,560" size="610,40" zPosition="4" font="Roboto-Light; 25" backgroundColor="un2D3033" transparent="1" foregroundColor="preTrans20">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Next" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=1,oneshot=1,startdelay=5000" position="282,599" size="710,40" zPosition="4" font="Roboto-Light; 25" backgroundColor="un181A1C" transparent="1" foregroundColor="transpWhite">
+    <widget source="session.Event_Next" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=1,oneshot=1,startdelay=5000" position="405,599" size="610,40" zPosition="4" font="Roboto-Light; 25" backgroundColor="un181A1C" transparent="1" foregroundColor="transpWhite">
       <convert type="EventName">Name</convert>
     </widget>
     <!-- Running Text End -->
@@ -523,203 +551,202 @@
     <widget source="global.CurrentTime" render="Label" position="1163,220" size="90,40" font="scoutcond; 38" halign="center" valign="center" foregroundColor="light_blue1" backgroundColor="background2" transparent="1" zPosition="1">
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="session.RecordState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_rec_on.png" position="232,643" size="50,25" zPosition="11" alphatest="blend" transparent="1">
+    <widget source="session.RecordState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_rec_on.png" position="258,643" size="50,25" zPosition="11" alphatest="blend" transparent="1">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="0,490" size="1280,80" font="Robo-Regular; 43" valign="center" halign="center" backgroundColor="transparent" transparent="1" foregroundColor="preTrans60" zPosition="-10" alphatest="on">
+    <widget source="session.CurrentService" render="Label" position="0,490" size="1280,80" font="Robo-Regular; 43" valign="center" halign="center" backgroundColor="transparent" transparent="1" foregroundColor="preTrans60" zPosition="0" alphatest="on">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="session.CurrentService" render="Picon" position="10,560" size="220,132" zPosition="10" backgroundColor="un2D3033" transparent="0" alphatest="blend">
+    <widget source="session.CurrentService" render="Picon" position="25,560" size="220,132" zPosition="10" backgroundColor="un2D3033" transparent="0" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="NOVUM_HD_Common/images/title_progress_bar_blue-fs8.png" position="287,595" size="700,1" zPosition="2" alphatest="blend" transparent="1">
+    <widget source="session.Event_Now" render="Progress" pixmap="NOVUM_HD_Common/images/title_progress_bar_blue-fs8.png" position="405,595" size="610,1" zPosition="2" alphatest="blend" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="1000,563" size="80,30" halign="right" font="scoutcondWide; 23" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" noWrap="1" zPosition="5">
+    <widget source="session.Event_Now" render="Label" position="320,563" size="80,30" halign="left" font="scoutcondWide; 23" foregroundColor="preTrans30" backgroundColor="un2D3033" transparent="1" noWrap="1" zPosition="5">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <eLabel text="-" position="1080,563" size="15,30" halign="center" font="scoutcondWide; 23" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" noWrap="1" zPosition="5" />
-    <widget source="session.Event_Now" render="Label" position="1095,563" size="80,30" halign="left" font="scoutcondWide; 23" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" noWrap="1" zPosition="5">
+    <widget source="session.Event_Now" render="Label" position="1020,563" size="80,30" halign="right" font="scoutcondWide; 23" foregroundColor="preTrans30" backgroundColor="un2D3033" transparent="1" noWrap="1" zPosition="5">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="1000,602" size="80,30" halign="right" font="scoutcondWide; 23" backgroundColor="un2D3033" foregroundColor="darkgrey" transparent="1" valign="center" zPosition="5">
+    <widget source="session.Event_Next" render="Label" position="320,602" size="80,30" halign="left" font="scoutcondWide; 23" backgroundColor="background2" foregroundColor="darkgrey" transparent="1" valign="center" zPosition="5">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <eLabel text="-" position="1080,602" size="15,30" halign="center" font="scoutcondWide; 23" backgroundColor="un2D3033" foregroundColor="darkgrey" transparent="1" zPosition="5" noWrap="1" valign="center" />
-    <widget source="session.Event_Next" render="Label" position="1095,602" size="80,30" halign="left" font="scoutcondWide; 23" backgroundColor="un2D3033" foregroundColor="darkgrey" transparent="1" valign="center" zPosition="5">
+    <widget source="session.Event_Next" render="Label" position="1020,602" size="80,30" halign="right" font="scoutcondWide; 23" backgroundColor="un2D3033" foregroundColor="darkgrey" transparent="1" valign="center" zPosition="5">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="1175,563" size="105,30" halign="left" font="scoutcondWide; 23" backgroundColor="un2D3033" foregroundColor="light_blue" transparent="1" zPosition="5">
+    <widget source="session.Event_Now" render="Label" position="1125,563" size="125,30" halign="left" font="scoutcondWide; 23" backgroundColor="un2D3033" foregroundColor="light_blue" transparent="1" zPosition="5">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="1175,602" size="105,30" halign="left" font="scoutcondWide; 23" backgroundColor="un2D3033" foregroundColor="un5678a4" transparent="1" valign="center" zPosition="5">
+    <widget source="session.Event_Next" render="Label" position="1125,602" size="125,30" halign="left" font="scoutcondWide; 23" backgroundColor="un2D3033" foregroundColor="un5678a4" transparent="1" valign="center" zPosition="5">
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_crypt_on.png" position="245,565" size="20,22" zPosition="11" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_crypt_on.png" position="270,566" size="20,20" zPosition="11" alphatest="blend">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_hd_off.png" position="1190,689" size="41,20" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="1190,689" size="41,20" zPosition="2" pixmap="NOVUM_HD_Common/icons/ico_hd_on.png" alphatest="blend">
+    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_hd_off.png" position="1183,690" size="38,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="1183,690" size="38,20" zPosition="2" pixmap="NOVUM_HD_Common/icons/ico_hd_on.png" alphatest="blend">
       <convert type="ServiceInfo">IsHD</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_format_off.png" position="1235,688" size="32,20" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_format_on.png" position="1235,688" size="32,20" zPosition="2" alphatest="blend">
+    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_format_off.png" position="1225,689" size="32,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_format_on.png" position="1225,689" size="32,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_txt_off.png" position="1153,685" size="35,25" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_txt_on.png" position="1153,685" size="35,25" zPosition="2" alphatest="blend">
+    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_txt_off.png" position="1095,690" size="33,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_txt_on.png" position="1095,690" size="33,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_hbbtv_off.png" position="1060,686" size="53,20" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="1060,686" size="53,20" zPosition="2" pixmap="NOVUM_HD_Common/icons/ico_hbbtv_on.png" alphatest="blend">
+    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_hbbtv_off.png" position="1010,687" size="53,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="1010,687" size="53,20" zPosition="2" pixmap="NOVUM_HD_Common/icons/ico_hbbtv_on.png" alphatest="blend">
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_sub_off.png" position="1120,688" size="27,20" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_sub_on.png" position="1120,688" size="27,20" zPosition="2" alphatest="blend">
+    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_sub_off.png" position="1065,689" size="27,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_sub_on.png" position="1065,689" size="27,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="550,692" size="100,20" foregroundColor="un579ADC" backgroundColor="un2D3033" transparent="1" zPosition="10" font="Regular; 18" halign="center">
+    <widget source="session.CurrentService" render="Label" position="530,692" size="100,20" foregroundColor="un579ADC" backgroundColor="un2D3033" transparent="1" zPosition="10" font="Regular; 18" halign="center">
       <convert type="ServiceOrbitalPosition" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="282,638" size="380,44" font="Regular2; 17" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" halign="left">
+    <widget source="session.CurrentService" render="Label" position="320,638" size="400,44" font="Regular2; 17" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" halign="left">
       <convert type="PliExtraInfo">TransponderInfo2line</convert>
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="892,692" size="73,20" font="Regular; 18" backgroundColor="un2D3033" transparent="1" halign="center" valign="center">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="850,692" size="73,20" font="Regular; 18" backgroundColor="background2" transparent="1" halign="center" valign="center">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="892,692" size="73,20" font="Regular; 18" backgroundColor="un2D3033" transparent="1" halign="center" valign="center">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="850,692" size="73,20" font="Regular; 18" backgroundColor="background2" transparent="1" halign="center" valign="center">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="892,692" size="73,20" font="Regular; 18" backgroundColor="un2D3033" transparent="1" halign="center" valign="center">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="850,692" size="73,20" font="Regular; 18" backgroundColor="background2" transparent="1" halign="center" valign="center">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="A" position="965,692" zPosition="1" size="20,20" font="Regular; 18" halign="center" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" valign="center" />
-    <eLabel text="B" position="985,692" zPosition="1" size="20,20" font="Regular; 18" halign="center" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" valign="center" />
-    <eLabel text="C" position="1005,692" zPosition="1" size="20,20" font="Regular; 18" halign="center" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" valign="center" />
-    <eLabel text="D" position="1025,692" zPosition="1" size="20,20" font="Regular; 18" halign="center" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" valign="center" />
-    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="965,692" zPosition="2" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1" valign="center">
+    <eLabel text="A" position="925,692" zPosition="1" size="20,20" font="Regular; 18" halign="center" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" valign="center" />
+    <eLabel text="B" position="945,692" zPosition="1" size="20,20" font="Regular; 18" halign="center" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" valign="center" />
+    <eLabel text="C" position="965,692" zPosition="1" size="20,20" font="Regular; 18" halign="center" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" valign="center" />
+    <eLabel text="D" position="985,692" zPosition="1" size="20,20" font="Regular; 18" halign="center" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" valign="center" />
+    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="925,692" zPosition="2" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="background2" transparent="1" valign="center">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="B" position="985,692" zPosition="2" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1" valign="center">
+    <widget source="session.TunerInfo" render="FixedLabel" text="B" position="945,692" zPosition="2" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="background2" transparent="1" valign="center">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="1005,692" zPosition="2" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1" valign="center">
+    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="965,692" zPosition="2" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="background2" transparent="1" valign="center">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">4</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="1025,692" zPosition="2" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1" valign="center">
+    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="985,692" zPosition="2" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="background2" transparent="1" valign="center">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">8</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="A" position="965,692" zPosition="3" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1" valign="center">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="A" position="925,692" zPosition="3" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="background2" transparent="1" valign="center">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="B" position="985,692" zPosition="3" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1" valign="center">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="B" position="945,692" zPosition="3" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="background2" transparent="1" valign="center">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="C" position="1005,692" zPosition="3" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1" valign="center">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="C" position="965,692" zPosition="3" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="background2" transparent="1" valign="center">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="D" position="1025,692" zPosition="3" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1" valign="center">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="D" position="985,692" zPosition="3" size="20,20" font="Regular; 18" halign="center" foregroundColor="light_blue" backgroundColor="background2" transparent="1" valign="center">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">3,3</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="SNR" position="650,692" size="50,20" halign="left" font="Regular; 18" backgroundColor="un2D3033" foregroundColor="transpWhite" transparent="1" valign="center" />
-    <widget source="session.FrontendStatus" render="Label" position="700,692" size="60,20" font="Regular; 18" backgroundColor="un2D3033" foregroundColor="light_blue1" transparent="1">
+    <eLabel text="SNR" position="630,692" size="50,20" halign="left" font="Regular; 18" backgroundColor="background2" foregroundColor="transpWhite" transparent="1" valign="center" />
+    <widget source="session.FrontendStatus" render="Label" position="680,692" size="60,20" font="Regular; 18" backgroundColor="background2" foregroundColor="light_blue1" transparent="1">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <eLabel text="AGC" position="771,692" size="50,20" font="Regular; 18" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" halign="left" />
-    <widget source="session.FrontendStatus" render="Label" position="825,692" size="60,20" font="Regular; 18" foregroundColor="light_blue" backgroundColor="un2D3033" transparent="1">
+    <eLabel text="AGC" position="740,692" size="50,20" font="Regular; 18" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" halign="left" />
+    <widget source="session.FrontendStatus" render="Label" position="790,692" size="60,20" font="Regular; 18" foregroundColor="light_blue" backgroundColor="background2" transparent="1">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="58,697" size="125,18" font="Regular2; 14" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" halign="center" valign="top">
+    <widget source="session.CurrentService" render="Label" position="73,697" size="125,18" font="Regular2; 14" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" halign="center" valign="top">
       <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/icon_dolby.png" position="1110,635" size="108,40" zPosition="2" alphatest="blend">
+    <ePixmap pixmap="NOVUM_HD_Common/icons/ico_dolby_off.png" position="1128,690" size="55,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_dolby_on.png" position="1128,690" size="55,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="282,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="262,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoBeta</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="300,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1" valign="center">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="280,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1" valign="center">
       <convert type="PliExtraInfo">CryptoIrdeto</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="318,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="298,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoSeca</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="336,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="316,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoVia</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="354,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="334,692" size="18,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoNagra</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="372,692" size="45,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="352,692" size="45,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoCryptoW</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="417,692" size="30,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="397,692" size="30,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoNDS</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="447,692" size="43,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="427,692" size="43,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoConax</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="490,692" size="30,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="470,692" size="30,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoBiss</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="520,692" size="30,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 18" position="500,692" size="30,20" foregroundColor="transpWhite" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1">
       <convert type="PliExtraInfo">CryptoDre</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular2; 17" position="670,638" size="430,44" halign="left" zPosition="1" foregroundColor="transpWhite" backgroundColor="un2D3033" transparent="1" noWrap="1">
+    <widget source="session.CurrentService" render="Label" font="Regular2; 17" position="730,638" size="440,44" halign="left" zPosition="1" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" noWrap="1">
       <convert type="CryptoInfo">VerboseInfo</convert>
     </widget>
     <!--		<widget source="session.CurrentService" render="Label" backgroundColor="un2D3033" font="Regular1; 18" foregroundColor="transpWhite" halign="left" valign="center" noWrap="1" position="295,693" size="925,22" transparent="1" zPosition="1">
 			<convert type="DMCHDCaidDisplay">EcmInfo</convert>
     </widget>-->
-    <!-- <ePixmap pixmap="NOVUM_HD_Common/icons/icon_stableupdate.png" position="244,603" size="25,25" zPosition="0" alphatest="blend" /> -->
-    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/icon_stableupdate.png" position="244,603" size="25,25" zPosition="1" alphatest="blend">
+    <!-- <ePixmap pixmap="NOVUM_HD_Common/icons/icon_stableupdate.png" position="244,643" size="25,25" zPosition="0" alphatest="blend" /> -->
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/icon_stableupdate.png" position="270,605" size="25,25" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/icon_unstableupdate.png" position="244,603" size="25,25" zPosition="1" alphatest="blend">
+    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/icon_unstableupdate.png" position="270,605" size="25,25" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <eLabel text="Now" position="766,238" size="100,30" zPosition="0" foregroundColor="ivorywhite" backgroundColor="background90" font="arial; 26" transparent="1" />
     <eLabel text="Next" position="1035,187" size="100,30" zPosition="0" foregroundColor="transpWhite" backgroundColor="background90" font="arial; 24" transparent="1" halign="right" />
     <!-- Running Text Start -->
-    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=1,oneshot=1,startdelay=5000" position="282,559" size="710,40" zPosition="4" font="Roboto-Light; 26" backgroundColor="un2D3033" transparent="1" foregroundColor="transpWhite">
+    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=1,oneshot=1,startdelay=5000" position="405,560" size="610,40" zPosition="4" font="Roboto-Light; 25" backgroundColor="un2D3033" transparent="1" foregroundColor="preTrans20">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Next" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=1,oneshot=1,startdelay=5000" position="282,599" size="710,40" zPosition="4" font="Roboto-Light; 25" backgroundColor="un181A1C" transparent="1" foregroundColor="transpWhite">
+    <widget source="session.Event_Next" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=1,oneshot=1,startdelay=5000" position="405,599" size="610,40" zPosition="4" font="Roboto-Light; 25" backgroundColor="un181A1C" transparent="1" foregroundColor="transpWhite">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,oneshot=1,startdelay=8000,wrap" position="766,278" size="370,172" font="Bold; 23" zPosition="0" backgroundColor="background70" transparent="1" halign="left" foregroundColor="unFFFFF4">
@@ -831,9 +858,9 @@
     </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_rec_on.png" position="1190,350" size="50,25" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
-   </widget>
+    </widget>
     <!-- Running Text Start -->
-   <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=110,repeat=3,always=0,oneshot=1,startdelay=11000,wrap" position="660,433" size="485,100" font="Regular_light; 19" backgroundColor="background30" foregroundColor="un27aeaeae" transparent="1" zPosition="6">
+    <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=110,repeat=3,always=0,oneshot=1,startdelay=11000,wrap" position="660,433" size="485,100" font="Regular_light; 19" backgroundColor="background30" foregroundColor="un27aeaeae" transparent="1" zPosition="6">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=110,repeat=4,always=0,oneshot=1,startdelay=14000,wrap" position="660,607" size="485,100" font="Regular_light; 19" backgroundColor="background30" foregroundColor="un27aeaeae" transparent="1" zPosition="6">
@@ -901,9 +928,9 @@
     </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_rec_on.png" position="1190,350" size="50,25" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
-   </widget>
+    </widget>
     <!-- Running Text Start -->
-   <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=110,repeat=3,always=0,oneshot=1,startdelay=11000,wrap" position="660,433" size="485,100" font="Regular_light; 19" backgroundColor="background30" foregroundColor="un27aeaeae" transparent="1" zPosition="6">
+    <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=110,repeat=3,always=0,oneshot=1,startdelay=11000,wrap" position="660,433" size="485,100" font="Regular_light; 19" backgroundColor="background30" foregroundColor="un27aeaeae" transparent="1" zPosition="6">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=110,repeat=4,always=0,oneshot=1,startdelay=14000,wrap" position="660,607" size="485,100" font="Regular_light; 19" backgroundColor="background30" foregroundColor="un27aeaeae" transparent="1" zPosition="6">
@@ -932,7 +959,7 @@
   <!-- Slim Channel Selection End -->
   <!-- mySmall Channel Selection -->
   <screen name="mySmallChannelSelection" title="Select service to add..." position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-     <ePixmap pixmap="NOVUM_HD_Common/images/sidebar.png" position="1150,80" size="130,640" transparent="1" zPosition="-3" />
+    <ePixmap pixmap="NOVUM_HD_Common/images/sidebar.png" position="1150,80" size="130,640" transparent="1" zPosition="-3" />
     <eLabel position="1150,80" size="1,640" backgroundColor="un2D3033" zPosition="7" />
     <eLabel position="640,80" size="5,640" backgroundColor="un2D3033" zPosition="8" />
     <eLabel position="0,0" size="1280,80" backgroundColor="un181A1C" zPosition="-2" />
@@ -971,9 +998,9 @@
     </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_rec_on.png" position="1190,350" size="50,25" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
-   </widget>
+    </widget>
     <!-- Running Text Start -->
-   <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=110,repeat=3,always=0,oneshot=1,startdelay=11000,wrap" position="660,433" size="485,100" font="Regular_light; 19" backgroundColor="background30" foregroundColor="un27aeaeae" transparent="1" zPosition="6">
+    <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=110,repeat=3,always=0,oneshot=1,startdelay=11000,wrap" position="660,433" size="485,100" font="Regular_light; 19" backgroundColor="background30" foregroundColor="un27aeaeae" transparent="1" zPosition="6">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=110,repeat=4,always=0,oneshot=1,startdelay=14000,wrap" position="660,607" size="485,100" font="Regular_light; 19" backgroundColor="background30" foregroundColor="un27aeaeae" transparent="1" zPosition="6">
@@ -1011,7 +1038,7 @@
     <ePixmap pixmap="NOVUM_HD_Common/images/myMain_menu.png" position="0,254" size="1187,410" transparent="1" zPosition="-1" />
     <ePixmap pixmap="NOVUM_HD_Common/images/myMain_menuR.png" position="1188,center" size="93,720" transparent="1" zPosition="-1" />
     <widget source="title" render="Label" position="215,370" size="420,180" font="Robo-Regular; 46" backgroundColor="un2D3033" foregroundColor="transpWhite" transparent="1" valign="center" zPosition="4" halign="center" />
-    <widget source="menu" render="Listbox" position="653,342" size="510,250" foregroundColor="light_blue1" selectionPixmap="NOVUM_HD_Common/images/FocusBar.png" backgroundPixmap="NOVUM_HD_Common/images/sel_bg.png" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <widget source="menu" render="Listbox" position="653,342" size="510,250" foregroundColor="light_blue1" selectionPixmap="NOVUM_HD_Common/images/FocusBar.png" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
       <convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (30,5), size = (480,50), flags = RT_HALIGN_LEFT, text = 0	) ],
 				"fonts": [gFont("Robo-Regular", 28)],
@@ -1034,7 +1061,7 @@
     <ePixmap pixmap="NOVUM_HD_Common/images/myMain_menu.png" position="0,254" size="1187,410" transparent="1" zPosition="-1" />
     <ePixmap pixmap="NOVUM_HD_Common/images/myMain_menuR.png" position="1188,center" size="93,720" transparent="1" zPosition="-1" />
     <widget source="title" render="Label" position="215,370" size="420,180" font="Robo-Regular; 46" backgroundColor="un2D3033" foregroundColor="transpWhite" transparent="1" valign="center" zPosition="4" halign="center" />
-    <widget source="menu" render="Listbox" position="653,342" size="510,250" foregroundColor="light_blue1" selectionPixmap="NOVUM_HD_Common/images/FocusBar.png" backgroundPixmap="NOVUM_HD_Common/images/sel_bg.png" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <widget source="menu" render="Listbox" position="653,342" size="510,250" foregroundColor="light_blue1" selectionPixmap="NOVUM_HD_Common/images/FocusBar.png" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
       <convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (30,5), size = (480,50), flags = RT_HALIGN_LEFT, text = 0	) ],
 				"fonts": [gFont("Robo-Regular", 28)],
@@ -1057,7 +1084,7 @@
     <ePixmap pixmap="NOVUM_HD_Common/images/myMain_menu.png" position="0,254" size="1187,410" transparent="1" zPosition="-1" />
     <ePixmap pixmap="NOVUM_HD_Common/images/myMain_menuR.png" position="1188,center" size="93,720" transparent="1" zPosition="-1" />
     <widget source="title" render="Label" position="215,370" size="420,180" font="Robo-Regular; 46" backgroundColor="un2D3033" foregroundColor="transpWhite" transparent="1" valign="center" zPosition="4" halign="center" />
-    <widget source="menu" render="Listbox" position="653,342" size="510,250" foregroundColor="light_blue1" selectionPixmap="NOVUM_HD_Common/images/FocusBar.png" backgroundPixmap="NOVUM_HD_Common/images/sel_bg.png" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <widget source="menu" render="Listbox" position="653,342" size="510,250" foregroundColor="light_blue1" selectionPixmap="NOVUM_HD_Common/images/FocusBar.png" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
       <convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (30,5), size = (480,50), flags = RT_HALIGN_LEFT, text = 0	) ],
 				"fonts": [gFont("Robo-Regular", 28)],
@@ -1080,7 +1107,7 @@
     <ePixmap pixmap="NOVUM_HD_Common/images/myMain_menu.png" position="0,254" size="1187,410" transparent="1" zPosition="-1" />
     <ePixmap pixmap="NOVUM_HD_Common/images/myMain_menuR.png" position="1188,center" size="93,720" transparent="1" zPosition="-1" />
     <widget source="title" render="Label" position="215,370" size="420,180" font="Robo-Regular; 46" backgroundColor="un2D3033" foregroundColor="transpWhite" transparent="1" valign="center" zPosition="4" halign="center" />
-    <widget source="menu" render="Listbox" position="653,342" size="510,250" foregroundColor="light_blue1" selectionPixmap="NOVUM_HD_Common/images/FocusBar.png" backgroundPixmap="NOVUM_HD_Common/images/sel_bg.png" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <widget source="menu" render="Listbox" position="653,342" size="510,250" foregroundColor="light_blue1" selectionPixmap="NOVUM_HD_Common/images/FocusBar.png" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
       <convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (30,5), size = (480,50), flags = RT_HALIGN_LEFT, text = 0	) ],
 				"fonts": [gFont("Robo-Regular", 28)],
@@ -1103,7 +1130,7 @@
     <ePixmap pixmap="NOVUM_HD_Common/images/myMain_menu.png" position="0,254" size="1187,410" transparent="1" zPosition="-1" />
     <ePixmap pixmap="NOVUM_HD_Common/images/myMain_menuR.png" position="1188,center" size="93,720" transparent="1" zPosition="-1" />
     <widget source="title" render="Label" position="215,370" size="420,180" font="Robo-Regular; 46" backgroundColor="un2D3033" foregroundColor="transpWhite" transparent="1" valign="center" zPosition="4" halign="center" />
-    <widget source="menu" render="Listbox" position="653,342" size="510,250" foregroundColor="light_blue1" selectionPixmap="NOVUM_HD_Common/images/FocusBar.png" backgroundPixmap="NOVUM_HD_Common/images/sel_bg.png" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <widget source="menu" render="Listbox" position="653,342" size="510,250" foregroundColor="light_blue1" selectionPixmap="NOVUM_HD_Common/images/FocusBar.png" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
       <convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (30,5), size = (480,50), flags = RT_HALIGN_LEFT, text = 0	) ],
 				"fonts": [gFont("Robo-Regular", 28)],
