@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: myNOVUM_HD vs.13.4  by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
+  <!--	Skin: myNOVUM_HD vs.13.6  by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
   <!--	Skin: ViXBMC Vs 1.0 based on ViX-Night-HD Vs 0.39 by AndyBlac @www.world-of-satellite.com	-->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
@@ -16,14 +16,22 @@
     <color name="background_fs" value="#00919191" />
     <color name="background1" value="#27d8dee2" />
     <color name="background10" value="#10000000" />
+    <color name="background10transp" value="#1f000000" />	
     <color name="background2" value="#05101010" />
     <color name="background20" value="#20000000" />
+    <color name="background20transp" value="#2f000000" />	
     <color name="background30" value="#30000000" />
+    <color name="background30transp" value="#3f000000" />	
     <color name="background40" value="#40000000" />
+    <color name="background40transp" value="#4f000000" />	
     <color name="background50" value="#50000000" />
+    <color name="background50transp" value="#5f000000" />	
     <color name="background60" value="#60000000" />
+    <color name="background60transp" value="#6f000000" />
     <color name="background70" value="#70000000" />
+    <color name="background70transp" value="#7f000000" />	
     <color name="background80" value="#80000000" />
+    <color name="background80transp" value="#8f000000" />	
     <color name="background90" value="#90000000" />
     <color name="background90transp" value="#9f000000" />
     <color name="black" value="#00000000" />
@@ -60,11 +68,6 @@
     <color name="menu-title_frgrnd" value="#00b3b3b3" />
     <color name="menu-title-bkgrnd" value="#12151515" />
     <color name="myblue" value="#00005aef" />
-    <color name="mybluelight" value="#006196e0" />			
-    <color name="mybluelight1" value="#0035abff" />		
-    <color name="mybluelight2" value="#002f9eff" />
-    <color name="mybluelight3" value="#006cb6f5" />	
-    <color name="mybluelight4" value="#006297e1" />			
     <color name="myblue1" value="#001868ff" />
     <color name="myblue1transp" value="#f01868ff" />
     <color name="myblue1transp1" value="#101868ff" />
@@ -87,6 +90,11 @@
     <color name="myblue4transp" value="#f0008eef" />
     <color name="myblue4transp1" value="#10008eef" />
     <color name="myblue4transp2" value="#20008eef" />
+    <color name="mybluelight" value="#006196e0" />
+    <color name="mybluelight1" value="#0035abff" />
+    <color name="mybluelight2" value="#002f9eff" />
+    <color name="mybluelight3" value="#006cb6f5" />
+    <color name="mybluelight4" value="#006297e1" />
     <color name="mybluetransp" value="#f0005aef" />
     <color name="mybluetransp1" value="#10005aef" />
     <color name="mybluetransp2" value="#20005aef" />
@@ -371,7 +379,7 @@
   <widget source="session.CurrentService" render="Picon" position="25,560" size="220,132" zPosition="10" backgroundColor="un2D3033" transparent="0" alphatest="blend">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget source="session.Event_Now" render="Progress" pixmap="NOVUM_HD_Common/images/progress.png.png" position="405,595" size="610,1" zPosition="2" alphatest="blend" transparent="1">
+  <widget source="session.Event_Now" render="Progress" pixmap="NOVUM_HD_Common/progress.png" position="405,595" size="610,1" zPosition="2" alphatest="blend" transparent="1">
     <convert type="EventTime">Progress</convert>
   </widget>
   <widget source="session.Event_Now" render="Label" position="320,563" size="80,30" halign="left" font="scoutcondWide; 23" foregroundColor="preTrans30" backgroundColor="un2D3033" transparent="1" noWrap="1" zPosition="5">
@@ -581,7 +589,7 @@
   <widget source="session.CurrentService" render="Picon" position="25,560" size="220,132" zPosition="10" backgroundColor="un2D3033" transparent="0" alphatest="blend">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget source="session.Event_Now" render="Progress" pixmap="NOVUM_HD_Common/images/progress.png.png" position="405,595" size="610,1" zPosition="2" alphatest="blend" transparent="1">
+  <widget source="session.Event_Now" render="Progress" pixmap="NOVUM_HD_Common/progress.png" position="405,595" size="610,1" zPosition="2" alphatest="blend" transparent="1">
     <convert type="EventTime">Progress</convert>
   </widget>
   <widget source="session.Event_Now" render="Label" position="320,563" size="80,30" halign="left" font="scoutcondWide; 23" foregroundColor="preTrans30" backgroundColor="un2D3033" transparent="1" noWrap="1" zPosition="5">
@@ -833,7 +841,11 @@
     <widget source="Service" render="Picon" position="988,62" size="90,54" transparent="0" zPosition="3" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
-  </screen>
+    <widget source="ServiceEvent" render="Label" position="465,80" size="130,30" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" zPosition="10" font="scoutcondWide; 20" halign="right">
+      <convert type="ServiceOrbitalPosition">
+      </convert>
+    </widget>
+	</screen>
   <!-- Channel Selection End -->
   <!-- Simple Channel Selection -->
   <screen name="SimpleChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
@@ -894,6 +906,10 @@
     <widget source="Service" render="Picon" position="1160,170" size="110,66" transparent="0" zPosition="3" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
+    <widget source="ServiceEvent" render="Label" position="1150,125" size="130,30" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" zPosition="10" font="scoutcondWide; 18" halign="center">
+      <convert type="ServiceOrbitalPosition">
+      </convert>
+    </widget>	
     <ePixmap pixmap="NOVUM_HD_Common/buttons/key_menu.png" position="1165,570" size="50,25" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="NOVUM_HD_Common/buttons/red.png" position="1150,600" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="NOVUM_HD_Common/buttons/green.png" position="1150,625" size="25,25" alphatest="blend" transparent="1" />
@@ -964,6 +980,10 @@
     <widget source="Service" render="Picon" position="1160,170" size="110,66" transparent="0" zPosition="3" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
+    <widget source="ServiceEvent" render="Label" position="1150,125" size="130,30" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" zPosition="10" font="scoutcondWide; 18" halign="center">
+      <convert type="ServiceOrbitalPosition">
+      </convert>
+    </widget>	
     <ePixmap pixmap="NOVUM_HD_Common/buttons/key_menu.png" position="1165,570" size="50,25" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="NOVUM_HD_Common/buttons/red.png" position="1150,600" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="NOVUM_HD_Common/buttons/green.png" position="1150,625" size="25,25" alphatest="blend" transparent="1" />
@@ -1034,6 +1054,10 @@
     <widget source="Service" render="Picon" position="1160,170" size="110,66" transparent="0" zPosition="3" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
+    <widget source="ServiceEvent" render="Label" position="1150,125" size="130,30" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" zPosition="10" font="scoutcondWide; 18" halign="center">
+      <convert type="ServiceOrbitalPosition">
+      </convert>
+    </widget>	
     <ePixmap pixmap="NOVUM_HD_Common/buttons/key_menu.png" position="1165,570" size="50,25" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="NOVUM_HD_Common/buttons/red.png" position="1150,600" size="25,25" alphatest="blend" transparent="1" />
     <ePixmap pixmap="NOVUM_HD_Common/buttons/green.png" position="1150,625" size="25,25" alphatest="blend" transparent="1" />
@@ -1067,7 +1091,7 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_rec_on.png" position="589,277" size="50,25" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <ePixmap pixmap="NOVUM_HD_Common/novumhd.png" position="56,475" size="100,80" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="NOVUM_HD_Common/novumhd.png" position="55,475" size="100,80" transparent="1" alphatest="blend" />
   </screen>
   <screen name="menu_information" position="0,0" size="1280,720" title="Information" flags="wfNoBorder" backgroundColor="transparent">
     <widget backgroundColor="background70" font="scoutcond; 36" foregroundColor="transpWhite" halign="center" position="46,315" render="Label" size="120,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
@@ -1090,7 +1114,7 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_rec_on.png" position="589,277" size="50,25" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <ePixmap pixmap="NOVUM_HD_Common/novumhd.png" position="56,475" size="100,80" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="NOVUM_HD_Common/novumhd.png" position="55,475" size="100,80" transparent="1" alphatest="blend" />
   </screen>
   <screen name="menu_shutdown" position="0,0" size="1280,720" title="shutdown" flags="wfNoBorder" backgroundColor="transparent">
     <widget backgroundColor="background70" font="scoutcond; 36" foregroundColor="transpWhite" halign="center" position="46,315" render="Label" size="120,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
@@ -1113,7 +1137,7 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_rec_on.png" position="589,277" size="50,25" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <ePixmap pixmap="NOVUM_HD_Common/novumhd.png" position="56,475" size="100,80" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="NOVUM_HD_Common/novumhd.png" position="55,475" size="100,80" transparent="1" alphatest="blend" />
   </screen>
   <screen name="menu_system" position="0,0" size="1280,720" title="System" flags="wfNoBorder" backgroundColor="transparent">
     <widget backgroundColor="background70" font="scoutcond; 36" foregroundColor="transpWhite" halign="center" position="46,315" render="Label" size="120,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
@@ -1136,7 +1160,7 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_rec_on.png" position="589,277" size="50,25" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <ePixmap pixmap="NOVUM_HD_Common/novumhd.png" position="56,475" size="100,80" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="NOVUM_HD_Common/novumhd.png" position="55,475" size="100,80" transparent="1" alphatest="blend" />
   </screen>
   <screen name="Menu" position="0,0" size="1280,720" title="Main Menu" flags="wfNoBorder" backgroundColor="transparent">
     <widget backgroundColor="background70" font="scoutcond; 36" foregroundColor="transpWhite" halign="center" position="46,315" render="Label" size="120,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
@@ -1159,7 +1183,7 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="NOVUM_HD_Common/icons/ico_rec_on.png" position="589,277" size="50,25" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <ePixmap pixmap="NOVUM_HD_Common/novumhd.png" position="56,475" size="100,80" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="NOVUM_HD_Common/novumhd.png" position="55,475" size="100,80" transparent="1" alphatest="blend" />
   </screen>
   <!-- ## VIX Skin ## -->
   <screen name="VIXMenu" position="0,0" size="1280,720" title="VIX" flags="wfNoBorder" backgroundColor="transparent">
@@ -1194,7 +1218,7 @@
     </widget>
     <ePixmap pixmap="NOVUM_HD_Common/buttons/red.png" position="-5,630" size="20,20" alphatest="blend" transparent="1" />
     <widget source="key_red" render="Label" position="25,630" size="190,20" zPosition="1" font="Regular; 18" backgroundColor="background50" foregroundColor="menu-buttons-frgrnd" halign="left" transparent="1" valign="top" />
-    <ePixmap pixmap="NOVUM_HD_Common/novumhd.png" position="56,475" size="100,80" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="NOVUM_HD_Common/novumhd.png" position="55,475" size="100,80" transparent="1" alphatest="blend" />
     <widget backgroundColor="background70" font="scoutcond; 36" foregroundColor="transpWhite" halign="center" position="46,315" render="Label" size="120,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>

@@ -1,11 +1,16 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: NOVUM_HD Common vs.13.4 by Nashu.     -->
+  <!--	Skin: NOVUM_HD Common vs.13.6 by Nashu.     -->
   <!--	This skin is part of NOVUM_HD-Series skins; the same license applies.	--> 
   <!-- Infobar Lite -->
   <screen name="InfoBarLite" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap position="center,535" size="1280,156" pixmap="NOVUM_HD_Common/images/infobarlite.png" transparent="1" zPosition="-2" />
-    <widget source="session.CurrentService" render="Label" position="center,535" size="590,45" font="Roboto-Light; 30" backgroundColor="un2D3033transp4" transparent="1" valign="center" halign="center" foregroundColor="transpWhite">
+    <ePixmap position="0,535" size="1280,9" pixmap="NOVUM_HD_Common/images/Infobarbg.png" transparent="1" zPosition="-10" />
+    <ePixmap position="0,690" size="1280,9" pixmap="NOVUM_HD_Common/images/InfobarTop.png" transparent="1" zPosition="-10" />
+    <eLabel position="0,540" size="1280,74" backgroundColor="un242426transp4" zPosition="-3" />
+    <eLabel position="0,614" size="1280,2" backgroundColor="orange" zPosition="0" />
+    <eLabel position="0,616" size="1280,77" backgroundColor="background30" zPosition="-3" />
+    <eLabel position="240,540" size="2,152" backgroundColor="orange" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="345,537" size="590,45" font="Roboto-Light; 30" backgroundColor="un2D3033transp4" transparent="1" valign="center" halign="center" foregroundColor="transpWhite">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="session.CurrentService" render="Picon" position="10,548" size="220,132" zPosition="10" backgroundColor="un2D3033" transparent="0" alphatest="blend">
@@ -64,7 +69,7 @@
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="NOVUM_HD_Common/p_bar.png" position="center,614" size="760,2" zPosition="1" transparent="1">
+    <widget source="session.Event_Now" render="Progress" pixmap="NOVUM_HD_Common/p_bar.png" position="423,614" size="500,2" zPosition="1" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="248,621" size="80,32" halign="center" font="Roboto-Light; 22" backgroundColor="un2D3033transp4" transparent="1" valign="center" foregroundColor="transpWhite">
@@ -83,9 +88,9 @@
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
-    <!--		<widget source="session.CurrentService" render="Label" backgroundColor="un2D3033" font="Regular; 18" foregroundColor="transpWhite" halign="left" valign="center" noWrap="1" position="256,690" size="1000,25" transparent="1" zPosition="1">
+    <!-- <widget source="session.CurrentService" render="Label" backgroundColor="un2D3033" font="Regular; 18" foregroundColor="transpWhite" halign="left" valign="center" noWrap="1" position="256,690" size="1000,25" transparent="1" zPosition="1">
 			<convert type="DMCHDCaidDisplay">EcmInfo</convert>
-    </widget>-->
+		</widget>-->
     <eLabel text="SNR" position="505,660" size="80,21" halign="right" font="Regular; 20" backgroundColor="un2D3033transp4" foregroundColor="transpWhite" transparent="1" valign="center" />
     <widget source="session.FrontendStatus" render="Label" position="590,660" size="80,21" font="Regular; 20" backgroundColor="un2D3033transp4" foregroundColor="light_blue" transparent="1">
       <convert type="FrontendInfo">SNR</convert>
@@ -6119,7 +6124,11 @@ self.autoResize()
     <widget name="menu" position="140,160" size="800,190" scrollbarMode="showOnDemand" backgroundColor="background2" transparent="1" />
   </screen>
   <screen name="SimplePlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap position="0,552" size="1280,156" pixmap="NOVUM_HD_Common/images/infobarlite.png" transparent="1" zPosition="-2" />
+    <ePixmap position="0,552" size="1280,9" pixmap="NOVUM_HD_Common/images/Infobarbg.png" transparent="1" zPosition="-10" />
+    <ePixmap position="0,707" size="1280,9" pixmap="NOVUM_HD_Common/images/InfobarTop.png" transparent="1" zPosition="-10" />
+    <eLabel position="0,559" size="1280,150" backgroundColor="un242426transp4" zPosition="-3" />
+    <eLabel position="990,555" size="2,156" backgroundColor="orange" zPosition="1" />
+    <eLabel position="255,555" size="2,156" backgroundColor="orange" zPosition="1" />
     <widget source="session.CurrentService" render="Label" position="273,566" size="700,54" font="Regular; 24" valign="center" halign="center" backgroundColor="black" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -6362,7 +6371,7 @@ self.autoResize()
     <eLabel text="OPEN SOURCE" position="210,210" size="200,30" font="Regular;22" backgroundColor="background2" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="210,350" size="650,320" font="Regular; 22" backgroundColor="background40" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
     <ePixmap position="1060,570" size="45,25" pixmap="NOVUM_HD_Common/buttons/key_info.png" alphatest="blend" />
-    <eLabel text="Skins NOVUM_HD Series vs.13.4 by Nashu" position="210,680" size="470,30" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="Robo-Regular; 20" halign="left" />
+    <eLabel text="Skins NOVUM_HD Series vs.13.6 by Nashu" position="210,680" size="470,30" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="Robo-Regular; 20" halign="left" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="NOVUM_HD_Common/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-2" />
@@ -9702,7 +9711,10 @@ self.autoResize()
     <widget source="key_green" render="Label" position="30,654" size="180,20" zPosition="4" font="Regular; 17" halign="left" backgroundColor="menu-buttons-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
   </screen>
   <screen name="DVDPlayer" flags="wfNoBorder" position="0,564" size="1280,156" title="InfoBar" backgroundColor="transparent">
-    <ePixmap pixmap="NOVUM_HD_Common/images/infobarlite.png" position="0,0" zPosition="-1" size="1280,156" />
+    <ePixmap position="0,0" size="1280,9" pixmap="NOVUM_HD_Common/images/Infobarbg.png" transparent="1" zPosition="-10" />
+    <eLabel position="0,4" size="1280,152" backgroundColor="un242426transp4" zPosition="-3" />
+    <eLabel position="1085,5" size="2,156" backgroundColor="orange" zPosition="1" />
+    <eLabel position="255,5" size="2,156" backgroundColor="orange" zPosition="1" />
     <widget source="session.CurrentService" render="Label" position="270,22" size="800,40" backgroundColor="un2D3033transp4" font="Robo-Regular; 29" foregroundColor="transpWhite" halign="left" Valign="center" transparent="1" zPosition="6" noWrap="1">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -9724,9 +9736,8 @@ self.autoResize()
       <convert type="ServiceInfo">VideoHeight</convert>
     </widget>
     <widget name="chapterLabel" position="0,27" size="240,25" font="RegularWide; 16" halign="center" foregroundColor="white" backgroundColor="un2D3033transp4" transparent="1" zPosition="3" />
-    <widget name="statusicon" position="608,90" zPosition="10" size="100,25" alphatest="on" pixmaps="NOVUM_HD_Common/images/pvrstate/pvr_playing.png,NOVUM_HD_Common/images/pvrstate/pvr_paused.png,NOVUM_HD_Common/images/pvrstate/pvr_stop.png,NOVUM_HD_Common/images/pvrstate/pvr_fwd.png,NOVUM_HD_Common/images/pvrstate/pvr_rwd.png,NOVUM_HD_Common/images/pvrstate/pvr_slow.png" backgroundColor="un2D3033transp4" transparent="1" />
+    <widget name="statusicon" position="608,90" zPosition="10" size="100,25" alphatest="on" pixmaps="images/pvrstate/pvr_playing.png,images/pvrstate/pvr_paused.png,images/pvrstate/pvr_stop.png,images/pvrstate/pvr_fwd.png,images/pvrstate/pvr_rwd.png,images/pvrstate/pvr_slow.png" backgroundColor="un2D3033transp4" transparent="1" />
     <widget name="speed" position="652,94" size="30,15" font="Regular; 17" halign="left" foregroundColor="epgblue" backgroundColor="un2D3033transp4" transparent="1" zPosition="12" />
-    <ePixmap position="1090,4" size="100,151" pixmap="NOVUM_HD_Common/menu/movie_nocover.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="ChapterZap" position="500,600" size="280,60" title="Chapter" backgroundColor="background40">
     <widget name="chapter" position="35,15" size="110,25" font="Regular; 22" transparent="1" backgroundColor="background2" />
