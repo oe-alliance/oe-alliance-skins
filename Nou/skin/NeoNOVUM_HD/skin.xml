@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: NeoNOVUM_HD vs.13.6 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
+  <!--	Skin: NeoNOVUM_HD vs.14.5 by Nashu based on ViXBMC_HD-Night Vs 1.0 by markus625 @www.world-of-satellite.com 	-->
   <!--	Skin: ViXBMC Vs 1.0 based on ViX-Night-HD Vs 0.39 by AndyBlac @www.world-of-satellite.com	-->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
@@ -16,24 +16,36 @@
     <color name="background_fs" value="#00919191" />
     <color name="background1" value="#27d8dee2" />
     <color name="background10" value="#10000000" />
-    <color name="background10transp" value="#1f000000" />	
+    <color name="background10transp" value="#1f000000" />
     <color name="background2" value="#05101010" />
     <color name="background20" value="#20000000" />
-    <color name="background20transp" value="#2f000000" />	
+    <color name="background20transp" value="#2f000000" />
     <color name="background30" value="#30000000" />
-    <color name="background30transp" value="#3f000000" />	
+    <color name="background30transp" value="#3f000000" />
     <color name="background40" value="#40000000" />
-    <color name="background40transp" value="#4f000000" />	
+    <color name="background40transp" value="#4f000000" />
     <color name="background50" value="#50000000" />
-    <color name="background50transp" value="#5f000000" />	
+    <color name="background50transp" value="#5f000000" />
     <color name="background60" value="#60000000" />
     <color name="background60transp" value="#6f000000" />
     <color name="background70" value="#70000000" />
-    <color name="background70transp" value="#7f000000" />	
+    <color name="background70transp" value="#7f000000" />
     <color name="background80" value="#80000000" />
-    <color name="background80transp" value="#8f000000" />	
+    <color name="background80transp" value="#8f000000" />
     <color name="background90" value="#90000000" />
     <color name="background90transp" value="#9f000000" />
+    <color name="background90transp1" value="#9f010000" />
+    <color name="background90transp2" value="#9f020000" />
+    <color name="background90transp3" value="#9f030000" />
+    <color name="background90transp4" value="#9f040000" />
+    <color name="background90transp5" value="#9f050000" />
+    <color name="background90transp6" value="#9f060000" />
+    <color name="background90transp7" value="#9f070000" />
+    <color name="background90transp8" value="#9f080000" />
+    <color name="background90transp9" value="#9f090909" />
+    <color name="background90transparent" value="#9f0f0f09" />	
+    <color name="background90transparent2" value="#9f0f0909" />
+    <color name="background90transparent3" value="#9f0f0f0f" />	
     <color name="black" value="#00000000" />
     <color name="blue" value="#000064c7" />
     <color name="blueciel" value="#ae4479ff" />
@@ -49,7 +61,7 @@
     <color name="green" value="#27307e13" />
     <color name="greentransparent" value="#08004c00" />
     <color name="grey" value="#00bbbbbb" />
-    <color name="greytransp" value="#f52d3033" />
+    <color name="greytransp" value="#f42d3033" />
     <color name="infobar_collab_back" value="#12131313" />
     <color name="infobar_service_frgrnd" value="#00385896" />
     <color name="infobar_sunken" value="#12191919" />
@@ -126,6 +138,13 @@
     <color name="transparent" value="#ffffffff" />
     <color name="transparent2" value="#ff000000" />
     <color name="transparent3" value="#ff090000" />
+    <color name="transparent30" value="#ff030000" />
+    <color name="transparent4" value="#ff040000" />
+    <color name="transparent5" value="#ff050000" />
+    <color name="transparent6" value="#ff060000" />
+    <color name="transparent7" value="#ff070000" />
+    <color name="transparent8" value="#ff080000" />
+    <color name="transparent9" value="#f1101010" />	
     <color name="transpBlack" value="#80000000" />
     <color name="transpWhite" value="#70f0f0f0" />
     <color name="transpWhite1" value="#77ffffff" />
@@ -810,7 +829,7 @@
       <convert type="EventName">FullDescription</convert>
     </widget>
     <!-- Running Text End -->
-    <widget source="ServiceEvent" render="NovSingleEpgList" position="15,55" size="1255,153" font="Regular2; 21" backgroundColor="transparent" foregroundColor="preTrans50" noWrap="1" transparent="1" zPosition="6" />
+    <widget source="ServiceEvent" render="NovSingleEpgList" position="15,55" size="1255,153" font="Regular2; 21" backgroundColor="transparent1" foregroundColor="preTrans50" noWrap="1" transparent="1" zPosition="6" />
     <widget source="global.CurrentTime" render="Label" position="1070,378" size="200,24" font="scoutcondWide; 20" foregroundColor="light_blue" backgroundColor="background30" halign="right" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
@@ -838,8 +857,8 @@
       <convert type="ServiceOrbitalPosition">
       </convert>
     </widget>
-    <eLabel text="PROGRAM GUIDE" position="15,10" size="280,30" halign="left" font="Robo-Regular; 25" backgroundColor="un2D3033" transparent="1" valign="center" zPosition="4" foregroundColor="preTrans40" />
-    <ePixmap pixmap="NOVUM_HD_Common/images/Ch_Selection_Bg-top_fs8.png" position="0,0" size="1280,50" transparent="1" zPosition="-1" />
+    <eLabel text="PROGRAM GUIDE" position="15,10" size="280,30" halign="left" font="Robo-Regular; 25" backgroundColor="un2D3033transp1" transparent="1" valign="center" zPosition="4" foregroundColor="preTrans40" />
+    <ePixmap pixmap="NOVUM_HD_Common/images/Ch_Selection_Bg-top_fs8.png" position="0,0" size="1280,220" transparent="1" zPosition="-1" />
     <ePixmap pixmap="NOVUM_HD_Common/buttons/key_menu.png" position="1172,545" size="55,25" alphatest="blend" zPosition="3" />
     <ePixmap pixmap="NOVUM_HD_Common/buttons/red.png" position="1157,575" size="20,18" alphatest="blend" zPosition="3" />
     <ePixmap pixmap="NOVUM_HD_Common/buttons/green.png" position="1157,600" size="20,18" alphatest="blend" zPosition="3" />
