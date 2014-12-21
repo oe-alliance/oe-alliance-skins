@@ -1103,7 +1103,7 @@ self.autoResize()
 	<screen name="PluginDownloadBrowser" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<widget name="text" position="10,107" size="503,533" zPosition="1" font="skyreg;20" foregroundColor="white" backgroundColor="skydarkblue" halign="center" valign="center" transparent="1" />
-		<widget name="list" position="10,107" size="503,533" itemHeight="49" selectionPixmap="buttons/FocusBar_H50x503.png" foregroundColor="white" backgroundColor="#032d497b" transparent="0" scrollbarMode="showOnDemand" zPosition="2" enableWrapAround="1" />
+		<widget name="list" position="10,107" size="503,533" itemHeight="49" selectionPixmap="buttons/FocusBar_H50x503.png" foregroundColor="white" backgroundColor="#032d497b" transparent="1" scrollbarMode="showOnDemand" zPosition="2" enableWrapAround="1" />
 	</screen>
 	<screen name="Dish" flags="wfNoBorder" position="20,20" size="165,275" zPosition="-1" backgroundColor="transparent">
 		<widget name="Dishpixmap" position="12,0" size="130,160" zPosition="1" pixmap="icons/dish.png" transparent="1" alphatest="blend" />
