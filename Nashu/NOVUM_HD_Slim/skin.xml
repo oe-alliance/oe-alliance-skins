@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: NOVUM_HD_Slim vs.16.6 by Nashu  -->
+  <!--	Skin: NOVUM_HD_Slim vs.16.7 by Nashu  -->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
   <!--	Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -6220,7 +6220,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="NOVUM_HD_Slim/menu/iconnovum.png" transparent="1" alphatest="blend" />
-    <widget name="checkList" position="140,160" size="800,510" itemHeight="30" selectionPixmap="NOVUM_HD_Slim/images/FocusBar.png" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" font="Regular;20" />
+    <widget source="title_text" render="Label" position="140,160" size="800,30" font="Regular; 20" halign="left" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" />
+    <widget source="summary_description" render="Label" position="140,660" size="800,30" foregroundColor="lightgrey" backgroundColor="background2" font="Regular; 20" halign="left" transparent="1" />
+    <widget name="checkList" position="140,200" size="800,450" itemHeight="30" selectionPixmap="NOVUM_HD_Slim/images/FocusBar.png" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" font="Regular;20" />
     <ePixmap pixmap="NOVUM_HD_Slim/buttons/red.png" position="1044,600" size="24,24" alphatest="blend" transparent="1" />
     <ePixmap pixmap="NOVUM_HD_Slim/buttons/green.png" position="1044,624" size="24,24" alphatest="blend" transparent="1" />
     <ePixmap pixmap="NOVUM_HD_Slim/buttons/yellow.png" position="1044,650" size="24,24" alphatest="blend" transparent="1" />
@@ -11401,7 +11403,7 @@ self.instance.move(ePoint(0,0))
     <eLabel text="OPEN SOURCE" position="210,210" size="200,30" font="Regular;22" backgroundColor="background2" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="210,350" size="650,320" font="Regular;17" backgroundColor="background30" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
     <ePixmap position="1044,575" size="69,24" pixmap="NOVUM_HD_Slim/buttons/key_info.png" alphatest="blend" />
-    <eLabel text="Skin NOVUM_HD_Slim vs.16.6 by Nashu" position="210,680" size="470,30" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="Regular;20" halign="left" />
+    <eLabel text="Skin NOVUM_HD_Slim vs.16.7 by Nashu" position="210,680" size="470,30" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="Regular;20" halign="left" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="NOVUM_HD_Slim/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
