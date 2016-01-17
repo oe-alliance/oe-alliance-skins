@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: myNOVUM_HD2_Black vs.16.7 by Nashu  -->
+  <!--	Skin: myNOVUM_HD2_Black vs.16.9 by Nashu  -->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
   <!--	Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -2328,7 +2328,7 @@
   </screen>
   <screen name="QuitMainloopScreen" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="black">
     <ePixmap pixmap="myNOVUM_HD2_Black/menu/backdrop.png" position="0,0" size="1280,720" alphatest="blend" zPosition="-1" />
-    <widget name="text" position="0,310" size="1280,170" font="scoutcondWide; 28" foregroundColor="unc0d7ff" transparent="1" halign="center" backgroundColor="background2" />
+    <widget name="text" position="0,330" size="1280,180" font="scoutcondWide; 28" foregroundColor="unc0d7ff" transparent="1" halign="center" backgroundColor="background2" />
   </screen>
   <!-- Quick EPG -->
   <screen name="QuickEPG" flags="wfNoBorder" position="0,500" size="1280,220" title="InfoBar" backgroundColor="transparent">
@@ -11559,7 +11559,7 @@ self.instance.move(ePoint(0,0))
     <eLabel text="OPEN SOURCE" position="210,210" size="200,30" font="Regular;22" backgroundColor="background2" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="210,350" size="650,320" font="Regular;17" backgroundColor="background30" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
     <ePixmap position="1044,575" size="69,24" pixmap="myNOVUM_HD2_Black/buttons/key_info.png" alphatest="blend" />
-    <eLabel text="Skin myNOVUM_HD2_Black vs.16.7 by Nashu" position="210,680" size="470,30" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="Regular;20" halign="left" />
+    <eLabel text="Skin myNOVUM_HD2_Black vs.16.9 by Nashu" position="210,680" size="470,30" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="Regular;20" halign="left" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
@@ -27120,71 +27120,74 @@ self.instance.move(ePoint(0,0))
   <!-- Serien Recorder -->
   <screen name="SerienRecorder3.0" position="0,0" size="1280,720" title="Serien Recorder" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/Lcd4Sel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/images/slider/slider_H720.png" position="1224,140" size="10,480" zPosition="12" alphatest="blend" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/images/slider/slider_H720.png" position="726,140" size="10,480" zPosition="12" alphatest="blend" />
-    <eLabel position="16,140" size="720,480" zPosition="-9" backgroundColor="background30" />
-    <eLabel position="740,140" size="522,480" zPosition="-9" backgroundColor="background10" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/images/slider/slider_H420.png" position="1244,170" size="10,420" zPosition="12" alphatest="blend" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/images/slider/slider_H480.png" position="766,140" size="10,480" zPosition="12" alphatest="blend" />    
+    <eLabel position="785,140" size="477,480" zPosition="-9" backgroundColor="background10" />
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="13" />
-    <eLabel position="16,620" size="1246,1" backgroundColor="transpWhite3" zPosition="13" />
+    <eLabel position="16,619" size="1246,1" backgroundColor="transpWhite3" zPosition="13" />
+    <eLabel position="785,21" size="1,700" backgroundColor="transpWhite3" />
+    <eLabel position="17,21" size="770,700" zPosition="-9" backgroundColor="background50" />
+    <eLabel position="18,140" size="768,480" zPosition="-8" backgroundColor="background20" />
+    <eLabel position="0,719" size="1280,1" backgroundColor="transpWhite3" zPosition="13" />
     <widget source="global.CurrentTime" render="Label" position="1036,38" size="200,38" font="scoutcondWide;21" foregroundColor="preTrans30" backgroundColor="background2" halign="right" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
     <!-- Titel + Version -->
     <widget name="version" position="796,86" size="433,38" halign="right" font="Regular;24" foregroundColor="preTrans30" backgroundColor="background2" transparent="1" noWrap="1" valign="center" zPosition="4" />
     <!-- Subtitel -->
-    <widget name="title" position="43,41" size="680,26" font="Regular;20" foregroundColor="window-sel-fg" backgroundColor="background2" transparent="1" halign="left" />
+    <widget name="title" position="43,40" size="720,30" font="Regular;20" foregroundColor="window-sel-fg" backgroundColor="background2" transparent="1" halign="left" />
     <!-- Serienherkunft -->
     <widget name="cover" position="801,193" size="400,373" pixmap="myNOVUM_HD2_Black/no_cover.png" zPosition="-5" alphatest="blend" backgroundColor="background80" />
-    <widget name="headline" font="Regular;17" position="43,106" size="686,26" backgroundColor="background2" valign="center" halign="left" transparent="1" />
-    <widget name="info" position="26,193" size="710,426" font="Regular;17" backgroundColor="background2" transparent="1" zPosition="1" />
-    <widget name="path" position="43,73" size="680,26" font="Regular;17" foregroundColor="window-sel-fg" backgroundColor="background2" valign="center" halign="left" transparent="1" />
+    <widget name="headline" font="Regular;16" position="43,106" size="726,26" backgroundColor="background2" valign="center" halign="left" transparent="1" />
+    <widget name="info" position="26,193" size="710,426" font="Regular;16" backgroundColor="background2" transparent="1" zPosition="1" />
+    <widget name="path" position="43,73" size="720,30" font="Regular;16" foregroundColor="window-sel-fg" backgroundColor="background2" valign="center" halign="left" transparent="1" />
     <!-- Serienliste -->
-    <widget name="config" position="26,193" size="710,426" itemHeight="30" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" backgroundPixmap="myNOVUM_HD2_Black/images/sel_bg2.png" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background2" transparent="1" font="Regular;16" Wrap="1" />
-    <widget name="menu_list" position="26,140" size="710,480" enableWrapAround="1" itemHeight="80" scrollbarMode="showOnDemand" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" />
-    <widget name="log" position="26,140" size="710,480" itemHeight="30" enableWrapAround="1" backgroundColor="background2" transparent="1" font="Regular;17" />
+    <widget name="config" position="26,140" size="750,480" itemHeight="30" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" backgroundPixmap="myNOVUM_HD2_Black/images/sel_bg2.png" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background2" transparent="1" font="Regular;20" Wrap="1" />
+    <widget name="menu_list" position="26,140" size="750,480" enableWrapAround="1" font="Regular;18" itemHeight="60" scrollbarMode="showOnDemand" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" />
+    <widget name="log" position="26,140" size="710,480" itemHeight="30" enableWrapAround="1" backgroundColor="background2" transparent="1" font="Regular;16" />
     <!-- Anzeige-Modus -->
-    <widget name="popup_bg" position="26,140" size="710,480" backgroundColor="background30" transparent="0" zPosition="5" font="Regular;20" />
-    <widget name="popup_list" position="26,140" size="710,480" itemHeight="30" backgroundColor="background30" zPosition="10" scrollbarMode="showOnDemand" transparent="0" />
+    <widget name="popup_bg" position="26,140" size="750,480" backgroundColor="background30" transparent="0" zPosition="5" />
+    <widget name="popup_list" position="26,140" size="750,480" itemHeight="30" font="Regular;20" backgroundColor="background30" zPosition="10" scrollbarMode="showOnDemand" transparent="0" />
     <!-- Channels -->
-    <widget name="list" position="26,140" size="710,480" itemHeight="30" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" backgroundPixmap="myNOVUM_HD2_Black/images/sel_bg2.png" backgroundColor="background2" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="Web_Channel" position="33,106" size="226,26" zPosition="10" font="Regular;17" foregroundColor="window-sel-fg" backgroundColor="background2" transparent="1" halign="left" />
-    <widget name="STB_Channel" position="266,106" size="226,26" zPosition="10" font="Regular;17" foregroundColor="window-sel-fg" backgroundColor="background2" transparent="1" halign="center" />
-    <widget name="alt_STB_Channel" position="500,106" size="226,26" zPosition="10" font="Regular;17" foregroundColor="window-sel-fg" backgroundColor="background2" transparent="1" halign="right" />
-    <widget name="popup_list2" position="769,140" size="466,480" backgroundColor="background10" zPosition="11" scrollbarMode="showOnDemand" transparent="0" font="Regular;17" itemHeight="30" />
+    <widget name="list" position="26,140" size="710,480" font="Regular;20" itemHeight="30" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" backgroundPixmap="myNOVUM_HD2_Black/images/sel_bg2.png" backgroundColor="background2" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="Web_Channel" position="33,106" size="226,26" zPosition="10" font="Regular;16" foregroundColor="window-sel-fg" backgroundColor="background2" transparent="1" halign="left" />
+    <widget name="STB_Channel" position="286,106" size="226,26" zPosition="10" font="Regular;16" foregroundColor="window-sel-fg" backgroundColor="background2" transparent="1" halign="center" />
+    <widget name="alt_STB_Channel" position="540,106" size="226,26" zPosition="10" font="Regular;16" foregroundColor="window-sel-fg" backgroundColor="background2" transparent="1" halign="right" />
+    <widget name="popup_list2" position="800,170" size="455,420" backgroundColor="background10" zPosition="11" scrollbarMode="showOnDemand" transparent="0" font="Regular;18" itemHeight="30" />
     <!-- Config -->
-    <widget name="config_information" position="769,140" size="466,480" zPosition="3" backgroundColor="background10" font="Regular;17" />
-    <widget name="config_information_text" position="769,140" size="466,480" zPosition="5" font="Regular;17" halign="left" foregroundColor="window-sel-fg" backgroundColor="background10" transparent="0" />
+    <widget name="config_information" position="800,170" size="455,420" zPosition="3" backgroundColor="background10" font="Regular;18" />
+    <widget name="config_information_text" position="800,170" size="455,420" zPosition="5" font="Regular;18" halign="left" foregroundColor="window-sel-fg" backgroundColor="background10" transparent="0" />
     <!-- Buttons -->
-    <widget name="bt_ok" position="40,644" size="23,16" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_ok.png" alphatest="blend" />
-    <widget name="text_ok" position="73,646" size="200,21" zPosition="1" font="Regular;15" halign="left" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" transparent="1" />
-    <widget name="bt_0" position="40,669" size="23,16" zPosition="3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_0.png" alphatest="blend" />
-    <widget name="bt_5" position="40,669" size="23,16" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_5.png" alphatest="blend" />
-    <widget name="bt_exit" position="40,669" size="23,16" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_exit.png" alphatest="blend" />
-    <widget name="text_0" position="73,670" size="200,21" zPosition="1" font="Regular;15" halign="left" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" transparent="1" />
-    <widget name="bt_1" position="40,694" size="23,16" zPosition="3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_1.png" alphatest="blend" />
-    <widget name="bt_6" position="40,694" size="23,16" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_6.png" alphatest="blend" />
-    <widget name="bt_text" position="40,694" size="23,16" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_text.png" alphatest="blend" />
-    <widget name="text_1" position="73,695" size="200,21" zPosition="1" font="Regular;15" halign="left" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" transparent="1" />
-    <widget name="bt_2" position="286,644" size="23,16" zPosition="3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_2.png" alphatest="blend" />
-    <widget name="bt_7" position="286,644" size="23,16" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_7.png" alphatest="blend" />
-    <widget name="bt_epg" position="286,644" size="23,16" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_epg.png" alphatest="blend" />
-    <widget name="text_2" position="320,646" size="200,21" zPosition="1" font="Regular;15" halign="left" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" transparent="1" />
-    <widget name="bt_3" position="286,669" size="23,16" zPosition="3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_3.png" alphatest="blend" />
-    <widget name="bt_8" position="286,669" size="23,16" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_8.png" alphatest="blend" />
-    <widget name="bt_info" position="286,669" size="23,16" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_help.png" alphatest="blend" />
-    <widget name="text_3" position="320,670" size="200,21" zPosition="1" font="Regular;15" halign="left" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" transparent="1" />
-    <widget name="bt_4" position="286,694" size="23,16" zPosition="3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_4.png" alphatest="blend" />
-    <widget name="bt_9" position="286,694" size="23,16" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_9.png" alphatest="blend" />
-    <widget name="bt_menu" position="286,694" size="23,16" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_menu.png" alphatest="blend" />
-    <widget name="text_4" position="320,695" size="200,21" zPosition="1" font="Regular;15" halign="left" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" transparent="1" />
-    <widget name="bt_red" pixmap="myNOVUM_HD2_Black/buttons/red.png" position="746,669" size="24,24" alphatest="blend" transparent="1" />
-    <widget name="bt_green" pixmap="myNOVUM_HD2_Black/buttons/green.png" position="746,694" size="24,24" alphatest="blend" transparent="1" />
-    <widget name="bt_yellow" pixmap="myNOVUM_HD2_Black/buttons/yellow.png" position="986,669" size="24,24" alphatest="blend" transparent="1" />
-    <widget name="bt_blue" pixmap="myNOVUM_HD2_Black/buttons/blue.png" position="986,694" size="24,24" alphatest="blend" transparent="1" />
-    <widget name="text_red" position="781,670" size="213,20" zPosition="1" font="Regular;15" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
-    <widget name="text_green" position="781,695" size="213,20" zPosition="1" font="Regular;15" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
-    <widget name="text_yellow" position="1021,670" size="226,20" zPosition="1" font="Regular;15" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
-    <widget name="text_blue" position="1021,695" size="226,20" zPosition="1" font="Regular;15" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
+    <widget name="bt_ok" position="40,644" size="24,24" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_ok.png" alphatest="blend" />
+    <widget name="text_ok" position="73,646" size="200,21" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" transparent="1" />
+    <widget name="bt_0" position="40,669" size="24,24" zPosition="3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_0.png" alphatest="blend" />
+    <widget name="bt_5" position="40,669" size="24,24" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_5.png" alphatest="blend" />
+    <widget name="bt_exit" position="40,669" size="24,24" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_exit.png" alphatest="blend" />
+    <widget name="text_0" position="73,670" size="200,21" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" transparent="1" />
+    <widget name="bt_1" position="40,694" size="24,24" zPosition="3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_1.png" alphatest="blend" />
+    <widget name="bt_6" position="40,694" size="24,24" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_6.png" alphatest="blend" />
+    <widget name="bt_text" position="40,694" size="24,24" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_text.png" alphatest="blend" />
+    <widget name="text_1" position="73,695" size="200,21" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" transparent="1" />
+    <widget name="bt_2" position="286,644" size="24,24" zPosition="3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_2.png" alphatest="blend" />
+    <widget name="bt_7" position="286,644" size="24,24" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_7.png" alphatest="blend" />
+    <widget name="bt_epg" position="286,644" size="24,24" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_epg.png" alphatest="blend" />
+    <widget name="text_2" position="320,646" size="200,21" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" transparent="1" />
+    <widget name="bt_3" position="286,669" size="24,24" zPosition="3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_3.png" alphatest="blend" />
+    <widget name="bt_8" position="286,669" size="24,24" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_8.png" alphatest="blend" />
+    <widget name="bt_info" position="286,669" size="24,24" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_help.png" alphatest="blend" />
+    <widget name="text_3" position="320,670" size="200,21" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" transparent="1" />
+    <widget name="bt_4" position="286,694" size="24,24" zPosition="3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_4.png" alphatest="blend" />
+    <widget name="bt_9" position="286,694" size="24,24" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_9.png" alphatest="blend" />
+    <widget name="bt_menu" position="286,694" size="24,24" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/serienrecorder/skins/AtileHD/images/key_menu.png" alphatest="blend" />
+    <widget name="text_4" position="320,695" size="200,21" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" transparent="1" />
+    <widget name="bt_red" pixmap="myNOVUM_HD2_Black/buttons/red.png" position="806,669" size="24,24" alphatest="blend" transparent="1" />
+    <widget name="bt_green" pixmap="myNOVUM_HD2_Black/buttons/green.png" position="806,694" size="24,24" alphatest="blend" transparent="1" />
+    <widget name="bt_yellow" pixmap="myNOVUM_HD2_Black/buttons/yellow.png" position="1026,669" size="24,24" alphatest="blend" transparent="1" />
+    <widget name="bt_blue" pixmap="myNOVUM_HD2_Black/buttons/blue.png" position="1026,694" size="24,24" alphatest="blend" transparent="1" />
+    <widget name="text_red" position="841,670" size="200,20" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
+    <widget name="text_green" position="841,695" size="200,20" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
+    <widget name="text_yellow" position="1061,670" size="200,20" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
+    <widget name="text_blue" position="1061,695" size="200,20" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
   </screen>
   <!-- Serien Recorder End -->
   <!-- Service Editor -->
@@ -27549,212 +27552,226 @@ self.instance.move(ePoint(0,0))
   <screen name="SkyRecorderArchiv" position="center,center" size="1280,720" title="SkyRecorder" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/Lcd4Sel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
     <ePixmap position="16,72" size="106,66" pixmap="myNOVUM_HD2_Black/menu/sky_bg.png" transparent="1" alphatest="blend" />
-    <eLabel position="740,140" size="522,479" zPosition="-9" backgroundColor="background10" />
+    <eLabel position="930,140" size="332,479" zPosition="-9" backgroundColor="background10" />    
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="13" />
+    <eLabel position="17,21" size="910,697" zPosition="-9" />
+    <eLabel position="928,21" size="1,700" backgroundColor="transpWhite3" />
     <widget source="global.CurrentTime" render="Label" position="1036,38" size="200,38" font="scoutcondWide;21" foregroundColor="preTrans30" backgroundColor="background2" halign="right" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="763,86" size="466,38" halign="right" font="Regular;24" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" />
-    <widget name="title" position="173,80" size="553,50" backgroundColor="background2" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" foregroundColor="transpWhite" />
-    <widget name="movieselect" position="40,160" size="686,330" backgroundColor="background2" scrollbarMode="showOnDemand" itemHeight="45" transparent="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" zPosition="1" font="Regular;17" />
-    <widget name="genreselect" position="836,486" size="333,120" backgroundColor="background2" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" scrollbarMode="showOnDemand" transparent="1" zPosition="1" itemHeight="30" font="Regular;16" halign="center" />
-    <widget name="image" position="933,223" size="168,238" transparent="1" alphatest="blend" zPosition="2" backgroundColor="black" />
-    <eLabel name="imageback" position="933,223" size="168,238" backgroundColor="background10" zPosition="0" />
-    <eLabel name="imagefill" position="933,223" size="168,238" backgroundColor="black" zPosition="1" />
-    <widget name="name" position="766,160" size="466,50" backgroundColor="background2" transparent="1" font="Regular;17" valign="center" zPosition="1" halign="center" foregroundColor="ivorywhite" Wrap="1" />
-    <widget name="handlung" position="40,526" size="686,186" backgroundColor="background2" transparent="1" font="Regular;16" valign="top" halign="left" zPosition="1" foregroundColor="preTrans30" />
-    <widget name="searchlist_bg" position="196,220" size="533,480" backgroundColor="background10" transparent="0" zPosition="4" />
-    <widget name="searchlist" position="206,253" size="513,346" itemHeight="30" font="Regular;17" backgroundColor="background10" scrollbarMode="showOnDemand" transparent="0" zPosition="5" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" />
+    <widget name="title" position="173,80" size="740,50" backgroundColor="background2" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" foregroundColor="transpWhite" />
+    <widget name="movieselect" position="30,160" size="890,315" backgroundColor="background2" scrollbarMode="showOnDemand" itemHeight="45" transparent="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" zPosition="1" font="Regular;17" />
+    <widget name="genreselect" position="980,486" size="270,120" backgroundColor="background2" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" scrollbarMode="showOnDemand" transparent="1" zPosition="1" itemHeight="30" font="Regular;16" halign="center" />
+    <widget name="image" position="1033,223" size="168,238" transparent="1" alphatest="blend" zPosition="2" backgroundColor="black" />
+    <eLabel name="imageback" position="1033,223" size="168,238" backgroundColor="background10" zPosition="0" />
+    <eLabel name="imagefill" position="1033,223" size="168,238" backgroundColor="black" zPosition="1" />
+    <widget name="name" position="980,160" size="270,50" backgroundColor="background2" transparent="1" font="Regular;17" valign="center" zPosition="1" halign="center" foregroundColor="ivorywhite" Wrap="1" />
+    <widget name="handlung" position="30,526" size="890,186" backgroundColor="background2" transparent="1" font="Regular;16" valign="top" halign="left" zPosition="1" foregroundColor="preTrans30" />
+    <widget name="searchlist_bg" position="196,220" size="683,480" backgroundColor="background10" transparent="0" zPosition="4" />
+    <widget name="searchlist" position="206,253" size="663,346" itemHeight="30" font="Regular;17" backgroundColor="background10" scrollbarMode="showOnDemand" transparent="0" zPosition="5" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" />
     <widget name="searchlist_red" backgroundColor="background2" pixmap="myNOVUM_HD2_Black/buttons/red.png" position="240,654" zPosition="5" size="24,24" alphatest="blend" />
     <widget name="searchlist_green" backgroundColor="background2" pixmap="myNOVUM_HD2_Black/buttons/green.png" position="400,654" zPosition="5" size="24,24" alphatest="blend" />
     <widget name="searchlist_yellow" backgroundColor="background2" pixmap="myNOVUM_HD2_Black/buttons/yellow.png" position="560,654" zPosition="5" size="24,24" alphatest="blend" />
     <widget name="searchlist_red_label" position="276,656" size="113,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="5" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
     <widget name="searchlist_green_label" position="436,656" size="113,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="4" font="Regular;16" halign="left" foregroundColor="menu-title_frgrnd" />
     <widget name="searchlist_yellow_label" position="596,656" size="113,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="4" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
-    <widget name="movieinfo_bg" position="196,220" size="533,480" backgroundColor="background10" transparent="0" zPosition="4" />
-    <widget name="movieinfo" position="206,233" size="513,450" backgroundColor="background10" scrollbarMode="showOnDemand" transparent="0" zPosition="5" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" foregroundColor="ivorywhite" font="Regular;16" />
+    <widget name="movieinfo_bg" position="196,220" size="683,480" backgroundColor="background10" transparent="0" zPosition="4" />
+    <widget name="movieinfo" position="206,233" size="663,450" backgroundColor="background10" scrollbarMode="showOnDemand" transparent="0" zPosition="5" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" foregroundColor="ivorywhite" font="Regular;16" />
     <widget name="movieinfo_red" backgroundColor="background30" pixmap="myNOVUM_HD2_Black/buttons/red.png" position="240,654" zPosition="4" size="24,24" alphatest="blend" />
     <widget name="movieinfo_green" backgroundColor="background30" pixmap="myNOVUM_HD2_Black/buttons/green.png" position="400,654" zPosition="4" size="24,24" alphatest="blend" />
     <widget name="movieinfo_red_label" position="276,656" size="113,20" backgroundColor="event-bkgrnd" transparent="1" zPosition="4" font="Regular;16" valign="center" halign="left" />
     <widget name="movieinfo_green_label" position="436,656" size="113,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="4" font="Regular;16" valign="center" halign="left" foregroundColor="menu-buttons-frgrnd" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="746,666" size="24,24" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="746,691" size="24,24" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/yellow.png" position="1013,666" size="24,24" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="946,666" size="24,24" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="946,691" size="24,24" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/yellow.png" position="1113,666" size="24,24" alphatest="blend" transparent="1" />
     <!--
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/blue.png" position="1013,691" size="24,24" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/blue.png" position="1113,691" size="24,24" alphatest="blend" transparent="1" />
     -->
-    <eLabel text="Löschen" position="781,666" size="200,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
-    <eLabel text="Film ab!" position="781,691" size="200,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
-    <eLabel text="Info" position="1048,666" size="200,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
+    <eLabel text="Löschen" position="981,666" size="140,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
+    <eLabel text="Film ab!" position="981,691" size="140,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
+    <eLabel text="Info" position="1148,666" size="140,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
     <!--
-    <eLabel text="Trailer" position="1048,691" size="200,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="background2" transparent="1" foregroundColor="menu-buttons-frgrnd" />
+    <eLabel text="Trailer" position="1148,691" size="200,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="background2" transparent="1" foregroundColor="menu-buttons-frgrnd" />
     -->
     <!--
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/up.png" position="1110,313" zPosition="1" size="20,14" alphatest="blend" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/down.png" position="1110,350" zPosition="1" size="20,14" alphatest="blend" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/up.png" position="1210,313" zPosition="1" size="20,14" alphatest="blend" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/down.png" position="1210,350" zPosition="1" size="20,14" alphatest="blend" />
     -->
-    <widget name="star0" transparent="1" zPosition="3" position="900,439" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star1" transparent="1" zPosition="3" position="900,415" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star2" transparent="1" zPosition="3" position="900,391" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star3" transparent="1" zPosition="3" position="900,367" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star4" transparent="1" zPosition="3" position="900,343" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star5" transparent="1" zPosition="3" position="900,319" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star6" transparent="1" zPosition="3" position="900,295" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star7" transparent="1" zPosition="3" position="900,271" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star8" transparent="1" zPosition="3" position="900,247" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star9" transparent="1" zPosition="3" position="900,223" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <ePixmap name="nostar0" transparent="1" zPosition="2" position="900,439" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar1" transparent="1" zPosition="2" position="900,415" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar2" transparent="1" zPosition="2" position="900,391" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar3" transparent="1" zPosition="2" position="900,367" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar4" transparent="1" zPosition="2" position="900,343" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar5" transparent="1" zPosition="2" position="900,319" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar6" transparent="1" zPosition="2" position="900,295" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar7" transparent="1" zPosition="2" position="900,271" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar8" transparent="1" zPosition="2" position="900,247" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar9" transparent="1" zPosition="2" position="900,223" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <widget name="star0" transparent="1" zPosition="3" position="980,439" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star1" transparent="1" zPosition="3" position="980,415" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star2" transparent="1" zPosition="3" position="980,391" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star3" transparent="1" zPosition="3" position="980,367" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star4" transparent="1" zPosition="3" position="980,343" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star5" transparent="1" zPosition="3" position="980,319" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star6" transparent="1" zPosition="3" position="980,295" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star7" transparent="1" zPosition="3" position="980,271" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star8" transparent="1" zPosition="3" position="980,247" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star9" transparent="1" zPosition="3" position="980,223" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <ePixmap name="nostar0" transparent="1" zPosition="2" position="980,439" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar1" transparent="1" zPosition="2" position="980,415" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar2" transparent="1" zPosition="2" position="980,391" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar3" transparent="1" zPosition="2" position="980,367" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar4" transparent="1" zPosition="2" position="980,343" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar5" transparent="1" zPosition="2" position="980,319" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar6" transparent="1" zPosition="2" position="980,295" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar7" transparent="1" zPosition="2" position="980,271" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar8" transparent="1" zPosition="2" position="980,247" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar9" transparent="1" zPosition="2" position="980,223" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
   </screen>
   <screen name="SkyChannelSelect" position="center,center" size="1280,720" title="SkyRecorder" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/Lcd4Sel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
     <ePixmap position="16,72" size="106,66" pixmap="myNOVUM_HD2_Black/menu/sky_bg.png" transparent="1" alphatest="blend" />
-    <eLabel position="740,140" size="522,479" zPosition="-9" backgroundColor="background10" />
+    <eLabel position="930,140" size="332,479" zPosition="-9" backgroundColor="background10" />    
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="13" />
+    <eLabel position="17,21" size="910,697" zPosition="-9" />
+    <eLabel position="928,21" size="1,700" backgroundColor="transpWhite3" />
     <widget source="global.CurrentTime" render="Label" position="1036,38" size="200,38" font="scoutcondWide;21" foregroundColor="preTrans30" backgroundColor="background2" halign="right" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="763,86" size="466,38" halign="right" font="Regular;24" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" />
-    <widget name="channelselect" position="40,160" size="686,510" itemHeight="45" backgroundColor="background2" scrollbarMode="showOnDemand" transparent="1" zPosition="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" font="Regular;20" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="746,691" size="24,24" alphatest="blend" transparent="1" />
-    <eLabel text="Sendernamen umschlüsseln" position="781,691" size="333,20" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-buttons-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" valign="center" />
+    <widget name="channelselect" position="30,160" size="890,495" itemHeight="45" backgroundColor="background2" scrollbarMode="showOnDemand" transparent="1" zPosition="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" font="Regular;20" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="946,691" size="24,24" alphatest="blend" transparent="1" />
+    <eLabel text="Sendernamen umschlüsseln" position="981,691" size="260,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-buttons-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" valign="center" />
   </screen>
   <screen name="SkyChannelEditor" position="center,center" size="1280,720" title="SkyRecorder" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/Lcd4Sel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
     <ePixmap position="16,72" size="106,66" pixmap="myNOVUM_HD2_Black/menu/sky_bg.png" transparent="1" alphatest="blend" />
-    <eLabel position="740,140" size="522,479" zPosition="-9" backgroundColor="background10" />
+    <eLabel position="930,140" size="332,479" zPosition="-9" backgroundColor="background10" />    
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="13" />
+    <eLabel position="17,21" size="910,697" zPosition="-9" />
+    <eLabel position="928,21" size="1,700" backgroundColor="transpWhite3" />
     <widget source="global.CurrentTime" render="Label" position="1036,38" size="200,38" font="scoutcondWide;21" foregroundColor="preTrans30" backgroundColor="background2" halign="right" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="763,86" size="466,38" halign="right" font="Regular;24" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" />
-    <widget name="channeledit" position="40,160" size="686,480" itemHeight="45" backgroundColor="background2" scrollbarMode="showOnDemand" transparent="1" zPosition="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" font="Regular;20" />
-    <eLabel text="links 'Sky TV-Guide', rechts 'STB' ... '+' = Sender in STB-Kanalliste gefunden, '-' = Sender nicht gefunden" position="40,673" size="693,33" zPosition="1" font="Regular;16" halign="left" backgroundColor="background2" transparent="1" foregroundColor="ivorywhite" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="746,666" size="24,24" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="746,691" size="24,24" alphatest="blend" transparent="1" />
-    <eLabel text="Alle löschen" position="781,666" size="200,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-time-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
-    <eLabel text="Eintrag löschen" position="781,691" size="200,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-buttons-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
+    <widget name="channeledit" position="30,160" size="890,495" itemHeight="45" backgroundColor="background2" scrollbarMode="showOnDemand" transparent="1" zPosition="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" font="Regular;20" />
+    <eLabel text="links 'Sky TV-Guide', rechts 'STB' ... '+' = Sender in STB-Kanalliste gefunden, '-' = Sender nicht gefunden" position="30,673" size="890,33" zPosition="1" font="Regular;16" halign="left" backgroundColor="background2" transparent="1" foregroundColor="ivorywhite" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="946,666" size="24,24" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="946,691" size="24,24" alphatest="blend" transparent="1" />
+    <eLabel text="Alle löschen" position="981,666" size="140,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-time-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
+    <eLabel text="Eintrag löschen" position="981,691" size="140,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-buttons-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
   </screen>
   <screen name="SkySelectAnytimeFolder" position="center,center" size="1280,720" title="SkyRecorder" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/Lcd4Sel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
     <ePixmap position="16,72" size="106,66" pixmap="myNOVUM_HD2_Black/menu/sky_bg.png" transparent="1" alphatest="blend" />
-    <eLabel position="740,140" size="522,479" zPosition="-9" backgroundColor="background10" />
+    <eLabel position="930,140" size="332,479" zPosition="-9" backgroundColor="background10" />    
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="13" />
+    <eLabel position="17,21" size="910,697" zPosition="-9" />
+    <eLabel position="928,21" size="1,700" backgroundColor="transpWhite3" />
     <widget source="global.CurrentTime" render="Label" position="1036,38" size="200,38" font="scoutcondWide;21" foregroundColor="preTrans30" backgroundColor="background2" halign="right" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="763,86" size="466,38" halign="right" font="Regular;24" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" />
-    <widget name="media" position="40,673" size="693,33" valign="center" font="Regular;16" transparent="1" backgroundColor="background2" foregroundColor="ivorywhite" />
-    <widget name="folderlist" position="40,160" size="686,480" itemHeight="45" font="Regular;20" backgroundColor="background2" foregroundColor="lightgrey" scrollbarMode="showOnDemand" transparent="1" zPosition="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="746,666" size="24,24" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="746,691" size="24,24" alphatest="blend" transparent="1" />
-    <eLabel text="Abbrechen" position="781,666" size="200,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-time-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
-    <eLabel text="Speichern" position="781,691" size="200,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-buttons-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
+    <widget name="media" position="30,673" size="890,33" valign="center" font="Regular;16" transparent="1" backgroundColor="background2" foregroundColor="ivorywhite" />
+    <widget name="folderlist" position="30,160" size="890,495" itemHeight="45" font="Regular;20" backgroundColor="background2" foregroundColor="lightgrey" scrollbarMode="showOnDemand" transparent="1" zPosition="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="946,666" size="24,24" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="946,691" size="24,24" alphatest="blend" transparent="1" />
+    <eLabel text="Abbrechen" position="981,666" size="140,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-time-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
+    <eLabel text="Speichern" position="981,691" size="140,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-buttons-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
   </screen>
   <screen name="SkySelectSkydbFolder" position="center,center" size="1280,720" title="SkyRecorder" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/Lcd4Sel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
     <ePixmap position="16,72" size="106,66" pixmap="myNOVUM_HD2_Black/menu/sky_bg.png" transparent="1" alphatest="blend" />
-    <eLabel position="740,140" size="522,479" zPosition="-9" backgroundColor="background10" />
+    <eLabel position="930,140" size="332,479" zPosition="-9" backgroundColor="background10" />    
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="13" />
+    <eLabel position="17,21" size="910,697" zPosition="-9" />
+    <eLabel position="928,21" size="1,700" backgroundColor="transpWhite3" />
     <widget source="global.CurrentTime" render="Label" position="1036,38" size="200,38" font="scoutcondWide;21" foregroundColor="preTrans30" backgroundColor="background2" halign="right" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="763,86" size="466,38" halign="right" font="Regular;24" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" />
-    <widget name="media" position="40,673" size="693,33" valign="center" font="Regular;16" transparent="1" backgroundColor="background2" foregroundColor="ivorywhite" />
-    <widget name="folderlist" position="40,160" size="686,480" itemHeight="45" font="Regular;20" backgroundColor="background2" foregroundColor="lightgrey" scrollbarMode="showOnDemand" transparent="1" zPosition="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="746,666" size="24,24" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="746,691" size="24,24" alphatest="blend" transparent="1" />
-    <eLabel text="Abbrechen" position="781,666" size="200,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-time-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
-    <eLabel text="Speichern" position="781,691" size="200,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-buttons-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
+    <widget name="media" position="30,673" size="890,33" valign="center" font="Regular;16" transparent="1" backgroundColor="background2" foregroundColor="ivorywhite" />
+    <widget name="folderlist" position="30,160" size="890,495" itemHeight="45" font="Regular;20" backgroundColor="background2" foregroundColor="lightgrey" scrollbarMode="showOnDemand" transparent="1" zPosition="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="946,666" size="24,24" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="946,691" size="24,24" alphatest="blend" transparent="1" />
+    <eLabel text="Abbrechen" position="981,666" size="140,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-time-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
+    <eLabel text="Speichern" position="981,691" size="140,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-buttons-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
   </screen>
   <screen name="SkyGenreSelect" position="center,center" size="1280,720" title="SkyRecorder" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/Lcd4Sel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
     <ePixmap position="16,72" size="106,66" pixmap="myNOVUM_HD2_Black/menu/sky_bg.png" transparent="1" alphatest="blend" />
-    <eLabel position="740,140" size="522,479" zPosition="-9" backgroundColor="background10" />
+    <eLabel position="930,140" size="332,479" zPosition="-9" backgroundColor="background10" />    
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="13" />
+    <eLabel position="17,21" size="910,697" zPosition="-9" />
+    <eLabel position="928,21" size="1,700" backgroundColor="transpWhite3" />
     <widget source="global.CurrentTime" render="Label" position="1036,38" size="200,38" font="scoutcondWide;21" foregroundColor="preTrans30" backgroundColor="background2" halign="right" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="763,86" size="466,38" halign="right" font="Regular;24" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" />
-    <widget name="channelselect" position="40,160" size="686,510" itemHeight="45" font="Regular;20" backgroundColor="background2" transparent="1" zPosition="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" />
-    <widget name="config" position="750,160" size="500,426" itemHeight="30" font="Regular;20" backgroundColor="background2" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="channelselect" position="30,160" size="890,330" itemHeight="45" font="Regular;20" backgroundColor="background2" transparent="1" zPosition="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" />
+    <widget name="config" position="30,526" size="890,180" itemHeight="30" font="Regular;18" backgroundColor="background2" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" scrollbarMode="showOnDemand" transparent="1" />
     <!-- 
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="746,666" size="24,24" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="746,691" size="24,24" alphatest="blend" transparent="1" />
-    <eLabel text="Löschen" position="781,666" size="200,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-time-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
-    <eLabel text="Hinzufügen" position="781,691" size="200,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-buttons-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="946,666" size="24,24" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="946,691" size="24,24" alphatest="blend" transparent="1" />
+    <eLabel text="Löschen" position="981,666" size="140,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-time-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
+    <eLabel text="Hinzufügen" position="981,691" size="140,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-buttons-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
     -->
   </screen>
   <screen name="SkyRecorderMainScreen" position="center,center" size="1280,720" title="SkyRecorder" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/Lcd4Sel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
     <ePixmap position="16,72" size="106,66" pixmap="myNOVUM_HD2_Black/menu/sky_bg.png" transparent="1" alphatest="blend" />
-    <eLabel position="740,140" size="522,479" zPosition="-9" backgroundColor="background10" />
+    <eLabel position="930,140" size="332,479" zPosition="-9" backgroundColor="background10" />    
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="13" />
+    <eLabel position="17,21" size="910,697" zPosition="-9" />
+    <eLabel position="928,21" size="1,700" backgroundColor="transpWhite3" />
     <widget source="global.CurrentTime" render="Label" position="1036,38" size="200,38" font="scoutcondWide;21" foregroundColor="preTrans30" backgroundColor="background2" halign="right" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="763,86" size="466,38" halign="right" font="Regular;24" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" />
     <widget name="title" position="173,80" size="553,50" backgroundColor="background2" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" foregroundColor="transpWhite" />
-    <widget name="filmliste" position="40,160" size="686,330" backgroundColor="background2" scrollbarMode="showOnDemand" itemHeight="45" transparent="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" zPosition="1" font="Regular;17" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_hd_off.png" position="913,486" size="29,20" zPosition="1" alphatest="blend" />
-    <widget name="hd" position="913,486" size="29,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_hd_on.png" zPosition="2" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_format_off.png" position="946,486" size="36,20" zPosition="1" alphatest="blend" />
-    <widget name="169" position="946,486" size="36,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_format_on.png" zPosition="2" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_dolby_off.png" position="986,486" size="60,20" zPosition="1" alphatest="blend" />
-    <widget name="dolby" position="986,486" size="60,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_dolby_on.png" zPosition="2" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/dualch_off.png" position="1050,486" size="30,20" zPosition="1" alphatest="blend" />
-    <widget name="dualch" position="1050,486" size="30,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/dualch_on.png" zPosition="2" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_sub_off.png" position="1083,486" size="40,20" zPosition="1" alphatest="blend" />
-    <widget name="sub" position="1083,486" size="40,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_sub_on.png" zPosition="2" />
-    <widget name="image" position="933,223" size="168,238" transparent="1" alphatest="blend" zPosition="2" backgroundColor="black" />
-    <eLabel name="imageback" position="933,223" size="168,238" backgroundColor="background10" zPosition="0" />
-    <eLabel name="imagefill" position="933,223" size="168,238" backgroundColor="black" zPosition="1" />
-    <widget name="name" position="766,160" size="466,50" backgroundColor="background2" transparent="1" font="Regular;17" valign="center" zPosition="1" halign="center" foregroundColor="ivorywhite" Wrap="1" />
-    <widget name="handlung" position="40,526" size="686,186" backgroundColor="background2" transparent="1" font="Regular;16" valign="top" halign="left" zPosition="1" foregroundColor="preTrans30" />
-    <widget name="filmliste_event_bg" position="196,220" size="533,480" backgroundColor="background10" transparent="0" zPosition="4" />
-    <widget name="filmliste_event" position="206,253" size="513,346" itemHeight="30" font="Regular;17" backgroundColor="background10" scrollbarMode="showOnDemand" transparent="0" zPosition="5" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" />
-    <widget name="movieinfo" position="206,233" size="513,450" backgroundColor="background10" scrollbarMode="showOnDemand" transparent="0" zPosition="5" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" foregroundColor="ivorywhite" font="Regular;16" />
+    <widget name="filmliste" position="30,160" size="890,315" backgroundColor="background2" scrollbarMode="showOnDemand" itemHeight="45" transparent="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" zPosition="1" font="Regular;17" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_hd_off.png" position="1013,486" size="29,20" zPosition="1" alphatest="blend" />
+    <widget name="hd" position="1013,486" size="29,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_hd_on.png" zPosition="2" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_format_off.png" position="1046,486" size="36,20" zPosition="1" alphatest="blend" />
+    <widget name="169" position="1046,486" size="36,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_format_on.png" zPosition="2" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_dolby_off.png" position="1086,486" size="60,20" zPosition="1" alphatest="blend" />
+    <widget name="dolby" position="1086,486" size="60,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_dolby_on.png" zPosition="2" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/dualch_off.png" position="1150,486" size="30,20" zPosition="1" alphatest="blend" />
+    <widget name="dualch" position="1150,486" size="30,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/dualch_on.png" zPosition="2" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_sub_off.png" position="1183,486" size="40,20" zPosition="1" alphatest="blend" />
+    <widget name="sub" position="1183,486" size="40,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_sub_on.png" zPosition="2" />
+    <widget name="image" position="1033,223" size="168,238" transparent="1" alphatest="blend" zPosition="2" backgroundColor="black" />
+    <eLabel name="imageback" position="1033,223" size="168,238" backgroundColor="background10" zPosition="0" />
+    <eLabel name="imagefill" position="1033,223" size="168,238" backgroundColor="black" zPosition="1" />
+    <widget name="name" position="980,160" size="270,50" backgroundColor="background2" transparent="1" font="Regular;17" valign="center" zPosition="1" halign="center" foregroundColor="ivorywhite" Wrap="1" />
+    <widget name="handlung" position="30,526" size="890,186" backgroundColor="background2" transparent="1" font="Regular;16" valign="top" halign="left" zPosition="1" foregroundColor="preTrans30" />
+    <widget name="filmliste_event_bg" position="196,220" size="683,480" backgroundColor="background10" transparent="0" zPosition="4" />
+    <widget name="filmliste_event" position="206,253" size="663,346" itemHeight="30" font="Regular;17" backgroundColor="background10" scrollbarMode="showOnDemand" transparent="0" zPosition="5" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" />
+    <widget name="movieinfo" position="206,233" size="663,450" backgroundColor="background10" scrollbarMode="showOnDemand" transparent="0" zPosition="5" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" foregroundColor="ivorywhite" font="Regular;16" />
     <widget name="movieinfo_red" backgroundColor="un181d20" pixmap="myNOVUM_HD2_Black/buttons/red.png" position="260,594" zPosition="4" size="24,24" alphatest="blend" />
     <widget name="movieinfo_green" backgroundColor="un181d20" pixmap="myNOVUM_HD2_Black/buttons/green.png" position="460,594" zPosition="4" size="24,24" alphatest="blend" />
     <widget name="movieinfo_red_label" position="300,594" size="100,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="4" font="Regular;16" valign="center" halign="left" foregroundColor="menu-buttons-frgrnd" />
     <widget name="movieinfo_green_label" position="500,594" size="100,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="4" font="Regular;16" valign="center" halign="left" foregroundColor="menu-buttons-frgrnd" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/key_menu.png" position="746,642" size="69,24" zPosition="1" alphatest="blend" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="746,666" size="24,24" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="746,691" size="24,24" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/yellow.png" position="1013,666" size="24,24" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/blue.png" position="1013,691" size="24,24" alphatest="blend" transparent="1" />
-    <eLabel text="Blacklist" position="781,666" size="200,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
-    <eLabel text="Whitelist!" position="781,691" size="200,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
-    <eLabel text="Ansicht" position="1048,666" size="200,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
-    <eLabel text="Archiv" position="1048,691" size="200,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="background2" transparent="1" foregroundColor="menu-buttons-frgrnd" />
-    <widget name="star0" transparent="1" zPosition="3" position="900,439" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star1" transparent="1" zPosition="3" position="900,415" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star2" transparent="1" zPosition="3" position="900,391" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star3" transparent="1" zPosition="3" position="900,367" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star4" transparent="1" zPosition="3" position="900,343" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star5" transparent="1" zPosition="3" position="900,319" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star6" transparent="1" zPosition="3" position="900,295" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star7" transparent="1" zPosition="3" position="900,271" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star8" transparent="1" zPosition="3" position="900,247" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star9" transparent="1" zPosition="3" position="900,223" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <ePixmap name="nostar0" transparent="1" zPosition="2" position="900,439" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar1" transparent="1" zPosition="2" position="900,415" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar2" transparent="1" zPosition="2" position="900,391" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar3" transparent="1" zPosition="2" position="900,367" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar4" transparent="1" zPosition="2" position="900,343" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar5" transparent="1" zPosition="2" position="900,319" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar6" transparent="1" zPosition="2" position="900,295" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar7" transparent="1" zPosition="2" position="900,271" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar8" transparent="1" zPosition="2" position="900,247" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar9" transparent="1" zPosition="2" position="900,223" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/key_menu.png" position="946,642" size="69,24" zPosition="1" alphatest="blend" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="946,666" size="24,24" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="946,691" size="24,24" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/yellow.png" position="1113,666" size="24,24" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/blue.png" position="1113,691" size="24,24" alphatest="blend" transparent="1" />
+    <eLabel text="Blacklist" position="981,666" size="140,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
+    <eLabel text="Whitelist!" position="981,691" size="140,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
+    <eLabel text="Ansicht" position="1148,666" size="140,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
+    <eLabel text="Archiv" position="1148,691" size="140,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="background2" transparent="1" foregroundColor="menu-buttons-frgrnd" />
+    <widget name="star0" transparent="1" zPosition="3" position="980,439" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star1" transparent="1" zPosition="3" position="980,415" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star2" transparent="1" zPosition="3" position="980,391" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star3" transparent="1" zPosition="3" position="980,367" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star4" transparent="1" zPosition="3" position="980,343" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star5" transparent="1" zPosition="3" position="980,319" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star6" transparent="1" zPosition="3" position="980,295" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star7" transparent="1" zPosition="3" position="980,271" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star8" transparent="1" zPosition="3" position="980,247" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star9" transparent="1" zPosition="3" position="980,223" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <ePixmap name="nostar0" transparent="1" zPosition="2" position="980,439" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar1" transparent="1" zPosition="2" position="980,415" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar2" transparent="1" zPosition="2" position="980,391" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar3" transparent="1" zPosition="2" position="980,367" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar4" transparent="1" zPosition="2" position="980,343" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar5" transparent="1" zPosition="2" position="980,319" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar6" transparent="1" zPosition="2" position="980,295" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar7" transparent="1" zPosition="2" position="980,271" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar8" transparent="1" zPosition="2" position="980,247" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar9" transparent="1" zPosition="2" position="980,223" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
   </screen>
   <screen name="SkyRecorderSettings" position="center,center" size="1280,720" title="SkyRecorder" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
@@ -27782,145 +27799,155 @@ self.instance.move(ePoint(0,0))
   </screen>
   <screen name="SkySkipWordsSelect" position="center,center" size="1280,720" title="SkyRecorder" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/Lcd4Sel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
-    <ePixmap position="26,53" size="133,80" pixmap="myNOVUM_HD2_Black/menu/sky_bg.png" transparent="1" alphatest="blend" />
-    <eLabel position="740,140" size="522,479" zPosition="-9" backgroundColor="background10" />
+    <ePixmap position="16,72" size="106,66" pixmap="myNOVUM_HD2_Black/menu/sky_bg.png" transparent="1" alphatest="blend" />
+    <eLabel position="930,140" size="332,479" zPosition="-9" backgroundColor="background10" />    
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="13" />
+    <eLabel position="17,21" size="910,697" zPosition="-9" />
+    <eLabel position="928,21" size="1,700" backgroundColor="transpWhite3" />
     <widget source="global.CurrentTime" render="Label" position="1036,38" size="200,38" font="scoutcondWide;21" foregroundColor="preTrans30" backgroundColor="background2" halign="right" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="763,86" size="466,38" halign="right" font="Regular;24" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" />
-    <widget name="skipwordselect" position="40,160" size="686,510" backgroundColor="background2" scrollbarMode="showOnDemand" transparent="1" zPosition="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" font="Regular;20" itemHeight="45" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="746,666" size="24,24" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="746,691" size="24,24" alphatest="blend" transparent="1" />
-    <eLabel text="Löschen" position="781,666" size="200,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-time-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
-    <eLabel text="Hinzufügen" position="781,691" size="200,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-buttons-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
+    <widget name="skipwordselect" position="30,160" size="890,495" backgroundColor="background2" scrollbarMode="showOnDemand" transparent="1" zPosition="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" font="Regular;20" itemHeight="45" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="946,666" size="24,24" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="946,691" size="24,24" alphatest="blend" transparent="1" />
+    <eLabel text="Löschen" position="981,666" size="140,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-time-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
+    <eLabel text="Hinzufügen" position="981,691" size="140,24" zPosition="1" font="Regular;16" halign="left" backgroundColor="menu-buttons-bkgrnd" transparent="1" foregroundColor="menu-buttons-frgrnd" />
   </screen>
   <screen name="SkyWhitelist" position="center,center" size="1280,720" title="SkyRecorder" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/Lcd4Sel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
     <ePixmap position="16,72" size="106,66" pixmap="myNOVUM_HD2_Black/menu/sky_bg.png" transparent="1" alphatest="blend" />
-    <eLabel position="740,140" size="522,479" zPosition="-9" backgroundColor="background10" />
+    <eLabel position="930,140" size="332,479" zPosition="-9" backgroundColor="background10" />    
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="13" />
+    <eLabel position="17,21" size="910,697" zPosition="-9" />
+    <eLabel position="928,21" size="1,700" backgroundColor="transpWhite3" />
     <widget source="global.CurrentTime" render="Label" position="1036,38" size="200,38" font="scoutcondWide;21" foregroundColor="preTrans30" backgroundColor="background2" halign="right" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="763,86" size="466,38" halign="right" font="Regular;24" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" />
-    <widget name="whitelist" position="40,160" size="686,510" itemHeight="45" font="Regular;20" backgroundColor="background2" foregroundColor="lightgrey" scrollbarMode="showOnDemand" transparent="1" zPosition="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="746,666" size="24,24" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="746,691" size="24,24" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/yellow.png" position="1013,666" size="24,24" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/blue.png" position="1013,691" size="24,24" alphatest="blend" transparent="1" />
-    <eLabel text="Löschen" position="781,666" size="200,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
-    <eLabel text="Bearbeiten" position="781,691" size="200,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
-    <eLabel text="Hinzufügen" position="1048,666" size="200,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
+    <widget name="whitelist" position="30,160" size="890,495" itemHeight="45" font="Regular;20" backgroundColor="background2" foregroundColor="lightgrey" scrollbarMode="showOnDemand" transparent="1" zPosition="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="946,666" size="24,24" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="946,691" size="24,24" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/yellow.png" position="1113,666" size="24,24" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/blue.png" position="1113,691" size="24,24" alphatest="blend" transparent="1" />
+    <eLabel text="Löschen" position="981,666" size="140,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
+    <eLabel text="Bearbeiten" position="981,691" size="140,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
+    <eLabel text="Hinzufügen" position="1148,666" size="140,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
   </screen>
   <screen name="SkyAddedEdit" position="center,center" size="1280,720" title="SkyRecorder" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/Lcd4Sel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
     <ePixmap position="16,72" size="106,66" pixmap="myNOVUM_HD2_Black/menu/sky_bg.png" transparent="1" alphatest="blend" />
-    <eLabel position="740,140" size="522,479" zPosition="-9" backgroundColor="background10" />
+    <eLabel position="930,140" size="332,479" zPosition="-9" backgroundColor="background10" />    
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="13" />
+    <eLabel position="17,21" size="910,697" zPosition="-9" />
+    <eLabel position="928,21" size="1,700" backgroundColor="transpWhite3" />
     <widget source="global.CurrentTime" render="Label" position="1036,38" size="200,38" font="scoutcondWide;21" foregroundColor="preTrans30" backgroundColor="background2" halign="right" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="763,86" size="466,38" halign="right" font="Regular;24" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" />
-    <widget name="addededit" position="40,160" size="686,510" backgroundColor="background2" itemHeight="45" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" zPosition="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="746,666" size="24,24" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="746,691" size="24,24" alphatest="blend" transparent="1" />
-    <eLabel text="Alle löschen" position="781,666" size="200,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
-    <eLabel text="Eintrag löschen" position="781,691" size="200,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
+    <widget name="addededit" position="30,160" size="890,495" backgroundColor="background2" itemHeight="45" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" zPosition="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="946,666" size="24,24" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="946,691" size="24,24" alphatest="blend" transparent="1" />
+    <eLabel text="Alle löschen" position="981,666" size="140,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
+    <eLabel text="Eintrag löschen" position="981,691" size="140,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="background2" />
   </screen>
   <screen name="SkyRecorderTimerSelect" position="center,center" size="1280,720" title="SkyRecorder" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/Lcd4Sel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
     <ePixmap position="16,72" size="106,66" pixmap="myNOVUM_HD2_Black/menu/sky_bg.png" transparent="1" alphatest="blend" />
-    <eLabel position="740,140" size="522,479" zPosition="-9" backgroundColor="background10" />
+    <eLabel position="930,140" size="332,479" zPosition="-9" backgroundColor="background10" />    
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="13" />
+    <eLabel position="17,21" size="910,697" zPosition="-9" />
+    <eLabel position="928,21" size="1,700" backgroundColor="transpWhite3" />
     <widget source="global.CurrentTime" render="Label" position="1036,38" size="200,38" font="scoutcondWide;21" foregroundColor="preTrans30" backgroundColor="background2" halign="right" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="763,86" size="466,38" halign="right" font="Regular;24" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" />
-    <widget name="title" position="173,80" size="553,50" backgroundColor="background2" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" foregroundColor="transpWhite" />
-    <widget name="filmliste" position="40,160" size="686,330" backgroundColor="background2" scrollbarMode="showOnDemand" itemHeight="45" transparent="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" zPosition="1" font="Regular;17" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_hd_off.png" position="913,486" size="29,20" zPosition="1" alphatest="blend" />
-    <widget name="hd" position="913,486" size="29,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_hd_on.png" zPosition="2" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_format_off.png" position="946,486" size="36,20" zPosition="1" alphatest="blend" />
-    <widget name="169" position="946,486" size="36,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_format_on.png" zPosition="2" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_dolby_off.png" position="986,486" size="60,20" zPosition="1" alphatest="blend" />
-    <widget name="dolby" position="986,486" size="60,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_dolby_on.png" zPosition="2" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/dualch_off.png" position="1050,486" size="30,20" zPosition="1" alphatest="blend" />
-    <widget name="dualch" position="1050,486" size="30,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/dualch_on.png" zPosition="2" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_sub_off.png" position="1083,486" size="40,20" zPosition="1" alphatest="blend" />
-    <widget name="sub" position="1083,486" size="40,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_sub_on.png" zPosition="2" />
-    <widget name="image" position="933,223" size="168,238" transparent="1" alphatest="blend" zPosition="2" backgroundColor="black" />
-    <eLabel name="imageback" position="933,223" size="168,238" backgroundColor="background10" zPosition="0" />
-    <eLabel name="imagefill" position="933,223" size="168,238" backgroundColor="black" zPosition="1" />
-    <widget name="name" position="766,160" size="466,50" backgroundColor="background2" transparent="1" font="Regular;17" valign="center" zPosition="1" halign="center" foregroundColor="ivorywhite" Wrap="1" />
-    <widget name="handlung" position="40,526" size="686,186" backgroundColor="background2" transparent="1" font="Regular;16" valign="top" halign="left" zPosition="1" foregroundColor="preTrans30" />
-    <widget name="star0" transparent="1" zPosition="3" position="900,439" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star1" transparent="1" zPosition="3" position="900,415" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star2" transparent="1" zPosition="3" position="900,391" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star3" transparent="1" zPosition="3" position="900,367" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star4" transparent="1" zPosition="3" position="900,343" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star5" transparent="1" zPosition="3" position="900,319" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star6" transparent="1" zPosition="3" position="900,295" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star7" transparent="1" zPosition="3" position="900,271" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star8" transparent="1" zPosition="3" position="900,247" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star9" transparent="1" zPosition="3" position="900,223" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <ePixmap name="nostar0" transparent="1" zPosition="2" position="900,439" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar1" transparent="1" zPosition="2" position="900,415" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar2" transparent="1" zPosition="2" position="900,391" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar3" transparent="1" zPosition="2" position="900,367" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar4" transparent="1" zPosition="2" position="900,343" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar5" transparent="1" zPosition="2" position="900,319" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar6" transparent="1" zPosition="2" position="900,295" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar7" transparent="1" zPosition="2" position="900,271" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar8" transparent="1" zPosition="2" position="900,247" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar9" transparent="1" zPosition="2" position="900,223" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <widget name="title" position="173,80" size="740,50" backgroundColor="background2" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" foregroundColor="transpWhite" />
+    <widget name="filmliste" position="30,160" size="890,315" backgroundColor="background2" scrollbarMode="showOnDemand" itemHeight="45" transparent="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" zPosition="1" font="Regular;17" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_hd_off.png" position="1013,486" size="29,20" zPosition="1" alphatest="blend" />
+    <widget name="hd" position="1013,486" size="29,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_hd_on.png" zPosition="2" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_format_off.png" position="1046,486" size="36,20" zPosition="1" alphatest="blend" />
+    <widget name="169" position="1046,486" size="36,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_format_on.png" zPosition="2" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_dolby_off.png" position="1086,486" size="60,20" zPosition="1" alphatest="blend" />
+    <widget name="dolby" position="1086,486" size="60,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_dolby_on.png" zPosition="2" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/dualch_off.png" position="1150,486" size="30,20" zPosition="1" alphatest="blend" />
+    <widget name="dualch" position="1150,486" size="30,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/dualch_on.png" zPosition="2" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_sub_off.png" position="1183,486" size="40,20" zPosition="1" alphatest="blend" />
+    <widget name="sub" position="1183,486" size="40,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_sub_on.png" zPosition="2" />
+    <widget name="image" position="1033,223" size="168,238" transparent="1" alphatest="blend" zPosition="2" backgroundColor="black" />
+    <eLabel name="imageback" position="1033,223" size="168,238" backgroundColor="background10" zPosition="0" />
+    <eLabel name="imagefill" position="1033,223" size="168,238" backgroundColor="black" zPosition="1" />
+    <widget name="name" position="980,160" size="270,50" backgroundColor="background2" transparent="1" font="Regular;17" valign="center" zPosition="1" halign="center" foregroundColor="ivorywhite" Wrap="1" />
+    <widget name="handlung" position="30,526" size="890,186" backgroundColor="background2" transparent="1" font="Regular;16" valign="top" halign="left" zPosition="1" foregroundColor="preTrans30" />
+    <widget name="star0" transparent="1" zPosition="3" position="980,439" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star1" transparent="1" zPosition="3" position="980,415" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star2" transparent="1" zPosition="3" position="980,391" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star3" transparent="1" zPosition="3" position="980,367" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star4" transparent="1" zPosition="3" position="980,343" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star5" transparent="1" zPosition="3" position="980,319" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star6" transparent="1" zPosition="3" position="980,295" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star7" transparent="1" zPosition="3" position="980,271" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star8" transparent="1" zPosition="3" position="980,247" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star9" transparent="1" zPosition="3" position="980,223" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <ePixmap name="nostar0" transparent="1" zPosition="2" position="980,439" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar1" transparent="1" zPosition="2" position="980,415" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar2" transparent="1" zPosition="2" position="980,391" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar3" transparent="1" zPosition="2" position="980,367" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar4" transparent="1" zPosition="2" position="980,343" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar5" transparent="1" zPosition="2" position="980,319" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar6" transparent="1" zPosition="2" position="980,295" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar7" transparent="1" zPosition="2" position="980,271" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar8" transparent="1" zPosition="2" position="980,247" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar9" transparent="1" zPosition="2" position="980,223" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
   </screen>
   <screen name="SkySkyTimerRec" position="center,center" size="1280,720" title="SkyRecorder" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/Lcd4Sel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
     <ePixmap position="16,72" size="106,66" pixmap="myNOVUM_HD2_Black/menu/sky_bg.png" transparent="1" alphatest="blend" />
-    <eLabel position="740,140" size="522,479" zPosition="-9" backgroundColor="background10" />
+    <eLabel position="930,140" size="332,479" zPosition="-9" backgroundColor="background10" />    
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="13" />
+    <eLabel position="17,21" size="910,697" zPosition="-9" />
+    <eLabel position="928,21" size="1,700" backgroundColor="transpWhite3" />
     <widget source="global.CurrentTime" render="Label" position="1036,38" size="200,38" font="scoutcondWide;21" foregroundColor="preTrans30" backgroundColor="background2" halign="right" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="763,86" size="466,38" halign="right" font="Regular;24" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" />
-    <widget name="title" position="173,80" size="553,50" backgroundColor="background2" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" foregroundColor="transpWhite" />
-    <widget name="filmliste" position="40,160" size="686,330" backgroundColor="background2" scrollbarMode="showOnDemand" itemHeight="45" transparent="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" zPosition="1" font="Regular;17" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_hd_off.png" position="913,486" size="29,20" zPosition="1" alphatest="blend" />
-    <widget name="hd" position="913,486" size="29,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_hd_on.png" zPosition="2" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_format_off.png" position="946,486" size="36,20" zPosition="1" alphatest="blend" />
-    <widget name="169" position="946,486" size="36,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_format_on.png" zPosition="2" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_dolby_off.png" position="986,486" size="60,20" zPosition="1" alphatest="blend" />
-    <widget name="dolby" position="986,486" size="60,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_dolby_on.png" zPosition="2" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/dualch_off.png" position="1050,486" size="30,20" zPosition="1" alphatest="blend" />
-    <widget name="dualch" position="1050,486" size="30,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/dualch_on.png" zPosition="2" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_sub_off.png" position="1083,486" size="40,20" zPosition="1" alphatest="blend" />
-    <widget name="sub" position="1083,486" size="40,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_sub_on.png" zPosition="2" />
-    <widget name="image" position="933,223" size="168,238" transparent="1" alphatest="blend" zPosition="2" backgroundColor="black" />
-    <eLabel name="imageback" position="933,223" size="168,238" backgroundColor="background10" zPosition="0" />
-    <eLabel name="imagefill" position="933,223" size="168,238" backgroundColor="black" zPosition="1" />
-    <widget name="name" position="766,160" size="466,50" backgroundColor="background2" transparent="1" font="Regular;17" valign="center" zPosition="1" halign="center" foregroundColor="ivorywhite" Wrap="1" />
-    <widget name="handlung" position="40,526" size="686,186" backgroundColor="background2" transparent="1" font="Regular;16" valign="top" halign="left" zPosition="1" foregroundColor="preTrans30" />
-    <widget name="star0" transparent="1" zPosition="3" position="900,439" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star1" transparent="1" zPosition="3" position="900,415" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star2" transparent="1" zPosition="3" position="900,391" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star3" transparent="1" zPosition="3" position="900,367" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star4" transparent="1" zPosition="3" position="900,343" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star5" transparent="1" zPosition="3" position="900,319" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star6" transparent="1" zPosition="3" position="900,295" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star7" transparent="1" zPosition="3" position="900,271" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star8" transparent="1" zPosition="3" position="900,247" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <widget name="star9" transparent="1" zPosition="3" position="900,223" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
-    <ePixmap name="nostar0" transparent="1" zPosition="2" position="900,439" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar1" transparent="1" zPosition="2" position="900,415" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar2" transparent="1" zPosition="2" position="900,391" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar3" transparent="1" zPosition="2" position="900,367" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar4" transparent="1" zPosition="2" position="900,343" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar5" transparent="1" zPosition="2" position="900,319" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar6" transparent="1" zPosition="2" position="900,295" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar7" transparent="1" zPosition="2" position="900,271" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar8" transparent="1" zPosition="2" position="900,247" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
-    <ePixmap name="nostar9" transparent="1" zPosition="2" position="900,223" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <widget name="title" position="173,80" size="740,50" backgroundColor="background2" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" foregroundColor="transpWhite" />
+    <widget name="filmliste" position="30,160" size="890,315" backgroundColor="background2" scrollbarMode="showOnDemand" itemHeight="45" transparent="1" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" zPosition="1" font="Regular;17" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_hd_off.png" position="1013,486" size="29,20" zPosition="1" alphatest="blend" />
+    <widget name="hd" position="1013,486" size="29,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_hd_on.png" zPosition="2" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_format_off.png" position="1046,486" size="36,20" zPosition="1" alphatest="blend" />
+    <widget name="169" position="1046,486" size="36,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_format_on.png" zPosition="2" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_dolby_off.png" position="1086,486" size="60,20" zPosition="1" alphatest="blend" />
+    <widget name="dolby" position="1086,486" size="60,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_dolby_on.png" zPosition="2" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/dualch_off.png" position="1150,486" size="30,20" zPosition="1" alphatest="blend" />
+    <widget name="dualch" position="1150,486" size="30,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/dualch_on.png" zPosition="2" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_sub_off.png" position="1183,486" size="40,20" zPosition="1" alphatest="blend" />
+    <widget name="sub" position="1183,486" size="40,20" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/ico_sub_on.png" zPosition="2" />
+    <widget name="image" position="1033,223" size="168,238" transparent="1" alphatest="blend" zPosition="2" backgroundColor="black" />
+    <eLabel name="imageback" position="1033,223" size="168,238" backgroundColor="background10" zPosition="0" />
+    <eLabel name="imagefill" position="1033,223" size="168,238" backgroundColor="black" zPosition="1" />
+    <widget name="name" position="980,160" size="270,50" backgroundColor="background2" transparent="1" font="Regular;17" valign="center" zPosition="1" halign="center" foregroundColor="ivorywhite" Wrap="1" />
+    <widget name="handlung" position="30,526" size="890,186" backgroundColor="background2" transparent="1" font="Regular;16" valign="top" halign="left" zPosition="1" foregroundColor="preTrans30" />
+    <widget name="star0" transparent="1" zPosition="3" position="980,439" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star1" transparent="1" zPosition="3" position="980,415" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star2" transparent="1" zPosition="3" position="980,391" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star3" transparent="1" zPosition="3" position="980,367" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star4" transparent="1" zPosition="3" position="980,343" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star5" transparent="1" zPosition="3" position="980,319" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star6" transparent="1" zPosition="3" position="980,295" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star7" transparent="1" zPosition="3" position="980,271" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star8" transparent="1" zPosition="3" position="980,247" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <widget name="star9" transparent="1" zPosition="3" position="980,223" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/Star.png" alphatest="blend" />
+    <ePixmap name="nostar0" transparent="1" zPosition="2" position="980,439" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar1" transparent="1" zPosition="2" position="980,415" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar2" transparent="1" zPosition="2" position="980,391" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar3" transparent="1" zPosition="2" position="980,367" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar4" transparent="1" zPosition="2" position="980,343" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar5" transparent="1" zPosition="2" position="980,319" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar6" transparent="1" zPosition="2" position="980,295" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar7" transparent="1" zPosition="2" position="980,271" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar8" transparent="1" zPosition="2" position="980,247" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
+    <ePixmap name="nostar9" transparent="1" zPosition="2" position="980,223" size="24,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/skyrecorder/images/NoStar2.png" alphatest="blend" />
   </screen>
   <!-- SkyRecorder End -->
   <!-- SNMP Agent -->
