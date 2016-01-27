@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: myNOVUM_HD2_Black vs.17.1 by Nashu  -->
+  <!--	Skin: myNOVUM_HD2_Black vs.17.2 by Nashu  -->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
   <!--	Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -9833,8 +9833,8 @@ self.instance.move(ePoint(0,0))
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2_Black/menu/iconnovum.png" transparent="1" alphatest="blend" />
-    <widget name="text" position="140,160" size="800,510" font="Regular;20" halign="center" valign="center" backgroundColor="background2" foregroundColor="lightgrey" transparent="1" />
-    <widget name="timerlist" position="140,160" size="800,510" itemHeight="70" font="Regular;20" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" zPosition="2" />
+    <widget name="text" position="140,160" size="800,500" font="Regular;20" halign="center" valign="center" backgroundColor="background2" foregroundColor="lightgrey" transparent="1" />
+    <widget name="timerlist" position="140,160" size="800,500" itemHeight="50" font="Regular;20" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" zPosition="2" />
     <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="1044,600" size="24,24" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="1044,624" size="24,24" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2_Black/buttons/yellow.png" position="1044,650" size="24,24" alphatest="blend" transparent="1" />
@@ -9857,7 +9857,7 @@ self.instance.move(ePoint(0,0))
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2_Black/menu/iconnovum.png" transparent="1" alphatest="blend" />
     <widget name="text" position="140,160" size="800,480" font="Regular;20" halign="center" valign="center" transparent="1" backgroundColor="background2" foregroundColor="lightgrey" />
-    <widget name="bouquetlist" position="140,160" size="800,510" itemHeight="70" font="Regular;20" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" foregroundColor="lightgrey" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="2" />
+    <widget name="bouquetlist" position="140,160" size="800,480" itemHeight="60" font="Regular;20" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" foregroundColor="lightgrey" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="2" />
   </screen>
   <screen name="RemoteTimerChannelList" title="Select Channel" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
@@ -9871,8 +9871,8 @@ self.instance.move(ePoint(0,0))
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2_Black/menu/iconnovum.png" transparent="1" alphatest="blend" />
-    <widget name="text" position="140,160" size="800,510" font="Regular;20" halign="center" valign="center" transparent="1" backgroundColor="background50" foregroundColor="lightgrey" />
-    <widget name="channellist" position="140,160" size="800,513" itemHeight="70" font="Regular;20" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" enableWrapAround="1" zPosition="2" />
+    <widget name="text" position="140,160" size="800,500" font="Regular;20" halign="center" valign="center" transparent="1" backgroundColor="background50" foregroundColor="lightgrey" />
+    <widget name="channellist" position="140,160" size="800,500" itemHeight="50" font="Regular;20" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" enableWrapAround="1" zPosition="2" />
     <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="1044,600" size="24,24" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="1044,624" size="24,24" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2_Black/buttons/yellow.png" position="1044,650" size="24,24" alphatest="blend" transparent="1" />
@@ -9960,7 +9960,7 @@ self.instance.move(ePoint(0,0))
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2_Black/menu/iconnovum.png" transparent="1" alphatest="blend" />
-    <widget name="timerlist" position="140,160" size="800,420" itemHeight="70" font="Regular;20" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
+    <widget name="timerlist" position="140,160" size="800,400" itemHeight="50" font="Regular;20" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
     <widget name="text" position="140,620" size="800,80" font="Regular;20" backgroundColor="background2" halign="left" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="1044,600" size="24,24" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="1044,624" size="24,24" alphatest="blend" transparent="1" />
@@ -11559,7 +11559,7 @@ self.instance.move(ePoint(0,0))
     <eLabel text="OPEN SOURCE" position="210,210" size="200,30" font="Regular;22" backgroundColor="background2" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="210,350" size="650,320" font="Regular;17" backgroundColor="background" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
     <ePixmap position="1044,575" size="69,24" pixmap="myNOVUM_HD2_Black/buttons/key_info.png" alphatest="blend" />
-    <eLabel text="Skin myNOVUM_HD2_Black vs.17.1 by Nashu" position="210,680" size="470,30" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="Regular;20" halign="left" />
+    <eLabel text="Skin myNOVUM_HD2_Black vs.17.2 by Nashu" position="210,680" size="470,30" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="Regular;20" halign="left" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
@@ -16135,12 +16135,12 @@ self.instance.move(ePoint(0,0))
     <widget source="global.CurrentTime" render="Label" position="1040,52" size="240,38" font="scoutcondWide;24" foregroundColor="transpWhite" backgroundColor="un181A1C" halign="center" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
-    <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />    
+    <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <widget source="cutlist" render="Listbox" position="855,160" zPosition="3" size="280,390" scrollbarMode="showOnDemand" foregroundColorSelected="secondFG" backgroundColor="un2D3033" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(size=(130,30),text = 1),
-				MultiContentEntryText(pos=(240,0),size=(125,30), text = 2, flags = RT_HALIGN_RIGHT)
+				MultiContentEntryText(size=(140,30),text = 1),
+				MultiContentEntryText(pos=(150,0),size=(125,30), text = 2, flags = RT_HALIGN_RIGHT)
 				],
 				"fonts": [gFont("Regular",20)],
 				"itemHeight": 30
@@ -17027,12 +17027,12 @@ self.instance.move(ePoint(0,0))
     <widget source="global.CurrentTime" render="Label" position="1040,52" size="240,38" font="scoutcondWide;24" foregroundColor="transpWhite" backgroundColor="un181A1C" halign="center" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
-    <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />    
+    <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <widget source="cutlist" render="Listbox" position="855,160" zPosition="3" size="280,390" scrollbarMode="showOnDemand" foregroundColorSelected="secondFG" backgroundColor="un2D3033" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(size=(130,30),text = 1),
-				MultiContentEntryText(pos=(240,0),size=(125,30), text = 2, flags = RT_HALIGN_RIGHT)
+				MultiContentEntryText(size=(140,30),text = 1),
+				MultiContentEntryText(pos=(150,0),size=(125,30), text = 2, flags = RT_HALIGN_RIGHT)
 				],
 				"fonts": [gFont("Regular",20)],
 				"itemHeight": 30
@@ -18002,7 +18002,7 @@ self.instance.move(ePoint(0,0))
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2_Black/menu/movielogo.png" transparent="1" alphatest="blend" />
-    <widget name="config" position="140,160" size="800,360" font="Regular;20" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background2" transparent="1" foregroundColor="lightgrey" />
+    <widget name="config" position="140,160" size="800,390" font="Regular;20" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background2" transparent="1" foregroundColor="lightgrey" />
     <widget source="help" render="Label" position="140,593" size="800,120" font="Regular;20" backgroundColor="background2" transparent="1" foregroundColor="white" />
     <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="1044,600" size="24,24" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="1044,624" size="24,24" alphatest="blend" transparent="1" />
@@ -18038,7 +18038,7 @@ self.instance.move(ePoint(0,0))
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2_Black/menu/movielogo.png" transparent="1" alphatest="blend" />
     <widget name="m_info" position="140,160" size="800,34" font="Regular;22" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" />
-    <widget name="menulist" position="333,210" size="606,400" itemHeight="30" font="Regular;20" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background2" transparent="1" />
+    <widget name="menulist" position="333,210" size="606,390" itemHeight="30" font="Regular;20" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background2" transparent="1" />
     <widget name="poster" position="140,210" size="156,260" zPosition="4" alphatest="blend" />
     <widget name="info" position="140,480" size="471,24" font="Regular;17" halign="left" backgroundColor="background2" transparent="1" />
     <widget name="download" position="140,510" size="180,24" font="Regular;17" halign="left" backgroundColor="background2" transparent="1" />
@@ -18069,8 +18069,7 @@ self.instance.move(ePoint(0,0))
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2_Black/menu/movielogo.png" transparent="1" alphatest="blend" />
     <widget name="config" position="140,160" size="800,480" font="Regular;20" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background2" transparent="1" />
-    <ePixmap position="1044,569" size="30,30" zPosition="10" pixmap="myNOVUM_HD2_Black/buttons/key_left.png" alphatest="blend" />
-    <ePixmap position="1074,569" size="30,30" zPosition="10" pixmap="myNOVUM_HD2_Black/buttons/key_right.png" alphatest="blend" />
+    <ePixmap position="1044,569" size="24,30" zPosition="10" pixmap="myNOVUM_HD2_Black/buttons/left_right.png" alphatest="blend" />    
     <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="1044,600" size="24,24" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="1044,624" size="24,24" alphatest="blend" transparent="1" />
     <widget name="key_red" position="1080,600" size="200,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
@@ -18088,7 +18087,7 @@ self.instance.move(ePoint(0,0))
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2_Black/menu/movielogo.png" transparent="1" alphatest="blend" />
-    <widget name="menulist" position="333,210" size="606,400" itemHeight="30" font="Regular;20" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background2" transparent="1" />
+    <widget name="menulist" position="333,210" size="606,390" itemHeight="30" font="Regular;20" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background2" transparent="1" />
     <widget name="poster" position="140,210" size="156,260" zPosition="4" alphatest="blend" />
     <widget name="info" position="333,640" size="606,73" font="Regular;20" halign="left" backgroundColor="background2" transparent="1" />
     <ePixmap position="1044,526" size="69,24" zPosition="10" pixmap="myNOVUM_HD2_Black/buttons/key_ok.png" alphatest="blend" />
@@ -18107,7 +18106,7 @@ self.instance.move(ePoint(0,0))
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2_Black/menu/movielogo.png" transparent="1" alphatest="blend" />
     <widget name="movie_name" position="140,160" size="800,34" font="Regular;22" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" />
-    <widget name="movielist" position="333,210" size="606,400" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background2" transparent="1" />
+    <widget name="movielist" position="333,210" size="606,390" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background2" transparent="1" />
     <widget name="poster" position="140,210" size="156,260" zPosition="4" alphatest="blend" />
     <widget name="resulttext" position="333,640" size="606,73" font="Regular;20" halign="left" backgroundColor="background2" transparent="1" />
     <ePixmap position="1044,600" size="69,24" zPosition="10" pixmap="myNOVUM_HD2_Black/buttons/key_epg.png" alphatest="blend" />
