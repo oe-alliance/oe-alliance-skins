@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: NOVUM_HD_Slim vs.17.2 by Nashu  -->
+  <!--	Skin: NOVUM_HD_Slim vs.17.3 by Nashu  -->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
   <!--	Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -2221,18 +2221,19 @@
     <widget source="Event" render="Progress" position="760,64" size="513,3" foregroundColor="orange" backgroundColor="un181A1C" transparent="0" alphatest="blend" borderWidth="1" borderColor="colourbuttonsbg">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget name="list" position="10,53" size="733,141" selectionPixmap="NOVUM_HD_Slim/images/FocusBar.png" ServiceFontInfobar="Regular;24" foregroundColor="transpWhite" backgroundColor="un2D353B" EntryBackgroundColorNow="black" />
+    <widget name="list" position="10,53" size="733,141" selectionPixmap="NOVUM_HD_Slim/images/FocusBar.png" ServiceFontInfobar="Regular;24" foregroundColor="menu-title_frgrnd" backgroundColor="un2D353B" foregroundColorSelected="black" backgroundColorSelected="myblue1transp1" />
     <eLabel position="743,53" size="1,141" zPosition="1" backgroundColor="background80" />
-    <ePixmap pixmap="NOVUM_HD_Slim/buttons/red.png" position="60,196" size="24,24" alphatest="blend" />
-    <ePixmap pixmap="NOVUM_HD_Slim/buttons/green.png" position="315,196" size="24,24" alphatest="blend" />
-    <ePixmap pixmap="NOVUM_HD_Slim/buttons/yellow.png" position="570,196" size="24,24" alphatest="blend" />
-    <ePixmap pixmap="NOVUM_HD_Slim/buttons/blue.png" position="824,196" size="24,24" alphatest="blend" />
-    <widget name="key_red" position="95,198" size="220,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
-    <widget name="key_green" position="350,198" size="220,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
-    <widget name="key_yellow" position="604,198" size="220,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
-    <widget name="key_blue" position="860,198" size="220,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
-    <ePixmap pixmap="NOVUM_HD_Slim/buttons/key_menu.png" alphatest="blend" position="1053,198" size="69,24" />
-    <ePixmap pixmap="NOVUM_HD_Slim/buttons/key_info.png" alphatest="blend" position="1130,198" size="69,24" />
+    <ePixmap pixmap="NOVUM_HD_Slim/buttons/red.png" position="20,196" size="24,24" alphatest="blend" />
+    <ePixmap pixmap="NOVUM_HD_Slim/buttons/green.png" position="235,196" size="24,24" alphatest="blend" />
+    <ePixmap pixmap="NOVUM_HD_Slim/buttons/yellow.png" position="450,196" size="24,24" alphatest="blend" />
+    <ePixmap pixmap="NOVUM_HD_Slim/buttons/blue.png" position="666,196" size="24,24" alphatest="blend" />
+    <widget name="key_red" position="55,198" size="180,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
+    <widget name="key_green" position="270,198" size="180,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
+    <widget name="key_yellow" position="485,198" size="180,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
+    <widget name="key_blue" position="700,198" size="180,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
+    <ePixmap pixmap="NOVUM_HD_Slim/buttons/key_menu.png" alphatest="blend" position="880,196" size="69,24" />
+    <ePixmap pixmap="NOVUM_HD_Slim/buttons/key_info.png" alphatest="blend" position="1040,196" size="69,24" />
+    <ePixmap pixmap="NOVUM_HD_Slim/buttons/bouquet.png" alphatest="blend" position="1200,196" size="69,24" />
   </screen>
   <!-- EPG Selection -->
   <screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
@@ -2507,7 +2508,7 @@
     <widget name="lab1" position="10,330" size="1030,388" font="Regular;20" halign="center" valign="center" zPosition="20" backgroundColor="background" transparent="1" foregroundColor="ivorywhite" />
     <widget name="timeline_text" position="20,330" size="1013,22" backgroundColor="un2D353B" foregroundColor="light_blue1" transparent="0" zPosition="0" font="Regular;15" />
     <widget name="bouquetlist" position="693,160" size="333,170" itemHeight="35" foregroundColor="un181A1C" backgroundColor="myblue1transp1" foregroundColorSelected="ivorywhite" backgroundColorSelected="myblue1transp1" scrollbarMode="showNever" zPosition="6" transparent="1" />
-    <widget name="list" position="20,354" size="1013,360" ServiceFontGraphical="Regular;20" EntryFontGraphical="Regular;20" EntryFontWrap="no" EventNamePadding="5" backgroundColor="un2D353B" ServiceForegroundColor="white" ServiceBackgroundColor="un2D353B" ServiceForegroundColorNow="white" ServiceBackgroundColorNow="un2D353B" EntryBackgroundColor="un2D353B" EntryForegroundColorSelected="black" EntryBackgroundColorSelected="myblue1" EntryForegroundColorNow="white" EntryBackgroundColorNow="un2D353B" EntryForegroundColorNowSelected="black" EntryBackgroundColorNowSelected="black" RecordForegroundColorSelected="blue" RecordBackgroundColorSelected="un800000" ZapForegroundColorSelected="black" scrollbarMode="showNever" transparent="1" zPosition="1" />
+    <widget name="list" position="20,354" size="1013,360" ServiceFontGraphical="Regular;20" EntryFontGraphical="Regular;20" EntryFontWrap="no" EventNamePadding="5" backgroundColor="un2D353B" ServiceForegroundColor="white" ServiceBackgroundColor="un2D353B" ServiceForegroundColorNow="white" ServiceBackgroundColorNow="un2D353B" EntryBackgroundColor="un2D353B" EntryForegroundColorSelected="black" EntryBackgroundColorSelected="myblue1" EntryForegroundColorNow="white" EntryBackgroundColorNow="un2D353B" EntryForegroundColorNowSelected="black" EntryBackgroundColorNowSelected="black" RecordForegroundColorSelected="blue" RecordBackgroundColorSelected="un800000" ZapForegroundColorSelected="black" scrollbarMode="showNever" transparent="1" zPosition="1" Wrap="1" />
     <widget name="timeline_now" position="20,354" zPosition="3" size="18,360" pixmap="NOVUM_HD_Slim/timeline-now.png" alphatest="blend" />
     <ePixmap pixmap="NOVUM_HD_Slim/buttons/bouquet.png" position="1044,575" size="69,24" zPosition="2" alphatest="blend" backgroundColor="background" transparent="1" />
     <ePixmap pixmap="NOVUM_HD_Slim/buttons/key_tv.png" position="1044,502" size="69,24" alphatest="blend" transparent="1" zPosition="1" />
@@ -2566,7 +2567,7 @@
     <widget name="lab1" position="0,230" size="1280,450" font="Regular;20" halign="center" valign="center" zPosition="20" backgroundColor="un2D3033transp" transparent="1" foregroundColor="ivorywhite" />
     <widget name="timeline_text" position="14,230" size="1250,22" backgroundColor="un2D353B" foregroundColor="light_blue1" transparent="0" zPosition="0" font="Regular;15" />
     <widget name="bouquetlist" position="610,63" size="320,170" itemHeight="35" foregroundColor="lightgrey" backgroundColor="un2D3033" foregroundColorSelected="ivorywhite" backgroundColorSelected="un2D3033" scrollbarMode="showNever" zPosition="6" transparent="1" />
-    <widget name="list" position="14,254" size="1250,420" ServiceFontGraphical="Regular;20" EntryFontGraphical="Regular;20" EntryFontWrap="no" EventNamePadding="5" backgroundColor="un2D353B" ServiceForegroundColor="white" ServiceBackgroundColor="un2D353B" ServiceForegroundColorNow="white" ServiceBackgroundColorNow="un2D353B" EntryBackgroundColor="un2D353B" EntryForegroundColorSelected="black" EntryBackgroundColorSelected="myblue1" EntryForegroundColorNow="white" EntryBackgroundColorNow="un2D353B" EntryForegroundColorNowSelected="black" EntryBackgroundColorNowSelected="black" RecordForegroundColorSelected="blue" RecordBackgroundColorSelected="un800000" ZapForegroundColorSelected="black" scrollbarMode="showNever" transparent="1" zPosition="1" />
+    <widget name="list" position="14,254" size="1250,420" ServiceFontGraphical="Regular;20" EntryFontGraphical="Regular;20" EntryFontWrap="no" EventNamePadding="5" backgroundColor="un2D353B" ServiceForegroundColor="white" ServiceBackgroundColor="un2D353B" ServiceForegroundColorNow="white" ServiceBackgroundColorNow="un2D353B" EntryBackgroundColor="un2D353B" EntryForegroundColorSelected="black" EntryBackgroundColorSelected="myblue1" EntryForegroundColorNow="white" EntryBackgroundColorNow="un2D353B" EntryForegroundColorNowSelected="black" EntryBackgroundColorNowSelected="black" RecordForegroundColorSelected="blue" RecordBackgroundColorSelected="un800000" ZapForegroundColorSelected="black" scrollbarMode="showNever" transparent="1" zPosition="1" Wrap="1" />
     <widget name="timeline_now" position="14,254" zPosition="3" size="18,420" pixmap="NOVUM_HD_Slim/timeline-now.png" alphatest="blend" />
     <ePixmap pixmap="NOVUM_HD_Slim/buttons/bouquet.png" position="40,18" size="72,22" zPosition="2" alphatest="blend" backgroundColor="background" transparent="1" />
     <ePixmap pixmap="NOVUM_HD_Slim/menu/arrow-lt.png" position="392,18" size="14,24" zPosition="3" alphatest="blend" />
@@ -2593,7 +2594,7 @@
     <eLabel position="0,52" size="1280,622" backgroundColor="background" zPosition="-2" />
   </screen>
   <!-- Graphical InfoBar EPG -->
-  <screen name="GraphicalInfoBarEPG" title="InfoBar" position="0,500" size="1280,220" backgroundColor="transparent" flags="wfNoBorder">
+    <screen name="GraphicalInfoBarEPG" title="InfoBar" position="0,500" size="1280,220" backgroundColor="transparent" flags="wfNoBorder">
     <eLabel position="0,0" size="1280,221" backgroundColor="background" zPosition="-2" />
     <eLabel position="10,53" size="1260,141" backgroundColor="un2D353B" zPosition="-1" />
     <eLabel position="0,53" size="1280,1" backgroundColor="background80" zPosition="22" />
@@ -2616,19 +2617,19 @@
     <widget name="lab1" position="0,53" size="1280,141" font="Regular;20" halign="center" valign="center" zPosition="20" backgroundColor="un2D3033" transparent="1" />
     <widget name="timeline_text" position="10,53" size="1260,22" foregroundColor="light_blue" font="Regular;15" transparent="0" zPosition="21" backgroundColor="un2D353B" valign="top" />
     <widget name="bouquetlist" position="10,76" size="1260,118" itemHeight="30" foregroundColor="lightgrey" backgroundColor="un2D3033" foregroundColorSelected="white" backgroundColorSelected="un2D3033" scrollbarMode="showNever" zPosition="6" transparent="1" />
-    <widget name="list" position="10,76" size="1260,118" ServiceFontGraphical="Regular;20" EntryFontGraphical="Regular;20" EntryFontWrap="no" EventNamePadding="5" backgroundColor="un2D353B" ServiceForegroundColor="white" ServiceBackgroundColor="un2D353B" ServiceForegroundColorNow="white" ServiceBackgroundColorNow="un2D353B" EntryBackgroundColor="un2D353B" EntryForegroundColorSelected="black" EntryBackgroundColorSelected="myblue1" EntryForegroundColorNow="white" EntryBackgroundColorNow="un2D353B" EntryForegroundColorNowSelected="black" EntryBackgroundColorNowSelected="black" RecordForegroundColorSelected="blue" RecordBackgroundColorSelected="un800000" ZapForegroundColorSelected="black" scrollbarMode="showNever" transparent="1" zPosition="1" />
+    <widget name="list" position="10,76" size="1260,118" ServiceFontGraphical="Regular;18" EntryFontGraphical="Regular;18" EntryFontWrap="no" EventNamePadding="5" backgroundColor="un2D353B" ServiceForegroundColor="darkgrey" ServiceBackgroundColor="un2D353B" ServiceForegroundColorNow="darkgrey" ServiceBackgroundColorNow="un2D353B" EntryForegroundColor="darkgrey" EntryBackgroundColor="un2D353B" EntryForegroundColorSelected="black" EntryBackgroundColorSelected="myblue1" EntryForegroundColorNow="white" EntryBackgroundColorNow="un2D353B" EntryForegroundColorNowSelected="light_blue3" EntryBackgroundColorNowSelected="black" RecordForegroundColorSelected="mybluelight3" RecordBackgroundColorSelected="un800000" ZapForegroundColorSelected="black" scrollbarMode="showNever" transparent="1" zPosition="1" Wrap="1" />
     <widget name="timeline_now" position="10,76" zPosition="2" size="18,118" pixmap="NOVUM_HD_Slim/timeline-now.png" alphatest="blend" />
-    <ePixmap pixmap="NOVUM_HD_Slim/buttons/red.png" position="60,196" size="24,24" alphatest="blend" />
-    <ePixmap pixmap="NOVUM_HD_Slim/buttons/green.png" position="315,196" size="24,24" alphatest="blend" />
-    <ePixmap pixmap="NOVUM_HD_Slim/buttons/yellow.png" position="570,196" size="24,24" alphatest="blend" />
-    <ePixmap pixmap="NOVUM_HD_Slim/buttons/blue.png" position="824,196" size="24,24" alphatest="blend" />
-    <widget name="key_red" position="95,198" size="220,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
-    <widget name="key_green" position="350,198" size="220,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
-    <widget name="key_yellow" position="604,198" size="220,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
-    <widget name="key_blue" position="860,198" size="220,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
-    <ePixmap pixmap="NOVUM_HD_Slim/buttons/key_menu.png" alphatest="blend" position="1053,198" size="69,24" />
-    <ePixmap pixmap="NOVUM_HD_Slim/buttons/key_info.png" alphatest="blend" position="1130,198" size="69,24" />
-    <ePixmap pixmap="NOVUM_HD_Slim/buttons/key_tv.png" alphatest="blend" position="1200,198" size="69,24" />
+    <ePixmap pixmap="NOVUM_HD_Slim/buttons/red.png" position="20,196" size="24,24" alphatest="blend" />
+    <ePixmap pixmap="NOVUM_HD_Slim/buttons/green.png" position="235,196" size="24,24" alphatest="blend" />
+    <ePixmap pixmap="NOVUM_HD_Slim/buttons/yellow.png" position="450,196" size="24,24" alphatest="blend" />
+    <ePixmap pixmap="NOVUM_HD_Slim/buttons/blue.png" position="666,196" size="24,24" alphatest="blend" />
+    <widget name="key_red" position="55,198" size="180,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
+    <widget name="key_green" position="270,198" size="180,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
+    <widget name="key_yellow" position="485,198" size="180,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
+    <widget name="key_blue" position="700,198" size="180,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="1" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
+    <ePixmap pixmap="NOVUM_HD_Slim/buttons/key_menu.png" alphatest="blend" position="880,196" size="69,24" />
+    <ePixmap pixmap="NOVUM_HD_Slim/buttons/key_info.png" alphatest="blend" position="1040,196" size="69,24" />
+    <ePixmap pixmap="NOVUM_HD_Slim/buttons/key_tv.png" alphatest="blend" position="1200,196" size="69,24" />
   </screen>
   <!-- Graphical EPG Help -->
   <screen name="GraphEPGHelp" position="0,0" size="1280,720" title="Help" backgroundColor="transparent" flags="wfNoBorder" zPosition="1">
@@ -8986,7 +8987,6 @@ self.instance.move(ePoint(0,0))
   <!-- IMDB Plugin -->
   <screen name="IMDB" position="0,0" size="1280,720" title="IMDb Details" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="NOVUM_HD_Slim/images/ChannelSel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
-    <ePixmap position="573,153" size="133,106" pixmap="NOVUM_HD_Slim/menu/imdb_logo.png" transparent="1" alphatest="blend" />
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="4" />
     <eLabel position="16,620" size="1246,1" backgroundColor="transpWhite3" zPosition="4" />
     <eLabel text="T i t l e  V i e w" position="50,86" size="300,38" halign="left" font="Regular;24" foregroundColor="preTrans30" backgroundColor="background2" transparent="1" noWrap="1" valign="center" zPosition="4" />
@@ -11401,7 +11401,7 @@ self.instance.move(ePoint(0,0))
     <eLabel text="OPEN SOURCE" position="210,210" size="200,30" font="Regular;22" backgroundColor="background2" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="210,350" size="650,320" font="Regular;17" backgroundColor="background" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
     <ePixmap position="1044,575" size="69,24" pixmap="NOVUM_HD_Slim/buttons/key_info.png" alphatest="blend" />
-    <eLabel text="Skin NOVUM_HD_Slim vs.17.2 by Nashu" position="210,680" size="470,30" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="Regular;20" halign="left" />
+    <eLabel text="Skin NOVUM_HD_Slim vs.17.3 by Nashu" position="210,680" size="470,30" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="Regular;20" halign="left" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="NOVUM_HD_Slim/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
@@ -15589,6 +15589,7 @@ self.instance.move(ePoint(0,0))
     <widget name="key_yellow" position="1080,650" size="200,21" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
     <widget name="key_blue" position="1080,674" size="200,21" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
     <widget source="Service" render="CoolPico" position="1090,150" zPosition="1" size="146,88" backgroundColor="un181A1C" alphatest="blend" transparent="1" />
+    <eLabel position="20,410" size="1013,300" zPosition="-1" backgroundColor="un2D3033transp" />
   </screen>
   <screen name="CoolNiceGuide" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <eLabel text="CoolTV Nice Guide" position="70,44" size="334,38" font="Regular;29" backgroundColor="background90" transparent="1" valign="top" foregroundColor="preTrans50" />
@@ -15643,6 +15644,7 @@ self.instance.move(ePoint(0,0))
     <widget name="key_yellow" position="1080,650" size="200,21" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
     <widget name="key_blue" position="1080,674" size="200,21" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
     <widget source="Service" render="CoolPico" position="1090,150" zPosition="1" size="146,88" backgroundColor="un181A1C" alphatest="blend" transparent="1" />
+    <eLabel position="20,410" size="1013,300" zPosition="-1" backgroundColor="un2D3033transp" />
   </screen>
   <screen name="CoolSingleGuide" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap pixmap="NOVUM_HD_Slim/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
@@ -15784,6 +15786,7 @@ self.instance.move(ePoint(0,0))
     <widget name="key_yellow" position="1080,650" size="200,21" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
     <widget name="key_blue" position="1080,674" size="200,21" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
     <widget source="Service" render="CoolPico" position="1090,150" zPosition="1" size="146,88" backgroundColor="un181A1C" alphatest="blend" transparent="1" />
+    <eLabel position="20,410" size="1013,300" zPosition="-1" backgroundColor="un2D3033transp" />
   </screen>
   <screen name="CoolTVGuide" position="center,center" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <eLabel text="CoolTV Guide" position="70,44" size="300,38" font="Regular;29" backgroundColor="background90" transparent="1" valign="top" foregroundColor="preTrans50" />
@@ -15838,6 +15841,7 @@ self.instance.move(ePoint(0,0))
     <widget name="key_yellow" position="1080,650" size="200,21" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
     <widget name="key_blue" position="1080,674" size="200,21" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
     <widget source="Service" render="CoolPico" position="1090,150" zPosition="1" size="146,88" backgroundColor="un181A1C" alphatest="blend" transparent="1" />
+    <eLabel position="20,410" size="1013,300" zPosition="-1" backgroundColor="un2D3033transp" />
   </screen>
   <screen name="CoolTVGuideSetup" position="0,0" size="1280,720" backgroundColor="transparent" title="CoolTV Guide Setup" flags="wfNoBorder">
     <ePixmap pixmap="NOVUM_HD_Slim/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
@@ -24538,7 +24542,6 @@ self.instance.move(ePoint(0,0))
   <!-- OFDB -->
   <screen name="OFDB" position="0,0" size="1280,720" title="Online-Filmdatenbank Details Plugin" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap pixmap="NOVUM_HD_Slim/images/ChannelSel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
-    <ePixmap position="573,153" size="133,106" pixmap="NOVUM_HD_Slim/menu/ofdb_logo.png" transparent="1" alphatest="blend" />
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="4" />
     <eLabel position="16,620" size="1246,1" backgroundColor="transpWhite3" zPosition="4" />
     <eLabel text="T i t l e  V i e w" position="50,86" size="300,38" halign="left" font="Regular;24" foregroundColor="preTrans30" backgroundColor="background2" transparent="1" noWrap="1" valign="center" zPosition="4" />
@@ -26135,19 +26138,18 @@ self.instance.move(ePoint(0,0))
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="813,44" size="426,38" font="Regular;20" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" halign="right" />
-    <widget name="streamlist" position="40,155" size="496,270" itemHeight="30" font="Regular;20" backgroundColor="background2" scrollbarMode="showNever" selectionPixmap="NOVUM_HD_Slim/images/FocusBar.png" transparent="1" />
-    <widget name="playlist" position="725,155" size="530,450" itemHeight="30" font="Regular;20" backgroundColor="background2" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="NOVUM_HD_Slim/Selection.png" />
+    <widget name="streamlist" position="30,155" size="496,270" itemHeight="30" font="Regular;20" backgroundColor="background2" scrollbarMode="showNever" selectionPixmap="NOVUM_HD_Slim/images/FocusBar.png" transparent="1" />
+    <widget name="playlist" position="755,155" size="500,450" itemHeight="30" font="Regular;20" backgroundColor="background2" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="NOVUM_HD_Slim/Selection.png" />
     <widget name="stationIcon" position="573,153" zPosition="1" size="133,106" pixmap="NOVUM_HD_Slim/menu/radiode_logo.png" alphatest="blend" />
-    <eLabel text="Play" position="40,433" size="120,23" backgroundColor="background60" transparent="1" font="Regular;17" valign="top" halign="left" foregroundColor="white" />
-    <widget name="stationInfo" position="40,463" size="496,43" backgroundColor="background60" foregroundColor="secondFG" transparent="1" font="Regular;16" Wrap="1" />
-    <widget source="session.CurrentService" render="Label" position="416,433" size="120,24" font="Regular;17" foregroundColor="secondFG" backgroundColor="background60" halign="right" valign="top" transparent="1">
+    <eLabel text="Play" position="30,433" size="120,23" backgroundColor="background60" transparent="1" font="Regular;17" valign="top" halign="left" foregroundColor="white" />
+    <widget name="stationInfo" position="30,463" size="496,43" backgroundColor="background60" foregroundColor="secondFG" transparent="1" font="Regular;16" Wrap="1" />
+    <widget source="session.CurrentService" render="Label" position="406,433" size="120,24" font="Regular;17" foregroundColor="secondFG" backgroundColor="background60" halign="right" valign="top" transparent="1">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <eLabel text="Info" position="40,510" size="80,23" backgroundColor="background2" transparent="1" font="Regular;17" valign="top" halign="left" />
-    <widget name="stationDesc" position="40,540" zPosition="1" size="496,73" backgroundColor="background2" transparent="1" font="Regular;16" halign="left" valign="top" />
-    <eLabel position="562,142" size="156,576" zPosition="-9" backgroundColor="background10" />
-    <eLabel position="720,141" size="542,478" zPosition="-9" backgroundColor="background20" />
-    <eLabel position="16,141" size="1246,1" backgroundColor="transpWhite3" zPosition="4" />
+    <eLabel text="Info" position="30,510" size="80,23" backgroundColor="background2" transparent="1" font="Regular;17" valign="top" halign="left" />
+    <widget name="stationDesc" position="30,540" zPosition="1" size="496,73" backgroundColor="background2" transparent="1" font="Regular;16" halign="left" valign="top" />    
+    <eLabel position="17,140" size="522,479" zPosition="-9" backgroundColor="background40" />        
+    <eLabel position="17,140" size="1246,1" backgroundColor="transpWhite3" zPosition="4" />
   </screen>
   <!-- Radio Online -->
   <screen name="radmain" position="0,0" size="1280,720" flags="wfNoBorder" title="" backgroundColor="transparent">
@@ -29371,7 +29373,6 @@ self.instance.move(ePoint(0,0))
   <!-- TMBD Plugin -->
   <screen name="TMBD" position="0,0" size="1280,720" title="TMBD Details Plugin" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="NOVUM_HD_Slim/images/ChannelSel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
-    <ePixmap position="573,153" size="133,106" pixmap="NOVUM_HD_Slim/menu/tmbd_logo.png" transparent="1" alphatest="blend" />
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="4" />
     <eLabel position="16,620" size="1246,1" backgroundColor="transpWhite3" zPosition="4" />
     <eLabel text="T i t l e  V i e w" position="50,86" size="300,38" halign="left" font="Regular;24" foregroundColor="preTrans30" backgroundColor="background2" transparent="1" noWrap="1" valign="center" zPosition="4" />
