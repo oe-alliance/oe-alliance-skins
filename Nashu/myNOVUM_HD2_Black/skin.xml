@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: myNOVUM_HD2_Black vs.18.3 by Nashu  -->
+  <!--	Skin: myNOVUM_HD2_Black vs.18.4 by Nashu  -->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
   <!--	Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -11559,7 +11559,7 @@ self.instance.move(ePoint(0,0))
     <widget source="lab3" render="Label" position="210,300" size="650,40" font="Regular;20" backgroundColor="background2" transparent="1" zPosition="1" />
     <eLabel text="OPEN SOURCE" position="210,210" size="200,30" font="Regular;22" backgroundColor="background2" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="210,350" size="650,320" font="Regular;17" backgroundColor="background" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
-    <eLabel text="Skin myNOVUM_HD2_Black vs.18.3 by Nashu" position="210,680" size="470,30" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="Regular;20" halign="left" />
+    <eLabel text="Skin myNOVUM_HD2_Black vs.18.4 by Nashu" position="210,680" size="470,30" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="Regular;20" halign="left" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
@@ -17816,14 +17816,12 @@ self.instance.move(ePoint(0,0))
     <ePixmap pixmap="myNOVUM_HD2_Black/images/slider/slider_H480.png" position="927,140" size="10,480" zPosition="1" alphatest="blend" />
     <eLabel position="0,0" size="1280,94" backgroundColor="un181A1C" zPosition="-2" />
     <eLabel position="0,94" size="1280,1" backgroundColor="background80" zPosition="-1" />
-    <eLabel position="0,94" size="1280,25" backgroundColor="background90" zPosition="-10" />   
-    <eLabel position="341,140" size="599,1" backgroundColor="transpWhite3" zPosition="4" />
-    <eLabel position="341,619" size="599,1" backgroundColor="transpWhite3" zPosition="4" />
+    <eLabel position="0,94" size="1280,25" backgroundColor="background90" zPosition="-10" />
+    <eLabel position="341,140" size="599,1" backgroundColor="transpWhite3" zPosition="4" />    
     <eLabel position="939,118" size="1,602" backgroundColor="background80" zPosition="4" />
     <eLabel position="341,118" size="1,602" backgroundColor="background80" zPosition="4" />    
-    <eLabel position="341,620" size="599,1" backgroundColor="transpWhite3" zPosition="4" />
     <eLabel position="0,118" size="1280,602" zPosition="-20" backgroundColor="background" />
-    <eLabel position="0,620" size="340,1" backgroundColor="black" zPosition="4" />
+    <eLabel position="0,620" size="1280,1" backgroundColor="transpWhite3" zPosition="4" />
     <eLabel position="940,620" size="340,1" backgroundColor="black" zPosition="4" />
     <eLabel text="my Enhanced Movie Center" position="63,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <eLabel position="0,118" size="340,602" zPosition="-10" backgroundColor="un102e2e2e" />
@@ -27662,7 +27660,7 @@ self.instance.move(ePoint(0,0))
   <screen name="SkyRecorderArchiv" position="center,center" size="1280,720" title="SkyRecorder" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/Lcd4Sel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
     <ePixmap position="16,72" size="106,66" pixmap="myNOVUM_HD2_Black/menu/sky_bg.png" transparent="1" alphatest="blend" />
-    <eLabel position="930,140" size="332,479" zPosition="-9" backgroundColor="background10" />    
+    <eLabel position="930,140" size="332,479" zPosition="-9" backgroundColor="background10" />
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="13" />
     <eLabel position="17,21" size="910,697" zPosition="-9" />
     <eLabel position="928,21" size="1,700" backgroundColor="transpWhite3" />
@@ -27680,16 +27678,16 @@ self.instance.move(ePoint(0,0))
     <widget name="handlung" position="30,526" size="890,186" backgroundColor="background2" transparent="1" font="Regular;16" valign="top" halign="left" zPosition="1" foregroundColor="preTrans30" />
     <widget name="searchlist_bg" position="196,220" size="683,480" backgroundColor="background10" transparent="0" zPosition="4" />
     <widget name="searchlist" position="206,253" size="663,346" itemHeight="30" font="Regular;17" backgroundColor="background10" scrollbarMode="showOnDemand" transparent="0" zPosition="5" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" />
-    <widget name="searchlist_red" backgroundColor="background2" pixmap="myNOVUM_HD2_Black/buttons/red.png" position="240,654" zPosition="5" size="24,24" alphatest="blend" />
-    <widget name="searchlist_green" backgroundColor="background2" pixmap="myNOVUM_HD2_Black/buttons/green.png" position="400,654" zPosition="5" size="24,24" alphatest="blend" />
-    <widget name="searchlist_yellow" backgroundColor="background2" pixmap="myNOVUM_HD2_Black/buttons/yellow.png" position="560,654" zPosition="5" size="24,24" alphatest="blend" />
+    <widget name="searchlist_red" pixmap="myNOVUM_HD2_Black/buttons/red.png" position="240,654" zPosition="5" size="24,24" alphatest="blend" />
+    <widget name="searchlist_green" pixmap="myNOVUM_HD2_Black/buttons/green.png" position="400,654" zPosition="5" size="24,24" alphatest="blend" />
+    <widget name="searchlist_yellow" pixmap="myNOVUM_HD2_Black/buttons/yellow.png" position="560,654" zPosition="5" size="24,24" alphatest="blend" />
     <widget name="searchlist_red_label" position="276,656" size="113,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="5" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
     <widget name="searchlist_green_label" position="436,656" size="113,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="4" font="Regular;16" halign="left" foregroundColor="menu-title_frgrnd" />
     <widget name="searchlist_yellow_label" position="596,656" size="113,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="4" font="Regular;16" halign="left" foregroundColor="menu-buttons-frgrnd" />
     <widget name="movieinfo_bg" position="196,220" size="683,480" backgroundColor="background10" transparent="0" zPosition="4" />
-    <widget name="movieinfo" position="206,233" size="663,450" backgroundColor="background10" scrollbarMode="showOnDemand" transparent="0" zPosition="5" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" foregroundColor="ivorywhite" font="Regular;16" />
-    <widget name="movieinfo_red" backgroundColor="background" pixmap="myNOVUM_HD2_Black/buttons/red.png" position="240,654" zPosition="4" size="24,24" alphatest="blend" />
-    <widget name="movieinfo_green" backgroundColor="background" pixmap="myNOVUM_HD2_Black/buttons/green.png" position="400,654" zPosition="4" size="24,24" alphatest="blend" />
+    <widget name="movieinfo" position="206,233" size="663,460" backgroundColor="background10" scrollbarMode="showOnDemand" transparent="0" zPosition="5" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" foregroundColor="ivorywhite" font="Regular;16" />
+    <widget name="movieinfo_red" pixmap="myNOVUM_HD2_Black/buttons/red.png" position="240,654" zPosition="4" size="24,24" alphatest="blend" />
+    <widget name="movieinfo_green" pixmap="myNOVUM_HD2_Black/buttons/green.png" position="400,654" zPosition="4" size="24,24" alphatest="blend" />
     <widget name="movieinfo_red_label" position="276,656" size="113,20" backgroundColor="event-bkgrnd" transparent="1" zPosition="4" font="Regular;16" valign="center" halign="left" />
     <widget name="movieinfo_green_label" position="436,656" size="113,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="4" font="Regular;16" valign="center" halign="left" foregroundColor="menu-buttons-frgrnd" />
     <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="946,666" size="24,24" alphatest="blend" transparent="1" />
@@ -27821,7 +27819,7 @@ self.instance.move(ePoint(0,0))
   <screen name="SkyRecorderMainScreen" position="center,center" size="1280,720" title="SkyRecorder" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/Lcd4Sel_bg.png" position="0,0" size="1280,720" zPosition="-10" />
     <ePixmap position="16,72" size="106,66" pixmap="myNOVUM_HD2_Black/menu/sky_bg.png" transparent="1" alphatest="blend" />
-    <eLabel position="930,140" size="332,479" zPosition="-9" backgroundColor="background10" />    
+    <eLabel position="930,140" size="332,479" zPosition="-9" backgroundColor="background10" />
     <eLabel position="16,140" size="1246,1" backgroundColor="transpWhite3" zPosition="13" />
     <eLabel position="17,21" size="910,697" zPosition="-9" />
     <eLabel position="928,21" size="1,700" backgroundColor="transpWhite3" />
@@ -27848,11 +27846,11 @@ self.instance.move(ePoint(0,0))
     <widget name="handlung" position="30,526" size="890,186" backgroundColor="background2" transparent="1" font="Regular;16" valign="top" halign="left" zPosition="1" foregroundColor="preTrans30" />
     <widget name="filmliste_event_bg" position="196,220" size="683,480" backgroundColor="background10" transparent="0" zPosition="4" />
     <widget name="filmliste_event" position="206,253" size="663,346" itemHeight="30" font="Regular;17" backgroundColor="background10" scrollbarMode="showOnDemand" transparent="0" zPosition="5" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" />
-    <widget name="movieinfo" position="206,233" size="663,450" backgroundColor="background10" scrollbarMode="showOnDemand" transparent="0" zPosition="5" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" foregroundColor="ivorywhite" font="Regular;16" />
-    <widget name="movieinfo_red" backgroundColor="un181d20" pixmap="myNOVUM_HD2_Black/buttons/red.png" position="260,594" zPosition="4" size="24,24" alphatest="blend" />
-    <widget name="movieinfo_green" backgroundColor="un181d20" pixmap="myNOVUM_HD2_Black/buttons/green.png" position="460,594" zPosition="4" size="24,24" alphatest="blend" />
-    <widget name="movieinfo_red_label" position="300,594" size="100,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="4" font="Regular;16" valign="center" halign="left" foregroundColor="menu-buttons-frgrnd" />
-    <widget name="movieinfo_green_label" position="500,594" size="100,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="4" font="Regular;16" valign="center" halign="left" foregroundColor="menu-buttons-frgrnd" />
+    <widget name="movieinfo" position="206,233" size="663,460" backgroundColor="background10" scrollbarMode="showOnDemand" transparent="0" zPosition="5" selectionPixmap="myNOVUM_HD2_Black/images/FocusBar.png" foregroundColor="ivorywhite" font="Regular;16" />
+    <widget name="movieinfo_red" pixmap="myNOVUM_HD2_Black/buttons/red.png" position="240,654" zPosition="4" size="24,24" alphatest="blend" />
+    <widget name="movieinfo_green" pixmap="myNOVUM_HD2_Black/buttons/green.png" position="400,654" zPosition="4" size="24,24" alphatest="blend" />
+    <widget name="movieinfo_red_label" position="276,656" size="113,20" backgroundColor="event-bkgrnd" transparent="1" zPosition="4" font="Regular;16" valign="center" halign="left" />
+    <widget name="movieinfo_green_label" position="436,656" size="113,20" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="4" font="Regular;16" valign="center" halign="left" foregroundColor="menu-buttons-frgrnd" />
     <ePixmap pixmap="myNOVUM_HD2_Black/buttons/menu.png" position="946,642" size="69,24" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2_Black/buttons/red.png" position="946,666" size="24,24" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2_Black/buttons/green.png" position="946,691" size="24,24" alphatest="blend" transparent="1" />
@@ -30094,37 +30092,37 @@ self.instance.move(ePoint(0,0))
     <widget name="play6" position="50,541" size="109,58" alphatest="blend" zPosition="1" backgroundColor="background20" />
     <widget name="label" position="270,632" size="740,30" font="Regular;20" foregroundColor="light_blue" backgroundColor="background20" halign="center" transparent="1" zPosition="2" />
   </screen>
-  <screen name="PixShow" position="0,0" size="1280,720" title="Mehr Bilder - TV Spielfilm.de" flags="wfNoBorder" backgroundColor="transparent">    
+  <screen name="TVPicShow" position="0,0" size="1280,720" title="Mehr Bilder - TV Spielfilm.de" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel position="0,0" size="1280,70" backgroundColor="un181A1C" zPosition="-2" />
     <eLabel position="0,70" size="1280,1" backgroundColor="background80" zPosition="3" />
-    <eLabel position="0,70" size="1280,650" backgroundColor="background20" zPosition="-10" />    
+    <eLabel position="0,70" size="1280,650" backgroundColor="background20" zPosition="-10" />
     <widget source="global.CurrentTime" render="Label" position="1040,20" size="240,38" font="scoutcondWide;24" foregroundColor="transpWhite" backgroundColor="un181A1C" halign="center" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="124,14" size="900,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
-    <ePixmap position="20,10" size="94,50" pixmap="myNOVUM_HD2_Black/menu/tvspielfilm-hd.png" alphatest="blend" zPosition="1" />
-    <widget name="list" position="0,0" size="0,0" scrollbarMode="showNever" zPosition="1" />
-    <widget name="infotext" position="50,93" size="200,24" font="Regular;16" halign="left" zPosition="1" backgroundColor="background20" transparent="1" />
-    <widget name="infotext2" position="50,128" size="200,24" font="Regular;16" halign="left" zPosition="1" backgroundColor="background20" transparent="1" />
-    <widget name="infotext3" position="50,163" size="200,24" font="Regular;16" halign="left" zPosition="1" backgroundColor="background20" transparent="1" />
-    <widget name="picture" position="290,94" size="700,524" alphatest="blend" zPosition="1" backgroundColor="background20" transparent="1" />
+    <ePixmap position="20,10" size="94,50" pixmap="myNOVUM_HD2_Black/menu/tvspielfilm-hd.png" alphatest="blend" zPosition="1" />    
+    <widget name="infotext" position="50,93" size="220,30" font="Regular;16" halign="left" zPosition="1" backgroundColor="background20" transparent="1" />
+    <widget name="infotext2" position="50,130" size="220,30" font="Regular;16" halign="left" zPosition="1" backgroundColor="background20" transparent="1" />
+    <widget name="infotext3" position="50,165" size="220,30" font="Regular;16" halign="left" zPosition="1" backgroundColor="background20" transparent="1" />
+    <widget name="picture" position="290,94" size="700,500" alphatest="blend" zPosition="1" backgroundColor="background20" transparent="1" halign="center" />
     <widget name="label" position="240,662" size="800,44" font="Regular;16" backgroundColor="background20" halign="center" transparent="1" zPosition="2" foregroundColor="light_blue" />
-    <widget name="statuslabel" position="40,632" size="1200,30" font="Regular;16" foregroundColor="orange" halign="center" zPosition="1" backgroundColor="background20" transparent="1" />
+    <widget name="pictext" position="290,615" size="700,40" font="Regular; 18" foregroundColor="orange" halign="center" zPosition="1" backgroundColor="background20" transparent="1" />
+    <widget name="picindex" position="1031,94" size="165,30" font="Regular; 16" halign="right" zPosition="2" transparent="1" />
   </screen>
-  <screen name="PlayboyPicShow" position="0,0" size="1280,720" title="Erotische Playmates - TV Spielfilm.de" flags="wfNoBorder" backgroundColor="transparent">    
+  <screen name="PlayboyPicShow" position="0,0" size="1280,720" title="Erotische Playmates - TV Spielfilm.de" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel position="0,0" size="1280,70" backgroundColor="un181A1C" zPosition="-2" />
     <eLabel position="0,70" size="1280,1" backgroundColor="background80" zPosition="3" />
-    <eLabel position="0,70" size="1280,650" backgroundColor="background20" zPosition="-10" />    
+    <eLabel position="0,70" size="1280,650" backgroundColor="background20" zPosition="-10" />
     <widget source="global.CurrentTime" render="Label" position="1040,20" size="240,38" font="scoutcondWide;24" foregroundColor="transpWhite" backgroundColor="un181A1C" halign="center" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="124,14" size="900,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
-    <ePixmap position="20,10" size="94,50" pixmap="myNOVUM_HD2_Black/menu/tvspielfilm-hd.png" alphatest="blend" zPosition="1" />
-    <widget name="list" position="0,0" size="0,0" scrollbarMode="showNever" zPosition="1" />
-    <widget name="textpage" position="30,93" size="250,560" font="Regular;16" halign="left" zPosition="1" backgroundColor="background20" transparent="1" />
-    <widget name="picture" position="290,94" size="700,524" alphatest="blend" zPosition="1" backgroundColor="background20" transparent="1" />
+    <ePixmap position="20,10" size="94,50" pixmap="myNOVUM_HD2_Black/menu/tvspielfilm-hd.png" alphatest="blend" zPosition="1" />    
+    <widget name="textpage" position="30,93" size="240,500" font="Regular;16" halign="left" zPosition="1" backgroundColor="background20" transparent="1" />
+    <widget name="picture" position="315,94" size="650,464" alphatest="blend" zPosition="1" backgroundColor="background20" transparent="1" halign="center" />
     <widget name="label" position="240,662" size="800,44" font="Regular;16" backgroundColor="background20" halign="center" transparent="1" zPosition="2" foregroundColor="light_blue" />
-    <widget name="statuslabel" position="290,632" size="700,30" font="Regular;16" foregroundColor="orange" halign="center" zPosition="1" backgroundColor="background20" transparent="1" />
+    <widget name="pictext" position="290,615" size="700,40" font="Regular; 18" foregroundColor="orange" halign="center" zPosition="1" backgroundColor="background20" transparent="1" />
+    <widget name="picindex" position="1031,94" size="165,30" font="Regular; 16" halign="right" zPosition="2" transparent="1" />
   </screen>
   <screen name="tvMain" position="0,0" size="1280,720" title="TV Spielfilm" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2_Black/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
