@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: NOVUM_FHD_Light vs.15.0 by Nashu  -->
+  <!--	Skin: NOVUM_FHD_Light vs.15.1 by Nashu  -->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
   <!--	Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -3219,19 +3219,18 @@
     <ePixmap position="1630,180" size="220,220" pixmap="NOVUM_FHD_Light/menu/iconnovum.png" transparent="1" alphatest="blend" />
     <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="NOVUM_FHD_Light/images/FocusBar.png" font="Regular;28" position="210,240" size="1200,720" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" itemHeight="40" enableWrapAround="1" />
   </screen>
-  <screen name="InfoBarEventView" position="67,15" size="754,710" backgroundColor="transparent" flags="wfNoBorder" zPosition="1">
-    <eLabel position="0,0" size="754,710" backgroundColor="background90" transparent="0" zPosition="-11" />
-    <widget name="datetime" position="24,170" size="450,40" font="scoutcondWide; 32" foregroundColor="transpWhite" backgroundColor="background90transp" transparent="1" noWrap="1" valign="center" halign="left" zPosition="2" />
-    <widget name="duration" position="490,170" size="240,40" font="scoutcondWide; 32" foregroundColor="light_blue" backgroundColor="background90transp1" transparent="1" noWrap="1" valign="center" halign="right" zPosition="2" />
+  <screen name="InfoBarEventView" position="0,0" size="775,750" backgroundColor="background90" flags="wfNoBorder" zPosition="1">   
+    <widget name="datetime" position="20,65" size="460,50" font="scoutcondWide; 36" foregroundColor="preTrans30" backgroundColor="background90" transparent="1" noWrap="1" valign="center" halign="left" zPosition="2" />
+    <widget name="duration" position="20,145" size="300,50" font="scoutcondWide; 36" foregroundColor="light_blue1" backgroundColor="background90" transparent="1" noWrap="1" valign="center" halign="left" zPosition="2" />
     <!-- neu start -->
-    <widget source="Event" render="Label" position="24,223" size="705,450" halign="left" Valign="top" backgroundColor="background90transp" font="Regular;28" foregroundColor="white" transparent="1" zPosition="6" Wrap="0">
+    <widget source="Event" render="Label" position="20,250" size="730,460" halign="left" Valign="top" backgroundColor="background90" font="Regular; 34" foregroundColor="white" transparent="1" zPosition="6" Wrap="0">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Service" render="Picon" position="24,30" size="200,120" transparent="0" zPosition="3" alphatest="blend">
+    <widget source="Service" render="Picon" position="480,45" size="267,160" transparent="0" zPosition="3" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <!-- Running Text Start -->
-    <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="33,325" size="690,312" font="Regular;30" foregroundColor="white" backgroundColor="background90transp" transparent="1">
+    <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="20,385" size="730,310" font="Regular;28" foregroundColor="white" backgroundColor="background90" transparent="1">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <!-- Running Text End -->
@@ -11687,7 +11686,7 @@ self.instance.move(ePoint(0,0))
     <widget source="lab3" render="Label" position="315,450" size="975,60" font="Regular;28" backgroundColor="background2" transparent="1" zPosition="1" />
     <eLabel text="OPEN SOURCE" position="315,315" size="300,45" font="Regular;33" backgroundColor="background2" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="315,525" size="975,480" font="Regular;26" backgroundColor="background" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
-    <eLabel text="Skin NOVUM_FHD_Light vs.15.0 by Nashu" position="315,1020" size="705,45" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="Regular;28" halign="left" />
+    <eLabel text="Skin NOVUM_FHD_Light vs.15.1 by Nashu" position="315,1020" size="705,45" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="Regular;28" halign="left" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1920,1080" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="NOVUM_FHD_Light/images/sidebar.png" position="1560,142" size="360,938" transparent="1" zPosition="-3" />
