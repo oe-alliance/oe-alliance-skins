@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: myNOVUM_HD2 vs.18.5 by Nashu  -->
+  <!--	Skin: myNOVUM_HD2 vs.18.6 by Nashu  -->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
   <!--	Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1570,11 +1570,11 @@
   </screen>
   <screen name="MoviePlayer1" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2/images/mpInfobar_bg.png" position="0,666" size="1280,42" zPosition="-10" />
-    <ePixmap position="1260,610" size="14,24" pixmap="myNOVUM_HD2/menu/arrow-rt.png" alphatest="blend" zPosition="1" />
+    <ePixmap position="1252,610" size="30,30" pixmap="myNOVUM_HD2/buttons/right.png" alphatest="blend" zPosition="1" />
     <ePixmap position="0,0" size="560,30" pixmap="myNOVUM_HD2/images/iconbg.png" transparent="1" zPosition="-1" alphatest="blend" />
     <ePixmap position="1153,0" size="126,30" pixmap="myNOVUM_HD2/images/iconbg2.png" transparent="1" zPosition="-1" alphatest="blend" />
     <eLabel position="0,0" size="1280,30" zPosition="-10" backgroundColor="background40" />
-    <ePixmap position="33,3" size="23,23" pixmap="myNOVUM_HD2/common_icons/info.png" alphatest="blend" zPosition="1" />
+    <ePixmap position="33,3" size="23,23" pixmap="myNOVUM_HD2/icons/info.png" alphatest="blend" zPosition="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="0,3" size="24,24" alphatest="blend" zPosition="1" />
     <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="myNOVUM_HD2/buttons/green.png" position="0,3" size="24,24" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide">Blink,1000</convert>
@@ -2038,7 +2038,7 @@
     <widget source="session.CurrentService" render="Progress" position="227,620" size="373,2" foregroundColor="light_blue2" transparent="1" zPosition="3" borderWidth="1" borderColor="infobar_service_frgrnd">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <widget name="repeat" position="400,593" size="26,20" pixmaps="myNOVUM_HD2/common_icons/ico_noreplay.png,myNOVUM_HD2/common_icons/ico_replay.png" transparent="1" alphatest="blend" backgroundColor="background2" foregroundColor="transpWhite" />
+    <widget name="repeat" position="400,593" size="26,20" pixmaps="myNOVUM_HD2/icons/ico_noreplay.png,myNOVUM_HD2/icons/ico_replay.png" transparent="1" alphatest="blend" backgroundColor="background2" foregroundColor="transpWhite" />
     <widget source="session.CurrentService" render="Label" position="226,586" size="120,26" foregroundColor="unff6600" font="Regular;20" halign="left" valign="center" transparent="1" backgroundColor="un143688">
       <convert type="ServicePosition">Position</convert>
     </widget>
@@ -2288,7 +2288,7 @@
     <widget name="config" position="140,160" size="800,390" transparent="1" backgroundColor="background2" font="Regular;20" itemHeight="30" />
   </screen>
   <screen name="Dish" flags="wfNoBorder" position="0,0" size="220,320" backgroundColor="backgroundtransp" zPosition="-1">
-    <widget name="Dishpixmap" position="36,6" size="146,146" zPosition="1" pixmap="myNOVUM_HD2/common_icons/dish.png" transparent="1" alphatest="blend" />
+    <widget name="Dishpixmap" position="36,6" size="146,146" zPosition="1" pixmap="myNOVUM_HD2/menu/dish.png" transparent="1" alphatest="blend" />
     <widget name="turnTime" position="56,160" size="106,25" zPosition="1" font="Regular;16" halign="center" valign="center" borderWidth="1" borderColor="background" foregroundColor="light_blue" backgroundColor="background" transparent="1" />
     <widget name="From" position="13,183" size="80,25" zPosition="1" font="Regular;16" halign="right" valign="center" borderWidth="1" borderColor="background" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget name="posFrom" position="100,183" size="106,25" zPosition="1" font="Regular;16" halign="left" valign="center" borderWidth="1" borderColor="background" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -2302,7 +2302,7 @@
     </widget>
   </screen>
   <screen name="Dishpip" flags="wfNoBorder" position="0,0" size="220,320" backgroundColor="backgroundtransp" zPosition="-1">
-    <widget name="Dishpixmap" position="36,6" size="146,146" zPosition="1" pixmap="myNOVUM_HD2/common_icons/dish.png" transparent="1" alphatest="blend" />
+    <widget name="Dishpixmap" position="36,6" size="146,146" zPosition="1" pixmap="myNOVUM_HD2/menu/dish.png" transparent="1" alphatest="blend" />
     <widget name="turnTime" position="56,160" size="106,25" zPosition="1" font="Regular;16" halign="center" valign="center" borderWidth="1" borderColor="background" foregroundColor="light_blue" backgroundColor="background" transparent="1" />
     <widget name="From" position="13,183" size="80,25" zPosition="1" font="Regular;16" halign="right" valign="center" borderWidth="1" borderColor="background" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget name="posFrom" position="100,183" size="106,25" zPosition="1" font="Regular;16" halign="left" valign="center" borderWidth="1" borderColor="background" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -2460,9 +2460,9 @@
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget name="now_button_sel" pixmap="myNOVUM_HD2/epg_now.png" position="16,141" zPosition="1" size="542,40" alphatest="blend" />
-    <widget name="next_button_sel" pixmap="myNOVUM_HD2/epg_next.png" position="16,141" zPosition="1" size="542,40" alphatest="blend" />
-    <widget name="more_button_sel" pixmap="myNOVUM_HD2/epg_more.png" position="16,141" zPosition="1" size="542,40" alphatest="blend" />
+    <widget name="now_button_sel" pixmap="myNOVUM_HD2/epg/epg_now.png" position="16,141" zPosition="1" size="542,40" alphatest="blend" />
+    <widget name="next_button_sel" pixmap="myNOVUM_HD2/epg/epg_next.png" position="16,141" zPosition="1" size="542,40" alphatest="blend" />
+    <widget name="more_button_sel" pixmap="myNOVUM_HD2/epg/epg_more.png" position="16,141" zPosition="1" size="542,40" alphatest="blend" />
     <widget name="now_text" position="46,144" zPosition="2" size="120,34" text="N O W" font="RegularBold;20" halign="center" valign="center" foregroundColor="unefefef" backgroundColor="background2" transparent="1" />
     <widget name="next_text" position="228,144" zPosition="2" size="120,34" text="N E X T" font="RegularBold;20" halign="center" valign="center" foregroundColor="unefefef" backgroundColor="background2" transparent="1" />
     <widget name="more_text" position="408,144" zPosition="2" size="120,34" text="M O R E" font="RegularBold;20" halign="center" valign="center" foregroundColor="unefefef" backgroundColor="background2" transparent="1" />
@@ -2582,13 +2582,13 @@
     <eLabel position="136,220" size="800,0" backgroundColor="light_blue" />
     <widget name="timeline_text" position="20,365" size="1018,22" selectionDisabled="1" transparent="1" backgroundColor="background" foregroundColor="light_blue" font="Regular;15" />
     <widget name="list" position="20,390" size="1018,300" itemHeight="60" EntryBorderColor="white" EntryBackgroundColor="background2" EntryBackgroundColorSelected="lightgrey" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="timeline0" position="0,398" zPosition="1" size="1,230" pixmap="myNOVUM_HD2/timeline.png" />
-    <widget name="timeline1" position="0,398" zPosition="1" size="1,230" pixmap="myNOVUM_HD2/timeline.png" />
-    <widget name="timeline2" position="0,398" zPosition="1" size="1,230" pixmap="myNOVUM_HD2/timeline.png" />
-    <widget name="timeline3" position="0,398" zPosition="1" size="1,230" pixmap="myNOVUM_HD2/timeline.png" />
-    <widget name="timeline4" position="0,398" zPosition="1" size="1,230" pixmap="myNOVUM_HD2/timeline.png" />
-    <widget name="timeline5" position="0,398" zPosition="1" size="1,230" pixmap="myNOVUM_HD2/timeline.png" />
-    <widget name="timeline_now" position="20,390" zPosition="2" size="12,300" pixmap="myNOVUM_HD2/timeline-now.png" alphatest="blend" />
+    <widget name="timeline0" position="0,398" zPosition="1" size="1,230" pixmap="myNOVUM_HD2/epg/timeline.png" />
+    <widget name="timeline1" position="0,398" zPosition="1" size="1,230" pixmap="myNOVUM_HD2/epg/timeline.png" />
+    <widget name="timeline2" position="0,398" zPosition="1" size="1,230" pixmap="myNOVUM_HD2/epg/timeline.png" />
+    <widget name="timeline3" position="0,398" zPosition="1" size="1,230" pixmap="myNOVUM_HD2/epg/timeline.png" />
+    <widget name="timeline4" position="0,398" zPosition="1" size="1,230" pixmap="myNOVUM_HD2/epg/timeline.png" />
+    <widget name="timeline5" position="0,398" zPosition="1" size="1,230" pixmap="myNOVUM_HD2/epg/timeline.png" />
+    <widget name="timeline_now" position="20,390" zPosition="2" size="12,300" pixmap="myNOVUM_HD2/epg/timeline-now.png" alphatest="blend" />
     <widget source="Service" render="Picon" position="1090,150" size="146,88" backgroundColor="un181A1C" transparent="1" zPosition="3" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
@@ -2642,7 +2642,7 @@
     <widget name="timeline_text" position="20,330" size="1013,22" backgroundColor="un2D353B" foregroundColor="light_blue1" transparent="0" zPosition="0" font="Regular;15" />
     <widget name="bouquetlist" position="693,160" size="333,170" itemHeight="35" foregroundColor="un181A1C" backgroundColor="myblue1transp1" foregroundColorSelected="ivorywhite" backgroundColorSelected="myblue1transp1" scrollbarMode="showNever" zPosition="6" transparent="1" />
     <widget name="list" position="20,354" size="1013,360" ServiceFontGraphical="Regular;20" EntryFontGraphical="Regular;20" EntryFontWrap="no" EventNamePadding="5" backgroundColor="un2D353B" ServiceForegroundColor="white" ServiceBackgroundColor="un2D353B" ServiceForegroundColorNow="white" ServiceBackgroundColorNow="un2D353B" EntryBackgroundColor="un2D353B" EntryForegroundColorSelected="black" EntryBackgroundColorSelected="myblue1" EntryForegroundColorNow="white" EntryBackgroundColorNow="un2D353B" EntryForegroundColorNowSelected="black" EntryBackgroundColorNowSelected="black" RecordForegroundColorSelected="blue" RecordBackgroundColorSelected="un800000" ZapForegroundColorSelected="black" scrollbarMode="showNever" transparent="1" zPosition="1" Wrap="1" />
-    <widget name="timeline_now" position="20,354" zPosition="3" size="18,360" pixmap="myNOVUM_HD2/timeline-now.png" alphatest="blend" />
+    <widget name="timeline_now" position="20,354" zPosition="3" size="18,360" pixmap="myNOVUM_HD2/epg/timeline-now.png" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/bouquet.png" position="1044,575" size="69,24" zPosition="2" alphatest="blend" backgroundColor="background" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/tv.png" position="1044,502" size="69,24" alphatest="blend" transparent="1" zPosition="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/menu.png" position="1044,551" size="69,24" zPosition="1" alphatest="blend" />
@@ -2673,7 +2673,7 @@
     <widget source="global.CurrentTime" render="Label" position="1000,20" size="240,24" font="scoutcondWide;18" halign="right" backgroundColor="background90" transparent="1" foregroundColor="preTrans50">
       <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
     </widget>
-    <widget source="Title" render="Label" position="390,12" size="500,36" backgroundColor="background90" foregroundColor="white" transparent="1" zPosition="2" font="scoutcondWide;26" valign="center" halign="center" />
+    <widget source="Title" render="Label" position="370,12" size="500,36" backgroundColor="background90" foregroundColor="white" transparent="1" zPosition="2" font="scoutcondWide;26" valign="center" halign="center" />
     <widget source="Event" render="Label" position="10,64" size="80,40" halign="right" backgroundColor="un271c1c1c" font="scoutcondWide;22" noWrap="1" transparent="1" foregroundColor="light_blue1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
@@ -2701,10 +2701,10 @@
     <widget name="timeline_text" position="14,230" size="1250,22" backgroundColor="un2D353B" foregroundColor="light_blue1" transparent="0" zPosition="0" font="Regular;15" />
     <widget name="bouquetlist" position="610,63" size="320,170" itemHeight="35" foregroundColor="lightgrey" backgroundColor="un2D3033" foregroundColorSelected="ivorywhite" backgroundColorSelected="un2D3033" scrollbarMode="showNever" zPosition="6" transparent="1" />
     <widget name="list" position="14,254" size="1250,420" ServiceFontGraphical="Regular;20" EntryFontGraphical="Regular;20" EntryFontWrap="no" EventNamePadding="5" backgroundColor="un2D353B" ServiceForegroundColor="white" ServiceBackgroundColor="un2D353B" ServiceForegroundColorNow="white" ServiceBackgroundColorNow="un2D353B" EntryBackgroundColor="un2D353B" EntryForegroundColorSelected="black" EntryBackgroundColorSelected="myblue1" EntryForegroundColorNow="white" EntryBackgroundColorNow="un2D353B" EntryForegroundColorNowSelected="black" EntryBackgroundColorNowSelected="black" RecordForegroundColorSelected="blue" RecordBackgroundColorSelected="un800000" ZapForegroundColorSelected="black" scrollbarMode="showNever" transparent="1" zPosition="1" Wrap="1" />
-    <widget name="timeline_now" position="14,254" zPosition="3" size="18,420" pixmap="myNOVUM_HD2/timeline-now.png" alphatest="blend" />
+    <widget name="timeline_now" position="14,254" zPosition="3" size="18,420" pixmap="myNOVUM_HD2/epg/timeline-now.png" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/bouquet.png" position="40,18" size="72,22" zPosition="2" alphatest="blend" backgroundColor="background" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2/menu/arrow-lt.png" position="392,18" size="14,24" zPosition="3" alphatest="blend" />
-    <ePixmap pixmap="myNOVUM_HD2/menu/arrow-rt.png" position="874,18" size="14,24" zPosition="3" alphatest="blend" />
+    <ePixmap pixmap="myNOVUM_HD2/buttons/left.png" position="345,15" size="30,30" zPosition="3" alphatest="blend" />
+    <ePixmap pixmap="myNOVUM_HD2/buttons/right.png" position="865,15" size="30,30" zPosition="3" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/red.png" position="40,688" size="24,24" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="294,688" size="24,24" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/yellow.png" position="550,688" size="24,24" alphatest="blend" />
@@ -2719,7 +2719,7 @@
     <widget source="Service" render="Picon" position="40,146" size="120,72" transparent="0" zPosition="3" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget name="jump" position="133,18" size="233,24" zPosition="2" font="scoutcondWide;20" foregroundColor="preTrans50" halign="left" transparent="1" valign="top" backgroundColor="background90" />
+    <widget name="jump" position="120,18" size="233,24" zPosition="2" font="scoutcondWide;20" foregroundColor="preTrans50" halign="left" transparent="1" valign="top" backgroundColor="background90" />
     <widget source="session.CurrentService" render="Label" position="950,58" size="312,24" font="Regular;20" foregroundColor="light_blue1" borderWidth="2" borderColor="background2" transparent="1" valign="center" halign="center" noWrap="1" zPosition="5" backgroundColor="background2">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -2751,7 +2751,7 @@
     <widget name="timeline_text" position="10,53" size="1260,22" foregroundColor="light_blue" font="Regular;15" transparent="0" zPosition="21" backgroundColor="un2D353B" valign="top" />
     <widget name="bouquetlist" position="10,76" size="1260,118" itemHeight="30" foregroundColor="lightgrey" backgroundColor="un2D3033" foregroundColorSelected="white" backgroundColorSelected="un2D3033" scrollbarMode="showNever" zPosition="6" transparent="1" />
     <widget name="list" position="10,76" size="1260,118" ServiceFontGraphical="Regular;18" EntryFontGraphical="Regular;18" EntryFontWrap="no" EventNamePadding="5" backgroundColor="un2D353B" ServiceForegroundColor="darkgrey" ServiceBackgroundColor="un2D353B" ServiceForegroundColorNow="darkgrey" ServiceBackgroundColorNow="un2D353B" EntryForegroundColor="darkgrey" EntryBackgroundColor="un2D353B" EntryForegroundColorSelected="black" EntryBackgroundColorSelected="myblue1" EntryForegroundColorNow="white" EntryBackgroundColorNow="un2D353B" EntryForegroundColorNowSelected="light_blue3" EntryBackgroundColorNowSelected="black" RecordForegroundColorSelected="mybluelight3" RecordBackgroundColorSelected="un800000" ZapForegroundColorSelected="black" scrollbarMode="showNever" transparent="1" zPosition="1" Wrap="1" />
-    <widget name="timeline_now" position="10,76" zPosition="2" size="18,118" pixmap="myNOVUM_HD2/timeline-now.png" alphatest="blend" />
+    <widget name="timeline_now" position="10,76" zPosition="2" size="18,118" pixmap="myNOVUM_HD2/epg/timeline-now.png" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/red.png" position="20,196" size="24,24" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="235,196" size="24,24" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/yellow.png" position="450,196" size="24,24" alphatest="blend" />
@@ -3502,9 +3502,9 @@
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/iconnovum.png" transparent="1" alphatest="blend" />
     <widget name="text" position="190,160" size="753,400" font="Regular;20" foregroundColor="lightgrey" itemHeight="30" backgroundColor="background2" transparent="1" valign="top" />
     <widget name="list" position="140,590" size="800,120" backgroundColor="background2" font="Regular;20" itemHeight="30" selectionPixmap="myNOVUM_HD2/buttons/FocusBar.png" transparent="1" />
-    <widget name="ErrorPixmap" pixmap="myNOVUM_HD2/common_icons/input_error.png" position="140,162" size="32,32" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="myNOVUM_HD2/common_icons/input_question.png" position="140,162" size="32,32" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="myNOVUM_HD2/common_icons/input_info.png" position="140,162" size="32,32" alphatest="blend" />
+    <widget name="ErrorPixmap" pixmap="myNOVUM_HD2/icons/input_error.png" position="140,162" size="32,32" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="myNOVUM_HD2/icons/input_question.png" position="140,162" size="32,32" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="myNOVUM_HD2/icons/input_info.png" position="140,162" size="32,32" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/red.png" position="1044,600" size="24,24" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="1044,624" size="24,24" alphatest="blend" transparent="1" />
     <eLabel text="Cancel" position="1080,600" size="200,24" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" transparent="1" zPosition="1" font="Regular;16" halign="left" />
@@ -3523,9 +3523,9 @@
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/iconnovum.png" transparent="1" alphatest="blend" />
     <widget name="text" font="Regular;20" position="190,160" size="750,30" backgroundColor="background2" transparent="1" valign="top" />
-    <widget name="ErrorPixmap" pixmap="myNOVUM_HD2/common_icons/input_error.png" alphatest="blend" position="140,162" size="32,32" />
-    <widget name="QuestionPixmap" pixmap="myNOVUM_HD2/common_icons/input_question.png" alphatest="blend" position="140,162" size="32,32" />
-    <widget name="InfoPixmap" pixmap="myNOVUM_HD2/common_icons/input_info.png" alphatest="blend" position="140,162" size="32,32" />
+    <widget name="ErrorPixmap" pixmap="myNOVUM_HD2/icons/input_error.png" alphatest="blend" position="140,162" size="32,32" />
+    <widget name="QuestionPixmap" pixmap="myNOVUM_HD2/icons/input_question.png" alphatest="blend" position="140,162" size="32,32" />
+    <widget name="InfoPixmap" pixmap="myNOVUM_HD2/icons/input_info.png" alphatest="blend" position="140,162" size="32,32" />
     <widget name="list" position="140,214" size="800,420" font="Regular;20" itemHeight="30" backgroundColor="background2" transparent="1" />
     <applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
@@ -3577,9 +3577,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/iconnovum.png" transparent="1" alphatest="blend" />
     <widget name="text" position="190,160" size="753,400" font="Regular;20" foregroundColor="lightgrey" itemHeight="30" backgroundColor="background2" transparent="1" valign="top" />
     <widget name="list" position="140,590" size="800,120" backgroundColor="background2" font="Regular;20" itemHeight="30" selectionPixmap="myNOVUM_HD2/buttons/FocusBar.png" transparent="1" />
-    <widget name="ErrorPixmap" pixmap="myNOVUM_HD2/common_icons/input_error.png" position="140,162" size="32,32" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="myNOVUM_HD2/common_icons/input_question.png" position="140,162" size="32,32" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="myNOVUM_HD2/common_icons/input_info.png" position="140,162" size="32,32" alphatest="blend" />
+    <widget name="ErrorPixmap" pixmap="myNOVUM_HD2/icons/input_error.png" position="140,162" size="32,32" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="myNOVUM_HD2/icons/input_question.png" position="140,162" size="32,32" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="myNOVUM_HD2/icons/input_info.png" position="140,162" size="32,32" alphatest="blend" />
   </screen>
   <screen name="Kernel" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
@@ -4306,7 +4306,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="list" position="140,160" size="800,450" itemHeight="50" font="Regular;20" selectionPixmap="myNOVUM_HD2/images/FocusBar.png" foregroundColor="lightgrey" foregroundColorSelected="black" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" zPosition="0" enableWrapAround="1" />
   </screen>
   <screen name="RassInteractive" position="100,120" size="100,274" backgroundColor="transpWhite" flags="wfNoBorder">
-    <ePixmap pixmap="myNOVUM_HD2/common_icons/rass_logo.png" position="24,0" size="50,20" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="myNOVUM_HD2/icons/rass_logo.png" position="24,0" size="50,20" transparent="1" alphatest="blend" />
     <eLabel text="Index" position="36,24" size="60,24" font="Regular;20" foregroundColor="black" backgroundColor="transpWhite" />
     <eLabel text="0" position="4,24" size="16,24" font="Regular;20" foregroundColor="black" backgroundColor="transpWhite" />
     <widget name="Marker" position="20,24" size="16,24" font="Regular;20" foregroundColor="black" backgroundColor="transpWhite" />
@@ -4330,7 +4330,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="subpages_9" position="34,250" size="36,20" alphatest="blend" backgroundColor="background" />
   </screen>
   <screen name="RdsInfoDisplay" position="0,0" size="1280,720" zPosition="-2" backgroundColor="transparent" flags="wfNoBorder">
-    <widget name="RassLogo" pixmap="myNOVUM_HD2/common_icons/rass_logo.png" position="100,584" size="50,20" />
+    <widget name="RassLogo" pixmap="myNOVUM_HD2/icons/rass_logo.png" position="100,584" size="50,20" />
     <widget name="RadioText" position="100,620" size="1080,30" font="Regular;20" noWrap="1" backgroundColor="transpBlack" />
     <widget name="RtpText" position="100,650" size="1080,30" font="Regular;20" halign="right" noWrap="1" backgroundColor="transpBlack" />
   </screen>
@@ -4363,7 +4363,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
-    <ePixmap pixmap="myNOVUM_HD2/common_icons/dish.png" position="1086,120" zPosition="0" size="146,146" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="myNOVUM_HD2/menu/dish.png" position="1086,120" zPosition="0" size="146,146" transparent="1" alphatest="blend" />
     <widget name="introduction" position="134,86" size="0,0" font="Regular;20" backgroundColor="background" transparent="1" />
     <widget source="Frontend" render="Label" position="450,160" zPosition="2" size="194,24" font="Regular;20" backgroundColor="background2" halign="center" valign="center" transparent="1">
       <convert type="FrontendInfo">SNRdB</convert>
@@ -4390,11 +4390,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="FrontendInfo">BER</convert>
     </widget>
     <eLabel name="lock" text="Lock:" position="380,260" size="60,26" font="Regular;20" backgroundColor="background2" halign="right" transparent="1" />
-    <widget source="Frontend" render="Pixmap" pixmap="myNOVUM_HD2/common_icons/lock_on.png" position="450,262" zPosition="1" size="24,24" alphatest="blend">
+    <widget source="Frontend" render="Pixmap" pixmap="myNOVUM_HD2/icons/lock_on.png" position="450,262" zPosition="1" size="24,24" alphatest="blend">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="Frontend" render="Pixmap" pixmap="myNOVUM_HD2/common_icons/lock_off.png" position="450,262" zPosition="1" size="24,24" alphatest="blend">
+    <widget source="Frontend" render="Pixmap" pixmap="myNOVUM_HD2/icons/lock_off.png" position="450,262" zPosition="1" size="24,24" alphatest="blend">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide">Invert</convert>
     </widget>
@@ -4480,7 +4480,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
-    <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/common_icons/scan-c.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/scan-c.png" transparent="1" alphatest="blend" />
     <widget name="config" scrollbarMode="showOnDemand" position="140,160" size="800,360" font="Regular;20" itemHeight="30" transparent="1" enableWrapAround="1" backgroundColor="background2" />
     <widget name="introduction" position="140,553" size="800,106" font="Regular;20" transparent="1" backgroundColor="background2" />
   </screen>
@@ -4495,7 +4495,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
-    <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/common_icons/scan-c.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/scan-c.png" transparent="1" alphatest="blend" />
     <widget name="scan_state" position="140,160" zPosition="2" size="800,30" font="Regular;20" transparent="1" backgroundColor="background2" />
     <widget name="scan_progress" position="140,210" size="800,10" pixmap="myNOVUM_HD2/progress.png" backgroundColor="background" transparent="1" />
   </screen>
@@ -4511,7 +4511,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
-    <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/common_icons/dish.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/dish.png" transparent="1" alphatest="blend" />
     <widget name="config" position="140,160" size="800,360" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="30" backgroundColor="background2" transparent="1" />
     <widget name="introduction" position="140,553" size="800,106" font="Regular;20" halign="left" backgroundColor="background2" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/red.png" position="1044,600" size="24,24" alphatest="blend" zPosition="3" />
@@ -4530,7 +4530,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
-    <widget name="frontend" pixmap="myNOVUM_HD2/common_icons/dish.png" position="1086,120" size="146,146" transparent="1" alphatest="blend" />
+    <widget name="frontend" pixmap="myNOVUM_HD2/menu/dish.png" position="1086,120" size="146,146" transparent="1" alphatest="blend" />
     <widget name="scan_state" position="140,160" zPosition="2" size="800,30" font="Regular;20" backgroundColor="background2" transparent="1" />
     <widget name="scan_progress" position="140,210" size="800,10" pixmap="myNOVUM_HD2/progress.png" backgroundColor="background" transparent="1" />
   </screen>
@@ -4652,17 +4652,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
-    <widget source="FrontendInfo" render="Pixmap" pixmap="myNOVUM_HD2/common_icons/dish.png" position="1086,120" size="146,146" transparent="1" alphatest="blend">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="myNOVUM_HD2/menu/dish.png" position="1086,120" size="146,146" transparent="1" alphatest="blend">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="FrontendInfo" render="Pixmap" pixmap="myNOVUM_HD2/common_icons/scan-c.png" position="1086,120" size="146,146" transparent="1" alphatest="blend">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="myNOVUM_HD2/menu/scan-c.png" position="1086,120" size="146,146" transparent="1" alphatest="blend">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="FrontendInfo" render="Pixmap" pixmap="myNOVUM_HD2/common_icons/scan-t.png" position="1086,120" size="146,146" transparent="1" alphatest="blend">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="myNOVUM_HD2/menu/scan-t.png" position="1086,120" size="146,146" transparent="1" alphatest="blend">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
@@ -5467,9 +5467,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/iconnovum.png" transparent="1" alphatest="blend" />
     <widget name="text" position="140,160" size="720,250" font="Regular;22" transparent="1" foregroundColor="lightgrey" backgroundColor="background2" />
-    <widget name="ErrorPixmap" pixmap="myNOVUM_HD2/common_icons/input_error.png" position="86,162" size="32,32" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="myNOVUM_HD2/common_icons/input_question.png" position="86,162" size="32,32" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="myNOVUM_HD2/common_icons/input_info.png" position="86,162" size="32,32" alphatest="blend" />
+    <widget name="ErrorPixmap" pixmap="myNOVUM_HD2/icons/input_error.png" position="86,162" size="32,32" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="myNOVUM_HD2/icons/input_question.png" position="86,162" size="32,32" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="myNOVUM_HD2/icons/input_info.png" position="86,162" size="32,32" alphatest="blend" />
     <widget name="list" position="140,430" size="720,213" font="Regular;20" itemHeight="30" transparent="1" backgroundColor="background2" />
     <widget name="rc" pixmap="skin_default/rc.png" position="874,160" zPosition="10" size="154,500" transparent="0" alphatest="blend" />
   </screen>
@@ -6698,17 +6698,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
-    <widget source="FrontendInfo" render="Pixmap" pixmap="myNOVUM_HD2/common_icons/dish.png" position="1086,120" size="146,146" transparent="1" alphatest="blend">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="myNOVUM_HD2/menu/dish.png" position="1086,120" size="146,146" transparent="1" alphatest="blend">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="FrontendInfo" render="Pixmap" pixmap="myNOVUM_HD2/common_icons/scan-c.png" position="1086,120" size="146,146" transparent="1" alphatest="blend">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="myNOVUM_HD2/menu/scan-c.png" position="1086,120" size="146,146" transparent="1" alphatest="blend">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="FrontendInfo" render="Pixmap" pixmap="myNOVUM_HD2/common_icons/scan-t.png" position="1086,120" size="146,146" transparent="1" alphatest="blend">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="myNOVUM_HD2/menu/scan-t.png" position="1086,120" size="146,146" transparent="1" alphatest="blend">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
@@ -6731,7 +6731,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
-    <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/common_icons/dish.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/dish.png" transparent="1" alphatest="blend" />
     <eLabel name="overall_progress" text="Overall progress:" position="240,320" size="600,30" font="Regular;20" halign="center" transparent="1" backgroundColor="background2" />
     <widget source="overall_progress" render="Progress" position="240,354" size="600,10" foregroundColor="myblue1transp1" backgroundColor="white" />
     <eLabel name="overall_progress" text="Progress:" position="240,376" size="600,30" font="Regular;20" halign="center" transparent="1" backgroundColor="background2" />
@@ -6781,11 +6781,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	  <convert type="FrontendInfo">BER</convert>
 	</widget>
 	<eLabel name="lock" text="Lock:" position="240,683" size="60,26" font="Regular;20" halign="right" backgroundColor="background2" transparent="1" />
-	<widget source="Frontend" render="Pixmap" pixmap="myNOVUM_HD2/common_icons/lock_on.png" position="310,686" zPosition="1" size="24,24" alphatest="blend">
+	<widget source="Frontend" render="Pixmap" pixmap="myNOVUM_HD2/icons/lock_on.png" position="310,686" zPosition="1" size="24,24" alphatest="blend">
 	  <convert type="FrontendInfo">LOCK</convert>
 	  <convert type="ConditionalShowHide" />
 	</widget>
-	<widget source="Frontend" render="Pixmap" pixmap="myNOVUM_HD2/common_icons/lock_off.png" position="310,686" zPosition="1" size="24,24" alphatest="blend">
+	<widget source="Frontend" render="Pixmap" pixmap="myNOVUM_HD2/icons/lock_off.png" position="310,686" zPosition="1" size="24,24" alphatest="blend">
 	  <convert type="FrontendInfo">LOCK</convert>
 	  <convert type="ConditionalShowHide">Invert</convert>
 	</widget-->
@@ -6827,7 +6827,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/iconnovum.png" transparent="1" alphatest="blend" />
     <widget source="text" position="190,160" size="753,506" font="Regular;20" halign="center" valign="top" render="Label" itemHeight="30" backgroundColor="background2" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2/common_icons/input_error.png" position="140,160" size="38,38" alphatest="blend" />
+    <ePixmap pixmap="myNOVUM_HD2/icons/input_error.png" position="140,160" size="38,38" alphatest="blend" />
   </screen>
   <screen name="NFIDownload" position="0,0" size="1280,720" title="Image download utility" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap pixmap="myNOVUM_HD2/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
@@ -7541,7 +7541,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/iconnovum.png" transparent="1" alphatest="blend" />
-    <widget name="connect" position="500,300" size="64,64" zPosition="2" pixmaps="myNOVUM_HD2/busy/busy1.png,myNOVUM_HD2/busy/busy2.png,myNOVUM_HD2/busy/busy3.png,myNOVUM_HD2/busy/busy4.png,myNOVUM_HD2/busy/busy5.png,myNOVUM_HD2/busy/busy6.png,myNOVUM_HD2/busy/busy7.png,myNOVUM_HD2/busy/busy8.png,myNOVUM_HD2/busy/busy9.png,myNOVUM_HD2/busy/busy9.png,myNOVUM_HD2/busy/busy10.png,myNOVUM_HD2/busy/busy11.png,myNOVUM_HD2/busy/busy12.png,myNOVUM_HD2/busy/busy13.png,myNOVUM_HD2/busy/busy14.png,myNOVUM_HD2/busy/busy15.png,myNOVUM_HD2/busy/busy17.png,myNOVUM_HD2/busy/busy18.png,myNOVUM_HD2/busy/busy19.png,myNOVUM_HD2/busy/busy20.png,myNOVUM_HD2/busy/busy21.png,myNOVUM_HD2/busy/busy22.png,myNOVUM_HD2/busy/busy23.png,myNOVUM_HD2/busy/busy24.png" transparent="1" alphatest="blend" backgroundColor="background2" />
+    <widget name="connect" position="500,300" size="64,64" zPosition="2" pixmaps="skin_default/busy/busy1.png,skin_default/busy/busy2.png,skin_default/busy/busy3.png,skin_default/busy/busy4.png,skin_default/busy/busy5.png,skin_default/busy/busy6.png,skin_default/busy/busy7.png,skin_default/busy/busy8.png,skin_default/busy/busy9.png,skin_default/busy/busy9.png,skin_default/busy/busy10.png,skin_default/busy/busy11.png,skin_default/busy/busy12.png,skin_default/busy/busy13.png,skin_default/busy/busy14.png,skin_default/busy/busy15.png,skin_default/busy/busy17.png,skin_default/busy/busy18.png,skin_default/busy/busy19.png,skin_default/busy/busy20.png,skin_default/busy/busy21.png,skin_default/busy/busy22.png,skin_default/busy/busy23.png,skin_default/busy/busy24.png" transparent="1" alphatest="blend" backgroundColor="background2" />
     <widget name="lab1" position="260,160" halign="center" size="552,60" zPosition="1" font="Regular;20" valign="top" transparent="1" backgroundColor="background2" />
   </screen>
   <screen name="SoftcamMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -7574,7 +7574,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/iconnovum.png" transparent="1" alphatest="blend" />
-    <widget name="connect" position="500,300" size="64,64" zPosition="2" pixmaps="myNOVUM_HD2/busy/busy1.png,myNOVUM_HD2/busy/busy2.png,myNOVUM_HD2/busy/busy3.png,myNOVUM_HD2/busy/busy4.png,myNOVUM_HD2/busy/busy5.png,myNOVUM_HD2/busy/busy6.png,myNOVUM_HD2/busy/busy7.png,myNOVUM_HD2/busy/busy8.png,myNOVUM_HD2/busy/busy9.png,myNOVUM_HD2/busy/busy9.png,myNOVUM_HD2/busy/busy10.png,myNOVUM_HD2/busy/busy11.png,myNOVUM_HD2/busy/busy12.png,myNOVUM_HD2/busy/busy13.png,myNOVUM_HD2/busy/busy14.png,myNOVUM_HD2/busy/busy15.png,myNOVUM_HD2/busy/busy17.png,myNOVUM_HD2/busy/busy18.png,myNOVUM_HD2/busy/busy19.png,myNOVUM_HD2/busy/busy20.png,myNOVUM_HD2/busy/busy21.png,myNOVUM_HD2/busy/busy22.png,myNOVUM_HD2/busy/busy23.png,myNOVUM_HD2/busy/busy24.png" transparent="1" alphatest="blend" backgroundColor="background2" />
+    <widget name="connect" position="500,300" size="64,64" zPosition="2" pixmaps="skin_default/busy/busy1.png,skin_default/busy/busy2.png,skin_default/busy/busy3.png,skin_default/busy/busy4.png,skin_default/busy/busy5.png,skin_default/busy/busy6.png,skin_default/busy/busy7.png,skin_default/busy/busy8.png,skin_default/busy/busy9.png,skin_default/busy/busy9.png,skin_default/busy/busy10.png,skin_default/busy/busy11.png,skin_default/busy/busy12.png,skin_default/busy/busy13.png,skin_default/busy/busy14.png,skin_default/busy/busy15.png,skin_default/busy/busy17.png,skin_default/busy/busy18.png,skin_default/busy/busy19.png,skin_default/busy/busy20.png,skin_default/busy/busy21.png,skin_default/busy/busy22.png,skin_default/busy/busy23.png,skin_default/busy/busy24.png" transparent="1" alphatest="blend" backgroundColor="background2" />
     <widget name="lab1" position="260,160" halign="center" size="552,60" zPosition="1" font="Regular;20" valign="top" transparent="1" backgroundColor="background2" />
   </screen>
   <screen name="StopCam" position="0,0" size="1280,720" title="Stopping Softcam" flags="wfNoBorder" backgroundColor="transparent">
@@ -7589,7 +7589,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/iconnovum.png" transparent="1" alphatest="blend" />
-    <widget name="connect" position="500,300" size="64,64" zPosition="2" pixmaps="myNOVUM_HD2/busy/busy1.png,myNOVUM_HD2/busy/busy2.png,myNOVUM_HD2/busy/busy3.png,myNOVUM_HD2/busy/busy4.png,myNOVUM_HD2/busy/busy5.png,myNOVUM_HD2/busy/busy6.png,myNOVUM_HD2/busy/busy7.png,myNOVUM_HD2/busy/busy8.png,myNOVUM_HD2/busy/busy9.png,myNOVUM_HD2/busy/busy9.png,myNOVUM_HD2/busy/busy10.png,myNOVUM_HD2/busy/busy11.png,myNOVUM_HD2/busy/busy12.png,myNOVUM_HD2/busy/busy13.png,myNOVUM_HD2/busy/busy14.png,myNOVUM_HD2/busy/busy15.png,myNOVUM_HD2/busy/busy17.png,myNOVUM_HD2/busy/busy18.png,myNOVUM_HD2/busy/busy19.png,myNOVUM_HD2/busy/busy20.png,myNOVUM_HD2/busy/busy21.png,myNOVUM_HD2/busy/busy22.png,myNOVUM_HD2/busy/busy23.png,myNOVUM_HD2/busy/busy24.png" transparent="1" alphatest="blend" backgroundColor="background2" />
+    <widget name="connect" position="500,300" size="64,64" zPosition="2" pixmaps="skin_default/busy/busy1.png,skin_default/busy/busy2.png,skin_default/busy/busy3.png,skin_default/busy/busy4.png,skin_default/busy/busy5.png,skin_default/busy/busy6.png,skin_default/busy/busy7.png,skin_default/busy/busy8.png,skin_default/busy/busy9.png,skin_default/busy/busy9.png,skin_default/busy/busy10.png,skin_default/busy/busy11.png,skin_default/busy/busy12.png,skin_default/busy/busy13.png,skin_default/busy/busy14.png,skin_default/busy/busy15.png,skin_default/busy/busy17.png,skin_default/busy/busy18.png,skin_default/busy/busy19.png,skin_default/busy/busy20.png,skin_default/busy/busy21.png,skin_default/busy/busy22.png,skin_default/busy/busy23.png,skin_default/busy/busy24.png" transparent="1" alphatest="blend" backgroundColor="background2" />
     <widget name="lab1" position="260,160" halign="center" size="552,60" zPosition="1" font="Regular;20" valign="top" transparent="1" backgroundColor="background2" />
   </screen>
   <screen name="BackupManager" position="0,0" size="1280,720" title="Image Manager" flags="wfNoBorder" backgroundColor="transparent">
@@ -7967,27 +7967,27 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="Adapter" position="400,160" size="240,26" zPosition="1" font="Regular;16" halign="center" foregroundColors="#cccccc,#a72c25,#5d984d" backgroundColor="background2" transparent="1" />
     <widget name="AdapterInfo" pixmaps="myNOVUM_HD2/buttons/blue.png" position="690,160" zPosition="1" size="24,24" transparent="1" alphatest="blend" backgroundColor="background2" />
     <widget name="AdapterInfo_Text" position="724,160" size="200,26" zPosition="2" font="Regular;16" backgroundColor="background2" transparent="1" foregroundColors="#18000000,#cccccc,#446bb7" />
-    <widget name="AdapterInfo_OK" pixmap="myNOVUM_HD2/common_icons/lock_on.png" position="650,160" size="24,24" alphatest="blend" zPosition="2" />
+    <widget name="AdapterInfo_OK" pixmap="myNOVUM_HD2/icons/lock_on.png" position="650,160" size="24,24" alphatest="blend" zPosition="2" />
     <widget name="Networktext" position="140,232" size="200,26" zPosition="1" font="Regular;16" backgroundColor="background2" foregroundColors="#cccccc,#5d984d" transparent="1" />
     <widget name="Network" position="400,232" size="240,26" zPosition="1" font="Regular;16" halign="center" foregroundColors="#cccccc,#a72c25,#5d984d" backgroundColor="background2" transparent="1" />
     <widget name="NetworkInfo" pixmaps="myNOVUM_HD2/buttons/blue.png" position="690,232" zPosition="1" size="24,24" transparent="1" alphatest="blend" backgroundColor="background2" />
     <widget name="NetworkInfo_Text" position="724,232" size="200,26" zPosition="2" font="Regular;16" backgroundColor="background2" transparent="1" foregroundColors="#18000000,#cccccc,#446bb7" />
-    <widget name="NetworkInfo_Check" pixmaps="myNOVUM_HD2/common_icons/lock_on.png,myNOVUM_HD2/common_icons/lock_error.png" position="650,232" size="24,24" alphatest="blend" zPosition="2" backgroundColor="background2" transparent="1" />
+    <widget name="NetworkInfo_Check" pixmaps="myNOVUM_HD2/icons/lock_on.png,myNOVUM_HD2/icons/lock_error.png" position="650,232" size="24,24" alphatest="blend" zPosition="2" backgroundColor="background2" transparent="1" />
     <widget name="Dhcptext" position="140,304" size="200,26" zPosition="1" font="Regular;16" backgroundColor="background2" foregroundColors="#cccccc,#5d984d" transparent="1" />
     <widget name="Dhcp" position="400,304" size="240,26" zPosition="1" font="Regular;16" halign="center" foregroundColors="#cccccc,#a72c25,#5d984d" backgroundColor="background2" transparent="1" />
     <widget name="DhcpInfo" pixmaps="myNOVUM_HD2/buttons/blue.png" position="690,304" zPosition="1" size="24,24" transparent="1" alphatest="blend" backgroundColor="background2" />
     <widget name="DhcpInfo_Text" position="724,304" size="200,26" zPosition="2" font="Regular;16" backgroundColor="background2" transparent="1" foregroundColors="#18000000,#cccccc,#446bb7" />
-    <widget name="DhcpInfo_Check" pixmaps="myNOVUM_HD2/common_icons/lock_on.png,myNOVUM_HD2/common_icons/lock_error.png" position="650,304" size="24,24" alphatest="blend" zPosition="2" backgroundColor="background2" transparent="1" />
+    <widget name="DhcpInfo_Check" pixmaps="myNOVUM_HD2/icons/lock_on.png,myNOVUM_HD2/icons/lock_error.png" position="650,304" size="24,24" alphatest="blend" zPosition="2" backgroundColor="background2" transparent="1" />
     <widget name="IPtext" position="140,376" size="200,26" zPosition="1" font="Regular;16" backgroundColor="background2" foregroundColors="#cccccc,#5d984d" transparent="1" />
     <widget name="IP" position="400,376" size="240,26" zPosition="1" font="Regular;16" halign="center" foregroundColors="#cccccc,#a72c25,#5d984d" backgroundColor="background2" transparent="1" />
     <widget name="IPInfo" pixmaps="myNOVUM_HD2/buttons/blue.png" position="690,376" zPosition="1" size="24,24" transparent="1" alphatest="blend" backgroundColor="background2" />
     <widget name="IPInfo_Text" position="724,376" size="200,26" zPosition="2" font="Regular;16" backgroundColor="background2" transparent="1" foregroundColors="#18000000,#cccccc,#446bb7" />
-    <widget name="IPInfo_Check" pixmaps="myNOVUM_HD2/common_icons/lock_on.png,myNOVUM_HD2/common_icons/lock_error.png" position="650,376" size="24,24" alphatest="blend" zPosition="2" transparent="1" backgroundColor="background2" />
+    <widget name="IPInfo_Check" pixmaps="myNOVUM_HD2/icons/lock_on.png,myNOVUM_HD2/icons/lock_error.png" position="650,376" size="24,24" alphatest="blend" zPosition="2" transparent="1" backgroundColor="background2" />
     <widget name="DNStext" position="140,448" size="200,26" zPosition="1" font="Regular;16" backgroundColor="background2" foregroundColors="#cccccc,#5d984d" transparent="1" />
     <widget name="DNS" position="400,448" size="240,26" zPosition="1" font="Regular;16" halign="center" foregroundColors="#cccccc,#a72c25,#5d984d" backgroundColor="background2" transparent="1" />
     <widget name="DNSInfo" pixmaps="myNOVUM_HD2/buttons/blue.png" position="690,448" zPosition="1" size="24,24" transparent="1" alphatest="blend" backgroundColor="background2" />
     <widget name="DNSInfo_Text" position="724,448" size="200,26" zPosition="2" font="Regular;16" backgroundColor="background2" transparent="1" foregroundColors="#18000000,#cccccc,#446bb7" />
-    <widget name="DNSInfo_Check" pixmaps="myNOVUM_HD2/common_icons/lock_on.png,myNOVUM_HD2/common_icons/lock_error.png" position="650,448" size="24,24" alphatest="blend" zPosition="2" backgroundColor="background2" transparent="1" />
+    <widget name="DNSInfo_Check" pixmaps="myNOVUM_HD2/icons/lock_on.png,myNOVUM_HD2/icons/lock_error.png" position="650,448" size="24,24" alphatest="blend" zPosition="2" backgroundColor="background2" transparent="1" />
     <widget name="EditSettings_Text" position="1080,674" size="200,20" zPosition="1" font="Regular;16" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" foregroundColor="menu-buttons-frgrnd" />
     <widget name="InfoText" position="140,160" size="800,430" zPosition="25" backgroundColor="background2" font="Regular; 20" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/red.png" position="1044,600" size="24,24" alphatest="blend" transparent="1" />
@@ -9409,10 +9409,10 @@ self.instance.move(ePoint(0,0))
     <widget name="key_green" position="1080,624" size="200,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
     <widget name="key_yellow" position="1080,650" size="200,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
     <widget name="key_blue" position="1080,674" size="200,24" zPosition="1" font="Regular;16" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
-    <ePixmap pixmap="myNOVUM_HD2/skin_default/buttons/key_0.png" zPosition="2" position="139,574" size="34,24" alphatest="blend" />
-    <ePixmap pixmap="myNOVUM_HD2/skin_default/buttons/key_1.png" zPosition="2" position="140,602" size="34,24" alphatest="blend" />
-    <ePixmap pixmap="myNOVUM_HD2/skin_default/buttons/key_2.png" zPosition="2" position="140,632" size="34,24" alphatest="blend" />
-    <ePixmap pixmap="myNOVUM_HD2/skin_default/buttons/key_3.png" zPosition="2" position="140,662" size="34,24" alphatest="blend" />
+    <ePixmap pixmap="myNOVUM_HD2/buttons/key_0.png" zPosition="2" position="139,574" size="34,24" alphatest="blend" />
+    <ePixmap pixmap="myNOVUM_HD2/buttons/key_1.png" zPosition="2" position="140,602" size="34,24" alphatest="blend" />
+    <ePixmap pixmap="myNOVUM_HD2/buttons/key_2.png" zPosition="2" position="140,632" size="34,24" alphatest="blend" />
+    <ePixmap pixmap="myNOVUM_HD2/buttons/key_3.png" zPosition="2" position="140,662" size="34,24" alphatest="blend" />
     <widget name="key_0" backgroundColor="background2" zPosition="2" position="176,573" size="200,26" font="Regular;17" halign="left" valign="center" transparent="1" />
     <widget name="key_1" backgroundColor="background2" position="176,603" zPosition="2" size="200,26" font="Regular;17" halign="left" valign="center" transparent="1" />
     <widget name="key_2" backgroundColor="background2" position="176,633" zPosition="2" size="200,26" font="Regular;17" halign="left" valign="center" transparent="1" />
@@ -11548,7 +11548,7 @@ self.instance.move(ePoint(0,0))
     <widget source="lab3" render="Label" position="210,300" size="650,40" font="Regular;20" backgroundColor="background2" transparent="1" zPosition="1" />
     <eLabel text="OPEN SOURCE" position="210,210" size="200,30" font="Regular;22" backgroundColor="background2" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="210,350" size="650,320" font="Regular;17" backgroundColor="background" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
-    <eLabel text="Skin myNOVUM_HD2 vs.18.5 by Nashu" position="210,680" size="470,30" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="Regular;20" halign="left" />
+    <eLabel text="Skin myNOVUM_HD2 vs.18.6 by Nashu" position="210,680" size="470,30" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="Regular;20" halign="left" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
@@ -11966,7 +11966,7 @@ self.instance.move(ePoint(0,0))
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/iconnovum.png" transparent="1" alphatest="blend" />
-    <widget name="connect" position="500,300" size="64,64" zPosition="2" pixmaps="myNOVUM_HD2/busy/busy1.png,myNOVUM_HD2/busy/busy2.png,myNOVUM_HD2/busy/busy3.png,myNOVUM_HD2/busy/busy4.png,myNOVUM_HD2/busy/busy5.png,myNOVUM_HD2/busy/busy6.png,myNOVUM_HD2/busy/busy7.png,myNOVUM_HD2/busy/busy8.png,myNOVUM_HD2/busy/busy9.png,myNOVUM_HD2/busy/busy9.png,myNOVUM_HD2/busy/busy10.png,myNOVUM_HD2/busy/busy11.png,myNOVUM_HD2/busy/busy12.png,myNOVUM_HD2/busy/busy13.png,myNOVUM_HD2/busy/busy14.png,myNOVUM_HD2/busy/busy15.png,myNOVUM_HD2/busy/busy17.png,myNOVUM_HD2/busy/busy18.png,myNOVUM_HD2/busy/busy19.png,myNOVUM_HD2/busy/busy20.png,myNOVUM_HD2/busy/busy21.png,myNOVUM_HD2/busy/busy22.png,myNOVUM_HD2/busy/busy23.png,myNOVUM_HD2/busy/busy24.png" transparent="1" alphatest="blend" backgroundColor="background2" />
+    <widget name="connect" position="500,300" size="64,64" zPosition="2" pixmaps="skin_default/busy/busy1.png,skin_default/busy/busy2.png,skin_default/busy/busy3.png,skin_default/busy/busy4.png,skin_default/busy/busy5.png,skin_default/busy/busy6.png,skin_default/busy/busy7.png,skin_default/busy/busy8.png,skin_default/busy/busy9.png,skin_default/busy/busy9.png,skin_default/busy/busy10.png,skin_default/busy/busy11.png,skin_default/busy/busy12.png,skin_default/busy/busy13.png,skin_default/busy/busy14.png,skin_default/busy/busy15.png,skin_default/busy/busy17.png,skin_default/busy/busy18.png,skin_default/busy/busy19.png,skin_default/busy/busy20.png,skin_default/busy/busy21.png,skin_default/busy/busy22.png,skin_default/busy/busy23.png,skin_default/busy/busy24.png" transparent="1" alphatest="blend" backgroundColor="background2" />
     <widget name="lab1" position="260,160" halign="center" size="552,60" zPosition="1" font="Regular;20" valign="top" transparent="1" backgroundColor="background2" />
   </screen>
   <screen name="VIXSoftcamMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -11999,7 +11999,7 @@ self.instance.move(ePoint(0,0))
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/iconnovum.png" transparent="1" alphatest="blend" />
-    <widget name="connect" position="500,300" size="64,64" zPosition="2" pixmaps="myNOVUM_HD2/busy/busy1.png,myNOVUM_HD2/busy/busy2.png,myNOVUM_HD2/busy/busy3.png,myNOVUM_HD2/busy/busy4.png,myNOVUM_HD2/busy/busy5.png,myNOVUM_HD2/busy/busy6.png,myNOVUM_HD2/busy/busy7.png,myNOVUM_HD2/busy/busy8.png,myNOVUM_HD2/busy/busy9.png,myNOVUM_HD2/busy/busy9.png,myNOVUM_HD2/busy/busy10.png,myNOVUM_HD2/busy/busy11.png,myNOVUM_HD2/busy/busy12.png,myNOVUM_HD2/busy/busy13.png,myNOVUM_HD2/busy/busy14.png,myNOVUM_HD2/busy/busy15.png,myNOVUM_HD2/busy/busy17.png,myNOVUM_HD2/busy/busy18.png,myNOVUM_HD2/busy/busy19.png,myNOVUM_HD2/busy/busy20.png,myNOVUM_HD2/busy/busy21.png,myNOVUM_HD2/busy/busy22.png,myNOVUM_HD2/busy/busy23.png,myNOVUM_HD2/busy/busy24.png" transparent="1" alphatest="blend" backgroundColor="background2" />
+    <widget name="connect" position="500,300" size="64,64" zPosition="2" pixmaps="skin_default/busy/busy1.png,skin_default/busy/busy2.png,skin_default/busy/busy3.png,skin_default/busy/busy4.png,skin_default/busy/busy5.png,skin_default/busy/busy6.png,skin_default/busy/busy7.png,skin_default/busy/busy8.png,skin_default/busy/busy9.png,skin_default/busy/busy9.png,skin_default/busy/busy10.png,skin_default/busy/busy11.png,skin_default/busy/busy12.png,skin_default/busy/busy13.png,skin_default/busy/busy14.png,skin_default/busy/busy15.png,skin_default/busy/busy17.png,skin_default/busy/busy18.png,skin_default/busy/busy19.png,skin_default/busy/busy20.png,skin_default/busy/busy21.png,skin_default/busy/busy22.png,skin_default/busy/busy23.png,skin_default/busy/busy24.png" transparent="1" alphatest="blend" backgroundColor="background2" />
     <widget name="lab1" position="260,160" halign="center" size="552,60" zPosition="1" font="Regular;20" valign="top" transparent="1" backgroundColor="background2" />
   </screen>
   <screen name="VIXStopCam" position="0,0" size="1280,720" title="Stopping Softcam" flags="wfNoBorder" backgroundColor="transparent">
@@ -12014,7 +12014,7 @@ self.instance.move(ePoint(0,0))
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/iconnovum.png" transparent="1" alphatest="blend" />
-    <widget name="connect" position="500,300" size="64,64" zPosition="2" pixmaps="myNOVUM_HD2/busy/busy1.png,myNOVUM_HD2/busy/busy2.png,myNOVUM_HD2/busy/busy3.png,myNOVUM_HD2/busy/busy4.png,myNOVUM_HD2/busy/busy5.png,myNOVUM_HD2/busy/busy6.png,myNOVUM_HD2/busy/busy7.png,myNOVUM_HD2/busy/busy8.png,myNOVUM_HD2/busy/busy9.png,myNOVUM_HD2/busy/busy9.png,myNOVUM_HD2/busy/busy10.png,myNOVUM_HD2/busy/busy11.png,myNOVUM_HD2/busy/busy12.png,myNOVUM_HD2/busy/busy13.png,myNOVUM_HD2/busy/busy14.png,myNOVUM_HD2/busy/busy15.png,myNOVUM_HD2/busy/busy17.png,myNOVUM_HD2/busy/busy18.png,myNOVUM_HD2/busy/busy19.png,myNOVUM_HD2/busy/busy20.png,myNOVUM_HD2/busy/busy21.png,myNOVUM_HD2/busy/busy22.png,myNOVUM_HD2/busy/busy23.png,myNOVUM_HD2/busy/busy24.png" transparent="1" alphatest="blend" backgroundColor="background2" />
+    <widget name="connect" position="500,300" size="64,64" zPosition="2" pixmaps="skin_default/busy/busy1.png,skin_default/busy/busy2.png,skin_default/busy/busy3.png,skin_default/busy/busy4.png,skin_default/busy/busy5.png,skin_default/busy/busy6.png,skin_default/busy/busy7.png,skin_default/busy/busy8.png,skin_default/busy/busy9.png,skin_default/busy/busy9.png,skin_default/busy/busy10.png,skin_default/busy/busy11.png,skin_default/busy/busy12.png,skin_default/busy/busy13.png,skin_default/busy/busy14.png,skin_default/busy/busy15.png,skin_default/busy/busy17.png,skin_default/busy/busy18.png,skin_default/busy/busy19.png,skin_default/busy/busy20.png,skin_default/busy/busy21.png,skin_default/busy/busy22.png,skin_default/busy/busy23.png,skin_default/busy/busy24.png" transparent="1" alphatest="blend" backgroundColor="background2" />
     <widget name="lab1" position="260,160" halign="center" size="552,60" zPosition="1" font="Regular;20" valign="top" transparent="1" backgroundColor="background2" />
   </screen>
   <screen name="VIXBackupManager" position="0,0" size="1280,720" title="Image Manager" flags="wfNoBorder" backgroundColor="transparent">
@@ -12737,7 +12737,7 @@ self.instance.move(ePoint(0,0))
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/iconnovum.png" transparent="1" alphatest="blend" />
-    <widget name="messagepic" pixmaps="myNOVUM_HD2/common_icons/input_info.png,myNOVUM_HD2/common_icons/input_error.png,myNOVUM_HD2/common_icons/input_question.png" position="140,160" size="38,38" transparent="1" alphatest="blend" />
+    <widget name="messagepic" pixmaps="myNOVUM_HD2/icons/input_info.png,myNOVUM_HD2/icons/input_error.png,myNOVUM_HD2/icons/input_question.png" position="140,160" size="38,38" transparent="1" alphatest="blend" />
     <widget name="messagetype" position="193,160" size="746,35" font="Regular;20" halign="left" valign="center" transparent="1" foregroundColor="lightgrey" backgroundColor="background2" />
     <widget name="messagetext" position="140,213" size="800,466" font="Regular;20" foregroundColor="lightgrey" backgroundColor="background2" halign="center" valign="top" transparent="1" />
   </screen>
@@ -15730,7 +15730,7 @@ self.instance.move(ePoint(0,0))
     <widget name="timeline3" position="20,160" zPosition="3" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline4" position="20,160" zPosition="3" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline5" position="20,160" zPosition="3" size="0,0" pixmap="skin_default/timeline.png" />
-    <widget name="timeline_now" position="20,410" zPosition="4" size="1,300" pixmap="myNOVUM_HD2/timeline-now.png" alphatest="blend" />
+    <widget name="timeline_now" position="20,410" zPosition="4" size="1,300" pixmap="myNOVUM_HD2/epg/timeline-now.png" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/menu.png" position="1044,575" size="69,24" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/red.png" position="1044,600" size="24,24" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="1044,624" size="24,24" alphatest="blend" transparent="1" />
@@ -15785,7 +15785,7 @@ self.instance.move(ePoint(0,0))
     <widget name="timeline3" position="20,160" zPosition="3" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline4" position="20,160" zPosition="3" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline5" position="20,160" zPosition="3" size="0,0" pixmap="skin_default/timeline.png" />
-    <widget name="timeline_now" position="20,410" zPosition="4" size="1,300" pixmap="myNOVUM_HD2/timeline-now.png" alphatest="blend" />
+    <widget name="timeline_now" position="20,410" zPosition="4" size="1,300" pixmap="myNOVUM_HD2/epg/timeline-now.png" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/menu.png" position="1044,575" size="69,24" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/red.png" position="1044,600" size="24,24" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="1044,624" size="24,24" alphatest="blend" transparent="1" />
@@ -15927,7 +15927,7 @@ self.instance.move(ePoint(0,0))
     <widget name="timeline3" position="20,160" zPosition="3" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline4" position="20,160" zPosition="3" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline5" position="20,160" zPosition="3" size="0,0" pixmap="skin_default/timeline.png" />
-    <widget name="timeline_now" position="20,410" zPosition="4" size="1,300" pixmap="myNOVUM_HD2/timeline-now.png" alphatest="blend" />
+    <widget name="timeline_now" position="20,410" zPosition="4" size="1,300" pixmap="myNOVUM_HD2/epg/timeline-now.png" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/menu.png" position="1044,575" size="69,24" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/red.png" position="1044,600" size="24,24" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="1044,624" size="24,24" alphatest="blend" transparent="1" />
@@ -15982,7 +15982,7 @@ self.instance.move(ePoint(0,0))
     <widget name="timeline3" position="20,160" zPosition="3" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline4" position="20,160" zPosition="3" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline5" position="20,160" zPosition="3" size="0,0" pixmap="skin_default/timeline.png" />
-    <widget name="timeline_now" position="20,410" zPosition="4" size="1,300" pixmap="myNOVUM_HD2/timeline-now.png" alphatest="blend" />
+    <widget name="timeline_now" position="20,410" zPosition="4" size="1,300" pixmap="myNOVUM_HD2/epg/timeline-now.png" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/menu.png" position="1044,575" size="69,24" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/red.png" position="1044,600" size="24,24" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="1044,624" size="24,24" alphatest="blend" transparent="1" />
@@ -17802,22 +17802,22 @@ self.instance.move(ePoint(0,0))
   </screen>
   <!-- EMC -->
   <screen name="EMCSelection" position="0,0" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap pixmap="myNOVUM_HD2/images/slider/slider_H480.png" position="927,140" size="10,480" zPosition="1" alphatest="blend" />
     <eLabel position="0,0" size="1280,94" backgroundColor="un181A1C" zPosition="-2" />
     <eLabel position="0,94" size="1280,1" backgroundColor="background80" zPosition="-1" />
     <eLabel position="0,94" size="1280,25" backgroundColor="background90" zPosition="-10" />
-    <eLabel position="341,140" size="599,1" backgroundColor="transpWhite3" zPosition="4" />    
+    <eLabel position="341,140" size="599,1" backgroundColor="transpWhite3" zPosition="4" />
     <eLabel position="939,118" size="1,602" backgroundColor="background80" zPosition="4" />
-    <eLabel position="341,118" size="1,602" backgroundColor="background80" zPosition="4" />    
+    <eLabel position="341,118" size="1,602" backgroundColor="background80" zPosition="4" />
     <eLabel position="0,118" size="1280,602" zPosition="-20" backgroundColor="background" />
     <eLabel position="0,620" size="1280,1" backgroundColor="transpWhite3" zPosition="4" />
     <eLabel position="940,620" size="340,1" backgroundColor="black" zPosition="4" />
+    <eLabel position="0,118" size="340,602" zPosition="-10" backgroundColor="background20" />
+    <eLabel position="940,118" size="340,602" backgroundColor="background20" zPosition="-10" />
     <eLabel text="my Enhanced Movie Center" position="63,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
-    <eLabel position="0,118" size="340,602" zPosition="-10" backgroundColor="un102e2e2e" />
-    <eLabel position="940,118" size="340,602" backgroundColor="un102e2e2e" zPosition="-10" />
     <widget source="global.CurrentTime" render="Label" position="1040,52" size="240,38" font="scoutcondWide;24" foregroundColor="transpWhite" backgroundColor="un181A1C" halign="center" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
+    <ePixmap pixmap="myNOVUM_HD2/images/slider/slider_H480.png" position="927,140" size="10,480" zPosition="1" alphatest="blend" />
     <widget name="list" position="347,140" size="590,480" itemHeight="30" CoolFont="Regular;20" CoolSelectFont="Regular;20" CoolDateFont="Regular;15" CoolMoviePiconPos="40" CoolMoviePiconSize="320" CoolMoviePos="40" CoolMovieSize="320" CoolFolderSize="320" CoolTitleColor="1" CoolDatePos="470" CoolDateHPos="5" CoolDateWidth="110" CoolDateColor="1" CoolHighlightColor="0" CoolProgressPos="370" CoolBarPos="370" CoolBarHPos="10" CoolBarSize="25,10" CoolBarSizeSa="40,10" CoolPiconPos="420" CoolPiconHPos="3" CoolPiconWidth="40" CoolPiconHeight="23" selectionPixmap="myNOVUM_HD2/images/FocusBar.png" backgroundPixmap="myNOVUM_HD2/images/sel_bg2.png" DefaultColor="white" UnwatchedColor="unFFFFF4" WatchingColor="light_blue1" FinishedColor="un32F902" RecordingColor="unff0000" BackColorSel="myblue1transp1" backgroundColor="background2" foregroundColorSelected="black" scrollbarMode="showOnDemand" transparent="1" Wrap="1" />
     <widget source="session.RecordState" render="Pixmap" pixmap="myNOVUM_HD2/icons/ico_rec_on1.png" position="816,53" size="50,24" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
@@ -19186,9 +19186,9 @@ self.instance.move(ePoint(0,0))
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/iconnovum.png" transparent="1" alphatest="blend" />
     <widget name="list" position="240,533" size="600,150" font="Regular;20" itemHeight="30" backgroundColor="background2" scrollbarMode="showOnDemand" zPosition="0" transparent="1" />
-    <widget name="ErrorPixmap" pixmap="myNOVUM_HD2/common_icons/input_error.png" position="184,160" zPosition="3" size="48,48" transparent="1" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="myNOVUM_HD2/common_icons/input_question.png" position="184,160" zPosition="3" size="48,48" transparent="1" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="myNOVUM_HD2/common_icons/input_info.png" position="184,160" zPosition="3" size="48,48" transparent="1" alphatest="blend" />
+    <widget name="ErrorPixmap" pixmap="myNOVUM_HD2/icons/input_error.png" position="184,160" zPosition="3" size="48,48" transparent="1" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="myNOVUM_HD2/icons/input_question.png" position="184,160" zPosition="3" size="48,48" transparent="1" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="myNOVUM_HD2/icons/input_info.png" position="184,160" zPosition="3" size="48,48" transparent="1" alphatest="blend" />
     <widget name="text" position="240,160" size="600,333" font="Regular;17" foregroundColor="lightgrey" zPosition="9" halign="left" valign="center" backgroundColor="background2" transparent="1" />
   </screen>
   <!-- Firmware Upgrade -->
@@ -30369,7 +30369,7 @@ self.instance.move(ePoint(0,0))
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/iconnovum.png" transparent="1" alphatest="blend" />
     <eLabel position="150,160" zPosition="1" size="670,290" backgroundColor="background" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2/menu/arrow-dn.png" position="474,430" zPosition="2" size="24,20" alphatest="blend" />
+    <ePixmap pixmap="myNOVUM_HD2/buttons/down.png" position="470,430" zPosition="2" size="30,30" alphatest="blend" />
     <widget name="picture" position="140,180" zPosition="2" size="690,224" backgroundColor="background2" transparent="1" />
   </screen>
   <screen name="UnwetterMain" position="0,0" size="1280,720" title="Unwetterzentrale" backgroundColor="transparent" flags="wfNoBorder">
@@ -30568,8 +30568,8 @@ self.instance.move(ePoint(0,0))
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/player_icon.png" transparent="1" alphatest="blend" />
     <eLabel text="VLC Video Player" position="70,44" size="720,38" font="Regular;29" backgroundColor="background2" transparent="1" halign="left" foregroundColor="transpWhite" />
     <eLabel text="Vlc-Media file overview" position="140,160" size="410,30" font="Regular;20" halign="left" backgroundColor="background2" transparent="1" foregroundColor="transpWhite" />
-    <widget name="filelist_button_sel" pixmap="myNOVUM_HD2/epg_now.png" position="140,206" zPosition="3" size="524,34" alphatest="blend" />
-    <widget name="playlist_button_sel" pixmap="myNOVUM_HD2/epg_next.png" position="140,206" zPosition="3" size="524,34" alphatest="blend" />
+    <widget name="filelist_button_sel" pixmap="myNOVUM_HD2/epg/epg_now.png" position="140,206" zPosition="3" size="524,34" alphatest="blend" />
+    <widget name="playlist_button_sel" pixmap="myNOVUM_HD2/epg/epg_next.png" position="140,206" zPosition="3" size="524,34" alphatest="blend" />
     <widget name="filelist_text" position="142,210" zPosition="4" size="170,34" font="Regular;16" halign="center" backgroundColor="background2" transparent="1" />
     <widget name="playlist_text" position="317,210" zPosition="4" size="170,34" font="Regular;16" halign="center" backgroundColor="background2" transparent="1" />
     <widget name="filelist" position="140,253" size="800,360" font="Regular;20" itemHeight="30" zPosition="3" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="0" />
