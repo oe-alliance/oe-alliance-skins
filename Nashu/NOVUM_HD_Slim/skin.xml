@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: NOVUM_HD_Slim vs.18.6 by Nashu  -->
+  <!--	Skin: NOVUM_HD_Slim vs.18.7 by Nashu  -->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
   <!--	Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -11393,12 +11393,12 @@ self.instance.move(ePoint(0,0))
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="NOVUM_HD_Slim/menu/iconnovum.png" transparent="1" alphatest="blend" />
-    <widget source="lab1" render="Label" position="210,160" size="650,40" font="Regular;26" backgroundColor="background2" transparent="1" zPosition="2" halign="left" />
-    <widget source="lab2" render="Label" position="210,250" size="650,40" font="Regular;20" backgroundColor="background2" transparent="1" zPosition="2" />
-    <widget source="lab3" render="Label" position="210,300" size="650,40" font="Regular;20" backgroundColor="background2" transparent="1" zPosition="1" />
-    <eLabel text="OPEN SOURCE" position="210,210" size="200,30" font="Regular;22" backgroundColor="background2" transparent="1" zPosition="1" />
-    <widget name="AboutScrollLabel" position="210,350" size="650,320" font="Regular;17" backgroundColor="background" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
-    <eLabel text="Skin NOVUM_HD_Slim vs.18.6 by Nashu" position="210,680" size="470,30" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="Regular;20" halign="left" />
+    <widget source="lab1" render="Label" position="140,160" size="800,40" font="Regular;26" backgroundColor="background2" transparent="1" zPosition="2" halign="left" />
+    <widget source="lab2" render="Label" position="140,250" size="800,40" font="Regular;20" backgroundColor="background2" transparent="1" zPosition="2" />
+    <widget source="lab3" render="Label" position="140,300" size="800,40" font="Regular;20" backgroundColor="background2" transparent="1" zPosition="1" />
+    <eLabel text="OPEN SOURCE" position="140,210" size="300,30" font="Regular;22" backgroundColor="background2" transparent="1" zPosition="1" />
+    <widget name="AboutScrollLabel" position="140,350" size="800,320" font="Regular;17" backgroundColor="background" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
+    <eLabel text="Skin NOVUM_HD_Slim vs.18.7 by Nashu" position="140,680" size="800,30" backgroundColor="background2" foregroundColor="white" transparent="1" font="Regular;20" halign="left" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="NOVUM_HD_Slim/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
@@ -11412,9 +11412,9 @@ self.instance.move(ePoint(0,0))
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="NOVUM_HD_Slim/menu/iconnovum.png" transparent="1" alphatest="blend" />
-    <widget source="lab1" render="Label" position="210,160" size="650,34" font="Regular;20" transparent="1" zPosition="2" backgroundColor="background" halign="left" />
-    <widget source="lab2" render="Label" position="210,210" size="650,30" font="Regular;20" transparent="1" zPosition="2" backgroundColor="background" halign="left" />
-    <widget name="AboutScrollLabel" position="210,260" size="650,400" font="Regular;20" transparent="1" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="background2" halign="left" />
+    <widget source="lab1" render="Label" position="140,160" size="800,34" font="Regular;20" transparent="1" zPosition="2" backgroundColor="background" halign="left" />
+    <widget source="lab2" render="Label" position="140,210" size="800,30" font="Regular;20" transparent="1" zPosition="2" backgroundColor="background" halign="left" />
+    <widget name="AboutScrollLabel" position="140,260" size="800,400" font="Regular;20" transparent="1" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="background2" halign="left" />
   </screen>
   <screen name="SystemNetworkInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="NOVUM_HD_Slim/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
@@ -11428,23 +11428,23 @@ self.instance.move(ePoint(0,0))
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="NOVUM_HD_Slim/menu/iconnovum.png" transparent="1" alphatest="blend" />
-    <widget name="AboutScrollLabel" position="210,160" size="666,186" itemHeight="30" font="Regular;20" transparent="1" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="background" halign="left" />
-    <widget source="LabelBSSID" render="Label" position="210,382" size="200,30" valign="left" font="Regular;20" transparent="1" backgroundColor="background2" />
-    <widget source="LabelESSID" render="Label" position="210,418" size="200,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
-    <widget source="LabelQuality" render="Label" position="210,452" size="200,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
-    <widget source="LabelSignal" render="Label" position="210,488" size="200,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
-    <widget source="LabelBitrate" render="Label" position="210,522" size="200,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
-    <widget source="LabelEnc" render="Label" position="210,558" size="200,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
-    <widget source="BSSID" render="Label" position="440,382" size="310,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
-    <widget source="ESSID" render="Label" position="440,418" size="310,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
-    <widget source="quality" render="Label" position="440,452" size="310,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
-    <widget source="signal" render="Label" position="440,488" size="310,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
-    <widget source="bitrate" render="Label" position="440,522" size="310,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
-    <widget source="enc" render="Label" position="440,558" size="310,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
-    <widget source="IFtext" render="Label" position="210,592" size="154,30" zPosition="10" font="Regular;20" halign="left" transparent="1" backgroundColor="background2" />
-    <widget source="IF" render="Label" position="370,592" size="394,30" zPosition="10" font="Regular;20" halign="left" transparent="1" backgroundColor="background2" />
-    <widget source="Statustext" render="Label" position="210,624" size="114,30" zPosition="10" font="Regular;20" halign="left" transparent="1" backgroundColor="background2" />
-    <widget name="statuspic" pixmaps="NOVUM_HD_Slim/buttons/green.png,NOVUM_HD_Slim/buttons/button_off.png" position="330,624" zPosition="10" size="24,24" transparent="1" alphatest="blend" backgroundColor="background2" />
+    <widget name="AboutScrollLabel" position="140,160" size="800,186" itemHeight="30" font="Regular;20" transparent="1" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="background" halign="left" />
+    <widget source="LabelBSSID" render="Label" position="140,382" size="210,30" valign="left" font="Regular;20" transparent="1" backgroundColor="background2" />
+    <widget source="LabelESSID" render="Label" position="140,418" size="210,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
+    <widget source="LabelQuality" render="Label" position="140,452" size="210,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
+    <widget source="LabelSignal" render="Label" position="140,488" size="210,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
+    <widget source="LabelBitrate" render="Label" position="140,522" size="210,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
+    <widget source="LabelEnc" render="Label" position="140,558" size="210,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
+    <widget source="BSSID" render="Label" position="360,382" size="330,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
+    <widget source="ESSID" render="Label" position="360,418" size="330,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
+    <widget source="quality" render="Label" position="360,452" size="330,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
+    <widget source="signal" render="Label" position="360,488" size="330,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
+    <widget source="bitrate" render="Label" position="360,522" size="330,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
+    <widget source="enc" render="Label" position="360,558" size="330,30" valign="center" font="Regular;20" transparent="1" backgroundColor="background2" />
+    <widget source="IFtext" render="Label" position="140,592" size="154,30" zPosition="10" font="Regular;20" halign="left" transparent="1" backgroundColor="background2" />
+    <widget source="IF" render="Label" position="300,592" size="394,30" zPosition="10" font="Regular;20" halign="left" transparent="1" backgroundColor="background2" />
+    <widget source="Statustext" render="Label" position="140,624" size="114,30" zPosition="10" font="Regular;20" halign="left" transparent="1" backgroundColor="background2" />
+    <widget name="statuspic" pixmaps="NOVUM_HD_Slim/buttons/green.png,NOVUM_HD_Slim/buttons/button_off.png" position="260,624" zPosition="10" size="24,24" transparent="1" alphatest="blend" backgroundColor="background2" />
   </screen>
   <screen name="SoftwareUpdateChanges" position="0,0" size="1280,720" title="SoftwareUpdateChanges" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="NOVUM_HD_Slim/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
@@ -25216,7 +25216,7 @@ self.instance.move(ePoint(0,0))
     <widget name="sizename" position="433,373" size="200,26" font="Regular;20" transparent="1" zPosition="1" halign="left" backgroundColor="background2" />
     <widget name="size" position="566,373" size="200,26" font="Regular;20" transparent="1" zPosition="1" halign="left" backgroundColor="background2" />
     <widget name="bitname" position="433,403" size="200,26" font="Regular;20" transparent="1" zPosition="1" halign="left" backgroundColor="background2" />
-    <widget position="566,403" size="200,26" font="Regular;20" transparent="1" zPosition="1" halign="left" backgroundColor="background2" />
+    <widget name="bit" position="566,403" size="200,26" font="Regular;20" transparent="1" zPosition="1" halign="left" backgroundColor="background2" />
     <widget name="spiconname" position="140,433" size="593,26" font="Regular;20" transparent="1" zPosition="1" halign="left" backgroundColor="background2" />
     <widget name="spicon" position="360,433" size="593,26" font="Regular;20" transparent="1" zPosition="1" halign="left" backgroundColor="background2" />
     <widget name="picon" position="653,160" size="300,180" zPosition="4" transparent="1" alphatest="blend" />
@@ -31169,7 +31169,7 @@ self.instance.move(ePoint(0,0))
     <widget name="playline2" position="83,506" size="230,14" pointer="skin_default/position_pointer.png:230,0" transparent="1" foregroundColor="white">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
-    <widget name="picture" position="83,153" size="230,230" backgroundColor="transparent" alphatest="blend" />
+    <widget name="picture" position="83,153" size="230,230" transparent="1" alphatest="blend" />
     <!--play files-->
     <widget name="random" position="83,463" size="50,30" alphatest="blend" backgroundColor="un102e2e2e" foregroundColor="secondFG" />
     <widget name="subdirs" position="173,463" size="50,30" alphatest="blend" backgroundColor="un102e2e2e" foregroundColor="secondFG" />
