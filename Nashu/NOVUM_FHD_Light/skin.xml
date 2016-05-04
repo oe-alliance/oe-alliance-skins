@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: NOVUM_FHD_Light vs.15.7 by Nashu  -->
+  <!--	Skin: NOVUM_FHD_Light vs.15.8 by Nashu  -->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
   <!--	Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -2047,7 +2047,6 @@
     <widget name="filelist" position="40,198" size="860,560" itemHeight="40" font="Regular;28" zPosition="0" scrollbarMode="showNever" selectionPixmap="NOVUM_FHD_Light/images/FocusBar_mpl.png" foregroundColor="un72AADC" foregroundColorSelected="white" backgroundColor="un143688" transparent="1" />
     <widget name="playlist" position="1020,198" size="860,560" itemHeight="40" font="Regular;28" zPosition="0" scrollbarMode="showNever" selectionPixmap="NOVUM_FHD_Light/images/FocusBar_mpr.png" foregroundColor="un143688" foregroundColorSelected="black" backgroundColor="un72AADC" transparent="1" />
     <widget name="currenttext" position="697,180" size="0,0" backgroundColor="background" />
-    <widget name="titletext" position="697,180" size="0,0" backgroundColor="background" />
     <widget name="coverArt" position="40,800" size="270,270" pixmap="NOVUM_FHD_Light/menu/mediaplayer_nocover.png" transparent="1" alphatest="blend" />
     <widget name="artisttext" position="1020,905" size="120,40" font="Regular; 28" valign="center" transparent="1" backgroundColor="un143688" foregroundColor="un37ADEA" halign="left" />
     <widget name="artist" position="1140,905" size="740,40" font="Regular; 28" valign="center" transparent="1" backgroundColor="un143688" foregroundColor="orange" Wrap="1" />
@@ -12179,7 +12178,7 @@ self.instance.move(ePoint(0,0))
     <widget source="lab3" render="Label" position="210,860" size="975,60" font="Regular;28" backgroundColor="background2" transparent="1" zPosition="1" />
     <eLabel text="OPEN SOURCE" position="210,240" size="1200,50" font="Regular;32" backgroundColor="background2" transparent="1" halign="right" zPosition="1" />
     <widget name="AboutScrollLabel" position="210,390" size="1200,480" font="Regular;28" transparent="1" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="background2" halign="left" />
-    <eLabel text="Skin NOVUM_FHD_Light vs.15.7 by Nashu" position="210,1020" size="1200,45" backgroundColor="background2" foregroundColor="white" transparent="1" font="Regular;28" halign="left" />
+    <eLabel text="Skin NOVUM_FHD_Light vs.15.8 by Nashu" position="210,1020" size="1200,45" backgroundColor="background2" foregroundColor="white" transparent="1" font="Regular;28" halign="left" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1920,1080" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="NOVUM_FHD_Light/images/sidebar.png" position="1560,142" size="360,938" transparent="1" zPosition="-3" />
