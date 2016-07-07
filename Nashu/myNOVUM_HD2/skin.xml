@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-  <!--	Skin: myNOVUM_HD2 vs.19.1 by Nashu  -->
+  <!--	Skin: myNOVUM_HD2 vs.19.2 by Nashu  -->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
   <!--	Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -4715,20 +4715,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="config" position="140,160" size="800,480" font="Regular;20" itemHeight="30" selectionPixmap="myNOVUM_HD2/images/FocusBar.png" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" />
   </screen>
   <screen name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent" />
-  <screen name="QuickSubtitlesConfigMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="Subtitle settings">
-    <ePixmap pixmap="myNOVUM_HD2/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
-    <eLabel position="1040,94" size="1,626" backgroundColor="background80" zPosition="-1" />
-    <eLabel position="0,0" size="1280,94" backgroundColor="un181A1C" zPosition="-2" />
-    <eLabel position="0,94" size="1280,1" backgroundColor="background80" zPosition="-1" />
-    <eLabel position="0,94" size="1040,626" backgroundColor="background70" zPosition="-10" />
-    <eLabel position="40,120" size="1000,600" backgroundColor="background" zPosition="-2" />
-    <widget source="global.CurrentTime" render="Label" position="1040,52" size="240,38" font="scoutcondWide;24" foregroundColor="transpWhite" backgroundColor="un181A1C" halign="center" transparent="1">
+  <screen name="QuickSubtitlesConfigMenu" position="0,0" size="1280,230" flags="wfNoBorder" backgroundColor="transparent" title="Subtitle settings">
+    <eLabel position="0,0" size="1280,60" backgroundColor="un181A1C" zPosition="-2" />
+    <eLabel position="0,60" size="1280,1" backgroundColor="transpWhite3" zPosition="-1" />
+    <eLabel position="0,60" size="1280,170" backgroundColor="background50" zPosition="-10" />   
+    <widget source="global.CurrentTime" render="Label" position="800,16" size="240,38" font="scoutcondWide; 22" foregroundColor="transpWhite" backgroundColor="un181A1C" halign="right" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
-    <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
-    <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/iconnovum.png" transparent="1" alphatest="blend" />
-    <widget name="config" position="140,160" size="800,330" font="Regular;20" itemHeight="30" selectionPixmap="myNOVUM_HD2/images/FocusBar.png" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" />
-    <widget name="videofps" position="140,526" size="800,106" font="Regular;20" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" halign="left" valign="center" zPosition="1" />
+    <widget source="Title" render="Label" position="240,14" size="800,38" font="Regular; 26" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />    
+    <widget name="config" position="240,70" size="800,120" font="Regular;20" itemHeight="30" selectionPixmap="myNOVUM_HD2/images/FocusBar.png" scrollbarMode="showOnDemand" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" />
+    <widget name="videofps" position="240,195" size="800,30" font="Regular; 16" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" halign="left" valign="center" zPosition="1" />
   </screen>
   <screen name="TimeDateInput" position="0,0" size="1280,720" title="Time/Date Input" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap pixmap="myNOVUM_HD2/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
@@ -12041,7 +12037,7 @@ self.instance.move(ePoint(0,0))
     <widget source="lab3" render="Label" position="140,300" size="800,40" font="Regular;20" backgroundColor="background2" transparent="1" zPosition="1" />
     <eLabel text="OPEN SOURCE" position="140,210" size="300,30" font="Regular;22" backgroundColor="background2" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="140,350" size="800,320" font="Regular;17" backgroundColor="background" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
-    <eLabel text="Skin myNOVUM_HD2 vs.19.1 by Nashu" position="140,680" size="800,30" backgroundColor="background2" foregroundColor="white" transparent="1" font="Regular;20" halign="left" />
+    <eLabel text="Skin myNOVUM_HD2 vs.19.2 by Nashu" position="140,680" size="800,30" backgroundColor="background2" foregroundColor="white" transparent="1" font="Regular;20" halign="left" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
@@ -13840,35 +13836,38 @@ self.instance.move(ePoint(0,0))
     </widget>
     <widget source="Title" render="Label" position="70,44" size="960,38" font="Regular;29" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <ePixmap position="1086,120" size="146,146" pixmap="myNOVUM_HD2/menu/iconnovum.png" transparent="1" alphatest="blend" />
-    <widget name="config" position="170,160" size="770,240" itemHeight="30" selectionPixmap="myNOVUM_HD2/images/FocusBar.png" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" font="Regular;20" />
-    <widget source="key_red" render="Pixmap" pixmap="myNOVUM_HD2/buttons/red.png" position="136,163" size="24,24" alphatest="blend" zPosition="1">
+    <widget name="key_left" pixmap="myNOVUM_HD2/buttons/left.png" position="124,158" size="20,30" alphatest="blend" />
+    <widget name="key_right" pixmap="myNOVUM_HD2/buttons/right.png" position="140,158" size="20,30" alphatest="blend" />
+    <widget name="switchdescription" position="170,160" size="770,35" font="Regular; 20" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" />
+    <widget name="config" position="170,200" size="770,240" itemHeight="30" selectionPixmap="myNOVUM_HD2/images/FocusBar.png" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" font="Regular;20" />
+    <widget source="key_red" render="Pixmap" pixmap="myNOVUM_HD2/buttons/red.png" position="136,203" size="24,24" alphatest="blend" zPosition="1">
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="key_green" render="Pixmap" pixmap="myNOVUM_HD2/buttons/green.png" position="136,189" size="24,24" alphatest="blend" zPosition="1">
+    <widget source="key_green" render="Pixmap" pixmap="myNOVUM_HD2/buttons/green.png" position="136,229" size="24,24" alphatest="blend" zPosition="1">
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="key_yellow" render="Pixmap" pixmap="myNOVUM_HD2/buttons/yellow.png" position="136,216" size="24,24" alphatest="blend" zPosition="1">
+    <widget source="key_yellow" render="Pixmap" pixmap="myNOVUM_HD2/buttons/yellow.png" position="136,256" size="24,24" alphatest="blend" zPosition="1">
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="key_blue" render="Pixmap" pixmap="myNOVUM_HD2/buttons/blue.png" position="136,243" size="24,24" alphatest="blend" zPosition="1">
+    <widget source="key_blue" render="Pixmap" pixmap="myNOVUM_HD2/buttons/blue.png" position="136,283" size="24,24" alphatest="blend" zPosition="1">
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="streams" render="Listbox" position="140,425" size="800,240" selectionPixmap="myNOVUM_HD2/images/FocusBar.png" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="streams" render="Listbox" position="140,465" size="800,240" selectionPixmap="myNOVUM_HD2/images/FocusBar.png" foregroundColor="lightgrey" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 				{"templates":
 				{"default": (30, [
 				MultiContentEntryText(pos = (0, 0), size = (35, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # key,
-				MultiContentEntryText(pos = (10, 0), size = (50, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # number,
-				MultiContentEntryText(pos = (80, 0), size = (300, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # description,
-				MultiContentEntryText(pos = (380, 0), size = (400, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4), # language,
-				MultiContentEntryText(pos = (755, 0), size = (25, 30), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 5), # selection,
+				MultiContentEntryText(pos = (10, 0), size = (70, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # number,
+				MultiContentEntryText(pos = (100, 0), size = (240, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # description,
+				MultiContentEntryText(pos = (360, 0), size = (400, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4), # language,
+				MultiContentEntryText(pos = (765, 0), size = (25, 30), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 5), # selection,
 				], True, "showNever"),
 				"notselected": (30, [
 				MultiContentEntryText(pos = (0, 0), size = (35, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # key,
-				MultiContentEntryText(pos = (10, 0), size = (50, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # number,
-				MultiContentEntryText(pos = (80, 0), size = (300, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # description,
-				MultiContentEntryText(pos = (380, 0), size = (400, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4), # language,
-				MultiContentEntryText(pos = (755, 0), size = (25, 30), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 5), # selection,
+				MultiContentEntryText(pos = (10, 0), size = (70, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # number,
+				MultiContentEntryText(pos = (100, 0), size = (240, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # description,
+				MultiContentEntryText(pos = (360, 0), size = (400, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4), # language,
+				MultiContentEntryText(pos = (765, 0), size = (25, 30), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 5), # selection,
 				], False, "showNever")
 				},
 				"fonts": [gFont("Regular", 20), gFont("Regular", 20)],
@@ -13878,24 +13877,26 @@ self.instance.move(ePoint(0,0))
     </widget>
   </screen>
   <!-- AudioSync -->
-  <screen name="AC3LipSync" flags="wfNoBorder" position="30,30" size="600,460" title="Audio Sync" zPosition="1" backgroundColor="transparent2">
-    <widget name="ChannelLabel" zPosition="2" position="32,40" size="130,20" font="Regular;13" halign="center" valign="center" transparent="1" backgroundColor="un232325" foregroundColors="#ffffff,orange" />
-    <widget name="ChannelImg" pixmaps="myNOVUM_HD2/OptionButtonOff.png,myNOVUM_HD2/OptionButtonOn.png" position="20,42" zPosition="2" size="10,10" transparent="1" alphatest="blend" />
-    <widget name="GlobalLabel" zPosition="2" position="178,40" size="110,20" font="Regular;13" halign="center" valign="center" transparent="1" backgroundColor="un232325" foregroundColors="#ffffff,orange" />
-    <widget name="GlobalImg" pixmaps="myNOVUM_HD2/OptionButtonOff.png,myNOVUM_HD2/OptionButtonOn.png" position="164,42" zPosition="2" size="10,10" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="myNOVUM_HD2/images/AudioSyncBarBGVert.png" zPosition="2" position="31,70" size="20,370" alphatest="blend" transparent="1" />
-    <widget name="AudioSliderBar" pixmap="myNOVUM_HD2/images/AudioSyncBarVert.png" zPosition="3" position="31,70" size="20,370" transparent="1" orientation="orBottomToTop" />
-    <widget name="AudioSlider" zPosition="4" position="6,244" size="70,20" font="Regular;13" halign="center" valign="center" backgroundColor="un232325" foregroundColor="uneeeeee" transparent="1" />
-    <widget name="ServiceInfoLabel" zPosition="4" position="20,14" size="64,20" font="Regular;13" backgroundColor="un232325" foregroundColor="undddddd" transparent="1" />
-    <widget name="ServiceInfo" zPosition="4" position="90,14" size="200,24" font="Regular;13" backgroundColor="un232325" foregroundColor="white" transparent="1" />
-    <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="290,14" zPosition="5" size="24,24" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="myNOVUM_HD2/buttons/red.png" position="290,40" zPosition="5" size="24,24" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="myNOVUM_HD2/buttons/blue.png" position="400,14" zPosition="5" size="24,24" transparent="1" alphatest="blend" />
-    <widget name="key_green" position="314,14" zPosition="4" size="84,20" font="Regular;13" valign="center" halign="left" backgroundColor="un232325" foregroundColor="white" transparent="1" />
-    <widget name="key_red" position="314,40" zPosition="4" size="84,20" font="Regular;13" valign="center" halign="left" backgroundColor="un232325" foregroundColor="white" transparent="1" />
-    <widget name="key_blue" position="424,14" zPosition="4" size="160,20" font="Regular;13" valign="center" halign="left" backgroundColor="un232325" foregroundColor="white" transparent="1" />
-    <eLabel name="" position="5,5" size="73,453" zPosition="-1" backgroundColor="un2D3033transp1" />
-    <eLabel name="" position="78,5" size="520,72" zPosition="-1" backgroundColor="un2D3033transp1" />
+  <screen name="AC3LipSync" flags="wfNoBorder" position="0,0" size="1280,720" title="Audio Sync" zPosition="1" backgroundColor="transparent2">
+    <eLabel position="0,0" size="50,720" zPosition="-1" backgroundColor="un2D3033transp2" />
+    <eLabel position="50,0" size="1230,50" zPosition="-1" backgroundColor="un2D3033transp2" />
+    <eLabel text="Audio" position="0,80" size="50,30" font="Regular; 15" foregroundColor="un32F902" backgroundColor="un181A1C" transparent="1" halign="center" /> 
+    <eLabel text="Sync." position="0,105" size="50,30" font="Regular; 15" foregroundColor="un32F902" backgroundColor="un181A1C" transparent="1" halign="center" />     
+    <widget name="ChannelLabel" zPosition="2" position="480,10" size="135,30" font="Regular; 18" halign="left" valign="center" transparent="1" backgroundColor="un232325" foregroundColors="#ffffff,orange" />
+    <widget name="ChannelImg" pixmaps="myNOVUM_HD2/OptionButtonOff.png,myNOVUM_HD2/OptionButtonOn.png" position="445,12" zPosition="2" size="24,24" transparent="1" alphatest="blend" />
+    <widget name="GlobalLabel" zPosition="2" position="650,10" size="135,30" font="Regular; 18" halign="left" valign="center" transparent="1" backgroundColor="un232325" foregroundColors="#ffffff,orange" />
+    <widget name="GlobalImg" pixmaps="myNOVUM_HD2/OptionButtonOff.png,myNOVUM_HD2/OptionButtonOn.png" position="616,12" zPosition="2" size="24,24" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="myNOVUM_HD2/images/AudioSyncBarBGVert.png" zPosition="2" position="15,170" size="20,370" alphatest="blend" transparent="1" />
+    <widget name="AudioSliderBar" pixmap="myNOVUM_HD2/images/AudioSyncBarVert.png" zPosition="3" position="15,170" size="20,370" transparent="1" orientation="orBottomToTop" />
+    <widget name="AudioSlider" zPosition="4" position="0,344" size="50,20" font="Regular; 14" halign="center" valign="center" backgroundColor="un232325" foregroundColor="white" transparent="1" />
+    <widget name="ServiceInfoLabel" zPosition="4" position="22,10" size="160,30" font="Regular; 18" backgroundColor="un232325" foregroundColor="white" transparent="1" />
+    <widget name="ServiceInfo" zPosition="4" position="155,10" size="300,30" font="Regular; 18" backgroundColor="un232325" foregroundColor="white" transparent="1" />
+    <ePixmap pixmap="myNOVUM_HD2/buttons/green.png" position="930,12" zPosition="5" size="24,24" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="myNOVUM_HD2/buttons/red.png" position="785,12" zPosition="5" size="24,24" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="myNOVUM_HD2/buttons/blue.png" position="1065,12" zPosition="5" size="24,24" transparent="1" alphatest="blend" />
+    <widget name="key_green" position="965,10" zPosition="4" size="100,30" font="Regular; 18" valign="center" halign="left" backgroundColor="un232325" foregroundColor="white" transparent="1" />
+    <widget name="key_red" position="820,10" zPosition="4" size="110,30" font="Regular; 18" valign="center" halign="left" backgroundColor="un232325" foregroundColor="white" transparent="1" />
+    <widget name="key_blue" position="1100,10" zPosition="4" size="180,30" font="Regular; 18" valign="center" halign="left" backgroundColor="un232325" foregroundColor="white" transparent="1" />
   </screen>
   <screen name="AC3LipSyncSetup" position="0,0" size="1280,720" title="LipSync Setup" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_HD2/images/sidebar.png" position="1040,95" size="240,625" transparent="1" zPosition="-3" />
